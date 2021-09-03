@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ExponeaSDK",
+        "repositoryURL": "https://github.com/exponea/exponea-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "9ec4d78b4bf8865fa37b7ed370a22b28236766c4",
+          "version": "2.11.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

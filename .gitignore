@@ -1,0 +1,20 @@
+/android/bin
+/android/obj
+/android/.vs
+/android/PaperDB/obj
+/android/PaperDB/.vs
+/ios/bin
+/ios/obj
+/ios/.vs
+/example/XamarinExample/bin
+/example/XamarinExample/obj
+/example/XamarinExample.Android/bin
+/example/XamarinExample.Android/obj
+/example/XamarinExample.iOS/bin
+/example/XamarinExample.iOS/obj
+/example/.vs
+/ios/native SDK wrapper/ExponeaSDKProxy/build
+/ios/native SDK wrapper/ExponeaSDKProxy/Cartfile.resolved
+/ios/native SDK wrapper/ExponeaSDKProxy/Carthage
+/ios/native SDK wrapper/ExponeaSDKProxy/frameworks
+

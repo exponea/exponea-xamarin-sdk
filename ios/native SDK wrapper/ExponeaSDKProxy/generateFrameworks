@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Builds a fat library for a given xcode project (framework)
+
+echo "Define parameters"
+IOS_SDK_VERSION="14.5" # xcodebuild -showsdks
+SWIFT_PROJECT_NAME="ExponeaSDKProxy"
+declare -a frameworks=("ExponeaSDKProxy" "ExponeaSDK" "ExponeaSDKShared" "ExponeaSDKNotifications" "ExponeaSDKObjC" "AnyCodable")
+
+SWIFT_PROJECT_PATH="./ExponeaSDKProxy.xcodeproj"
+SWIFT_BUILD_PATH="./build"
+SWIFT_OUTPUT_PATH="./frameworks"
+
+echo "Build iOS framework for simulator and device"
+rm -Rf "$SWIFT_BUILD_PATH"
+xcodebuild -sdk iphonesimulator$IOS_SDK_VERSION -arch x86_64 -arch i386 -arch armv7 -arch armv7s -project "$SWIFT_PROJECT_PATH" -configuration Release
+xcodebuild -sdk iphoneos$IOS_SDK_VERSION -project "$SWIFT_PROJECT_PATH" -configuration Release
+
+echo "Create fat binaries for Release-iphoneos and Release-iphonesimulator configuration"
+echo "Copy one build as a fat framework"
+cp -R "$SWIFT_BUILD_PATH/Release-iphoneos" "$SWIFT_BUILD_PATH/Release-fat"
+
+rm -Rf "$SWIFT_OUTPUT_PATH"
+mkdir "$SWIFT_OUTPUT_PATH"
+
+combine_to_fat () {
+	
+	echo "Combine modules from another build with the fat framework modules for $1"
+	cp -R "$SWIFT_BUILD_PATH/Release-iphonesimulator/$1.framework/Modules/$1.swiftmodule/" "$SWIFT_BUILD_PATH/Release-fat/$1.framework/Modules/$1.swiftmodule/"
+
+	lipo -remove arm64 "$SWIFT_BUILD_PATH/Release-iphonesimulator/$1.framework/$1" -output "$SWIFT_BUILD_PATH/Release-iphonesimulator/$1.framework/$1"
+
+	echo "Combine iphoneos + iphonesimulator configuration as fat libraries"
+	lipo -create -output "$SWIFT_BUILD_PATH/Release-fat/$1.framework/$1" "$SWIFT_BUILD_PATH/Release-iphoneos/$1.framework/$1" "$SWIFT_BUILD_PATH/Release-iphonesimulator/$1.framework/$1"
+
+	echo "Verify results"
+	lipo -info "$SWIFT_BUILD_PATH/Release-fat/$1.framework/$1"
+
+	echo "Copy fat frameworks to the output folder"
+	cp -Rf "$SWIFT_BUILD_PATH/Release-fat/$1.framework" "$SWIFT_OUTPUT_PATH"
+}
+
+for i in "${frameworks[@]}"
+do
+   combine_to_fat "$i"
+done
+
+echo "Generating binding api definition and structs"
+sharpie bind --sdk=iphoneos$IOS_SDK_VERSION --output="$SWIFT_OUTPUT_PATH/XamarinApiDef" --namespace="ExponeaSdk" --scope="$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/" "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift.h"
+
+echo "Removing Verify lines from ApiDefinitions file and copying it into binding library project"
+
+sed '/.*Verify.*/d' $SWIFT_OUTPUT_PATH/XamarinApiDef/ApiDefinitions.cs > ../../ApiDefinitions.cs
+echo "Done!"
+
