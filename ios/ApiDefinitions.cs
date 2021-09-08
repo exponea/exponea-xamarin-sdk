@@ -15,19 +15,23 @@ namespace ExponeaSdk
 
 		// -(void)configureWithConfiguration:(NSDictionary * _Nonnull)configuration;
 		[Export ("configureWithConfiguration:")]
-		void ConfigureWithConfiguration (NSDictionary configuration);
+		void Configure(NSDictionary configuration);
 
 		// -(void)trackEventWithEventType:(NSString * _Nonnull)eventType properties:(NSDictionary * _Nonnull)properties timestamp:(double)timestamp;
 		[Export ("trackEventWithEventType:properties:timestamp:")]
-		void TrackEventWithEventType (string eventType, NSDictionary properties, double timestamp);
+		void TrackEvent(string eventType, NSDictionary properties, double timestamp);
 
 		// -(void)anonymizeWithExponeaProjectDictionary:(NSDictionary * _Nullable)exponeaProjectDictionary projectMappingDictionary:(NSDictionary * _Nullable)projectMappingDictionary;
 		[Export ("anonymizeWithExponeaProjectDictionary:projectMappingDictionary:")]
-		void AnonymizeWithExponeaProjectDictionary ([NullAllowed] NSDictionary exponeaProjectDictionary, [NullAllowed] NSDictionary projectMappingDictionary);
+		void Anonymize([NullAllowed] NSDictionary exponeaProjectDictionary, [NullAllowed] NSDictionary projectMappingDictionary);
 
 		// -(void)anonymize;
 		[Export ("anonymize")]
 		void Anonymize ();
+
+		// -(void)anonymizeWithExponeaProjectDictionary:(NSDictionary * _Nullable)exponeaProjectDictionary;
+		[Export ("anonymizeWithExponeaProjectDictionary:")]
+		void Anonymize([NullAllowed] NSDictionary exponeaProjectDictionary);
 
 		// -(void)flushData;
 		[Export ("flushData")]
@@ -35,7 +39,7 @@ namespace ExponeaSdk
 
 		// -(void)flushDataWithDone:(void (^ _Nonnull)(NSString * _Nonnull))done;
 		[Export ("flushDataWithDone:")]
-		void FlushDataWithDone (Action<NSString> done);
+		void FlushData (Action<NSString> done);
 
 		// -(NSString * _Nullable)getCustomerCookie __attribute__((warn_unused_result("")));
 		[NullAllowed, Export ("getCustomerCookie")]
@@ -63,7 +67,7 @@ namespace ExponeaSdk
 
 		// -(void)setFlushModeWithFlushMode:(NSString * _Nonnull)flushMode;
 		[Export ("setFlushModeWithFlushMode:")]
-		void SetFlushModeWithFlushMode (string flushMode);
+		void SetFlushMode (string flushMode);
 
 		// -(NSInteger)getFlushPeriod __attribute__((warn_unused_result("")));
 		[Export ("getFlushPeriod")]
@@ -71,7 +75,7 @@ namespace ExponeaSdk
 
 		// -(void)setFlushPeriodWithFlushPeriod:(NSNumber * _Nonnull)flushPeriod;
 		[Export ("setFlushPeriodWithFlushPeriod:")]
-		void SetFlushPeriodWithFlushPeriod (NSNumber flushPeriod);
+		void SetFlushPeriod (NSNumber flushPeriod);
 
 		// -(NSString * _Nonnull)getLogLevel __attribute__((warn_unused_result("")));
 		[Export ("getLogLevel")]
@@ -79,7 +83,7 @@ namespace ExponeaSdk
 
 		// -(void)setLogLevelWithLogLevel:(NSString * _Nonnull)logLevel;
 		[Export ("setLogLevelWithLogLevel:")]
-		void SetLogLevelWithLogLevel (string logLevel);
+		void SetLogLevel (string logLevel);
 
 		// -(NSString * _Nonnull)getDefaultProperties __attribute__((warn_unused_result("")));
 		[Export ("getDefaultProperties")]
@@ -87,11 +91,11 @@ namespace ExponeaSdk
 
 		// -(void)setDefaultPropertiesWithProperties:(NSDictionary * _Nonnull)properties;
 		[Export ("setDefaultPropertiesWithProperties:")]
-		void SetDefaultPropertiesWithProperties (NSDictionary properties);
+		void SetDefaultProperties (NSDictionary properties);
 
 		// -(void)identifyCustomerWithCustomerIds:(NSDictionary * _Nonnull)customerIds properties:(NSDictionary * _Nonnull)properties;
 		[Export ("identifyCustomerWithCustomerIds:properties:")]
-		void IdentifyCustomerWithCustomerIds (NSDictionary customerIds, NSDictionary properties);
+		void IdentifyCustomer (NSDictionary customerIds, NSDictionary properties);
 
 		// -(void)trackSessionStart;
 		[Export ("trackSessionStart")]
@@ -103,18 +107,18 @@ namespace ExponeaSdk
 
 		// -(void)trackPushOpenedWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 		[Export ("trackPushOpenedWithUserInfo:")]
-		void TrackPushOpenedWithUserInfo (NSDictionary userInfo);
+		void TrackPushOpened(NSDictionary userInfo);
 
 		// -(void)trackPaymentWithProperties:(NSDictionary * _Nonnull)properties timestamp:(double)timestamp;
 		[Export ("trackPaymentWithProperties:timestamp:")]
-		void TrackPaymentWithProperties (NSDictionary properties, double timestamp);
+		void TrackPayment (NSDictionary properties, double timestamp);
 
 		// -(void)fetchConsentsWithSuccess:(void (^ _Nonnull)(NSString * _Nonnull))success fail:(void (^ _Nonnull)(NSString * _Nonnull))fail;
 		[Export ("fetchConsentsWithSuccess:fail:")]
-		void FetchConsentsWithSuccess (Action<NSString> success, Action<NSString> fail);
+		void FetchConsents (Action<NSString> success, Action<NSString> fail);
 
 		// -(void)fetchRecommendationsWithOptionsDictionary:(NSDictionary * _Nonnull)optionsDictionary success:(void (^ _Nonnull)(NSString * _Nonnull))success fail:(void (^ _Nonnull)(NSString * _Nonnull))fail;
 		[Export ("fetchRecommendationsWithOptionsDictionary:success:fail:")]
-		void FetchRecommendationsWithOptionsDictionary (NSDictionary optionsDictionary, Action<NSString> success, Action<NSString> fail);
+		void FetchRecommendations (NSDictionary optionsDictionary, Action<NSString> success, Action<NSString> fail);
 	}
 }

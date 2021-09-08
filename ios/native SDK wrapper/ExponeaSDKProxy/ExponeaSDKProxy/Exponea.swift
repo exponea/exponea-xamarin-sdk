@@ -106,6 +106,11 @@ public class Exponea : NSObject {
     }
     
     @objc
+    public func anonymize(exponeaProjectDictionary: NSDictionary?) {
+        anonymize(exponeaProjectDictionary: exponeaProjectDictionary, projectMappingDictionary: nil);
+    }
+    
+    @objc
     public func flushData() {
         guard isConfigured() else {
             print(ExponeaError.notConfigured.description)

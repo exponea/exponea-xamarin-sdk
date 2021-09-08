@@ -4,6 +4,7 @@ using ExponeaSdk.Models;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using System.Collections.Generic;
+using Android.Runtime;
 
 [assembly: Dependency(typeof(XamarinExample.Droid.Actions))]
 namespace XamarinExample.Droid
@@ -26,13 +27,15 @@ namespace XamarinExample.Droid
             config.ProjectToken = projectToken;
             config.Authorization = authorization;
             config.BaseURL = baseURL;
-            config.SetHttpLoggingLevel(ExponeaConfiguration.HttpLoggingLevel.Body);
             config.DefaultProperties["thisIsADefaultStringProperty"] = "This is a default string value";
             config.DefaultProperties["thisIsADefaultIntProperty"] = 1;
             config.AutomaticSessionTracking = automaticSessionTracking;
 
             Exponea.Instance.Init(Platform.CurrentActivity, config);
             Exponea.Instance.FlushMode = FlushMode.ValueOf(flushMode);
+            Exponea.Instance.LoggerLevel = Com.Exponea.Sdk.Util.Logger.Level.Debug;
+
+         
         }
 
         public void Flush(Page page)
@@ -71,21 +74,30 @@ namespace XamarinExample.Droid
 
         public void TrackPayment()
         {
-            PurchasedItem purchasedItem = new PurchasedItem(2011.1, "USD", "System", System.Guid.NewGuid().ToString(), "Product title", null);
-            Exponea.Instance.TrackPaymentEvent(getTimestamp(), purchasedItem);
+            PurchasedItem item = new PurchasedItem(
+                 12.34,
+                 "EUR",
+                 "Virtual",
+                 "handbag",
+                 "Awesome leather handbag"
+            );
+
+            //timestamp - event timestamp in seconds
+            Exponea.Instance.TrackPaymentEvent(getTimestamp(), item);
         }
 
         public void TrackEvent(string eventName)
         {
-            Dictionary<string, Java.Lang.Object> list = new Dictionary<string, Java.Lang.Object>
-            {
-                { "Number", 6},
-                { "String", "Hello!" },
-                { "Double", 2.46346 },
-            };
-            PropertiesList props = new PropertiesList(list);
+          
+            var properties = new PropertiesList(
+                new Dictionary<string, Java.Lang.Object>
+                    {
+                        {"name", "John"},
+                        {"age", 30},
+                        {"height", 175.32}
+                    });
 
-            Exponea.Instance.TrackEvent(props, getTimestamp(), eventName);
+            Exponea.Instance.TrackEvent(properties, getTimestamp(), eventName);
         }
 
         public void FetchConsents(Page page)
@@ -118,14 +130,12 @@ namespace XamarinExample.Droid
         {
             if (recommendationID != null)
             {
+                CustomerRecommendationOptions options = new CustomerRecommendationOptions(
+                       id: recommendationID,
+                       fillWithRandom: true,
+                       size: 10);
                 Exponea.Instance.FetchRecommendation(
-                    new CustomerRecommendationOptions(
-                        id: recommendationID,
-                        fillWithRandom: true,
-                        size: 10,
-                        items: null,
-                        noTrack: null,
-                        catalogAttributesWhitelist: null),
+                    options,
 
                 new ExponeaCallback<Result>((response) =>
                 {
@@ -150,8 +160,11 @@ namespace XamarinExample.Droid
         {
 
             CustomerIds customerIds = new CustomerIds().WithId("registered", registered);
-            Dictionary<string, Java.Lang.Object> properties = new Dictionary<string, Java.Lang.Object>();
-            properties.Add(propertyName, propertyValue);
+            Dictionary<string, Java.Lang.Object> properties = new Dictionary<string, Java.Lang.Object>
+            {
+                { propertyName, propertyValue}
+            };
+           
             Exponea.Instance.IdentifyCustomer(customerIds, new PropertiesList(properties));
         }
 

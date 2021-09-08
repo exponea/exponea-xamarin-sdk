@@ -16,19 +16,22 @@ namespace XamarinExample.iOS
 
         public void SwitchProject(string projectToken, string authorization, string baseURL)
         {
-            var exponeaProjectDictionary = new NSDictionary(
-               "exponeaProject", new NSDictionary(
-                    "projectToken", projectToken,
-                    "authorizationToken", authorization,
-                    "baseUrl", baseURL
+        
+            Exponea.Instance.Anonymize(
+                new NSDictionary(
+                    "exponeaProject",
+                    new NSDictionary(
+                        "projectToken", projectToken,
+                        "authorizationToken", authorization,
+                        "baseUrl", baseURL
                    )
-           );
-            Exponea.Instance.AnonymizeWithExponeaProjectDictionary(exponeaProjectDictionary, null);
+                )
+            );
         }
 
         public void Configure(string projectToken, string authorization, string baseURL, bool automaticSessionTracking, string flushMode)
         {
-            Console.Out.WriteLine("Going to configure");
+
             var configuration = new NSDictionary(
                 "projectToken", projectToken,
                 "authorizationToken", authorization,
@@ -37,12 +40,14 @@ namespace XamarinExample.iOS
                     "thisIsADefaultStringProperty", "This is a default string value",
                     "thisIsADefaultIntProperty", 1
                     ),
+              
                 "automaticSessionTracking", automaticSessionTracking
                 
             );
 
-            Exponea.Instance.ConfigureWithConfiguration(configuration);
-            Exponea.Instance.SetFlushModeWithFlushMode(flushMode);
+            Exponea.Instance.Configure(configuration);
+            Exponea.Instance.SetFlushMode(flushMode);
+            Exponea.Instance.SetLogLevel("VERBOSE");
         }
 
         public void FetchConsents(Page page)
@@ -55,16 +60,16 @@ namespace XamarinExample.iOS
                 page.DisplayAlert("Error", error, "OK");
             };
 
-            Exponea.Instance.FetchConsentsWithSuccess(success: success, fail);
+            Exponea.Instance.FetchConsents(success, fail);
         }
 
         public void FetchRecommendations(Page page, string recommendationID)
         {
-            Action<NSString> success = delegate (NSString message) {
+            Action<NSString> successDelegate = delegate (NSString message) {
                 page.DisplayAlert("Recommendations fetched", message, "OK");
             };
 
-            Action<NSString> fail = delegate (NSString error) {
+            Action<NSString> failDelegate = delegate (NSString error) {
                 page.DisplayAlert("Error", error, "OK");
             };
 
@@ -73,7 +78,7 @@ namespace XamarinExample.iOS
                 "fillWithRandom", true
             );
 
-            Exponea.Instance.FetchRecommendationsWithOptionsDictionary(options, success, fail);
+            Exponea.Instance.FetchRecommendations(options, successDelegate, failDelegate);
         }
 
         public void Flush(Page page)
@@ -82,7 +87,8 @@ namespace XamarinExample.iOS
                 page.DisplayAlert("Flush finshed", message, "OK");
             };
 
-            Exponea.Instance.FlushDataWithDone(done);
+            Exponea.Instance.FlushData(done);
+
         }
 
         public string GetCustomerCookie()
@@ -100,7 +106,7 @@ namespace XamarinExample.iOS
                 propertyName, propertyValue
             );
 
-            Exponea.Instance.IdentifyCustomerWithCustomerIds(customerIds, properties);
+            Exponea.Instance.IdentifyCustomer(customerIds, properties);
         }
 
         public void TrackClicked()
@@ -109,7 +115,7 @@ namespace XamarinExample.iOS
                 "action_type", "notification"
             );
 
-            Exponea.Instance.TrackPushOpenedWithUserInfo(properties);
+            Exponea.Instance.TrackPushOpened(properties);
         }
 
         public void TrackDelivered()
@@ -124,7 +130,7 @@ namespace XamarinExample.iOS
                 "string", "hello",
                 "double", 4534.234234
             );
-            Exponea.Instance.TrackEventWithEventType(eventName, properties, getTimestamp());
+            Exponea.Instance.TrackEvent(eventName, properties, getTimestamp());
         }
 
         private double getTimestamp()
@@ -158,11 +164,15 @@ namespace XamarinExample.iOS
         }
         public void TrackPayment()
         {
-            var properties = new NSDictionary(
-              "value", "99",
-              "custom_info", "sample payment"
-           );
-            Exponea.Instance.TrackPaymentWithProperties(properties, getTimestamp());
+            Exponea.Instance.TrackPayment(
+                new NSDictionary(
+                      "value", "12.34",
+                      "currency", "EUR",
+                      "productId", "handbag",
+                      "productTitle", "Awesome leather handbag"
+                ),
+                getTimestamp()
+            );
         }
 
         private void ShowToast(string message, double seconds)

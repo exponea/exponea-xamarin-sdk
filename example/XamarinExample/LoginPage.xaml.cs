@@ -9,14 +9,8 @@ namespace XamarinExample
         {
             InitializeComponent();
 
-            string authorizationPrefix = "";
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                authorizationPrefix = "Token ";
-            }
-
-            projectToken.Text = Preferences.Get("projectToken", "f02807dc-6b57-11e9-8cc8-0a580a203636");
-            authorization.Text = Preferences.Get("authorization", authorizationPrefix + "ndtxrn9sd1g4zjpwye2b7fcnogl72kac6iqxyj7kae66vfahiimgqh3perwj7ssm");
+            projectToken.Text = Preferences.Get("projectToken", "");
+            authorization.Text = Preferences.Get("authorization", "");
             url.Text = Preferences.Get("baseURL", "https://api.exponea.com");
             flushMode.SelectedIndex = 0;
         }

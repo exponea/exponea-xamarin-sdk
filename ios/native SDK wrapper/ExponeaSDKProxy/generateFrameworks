@@ -48,8 +48,5 @@ done
 echo "Generating binding api definition and structs"
 sharpie bind --sdk=iphoneos$IOS_SDK_VERSION --output="$SWIFT_OUTPUT_PATH/XamarinApiDef" --namespace="ExponeaSdk" --scope="$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/" "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift.h"
 
-echo "Removing Verify lines from ApiDefinitions file and copying it into binding library project"
-
-sed '/.*Verify.*/d' $SWIFT_OUTPUT_PATH/XamarinApiDef/ApiDefinitions.cs > ../../ApiDefinitions.cs
 echo "Done!"
 
