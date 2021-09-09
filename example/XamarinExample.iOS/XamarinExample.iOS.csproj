@@ -133,7 +133,7 @@
     <PackageReference Include="Xamarin.Swift">
       <Version>1.0.8</Version>
     </PackageReference>
-    <PackageReference Include="ExponeaSDK-iOS">
+    <PackageReference Include="ExponeaSDK.iOS">
       <Version>0.1.0</Version>
     </PackageReference>
   </ItemGroup>

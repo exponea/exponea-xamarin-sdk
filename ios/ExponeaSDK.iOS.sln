@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExponeaSDK-iOS", "ExponeaSDK-iOS.csproj", "{05A1689E-E4F6-4678-8DF0-F60D81908D1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExponeaSDK.iOS", "ExponeaSDK.iOS.csproj", "{05A1689E-E4F6-4678-8DF0-F60D81908D1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
