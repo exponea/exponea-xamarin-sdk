@@ -24,6 +24,7 @@
     <Authors>Exponea</Authors>
     <Description>PaperDB binding library for ExponeaSDK</Description>
     <Copyright>Copyright (C) 2007 Free Software Foundation</Copyright>
+    <PackageLicenseUrl>https://spdx.org/licenses/GPL-3.0</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

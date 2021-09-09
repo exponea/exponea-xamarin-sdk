@@ -3,6 +3,7 @@
 /android/.vs
 /android/PaperDB/obj
 /android/PaperDB/.vs
+/android/PaperDB/bin
 /ios/bin
 /ios/obj
 /ios/.vs
