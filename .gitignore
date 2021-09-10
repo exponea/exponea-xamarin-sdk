@@ -1,19 +1,8 @@
-/android/bin
-/android/obj
-/android/.vs
-/android/PaperDB/obj
-/android/PaperDB/.vs
-/android/PaperDB/bin
-/ios/bin
-/ios/obj
-/ios/.vs
-/example/XamarinExample/bin
-/example/XamarinExample/obj
-/example/XamarinExample.Android/bin
-/example/XamarinExample.Android/obj
-/example/XamarinExample.iOS/bin
-/example/XamarinExample.iOS/obj
-/example/.vs
+bin/
+obj/
+.vs/
+*.csproj.user
+
 /ios/native SDK wrapper/ExponeaSDKProxy/build
 /ios/native SDK wrapper/ExponeaSDKProxy/Cartfile.resolved
 /ios/native SDK wrapper/ExponeaSDKProxy/Carthage

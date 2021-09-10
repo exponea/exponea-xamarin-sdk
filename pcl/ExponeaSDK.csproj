@@ -1,0 +1,34 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.23">
+
+  <PropertyGroup>
+    <Target_iOS>xamarinios10</Target_iOS>
+    <Target_Android>monoandroid10.0</Target_Android>
+    <TargetFrameworks>netstandard2.0;$(Target_iOS);$(Target_Android)</TargetFrameworks>
+    <PackageVersion>0.1.0</PackageVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>ExponeaSdk</AssemblyName>
+    <RootNamespace>Exponea</RootNamespace>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="4.6.0" />
+    <Compile Include="*.cs" />
+    <Compile Include="Fallback/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == '$(Target_iOS)' ">
+    <PackageReference Include="ExponeaSDK-iOS" Version="$(PackageVersion)" />
+    <Compile Include="iOS/*.cs" />
+    <Compile Remove="Fallback/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == '$(Target_Android)' ">
+    <PackageReference Include="ExponeaSDK-Android" Version="$(PackageVersion)" />
+    <PackageReference Include="PaperDB" Version="$(PackageVersion)" />
+    <Compile Include="Android/*.cs" />
+    <Compile Remove="Fallback/*.cs" />
+  </ItemGroup>
+
+</Project>

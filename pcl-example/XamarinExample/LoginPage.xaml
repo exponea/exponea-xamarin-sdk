@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:exp="clr-namespace:Exponea;assembly=ExponeaSdk"
+    x:Class="XamarinExample.LoginPage">
+    <StackLayout>
+        <Frame BackgroundColor="#fed500" Padding="24" CornerRadius="0">
+            <Label Text="Exponea Example APP" HorizontalTextAlignment="Center" TextColor="#1d1731" FontSize="24"/>
+        </Frame>
+
+        <Entry x:Name="projectToken" Placeholder="Project token"></Entry>
+        <Entry x:Name="authorization" Placeholder="Authorization"></Entry>
+        <Entry x:Name="url" Placeholder="Base URL"></Entry>
+         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Label Text="Auto session tracking" VerticalOptions="Center"></Label>
+                    <Switch x:Name="automaticSessionTracking" IsToggled="true" VerticalOptions="Center"/>
+         </StackLayout>
+
+         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Flush mode" VerticalOptions="Center"></Label>
+                    <Picker x:Name="flushMode" VerticalOptions="Center">
+                      <Picker.ItemsSource>
+                        <x:Array Type="{x:Type exp:FlushMode}">
+                          <exp:FlushMode>Immediate</exp:FlushMode>
+                          <exp:FlushMode>Immediate</exp:FlushMode>
+                          <exp:FlushMode>Immediate</exp:FlushMode>
+                          <exp:FlushMode>Immediate</exp:FlushMode>
+                        </x:Array>
+                         
+                      </Picker.ItemsSource>
+                    </Picker>
+         </StackLayout>
+
+       
+        
+        <Button Text="Configure" Clicked="Configure_Clicked"/>
+    </StackLayout>
+</ContentPage>
