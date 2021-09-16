@@ -8,10 +8,6 @@ namespace Exponea
     {
         private const string RegisteredKey = "registered";
 
-        public Customer()
-        {
-        }
-
         public Customer(string registered)
         {
             ExternalIds[RegisteredKey] = registered;

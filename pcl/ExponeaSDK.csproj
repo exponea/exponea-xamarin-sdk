@@ -4,31 +4,65 @@
     <Target_iOS>xamarinios10</Target_iOS>
     <Target_Android>monoandroid10.0</Target_Android>
     <TargetFrameworks>netstandard2.0;$(Target_iOS);$(Target_Android)</TargetFrameworks>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.2.6</PackageVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <AssemblyName>ExponeaSdk</AssemblyName>
     <RootNamespace>Exponea</RootNamespace>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>ExponeaSDK</PackageId>
+    <Authors>Exponea</Authors>
+    <PackageLicenseUrl>https://spdx.org/licenses/MIT</PackageLicenseUrl>
+    <Owners>Exponea</Owners>
+    <Description>Exponea SDK allows your application to interact with the Exponea Customer Data &amp; Experience Platform. Exponea empowers B2C marketers to raise conversion rates, improve acquisition ROI, and maximize customer lifetime value.</Description>
+    <ReleaseVersion>0.1.0</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <Title>ExponeaSDK</Title>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Text.Json" Version="4.6.0" />
     <Compile Include="*.cs" />
     <Compile Include="Fallback/*.cs" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == '$(Target_iOS)' ">
-    <PackageReference Include="ExponeaSDK-iOS" Version="$(PackageVersion)" />
     <Compile Include="iOS/*.cs" />
     <Compile Remove="Fallback/*.cs" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == '$(Target_Android)' ">
-    <PackageReference Include="ExponeaSDK-Android" Version="$(PackageVersion)" />
-    <PackageReference Include="PaperDB" Version="$(PackageVersion)" />
     <Compile Include="Android/*.cs" />
     <Compile Remove="Fallback/*.cs" />
   </ItemGroup>
 
+  <ItemGroup Condition="'$(TargetFramework)' == 'monoandroid10.0'">
+    <PackageReference Include="ExponeaSDK.Android" Version="0.1.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'xamarinios10'">
+    <PackageReference Include="ExponeaSDK.iOS" Version="0.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NuGet.Build.Packaging" />
+    <None Remove="Xamarin.Essentials" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Configuration.cs">
+      <SubType></SubType>
+    </Compile>
+    <Compile Update="EventType.cs">
+      <SubType></SubType>
+    </Compile>
+    <Compile Update="CustomerRecommendation.cs">
+      <SubType></SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

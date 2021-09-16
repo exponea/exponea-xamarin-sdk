@@ -6,10 +6,6 @@ namespace Exponea
 {
     public class Event : AttributedObject
     {
-        public Event()
-        {
-        }
-
         public Event(string eventName)
         {
             Name = eventName;

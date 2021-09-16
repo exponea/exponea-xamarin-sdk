@@ -6,10 +6,6 @@ namespace Exponea
 {
     public class Click : AttributedObject
     {
-        public Click()
-        {
-        }
-
         public Click(string actionType, string actionName, string url = null)
         {
             ActionType = actionType;

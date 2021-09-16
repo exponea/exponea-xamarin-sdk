@@ -17,6 +17,8 @@
                 <Button Text="Track payment" Clicked="Track_Payment_Clicked"/>
                 <Button Text="Track push delivered" Clicked="Track_Delivered_Clicked"/>
                 <Button Text="Track push clicked" Clicked="Track_Clicked_Clicked"/>
+                <Button x:Name="SessionStartButton" Text="Track session start" Clicked="Track_Session_Start_Clicked"/>
+                <Button x:Name="SessionEndButton" Text="Track session end" Clicked="Track_Session_End_Clicked"/>
                 <Button Text="Anonymize" Clicked="Anonymize_Clicked"/>
                 
                 <Button Text="Flush" Clicked="Flush_Clicked"/>

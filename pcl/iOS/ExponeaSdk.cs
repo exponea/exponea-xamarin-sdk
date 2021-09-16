@@ -4,14 +4,20 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ExponeaSdkIos = ExponeaSdk;
 
 namespace Exponea
 {
     public class ExponeaSdk : IExponeaSdk
     {
-        private readonly ExponeaSdkIOS.Exponea _exponea = ExponeaSdkIOS.Exponea.Instance;
+        private readonly ExponeaSdkIos.Exponea _exponea = ExponeaSdkIos.Exponea.Instance;
 
         public string CustomerCookie => _exponea.CustomerCookie;
+
+        public bool IsConfigured
+        {
+            get => _exponea.IsConfigured;
+        }
 
         public bool AutomaticSessionTracking
         {
@@ -42,20 +48,14 @@ namespace Exponea
             _exponea.Anonymize();
         }
 
-        public void Configure(Project project)
+        public void Configure(Configuration config)
         {
-            _exponea.Configure(new NSDictionary(
-                "projectToken", project.ProjectToken,
-                "authorizationToken", project.Authorization,
-                "baseUrl", project.BaseUrl));
+            _exponea.Configure(config.ToNSDictionary());
         }
 
-        public void SwitchProject(Project project)
+        public void SwitchProject(Project project, IDictionary<EventType, IList<Project>> projectMapping = null)
         {
-            _exponea.Anonymize(new NSDictionary(
-                "projectToken", project.ProjectToken,
-                "authorizationToken", project.Authorization,
-                "baseUrl", project.BaseUrl));
+            _exponea.Anonymize(project.ToNsDictionary(), projectMapping.ToNsDictionary());
         }
 
         public Task<string> FetchConsentsAsync()
@@ -75,13 +75,13 @@ namespace Exponea
                 "id", request.Id,
                 "fillWithRandom", request.FillWithRandom,
                 "size", request.Size,
-                "items", request.Items.ToNsDictionary(),
+                "items", request.Items.ToNsDictionary<string>(),
                 "noTrack", request.NoTrack,
                 "catalogAttributesWhitelist", request.CatalogAttributesWhitelist);
 
             _exponea.FetchRecommendations(
                 options,
-                success => tcs.SetResult(success),
+                success => tcs.SetResult(success), //TODO: Parse result as list of CustomerRecommendation
                 failure => tcs.SetException(new FetchException(failure, failure)));
             return tcs.Task;
         }
@@ -93,8 +93,18 @@ namespace Exponea
             return tcs.Task;
         }
 
+        public void Flush()
+        { 
+            _exponea.FlushData();
+        }
+
         public IDictionary<string, object> GetDefaultProperties()
         {
+            if (_exponea.DefaultProperties == null)
+            {
+                return new Dictionary<string, object>();
+            }
+
             try
             {
                 return JsonSerializer.Deserialize<IDictionary<string, object>>(_exponea.DefaultProperties);
@@ -108,7 +118,7 @@ namespace Exponea
 
         public void SetDefaultProperties(IDictionary<string, object> properties)
         {
-            _exponea.SetDefaultProperties(properties.ToNsDictionary());
+            _exponea.SetDefaultProperties(properties.ToNsDictionary<Object>());
         }
 
         public void IdentifyCustomer(Customer customer)
@@ -119,11 +129,11 @@ namespace Exponea
         private static double GetTimestamp()
             => (DateTime.UtcNow - DateTime.UnixEpoch).TotalSeconds;
 
-        public void Track(Event evt)
+        public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
                 evt.Name,
                 evt.Attributes.ToNsDictionary(),
-                GetTimestamp());
+                timestamp != null ? (double)timestamp : GetTimestamp());
 
         public void Track(Delivery delivery)
             => throw new NotSupportedException();
@@ -137,17 +147,25 @@ namespace Exponea
             _exponea.TrackPushOpened(info);
         }
 
-        public void Track(Payment payment)
+        public void Track(Payment payment, double? timestamp = null)
         {
-            var info = new NSDictionary(
-                "value", payment.Value,
-                "currency", payment.Currency,
-                "paymentSystem", payment.System,
-                "productId", payment.ProductId,
-                "productTitle", payment.ProductTitle,
-                "receipt", payment.Receipt);
+           
 
-            _exponea.TrackPayment(info, GetTimestamp());
+            _exponea.TrackPayment(payment.ToNsDictionary(), timestamp != null ? (double)timestamp : GetTimestamp());
         }
+
+        public void TrackSessionStart()
+        {
+            _exponea.TrackSessionStart();
+        }
+
+        public void TrackSessionEnd()
+        {
+            _exponea.TrackSessionEnd();
+        }
+
+        public void TrackPushToken(string token)
+        //TODO: Add trackPushToken method to iOS native SDK wrapper
+            => throw new NotSupportedException();
     }
 }

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Com.Exponea.Sdk.Util;
 using ExponeaSdk.Models;
+using Xamarin.Essentials;
+
 
 namespace Exponea
 {
@@ -11,26 +12,52 @@ namespace Exponea
     {
         private static readonly global::ExponeaSdk.Exponea _exponea = global::ExponeaSdk.Exponea.Instance;
 
-        private readonly Android.Content.Context _context;
-
         public ExponeaSdk()
         {
-            _context = Android.App.Application.Context;
+          
         }
 
-        public void Configure(Project project)
+        public void Configure(Configuration config)
         {
-            _exponea.Init(_context, new ExponeaConfiguration
+            var configuration = new ExponeaConfiguration
             {
-                ProjectToken = project.ProjectToken,
-                Authorization = project.Authorization,
-                BaseURL = project.BaseUrl,
-            });
+                ProjectToken = config.ProjectToken,
+                Authorization = "Token " + config.Authorization,
+                BaseURL = config.BaseUrl,
+
+            };
+
+            if (config.AutomaticSessionTracking != null) {
+                configuration.AutomaticSessionTracking = (bool)config.AutomaticSessionTracking;
+            }
+            if (config.DefaultProperties != null)
+            {
+                configuration.DefaultProperties = config.DefaultProperties.ToJavaDictionary();
+            }
+            if (config.MaxTries != null)
+            {
+                configuration.MaxTries = (int)config.MaxTries;
+            }
+            if (config.SessionTimeout != null)
+            {
+                configuration.SessionTimeout = (double)config.SessionTimeout;
+            }
+            if (config.ProjectRouteMap != null)
+            {
+                configuration.ProjectRouteMap = config.ProjectRouteMap.ToJavaDictionary();
+            }
+
+            _exponea.Init(Platform.CurrentActivity, configuration);
         }
 
-        public void SwitchProject(Project project)
+        public bool IsConfigured
         {
-            _exponea.Anonymize(new ExponeaProject(project.BaseUrl, project.ProjectToken, project.Authorization));
+            get => _exponea.IsInitialized;
+        }
+
+        public void SwitchProject(Project project, IDictionary<EventType, IList<Project>> projectMapping = null)
+        {
+            _exponea.Anonymize(new ExponeaProject(project.BaseUrl, project.ProjectToken, "Token" + project.Authorization), projectMapping.ToJavaDictionary());
         }
 
         public string CustomerCookie
@@ -83,15 +110,15 @@ namespace Exponea
                 new NotificationData(delivery.Attributes.ToJavaDictionary(), new CampaignData() /* ? */),
                 GetTimestamp());
 
-        public void Track(Event evt)
+        public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
                 new PropertiesList(evt.Attributes.ToJavaDictionary()),
-                GetTimestamp(),
+                timestamp != null ? (double)timestamp : GetTimestamp(),
                 evt.Name);
 
-        public void Track(Payment payment)
+        public void Track(Payment payment, double? timestamp = null)
             => _exponea.TrackPaymentEvent(
-                GetTimestamp(),
+                timestamp != null ? (double)timestamp : GetTimestamp(),
                 new PurchasedItem((double)payment.Value, payment.Currency, payment.System, payment.ProductId, payment.ProductTitle, payment.Receipt));
 
         public Task FlushAsync()
@@ -99,6 +126,11 @@ namespace Exponea
             var tcs = new TaskCompletionSource<Kotlin.Result>();
             _exponea.FlushData(new KotlinCallback<Kotlin.Result>(tcs.SetResult));
             return tcs.Task;
+        }
+
+        public void Flush()
+        {
+            _exponea.FlushData();
         }
 
         public Task<string> FetchConsentsAsync()
@@ -130,6 +162,7 @@ namespace Exponea
             _exponea.FetchRecommendation(recommendationOptions,
                 new KotlinCallback<Result>(r =>
                 {
+                    //TODO: Return list of CustomerRecommendation instead of string
                     tcs.SetResult(r.Results.ToString());
                 }),
                 new KotlinCallback<Result>(r =>
@@ -142,5 +175,20 @@ namespace Exponea
 
         private static double GetTimestamp()
             => (DateTime.UtcNow - DateTime.UnixEpoch).TotalSeconds;
+
+        public void TrackSessionStart()
+        {
+            _exponea.TrackSessionStart(GetTimestamp());
+        }
+
+        public void TrackSessionEnd()
+        {
+            _exponea.TrackSessionEnd(GetTimestamp());
+        }
+
+        public void TrackPushToken(string token)
+        {
+            _exponea.TrackPushToken(token);
+        }
     }
 }

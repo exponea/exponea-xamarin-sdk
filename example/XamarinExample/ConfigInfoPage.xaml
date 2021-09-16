@@ -10,28 +10,28 @@
                 <StackLayout Orientation="Horizontal">
 
                    <Label Text="Auto session tracking" Margin="0,0,20,0"/>
-                    <Label x:Name="automaticSessionTracking" TextColor="#005FDB"/>
+                    <Label Text="{Binding AutomaticSessionTracking}" TextColor="#005FDB"/>
 
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
 
                      <Label Text="Flush mode" Margin="0,0,20,0"/>
-                    <Label x:Name="flushMode" TextColor="#005FDB"/>
+                    <Label Text="{Binding FlushMode}" TextColor="#005FDB"/>
 
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
 
                      <Label Text="Flush period" Margin="0,0,20,0"/>
-                    <Label x:Name="flushPeriod" TextColor="#005FDB"/>
+                    <Label Text="{Binding FlushPeriod}" TextColor="#005FDB"/>
 
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
 
                      <Label Text="Log level" Margin="0,0,20,0"/>
-                    <Label x:Name="logLevel" TextColor="#005FDB"/>
+                    <Label Text="{Binding LogLevel}" TextColor="#005FDB"/>
 
                 </StackLayout>
 

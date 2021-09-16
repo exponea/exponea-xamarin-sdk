@@ -1,17 +1,21 @@
-﻿using Xamarin.Forms;
+﻿using Exponea;
+using System.Text.Json;
+using Xamarin.Forms;
 
 namespace XamarinExample
 {
     public partial class ConfigInfoPage : ContentPage
     {
+        private readonly IExponeaSdk _exponea;
+
         public ConfigInfoPage()
         {
             InitializeComponent();
-            automaticSessionTracking.Text = DependencyService.Get<IActions>().IsAutoSessionTrackingOn().ToString();
-            flushMode.Text = DependencyService.Get<IActions>().GetFlushMode();
-            flushPeriod.Text = DependencyService.Get<IActions>().GetFlushPeriod().ToString();
-            logLevel.Text = DependencyService.Get<IActions>().GetLogLevel();
-            defaultProperties.Text = DependencyService.Get<IActions>().GetDefaultProperties();
+
+            BindingContext = _exponea = DependencyService.Get<IExponeaSdk>();
+            defaultProperties.Text = _exponea.GetDefaultProperties() != null ? JsonSerializer.Serialize(_exponea.GetDefaultProperties()) : "";
         }
-    }
+
+    }     
+    
 }

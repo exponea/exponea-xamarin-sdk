@@ -10,7 +10,7 @@ namespace Exponea
         { 
         }
 
-        public Payment(decimal value, string currency, string system = null, string productId = null, string productTitle = null, string receipt = null)
+        public Payment(double value, string currency, string system = null, string productId = null, string productTitle = null, string receipt = null)
         {
             Value = value;
             Currency = currency;
@@ -20,7 +20,7 @@ namespace Exponea
             Receipt = receipt;
         }
 
-        public decimal Value { get; set; }
+        public double Value { get; set; }
         public string Currency { get; set; }
         public string System { get; set; }
         public string ProductId { get; set; }

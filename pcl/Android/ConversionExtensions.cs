@@ -1,9 +1,10 @@
-﻿using ExponeaSdk.Models;
+﻿using ExponeaSdkAndroid = ExponeaSdk.Models;
 using Java.Util.Concurrent;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Android.Runtime;
 
 namespace Exponea
 {
@@ -11,10 +12,10 @@ namespace Exponea
     {
         private const long NanosecondsPerTick = 100;    // .NET ticks are 100ns quantities
 
-        public static TimeSpan ToTimeSpan(this FlushPeriod flushPeriod)
+        public static TimeSpan ToTimeSpan(this ExponeaSdkAndroid.FlushPeriod flushPeriod)
             => TimeSpan.FromTicks(flushPeriod.TimeUnit.ToNanos(flushPeriod.Amount) / NanosecondsPerTick);
-        public static FlushPeriod ToFlushPeriod(this TimeSpan timeSpan)
-            => new FlushPeriod(timeSpan.Ticks * NanosecondsPerTick, TimeUnit.Nanoseconds);
+        public static ExponeaSdkAndroid.FlushPeriod ToFlushPeriod(this TimeSpan timeSpan)
+            => new ExponeaSdkAndroid.FlushPeriod(timeSpan.Ticks * NanosecondsPerTick, TimeUnit.Nanoseconds);
 
         public static TPublicEnum ToNetEnum<TPublicEnum, TPrivateEnum>(this Java.Lang.Enum value)
             where TPublicEnum : struct
@@ -52,6 +53,27 @@ namespace Exponea
             foreach (var kvp in dic)
             {
                 res[kvp.Key] = kvp.Value.ToJava();
+            }
+
+            return res;
+        }
+
+        public static IDictionary<ExponeaSdkAndroid.EventType, IList<ExponeaSdkAndroid.ExponeaProject>> ToJavaDictionary(this IDictionary<EventType, IList<Project>> dic)
+        {
+            if (dic == null)
+            {
+                return null;
+            }
+
+            var res = new Dictionary<ExponeaSdkAndroid.EventType, IList<ExponeaSdkAndroid.ExponeaProject>>();
+            foreach (var kvp in dic)
+            {
+                var projectList = new JavaList<ExponeaSdkAndroid.ExponeaProject>();
+                foreach (var project in kvp.Value)
+                {
+                    projectList.Add(new ExponeaSdkAndroid.ExponeaProject(project.BaseUrl, project.ProjectToken, project.Authorization));
+                }
+                res[ExponeaSdkAndroid.EventType.ValueOf(kvp.Key.ToJavaEnumName<EventTypeInternal, EventType>())] = projectList;
             }
 
             return res;

@@ -2,6 +2,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:exp="clr-namespace:Exponea;assembly=ExponeaSdk"
     x:Class="XamarinExample.LoginPage">
     <StackLayout>
         <Frame BackgroundColor="#fed500" Padding="24" CornerRadius="0">
@@ -20,11 +21,11 @@
                     <Label Text="Flush mode" VerticalOptions="Center"></Label>
                     <Picker x:Name="flushMode" VerticalOptions="Center">
                       <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                          <x:String>IMMEDIATE</x:String>
-                          <x:String>PERIOD</x:String>
-                          <x:String>MANUAL</x:String>
-                          <x:String>APP_CLOSE</x:String>
+                        <x:Array Type="{x:Type exp:FlushMode}">
+                          <exp:FlushMode>Immediate</exp:FlushMode>
+                          <exp:FlushMode>Period</exp:FlushMode>
+                          <exp:FlushMode>Manual</exp:FlushMode>
+                          <exp:FlushMode>AppClose</exp:FlushMode>
                         </x:Array>
                          
                       </Picker.ItemsSource>

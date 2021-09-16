@@ -14,17 +14,19 @@ namespace Exponea
         public TimeSpan FlushPeriod { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public LogLevel LogLevel { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public bool IsConfigured => throw new NotImplementedException();
+
         public void Anonymize()
         {
             throw new NotImplementedException();
         }
 
-        public void Configure(Project project)
+        public void Configure(Configuration config)
         {
             throw new NotImplementedException();
         }
 
-        public void SwitchProject(Project project)
+        public void SwitchProject(Project project, IDictionary<EventType, IList<Project>> projectMapping)
         {
             throw new NotImplementedException();
         }
@@ -59,7 +61,7 @@ namespace Exponea
             throw new NotImplementedException();
         }
 
-        public void Track(Event evt)
+        public void Track(Event evt, double? timestamp)
         {
             throw new NotImplementedException();
         }
@@ -74,7 +76,27 @@ namespace Exponea
             throw new NotImplementedException();
         }
 
-        public void Track(Payment payment)
+        public void Track(Payment payment, double? timestamp)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackPushToken(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackSessionStart()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackSessionEnd()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Flush()
         {
             throw new NotImplementedException();
         }

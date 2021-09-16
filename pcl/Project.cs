@@ -6,10 +6,6 @@ namespace Exponea
 {
     public class Project
     {
-        public Project()
-        {
-        }
-
         public Project(string projectToken, string authorization, string baseUrl)
         {
             ProjectToken = projectToken;
@@ -20,5 +16,8 @@ namespace Exponea
         public string ProjectToken { get; set; }
         public string Authorization { get; set; }
         public string BaseUrl { get; set; }
+
+
+
     }
 }
