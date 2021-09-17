@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Exponea;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -21,7 +22,7 @@ namespace XamarinExample
 
         void Track_Clicked(System.Object sender, System.EventArgs e)
         {
-            _exponea.Track(new Event("custom_event"));
+            _exponea.Track(new Event("custom_event") { ["thisIsAStringProperty"] = "thisIsAStringValue" });
         }
 
         void Track_Payment_Clicked(System.Object sender, System.EventArgs e)
@@ -73,7 +74,10 @@ namespace XamarinExample
         {
             try
             {
-                var res = await _exponea.FetchRecommendationsAsync(new RecommendationsRequest(recommendationId.Text));
+                var res = await _exponea.FetchRecommendationsAsync(
+                    new RecommendationsRequest(
+                        id: recommendationId.Text, fillWithRandom: true)
+                    );
                 await DisplayAlert("Recommendations fetched", res, "OK");
             }
             catch (Exception ex)
@@ -127,6 +131,7 @@ namespace XamarinExample
         void Track_Session_End_Clicked(System.Object sender, System.EventArgs e)
         {
             _exponea.TrackSessionEnd();
+            _exponea.TrackPushToken("token");
         }
     }
 }

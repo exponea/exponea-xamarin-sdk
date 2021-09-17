@@ -6,5 +6,9 @@ namespace Exponea
 {
     public class Delivery : AttributedObject
     {
+        public Delivery()
+        {
+           
+        }
     }
 }

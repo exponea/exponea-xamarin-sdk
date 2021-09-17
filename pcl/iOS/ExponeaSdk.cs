@@ -43,6 +43,13 @@ namespace Exponea
             set => _exponea.SetLogLevel(((LogLevelInternal)value).ToString());
         }
 
+        public TokenTrackFrequency TokenTrackFrequency
+        {
+            //TODO: Add tracking frequency getter in iOS native SDK wrapper
+            //get => (TokenTrackFrequency)(Enum.TryParse<TokenTrackFrequencyInternal>(_exponea.TrackingFrequency, true, out var value) ? value : default);
+            get =>  throw new NotSupportedException();
+        }
+
         public void Anonymize()
         {
             _exponea.Anonymize();

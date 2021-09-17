@@ -19,7 +19,7 @@
 
          <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Label Text="Flush mode" VerticalOptions="Center"></Label>
-                    <Picker x:Name="flushMode" VerticalOptions="Center">
+                    <Picker x:Name="flushMode" VerticalOptions="Center" SelectedIndexChanged="flushMode_SelectedIndexChanged">
                       <Picker.ItemsSource>
                         <x:Array Type="{x:Type exp:FlushMode}">
                           <exp:FlushMode>Immediate</exp:FlushMode>
@@ -30,6 +30,7 @@
                          
                       </Picker.ItemsSource>
                     </Picker>
+                    <Entry x:Name="period" Placeholder="Period in minutes" />
          </StackLayout>
 
        

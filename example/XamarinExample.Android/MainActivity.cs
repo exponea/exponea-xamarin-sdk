@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.OS;
 using Android.Content;
 using Android.Widget;
-
+using ExponeaSdk;
 
 namespace XamarinExample.Droid
 {
@@ -31,9 +31,6 @@ namespace XamarinExample.Droid
                             "path is {0}", Intent.Data.Host, Intent.Data.Path));
 
             }
-
-            ExponeaSdk.Exponea.Instance.HandleCampaignIntent(Intent, ApplicationContext);
-
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

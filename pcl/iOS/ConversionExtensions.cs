@@ -108,6 +108,23 @@ namespace Exponea
                 configDictionary.Add(new NSString("projectMapping"), config.ProjectRouteMap.ToNsDictionary());
             }
 
+            configDictionary.Add(new NSString("pushTokenTrackingFrequency"), new NSString(((TokenTrackFrequencyInternal)config.TokenTrackFrequency).ToString()));
+
+            if (config.iOSConfiguration != null)
+            {
+                var iosConfig = config.iOSConfiguration;
+
+                if (iosConfig.RequirePushAuthorization != null)
+                {
+                    configDictionary.Add(new NSString("requirePushAuthorization"), new NSString(iosConfig.RequirePushAuthorization.ToString().ToLower()));
+                }
+                if (iosConfig.AppGroup != null)
+                {
+                    configDictionary.Add(new NSString("appGroup"), new NSString(iosConfig.AppGroup));
+                }
+            }
+
+            
             return configDictionary;
         }
 

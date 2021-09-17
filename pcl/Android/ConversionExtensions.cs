@@ -71,7 +71,7 @@ namespace Exponea
                 var projectList = new JavaList<ExponeaSdkAndroid.ExponeaProject>();
                 foreach (var project in kvp.Value)
                 {
-                    projectList.Add(new ExponeaSdkAndroid.ExponeaProject(project.BaseUrl, project.ProjectToken, project.Authorization));
+                    projectList.Add(new ExponeaSdkAndroid.ExponeaProject(project.BaseUrl, project.ProjectToken, "Token " + project.Authorization));
                 }
                 res[ExponeaSdkAndroid.EventType.ValueOf(kvp.Key.ToJavaEnumName<EventTypeInternal, EventType>())] = projectList;
             }

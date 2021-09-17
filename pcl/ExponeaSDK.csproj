@@ -4,7 +4,7 @@
     <Target_iOS>xamarinios10</Target_iOS>
     <Target_Android>monoandroid10.0</Target_Android>
     <TargetFrameworks>netstandard2.0;$(Target_iOS);$(Target_Android)</TargetFrameworks>
-    <PackageVersion>0.2.6</PackageVersion>
+    <PackageVersion>0.1.0</PackageVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <AssemblyName>ExponeaSdk</AssemblyName>
     <RootNamespace>Exponea</RootNamespace>
@@ -62,6 +62,9 @@
       <SubType></SubType>
     </Compile>
     <Compile Update="CustomerRecommendation.cs">
+      <SubType></SubType>
+    </Compile>
+    <Compile Update="TokenTrackFrequency.cs">
       <SubType></SubType>
     </Compile>
   </ItemGroup>

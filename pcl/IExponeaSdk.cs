@@ -31,6 +31,7 @@ namespace Exponea
         FlushMode FlushMode { get; set; }
         TimeSpan FlushPeriod { get; set; }
         LogLevel LogLevel { get; set; }
+        TokenTrackFrequency TokenTrackFrequency { get; }
         IDictionary<string, object> GetDefaultProperties();
         void SetDefaultProperties(IDictionary<string, object> properties);
     }

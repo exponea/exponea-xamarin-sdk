@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Com.Exponea.Sdk.Util;
 using ExponeaSdk.Models;
+using Firebase.Messaging;
 using Xamarin.Essentials;
 
 
@@ -10,7 +11,7 @@ namespace Exponea
 {
     public class ExponeaSdk : IExponeaSdk
     {
-        private static readonly global::ExponeaSdk.Exponea _exponea = global::ExponeaSdk.Exponea.Instance;
+        public static readonly global::ExponeaSdk.Exponea _exponea = global::ExponeaSdk.Exponea.Instance;
 
         public ExponeaSdk()
         {
@@ -45,6 +46,40 @@ namespace Exponea
             if (config.ProjectRouteMap != null)
             {
                 configuration.ProjectRouteMap = config.ProjectRouteMap.ToJavaDictionary();
+            }
+
+            configuration.TokenTrackFrequency = global::ExponeaSdk.Models.ExponeaConfiguration.TokenFrequency.ValueOf(
+                    config.TokenTrackFrequency.ToJavaEnumName<TokenTrackFrequencyInternal, TokenTrackFrequency>()
+            );
+
+            if (config.AndroidConfiguration != null)
+            {
+                var androidConfig = config.AndroidConfiguration;
+                configuration.AutomaticPushNotification = androidConfig.AutomaticPushNotification;
+                if (androidConfig.PushAccentColor != null)
+                {
+                    configuration.PushAccentColor = new Java.Lang.Integer((int)androidConfig.PushAccentColor);
+                }
+                if (androidConfig.PushIcon != null)
+                {
+                    configuration.PushIcon = new Java.Lang.Integer((int)androidConfig.PushIcon);
+                }
+                if (androidConfig.PushChannelDescription != null)
+                {
+                    configuration.PushChannelDescription = (string)androidConfig.PushChannelDescription;
+                }
+                if (androidConfig.PushChannelName != null)
+                {
+                    configuration.PushChannelName = (string)androidConfig.PushChannelName;
+                }
+                if (androidConfig.PushChannelId != null)
+                {
+                    configuration.PushChannelId = (string)androidConfig.PushChannelId;
+                }
+                if (androidConfig.PushNotificationImportance != null)
+                {
+                    configuration.PushNotificationImportance = (int)androidConfig.PushNotificationImportance;
+                }
             }
 
             _exponea.Init(Platform.CurrentActivity, configuration);
@@ -86,6 +121,12 @@ namespace Exponea
             get => _exponea.LoggerLevel.ToNetEnum<LogLevel, LogLevelInternal>();
             set => _exponea.LoggerLevel = Logger.Level.ValueOf(value.ToJavaEnumName<LogLevelInternal, LogLevel>());
         }
+
+        public TokenTrackFrequency TokenTrackFrequency
+        {
+            get => _exponea.TokenTrackFrequency.ToNetEnum<TokenTrackFrequency, TokenTrackFrequencyInternal>();
+        }
+
         public IDictionary<string, object> GetDefaultProperties()
             => _exponea.DefaultProperties.ToNetDictionary();
 
@@ -139,7 +180,8 @@ namespace Exponea
             _exponea.GetConsents(
                 new KotlinCallback<Result>(r =>
                 {
-                    tcs.SetResult(r.Results.ToString());
+                   
+                    tcs.SetResult(r.ToString());
                 }),
                 new KotlinCallback<Result>(r =>
                 {
@@ -163,7 +205,7 @@ namespace Exponea
                 new KotlinCallback<Result>(r =>
                 {
                     //TODO: Return list of CustomerRecommendation instead of string
-                    tcs.SetResult(r.Results.ToString());
+                    tcs.SetResult(r.ToString());
                 }),
                 new KotlinCallback<Result>(r =>
                 {

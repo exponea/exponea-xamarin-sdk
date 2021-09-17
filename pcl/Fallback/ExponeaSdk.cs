@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -100,5 +101,7 @@ namespace Exponea
         {
             throw new NotImplementedException();
         }
+
+        public TokenTrackFrequency TokenTrackFrequency => throw new NotImplementedException();
     }
 }

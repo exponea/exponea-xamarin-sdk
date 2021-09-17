@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Exponea;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -18,6 +19,7 @@ namespace XamarinExample
             url.Text = Preferences.Get("baseURL", "https://api.exponea.com");
             flushMode.SelectedIndex = 0;
 
+            
             if (_exponea.IsConfigured)
             {
                 GoToNextPage();
@@ -28,18 +30,7 @@ namespace XamarinExample
         {
             var config = new Configuration(projectToken.Text, authorization.Text, url.Text);
             config.AutomaticSessionTracking = automaticSessionTracking.IsToggled;
-
-            var projectMapping = new Dictionary<EventType, IList<Project>>();
-            projectMapping.Add(EventType.TrackEvent, new List<Project>()
-                    {
-                        new Project(
-                            projectToken: "2087f0ae-6b58-11e9-a353-0a580a2009c0",
-                            authorization: "vqgp8d3789w9dxr1srtal7nmi6sqn9fwakhptn1kbp40lb484pbh4v5a750lf817",
-                            baseUrl: "https://api.exponea.com"
-                            )
-                    });
-
-            config.ProjectRouteMap = projectMapping;
+            
             config.DefaultProperties = new Dictionary<string, object>()
             {
                 { "thisIsADefaultStringProperty", "This is a default string value" },
@@ -47,9 +38,30 @@ namespace XamarinExample
                 { "thisIsADefaultDoubleProperty", 12.53623}
 
             };
-
+            config.TokenTrackFrequency = TokenTrackFrequency.Daily;
+        
             _exponea.Configure(config);
             _exponea.FlushMode = (FlushMode)flushMode.SelectedItem;
+            _exponea.LogLevel = LogLevel.Debug;
+
+            if (_exponea.FlushMode == FlushMode.Period && period.Text.Trim() != "" )
+            {
+                int minutes;
+                bool isParsable = Int32.TryParse(period.Text, out minutes);
+
+                if (isParsable)
+                    _exponea.FlushPeriod = new System.TimeSpan(0, minutes: minutes, 0);
+                else
+                    Console.WriteLine("Period could not be parsed.");
+               
+            }
+            _exponea.SetDefaultProperties(new Dictionary<string, object>()
+            {
+                { "thisIsADefaultStringProperty", "This is a default string value" },
+                { "thisIsADefaultIntProperty", 1},
+                { "thisIsADefaultDoubleProperty", 12.53623}
+
+            });
 
             Preferences.Set("projectToken", projectToken.Text);
             Preferences.Set("authorization", authorization.Text);
@@ -61,6 +73,17 @@ namespace XamarinExample
         async void GoToNextPage()
         {
             await Navigation.PushAsync(new MainPage());
+        }
+
+        void flushMode_SelectedIndexChanged(System.Object sender, System.EventArgs e)
+        {
+            if ((FlushMode)flushMode.SelectedItem == FlushMode.Period)
+            {
+                period.IsVisible = true;
+            } else
+            {
+                period.IsVisible = false;
+            }
         }
     }
 }

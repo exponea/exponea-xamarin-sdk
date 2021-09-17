@@ -8,9 +8,11 @@ namespace Exponea
     {
         public const int DefaultSize = 10;
 
-        public RecommendationsRequest(string id)
+        public RecommendationsRequest(string id, bool fillWithRandom = false, int size = DefaultSize)
         {
             Id = id;
+            FillWithRandom = fillWithRandom;
+            Size = size;
         }
 
         public string Id { get; set; }

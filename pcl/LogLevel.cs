@@ -9,8 +9,8 @@ namespace Exponea
         Unknown,
         Off,
         Error,
-        Warning,
-        Information,
+        Warn,
+        Info,
         Debug,
         Verbose,
     }
