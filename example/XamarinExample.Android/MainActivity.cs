@@ -5,8 +5,6 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Android.Content;
-using Android.Widget;
-using ExponeaSdk;
 
 namespace XamarinExample.Droid
 {

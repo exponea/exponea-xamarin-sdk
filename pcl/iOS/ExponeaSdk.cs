@@ -79,17 +79,24 @@ namespace Exponea
             var tcs = new TaskCompletionSource<string>();
 
             var options = new NSDictionary(
-                "id", request.Id,
-                "fillWithRandom", request.FillWithRandom,
-                "size", request.Size,
+                "id", request.Id.ToNSObject(),
+                "fillWithRandom", request.FillWithRandom.ToNSObject(),
+                "size", request.Size.ToNSObject(),
                 "items", request.Items.ToNsDictionary<string>(),
-                "noTrack", request.NoTrack,
-                "catalogAttributesWhitelist", request.CatalogAttributesWhitelist);
+                "noTrack", request.NoTrack.ToNSObject(),
+                "catalogAttributesWhitelist", request.CatalogAttributesWhitelist.ToNSArray<string>());
 
-            _exponea.FetchRecommendations(
-                options,
-                success => tcs.SetResult(success), //TODO: Parse result as list of CustomerRecommendation
-                failure => tcs.SetException(new FetchException(failure, failure)));
+            Action<NSString> successDelegate = delegate (NSString success) {
+                //TODO: Parse result as list of CustomerRecommendation
+                tcs.SetResult(success);
+            };
+
+            Action<NSString> failDelegate = delegate (NSString error) {
+                tcs.SetException(new FetchException(error, error));
+            };
+
+            _exponea.FetchRecommendations(options, successDelegate, failDelegate);
+
             return tcs.Task;
         }
 

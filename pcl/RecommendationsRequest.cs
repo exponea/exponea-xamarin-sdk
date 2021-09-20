@@ -20,6 +20,6 @@ namespace Exponea
         public int Size { get; set; } = DefaultSize;
         public IDictionary<string, string> Items { get; set; } = new Dictionary<string, string>();
         public bool NoTrack { get; set; }
-        public IList<string> CatalogAttributesWhitelist { get; set; } = new List<string>();
+        public List<string> CatalogAttributesWhitelist { get; set; } = new List<string>();
     }
 }

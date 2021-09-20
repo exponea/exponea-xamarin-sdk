@@ -116,6 +116,9 @@ namespace XamarinExample
 
             _exponea.SwitchProject(new Project(projectToken, authorization, baseUrl));
             customerCookie.Text = "Customer cookie: \n" + _exponea.CustomerCookie;
+            Preferences.Set("projectToken", projectToken);
+            Preferences.Set("authorization", authorization);
+            Preferences.Set("baseURL", baseUrl);
         }
 
         async void Show_Configuration_ClickedAsync(System.Object sender, System.EventArgs e)
@@ -131,7 +134,6 @@ namespace XamarinExample
         void Track_Session_End_Clicked(System.Object sender, System.EventArgs e)
         {
             _exponea.TrackSessionEnd();
-            _exponea.TrackPushToken("token");
         }
     }
 }

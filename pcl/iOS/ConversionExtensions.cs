@@ -24,6 +24,24 @@ namespace Exponea
             return res;
         }
 
+        public static NSArray ToNSArray<TValue>(this List<TValue> list)
+        {
+
+            if (list == null)
+            {
+                return null;
+            }
+
+            var array = new NSObject[list.Count];
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                array[i] = list[i].ToNSObject();
+            }
+
+            return NSArray.FromNSObjects<NSObject>(array);
+        }
+
         public static NSMutableDictionary<NSString, NSMutableArray> ToNsDictionary(this IDictionary<EventType, IList<Project>> dic)
         {
             if (dic == null)
@@ -142,8 +160,9 @@ namespace Exponea
                 float f => new NSNumber(f),
                 double d => new NSNumber(d),
                 string s => new NSString(s),
+                bool b => new NSNumber(b),
                 NSObject o => o,
-                _ => throw new NotSupportedException()
+                _ => throw new ArgumentException()
             };
         }
     }
