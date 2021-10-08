@@ -35,13 +35,6 @@
 
                 </StackLayout>
 
-                <!--<StackLayout Orientation="Horizontal">
-
-                     <Label Text="Token Tracking Frequency" Margin="0,0,20,0"/>
-                    <Label Text="{Binding TokenTrackFrequency}" TextColor="#005FDB"/>
-
-                </StackLayout>-->
-
                  <Label Text="Default properties"/>
                     <Label x:Name="defaultProperties" TextColor="#005FDB"/>
               

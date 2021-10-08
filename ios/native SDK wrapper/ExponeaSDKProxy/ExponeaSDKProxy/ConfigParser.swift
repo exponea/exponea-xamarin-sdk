@@ -89,6 +89,10 @@ class ConfigurationParser {
             )
         }
     }
+    
+    func parseAppGroup() throws -> String? {
+        return try dictionary.getOptionalSafely(property: "appGroup")
+    }
 
     func parseSessionTracking() throws -> ExponeaSDK.Exponea.AutomaticSessionTracking {
         let automaticSessionTracking: Bool

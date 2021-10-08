@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Com.Exponea.Sdk.Util;
+using Exponea.Android;
 using ExponeaSdk.Models;
-using Firebase.Messaging;
 using Xamarin.Essentials;
-
+using Android.App;
+using Result = ExponeaSdk.Models.Result;
 
 namespace Exponea
 {
@@ -62,7 +63,7 @@ namespace Exponea
                 }
                 if (androidConfig.PushIcon != null)
                 {
-                    configuration.PushIcon = new Java.Lang.Integer((int)androidConfig.PushIcon);
+                    configuration.PushIcon = Utils.GetResourceId(Application.Context, androidConfig.PushIcon);
                 }
                 if (androidConfig.PushChannelDescription != null)
                 {
@@ -122,11 +123,6 @@ namespace Exponea
             set => _exponea.LoggerLevel = Logger.Level.ValueOf(value.ToJavaEnumName<LogLevelInternal, LogLevel>());
         }
 
-        public TokenTrackFrequency TokenTrackFrequency
-        {
-            get => _exponea.TokenTrackFrequency.ToNetEnum<TokenTrackFrequency, TokenTrackFrequencyInternal>();
-        }
-
         public IDictionary<string, object> GetDefaultProperties()
             => _exponea.DefaultProperties.ToNetDictionary();
 
@@ -144,22 +140,22 @@ namespace Exponea
             => _exponea.TrackClickedPush(
                 new NotificationData(click.Attributes.ToJavaDictionary(), new CampaignData() /* ? */),
                 new NotificationAction(click.ActionType, click.ActionName, click.Url),
-                GetTimestamp());
+                Utils.GetTimestamp());
 
         public void Track(Delivery delivery)
             => _exponea.TrackDeliveredPush(
                 new NotificationData(delivery.Attributes.ToJavaDictionary(), new CampaignData() /* ? */),
-                GetTimestamp());
+                Utils.GetTimestamp());
 
         public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
                 new PropertiesList(evt.Attributes.ToJavaDictionary()),
-                timestamp != null ? (double)timestamp : GetTimestamp(),
+                timestamp != null ? (double)timestamp : Utils.GetTimestamp(),
                 evt.Name);
 
         public void Track(Payment payment, double? timestamp = null)
             => _exponea.TrackPaymentEvent(
-                timestamp != null ? (double)timestamp : GetTimestamp(),
+                timestamp != null ? (double)timestamp : Utils.GetTimestamp(),
                 new PurchasedItem((double)payment.Value, payment.Currency, payment.System, payment.ProductId, payment.ProductTitle, payment.Receipt));
 
         public Task FlushAsync()
@@ -215,22 +211,24 @@ namespace Exponea
             return tcs.Task;
         }
 
-        private static double GetTimestamp()
-            => (DateTime.UtcNow - DateTime.UnixEpoch).TotalSeconds;
-
         public void TrackSessionStart()
         {
-            _exponea.TrackSessionStart(GetTimestamp());
+            _exponea.TrackSessionStart(Utils.GetTimestamp());
         }
 
         public void TrackSessionEnd()
         {
-            _exponea.TrackSessionEnd(GetTimestamp());
+            _exponea.TrackSessionEnd(Utils.GetTimestamp());
         }
 
         public void TrackPushToken(string token)
         {
             _exponea.TrackPushToken(token);
+        }
+
+        public void CheckPushSetup()
+        {
+            _exponea.CheckPushSetup = true;
         }
     }
 }

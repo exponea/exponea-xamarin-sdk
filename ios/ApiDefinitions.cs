@@ -1,6 +1,8 @@
 using System;
 using Foundation;
 using ObjCRuntime;
+using UserNotifications;
+using UIKit;
 
 namespace ExponeaSdk
 {
@@ -120,5 +122,46 @@ namespace ExponeaSdk
 		// -(void)fetchRecommendationsWithOptionsDictionary:(NSDictionary * _Nonnull)optionsDictionary success:(void (^ _Nonnull)(NSString * _Nonnull))success fail:(void (^ _Nonnull)(NSString * _Nonnull))fail;
 		[Export ("fetchRecommendationsWithOptionsDictionary:success:fail:")]
 		void FetchRecommendations (NSDictionary optionsDictionary, Action<NSString> success, Action<NSString> fail);
+
+		// -(void)handlePushNotificationTokenWithDeviceToken:(NSData * _Nonnull)deviceToken;
+		[Export("handlePushNotificationTokenWithDeviceToken:")]
+		void HandlePushNotificationToken(NSData deviceToken);
+
+		// -(void)handlePushNotificationOpenedWithResponse:(UNNotificationResponse * _Nonnull)response;
+		[Export("handlePushNotificationOpenedWithResponse:")]
+		void HandlePushNotificationOpened(UNNotificationResponse response);
+
+		// -(void)handlePushNotificationOpenedWithUserInfo:(NSDictionary * _Nonnull)userInfo actionIdentifier:(NSString * _Nullable)actionIdentifier;
+		[Export("handlePushNotificationOpenedWithUserInfo:actionIdentifier:")]
+		void HandlePushNotificationOpened(NSDictionary userInfo, [NullAllowed] string actionIdentifier);
+
+		// -(void)processNotificationRequestWithRequest:(UNNotificationRequest * _Nonnull)request contentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler;
+		[Export("processNotificationRequestWithRequest:contentHandler:")]
+		void ProcessNotificationRequest(UNNotificationRequest request, Action<UNNotificationContent> contentHandler);
+
+		// -(void)serviceExtensionTimeWillExpire;
+		[Export("serviceExtensionTimeWillExpire")]
+		void ServiceExtensionTimeWillExpire();
+
+		// -(void)notificationReceived:(UNNotification * _Nonnull)notification context:(NSExtensionContext * _Nullable)context viewController:(UIViewController * _Nonnull)viewController;
+		[Export("notificationReceived:context:viewController:")]
+		void NotificationReceived(UNNotification notification, [NullAllowed] NSExtensionContext context, UIViewController viewController);
+
+		// +(BOOL)isExponeaNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo __attribute__((warn_unused_result("")));
+		[Static]
+		[Export("isExponeaNotificationWithUserInfo:")]
+		bool IsExponeaNotification(NSDictionary userInfo);
+
+		// -(void)initNotificationServiceWithAppGroup:(NSString * _Nonnull)appGroup __attribute__((objc_method_family("none")));
+		[Export("initNotificationServiceWithAppGroup:")]
+		void InitNotificationService(string appGroup);
+
+		// -(void)handleCampaignClickWithUrl:(NSURL * _Nonnull)url timestamp:(double)timestamp;
+		[Export("handleCampaignClickWithUrl:timestamp:")]
+		void HandleCampaignClick(NSUrl url, double timestamp);
+
+		// -(void)trackPushTokenWithToken:(NSString * _Nonnull)token;
+		[Export("trackPushTokenWithToken:")]
+		void TrackPushToken(string token);
 	}
 }

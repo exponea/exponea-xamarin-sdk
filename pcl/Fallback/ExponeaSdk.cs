@@ -102,6 +102,11 @@ namespace Exponea
             throw new NotImplementedException();
         }
 
+        public void CheckPushSetup()
+        {
+            throw new NotImplementedException();
+        }
+
         public TokenTrackFrequency TokenTrackFrequency => throw new NotImplementedException();
     }
 }

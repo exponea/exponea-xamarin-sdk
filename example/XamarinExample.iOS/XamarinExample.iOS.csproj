@@ -27,6 +27,8 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>VS: com.exponea.xamarin Development</CodesignProvision>
+    <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -36,6 +38,8 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
+    <CodesignProvision>VS: com.exponea.xamarin Development</CodesignProvision>
+    <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,11 +50,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>VS: com.exponea.xamarin Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -62,6 +67,7 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
+    <CodesignProvision>VS: com.exponea.xamarin Development</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -69,6 +75,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushRegistrationHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -127,7 +134,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Swift">
       <Version>1.0.8</Version>
@@ -139,5 +146,18 @@
       <Project>{94BFFDBE-911F-4C36-B12C-99C05B4CF027}</Project>
       <Name>XamarinExample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ExamplePushServiceExtension\ExamplePushServiceExtension.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{68596DD4-8469-48E4-BCB9-BCFB79A5FCB6}</Project>
+      <Name>ExamplePushServiceExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExamplePushContentExtension\ExamplePushContentExtension.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{4CA99F78-93D9-4C01-A361-9063376C4D2D}</Project>
+      <Name>ExamplePushContentExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\beep.wav" />
   </ItemGroup>
 </Project>

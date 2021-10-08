@@ -2,8 +2,6 @@
 using Java.Util.Concurrent;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Android.Runtime;
 
 namespace Exponea

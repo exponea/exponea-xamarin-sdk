@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Foundation;
 
 namespace Exponea
@@ -134,7 +132,7 @@ namespace Exponea
 
                 if (iosConfig.RequirePushAuthorization != null)
                 {
-                    configDictionary.Add(new NSString("requirePushAuthorization"), new NSString(iosConfig.RequirePushAuthorization.ToString().ToLower()));
+                    configDictionary.Add(new NSString("requirePushAuthorization"), new NSNumber((bool)iosConfig.RequirePushAuthorization));
                 }
                 if (iosConfig.AppGroup != null)
                 {

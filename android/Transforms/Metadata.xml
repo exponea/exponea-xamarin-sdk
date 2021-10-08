@@ -8,4 +8,5 @@
     <attr path="/api/package[@name='com.exponea.sdk']/class[@name='Exponea']/method[@name='trackClickedPush' and count(parameter)=3 and parameter[1][@type='com.exponea.sdk.models.NotificationData'] and parameter[2][@type='com.exponea.sdk.models.NotificationAction'] and parameter[3][@type='java.lang.Double']]/parameter[3]" name="managedType">double</attr>
     <attr path="/api/package[@name='com.exponea.sdk']" name="managedName">ExponeaSdk</attr>
     <attr path="/api/package[@name='com.exponea.sdk.models']" name="managedName">ExponeaSdk.Models</attr>
+    <attr path="/api/package[@name='com.exponea.sdk.services']" name="managedName">ExponeaSdk.Services</attr>
 </metadata>

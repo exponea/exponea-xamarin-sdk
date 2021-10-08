@@ -1,7 +1,5 @@
-﻿using Java.Interop;
+﻿
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Exponea
 {

@@ -32,7 +32,7 @@ namespace Exponea
 
         public AndroidConfiguration(
             bool automaticPushNotification = true,
-            int? pushIcon = null,
+            string? pushIcon = null,
             int? pushAccentColor = null,
             string? pushChannelName = null,
             string? pushChannelDescription = null,
@@ -50,7 +50,7 @@ namespace Exponea
         }
 
         public bool AutomaticPushNotification { get; set; } = true;
-        public int? PushIcon { get; set; }
+        public string? PushIcon { get; set; }
         public int? PushAccentColor { get; set; }
         public string? PushChannelName { get; set; }
         public string? PushChannelDescription { get; set; }

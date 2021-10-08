@@ -15,6 +15,7 @@
                  <Button Text="Show Configuration" Clicked="Show_Configuration_ClickedAsync"/>
                 <Button Text="Track custom event" Clicked="Track_Clicked"/>
                 <Button Text="Track payment" Clicked="Track_Payment_Clicked"/>
+                <Button  x:Name="RegisterForPush" Text="Register for push notifications" Clicked="Register_For_Push_Clicked"/>
                 <Button Text="Track push delivered" Clicked="Track_Delivered_Clicked"/>
                 <Button Text="Track push clicked" Clicked="Track_Clicked_Clicked"/>
                 <Button x:Name="SessionStartButton" Text="Track session start" Clicked="Track_Session_Start_Clicked"/>

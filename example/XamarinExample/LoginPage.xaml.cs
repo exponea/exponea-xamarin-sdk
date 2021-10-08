@@ -28,21 +28,30 @@ namespace XamarinExample
 
         void Configure_Clicked(System.Object sender, System.EventArgs e)
         {
+           // _exponea.CheckPushSetup();
+
             var config = new Configuration(projectToken.Text, authorization.Text, url.Text);
             config.AutomaticSessionTracking = automaticSessionTracking.IsToggled;
             
-            config.DefaultProperties = new Dictionary<string, object>()
+            var props = new Dictionary<string, object>()
             {
                 { "thisIsADefaultStringProperty", "This is a default string value" },
                 { "thisIsADefaultIntProperty", 1},
                 { "thisIsADefaultDoubleProperty", 12.53623}
-
             };
-            config.TokenTrackFrequency = TokenTrackFrequency.Daily;
-        
+
+            config.DefaultProperties = props;
+
+            config.iOSConfiguration = new iOSConfiguration(appGroup: "group.com.exponea.xamarin");
+
+            int colorId = System.Drawing.Color.FromArgb(0, 0, 255).ToInt();
+            config.AndroidConfiguration = new AndroidConfiguration(pushIcon: "push_icon", pushAccentColor: colorId, automaticPushNotification: true);
+
             _exponea.Configure(config);
             _exponea.FlushMode = (FlushMode)flushMode.SelectedItem;
-            _exponea.LogLevel = LogLevel.Debug;
+            _exponea.LogLevel = Device.RuntimePlatform == Device.iOS ? LogLevel.Verbose : LogLevel.Debug;
+
+           
 
             if (_exponea.FlushMode == FlushMode.Period && period.Text.Trim() != "" )
             {
@@ -55,6 +64,8 @@ namespace XamarinExample
                     Console.WriteLine("Period could not be parsed.");
                
             }
+
+            
             _exponea.SetDefaultProperties(new Dictionary<string, object>()
             {
                 { "thisIsADefaultStringProperty", "This is a default string value" },

@@ -24,8 +24,6 @@
 	<string>10.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>XamarinExample</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.exponea.example.XamarinExample</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
@@ -34,5 +32,12 @@
 	<string>XamarinExample</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+		<string>processing</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.exponea.xamarin</string>
 </dict>
 </plist>

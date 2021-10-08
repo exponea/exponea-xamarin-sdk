@@ -7,6 +7,7 @@
 
 import Foundation
 import ExponeaSDK
+import ExponeaSDKNotifications
 
 @objc(Exponea)
 public class Exponea : NSObject {
@@ -16,6 +17,9 @@ public class Exponea : NSObject {
     
     static let defaultFlushPeriod = 5 * 60
     static var shared: ExponeaInternal = ExponeaSDK.Exponea.shared
+    
+    private var notificationService: ExponeaNotificationService? = nil
+    private let notificationContentService = ExponeaNotificationContentService()
     
     @objc
     public func configure(configuration: NSDictionary) {
@@ -111,6 +115,26 @@ public class Exponea : NSObject {
     }
     
     @objc
+    public func handlePushNotificationToken(deviceToken: Data) {
+        Exponea.shared.handlePushNotificationToken(deviceToken: deviceToken)
+    }
+    
+    @objc
+    public func handlePushNotificationOpened(response: UNNotificationResponse) {
+        Exponea.shared.handlePushNotificationOpened(response: response)
+    }
+    
+    @objc
+    public func handlePushNotificationOpened(userInfo: [AnyHashable: Any], actionIdentifier: String? = nil) {
+        Exponea.shared.handlePushNotificationOpened(userInfo: userInfo, actionIdentifier: actionIdentifier)
+    }
+    
+    @objc
+    public func handleCampaignClick(url: URL, timestamp: Double) {
+        Exponea.shared.trackCampaignClick(url: url, timestamp: timestamp)
+    }
+    
+    @objc
     public func flushData() {
         guard isConfigured() else {
             print(ExponeaError.notConfigured.description)
@@ -149,10 +173,6 @@ public class Exponea : NSObject {
     
     @objc
     public func checkPushSetup() {
-        guard isConfigured() else {
-            print(ExponeaError.notConfigured.description)
-            return
-        }
         Exponea.shared.checkPushSetup = true
     }
     
@@ -345,6 +365,11 @@ public class Exponea : NSObject {
     }
     
     @objc
+    public func trackPushToken(token: String) {
+        Exponea.shared.trackPushToken(token)
+    }
+    
+    @objc
     public func trackPayment(
         properties: NSDictionary,
         timestamp: Double
@@ -403,7 +428,31 @@ public class Exponea : NSObject {
             }
         }
     }
+    
+    @objc
+    public func processNotificationRequest(request: UNNotificationRequest, contentHandler: @escaping (UNNotificationContent) -> Void) {
+        notificationService?.process(request: request, contentHandler: contentHandler)
+    }
+    
+    @objc
+    public func initNotificationService(appGroup: String) {
+        if (notificationService == nil) {
+            notificationService = ExponeaNotificationService(appGroup: appGroup)
+        }
+    }
 
+    @objc
+    public func serviceExtensionTimeWillExpire() {
+        notificationService?.serviceExtensionTimeWillExpire()
+    }
+    
+    @objc
+    public func notificationReceived(_ notification: UNNotification,
+                           context: NSExtensionContext?,
+                           viewController: UIViewController) {
+        notificationContentService.didReceive(notification, context: context, viewController: viewController)
+    }
+    
     @objc
     public func fetchRecommendations(
         optionsDictionary: NSDictionary,
@@ -460,6 +509,9 @@ public class Exponea : NSObject {
         }
     }
     
-    
+    @objc
+    public static func isExponeaNotification(userInfo: [AnyHashable: Any]) -> Bool {
+        return ExponeaSDK.Exponea.isExponeaNotification(userInfo: userInfo)
+    }
 }
 

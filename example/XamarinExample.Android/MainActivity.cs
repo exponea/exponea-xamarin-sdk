@@ -1,10 +1,11 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Android.Content;
+using Exponea.Android;
+using Xamarin.Forms;
+using Exponea;
 
 namespace XamarinExample.Droid
 {
@@ -13,7 +14,7 @@ namespace XamarinExample.Droid
         Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
         DataScheme = "https",
         DataHost = "old.panaxeo.com",
-        DataPathPattern = "/exponea/.*",
+        DataPathPattern = "/xamarin/.*",
         AutoVerify = true
     )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -22,17 +23,11 @@ namespace XamarinExample.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            if (IsViewUrlIntent(Intent, "http") || IsViewUrlIntent(Intent, "exponea"))
-            {
-                Console.WriteLine(String.Format("Deep link received from {0}, " +
-                            "path is {0}", Intent.Data.Host, Intent.Data.Path));
-
-            }
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            Xamarin.Forms.DependencyService.Register<Exponea.IExponeaSdk, Exponea.ExponeaSdk>();
+            Forms.Init(this, savedInstanceState);
+            DependencyService.Register<IExponeaSdk, Exponea.ExponeaSdk>();
+
+            ExponeaLinkHandler.Instance.HandleCampaignClick(Intent, ApplicationContext);
 
             LoadApplication(new App());
 
@@ -43,11 +38,6 @@ namespace XamarinExample.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-
-        private bool IsViewUrlIntent(Intent intent, String schemePrefix)
-        {
-            return Intent.ActionView == intent.Action && intent.Data.Scheme.StartsWith(schemePrefix);
         }
 
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Android.App;
 using Android.Content;
-using Com.Exponea.Sdk.Services;
+using ExponeaSdk.Services;
 using ExponeaSdk.Models;
 
 namespace XamarinExample.Droid

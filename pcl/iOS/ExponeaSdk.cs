@@ -1,10 +1,11 @@
-﻿using Foundation;
+﻿using Exponea.iOS;
+using Foundation;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using ExponeaSdkIos = ExponeaSdk;
+
 
 namespace Exponea
 {
@@ -43,15 +44,9 @@ namespace Exponea
             set => _exponea.SetLogLevel(((LogLevelInternal)value).ToString());
         }
 
-        public TokenTrackFrequency TokenTrackFrequency
-        {
-            //TODO: Add tracking frequency getter in iOS native SDK wrapper
-            //get => (TokenTrackFrequency)(Enum.TryParse<TokenTrackFrequencyInternal>(_exponea.TrackingFrequency, true, out var value) ? value : default);
-            get =>  throw new NotSupportedException();
-        }
-
         public void Anonymize()
         {
+
             _exponea.Anonymize();
         }
 
@@ -86,12 +81,14 @@ namespace Exponea
                 "noTrack", request.NoTrack.ToNSObject(),
                 "catalogAttributesWhitelist", request.CatalogAttributesWhitelist.ToNSArray<string>());
 
-            Action<NSString> successDelegate = delegate (NSString success) {
+            Action<NSString> successDelegate = delegate (NSString success)
+            {
                 //TODO: Parse result as list of CustomerRecommendation
                 tcs.SetResult(success);
             };
 
-            Action<NSString> failDelegate = delegate (NSString error) {
+            Action<NSString> failDelegate = delegate (NSString error)
+            {
                 tcs.SetException(new FetchException(error, error));
             };
 
@@ -108,7 +105,7 @@ namespace Exponea
         }
 
         public void Flush()
-        { 
+        {
             _exponea.FlushData();
         }
 
@@ -125,7 +122,6 @@ namespace Exponea
             }
             catch
             {
-                // TODO: log? should we even catch?
                 return new Dictionary<string, object>();
             }
         }
@@ -140,14 +136,13 @@ namespace Exponea
             _exponea.IdentifyCustomer(customer.ExternalIds.ToNsDictionary(), customer.Attributes.ToNsDictionary());
         }
 
-        private static double GetTimestamp()
-            => (DateTime.UtcNow - DateTime.UnixEpoch).TotalSeconds;
+       
 
         public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
                 evt.Name,
                 evt.Attributes.ToNsDictionary(),
-                timestamp != null ? (double)timestamp : GetTimestamp());
+                timestamp != null ? (double)timestamp : Utils.GetTimestamp());
 
         public void Track(Delivery delivery)
             => throw new NotSupportedException();
@@ -163,9 +158,12 @@ namespace Exponea
 
         public void Track(Payment payment, double? timestamp = null)
         {
-           
+            _exponea.TrackPayment(payment.ToNsDictionary(), timestamp != null ? (double)timestamp : Utils.GetTimestamp());
+        }
 
-            _exponea.TrackPayment(payment.ToNsDictionary(), timestamp != null ? (double)timestamp : GetTimestamp());
+        public void TrackPushToken(string token)
+        {
+           _exponea.TrackPushToken(token);
         }
 
         public void TrackSessionStart()
@@ -178,8 +176,9 @@ namespace Exponea
             _exponea.TrackSessionEnd();
         }
 
-        public void TrackPushToken(string token)
-        //TODO: Add trackPushToken method to iOS native SDK wrapper
-            => throw new NotSupportedException();
+        public void CheckPushSetup()
+        {
+            _exponea.CheckPushSetup();
+        }
     }
 }

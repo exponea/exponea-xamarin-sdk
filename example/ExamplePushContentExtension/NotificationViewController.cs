@@ -1,0 +1,38 @@
+﻿using System;
+using Foundation;
+using UIKit;
+using UserNotifications;
+using UserNotificationsUI;
+using Exponea.iOS;
+
+
+namespace ExamplePushContentExtension
+{
+
+    public partial class NotificationViewController : UIViewController, IUNNotificationContentExtension
+    {
+        #region Constructors
+        protected NotificationViewController(IntPtr handle) : base(handle)
+        {
+            // Note: this .ctor should not contain any initialization logic.
+        }
+        #endregion
+
+        #region Override Methods
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            // Do any required interface initialization here.
+        }
+        #endregion
+
+        #region Public Methods
+        [Export("didReceiveNotification:")]
+        public void DidReceiveNotification(UNNotification notification)
+        {
+            ExponeaNotificationHandler.Instance.HandlePushNotificationReceived(notification, ExtensionContext, this);
+        }
+        #endregion
+    }
+}

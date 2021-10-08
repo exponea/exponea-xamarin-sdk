@@ -13,8 +13,8 @@ namespace Exponea
         void Track(Event evt, double? timestamp = null);
         void Track(Delivery delivery);
         void Track(Click click);
-        void TrackPushToken(string token);
         void Track(Payment payment, double? timestamp = null);
+        void TrackPushToken(string token);
         void TrackSessionStart();
         void TrackSessionEnd();
         void Anonymize();
@@ -31,8 +31,8 @@ namespace Exponea
         FlushMode FlushMode { get; set; }
         TimeSpan FlushPeriod { get; set; }
         LogLevel LogLevel { get; set; }
-        TokenTrackFrequency TokenTrackFrequency { get; }
         IDictionary<string, object> GetDefaultProperties();
         void SetDefaultProperties(IDictionary<string, object> properties);
+        void CheckPushSetup();
     }
 }

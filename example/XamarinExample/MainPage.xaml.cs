@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Exponea;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -18,6 +17,7 @@ namespace XamarinExample
             customerCookie.Text = "Customer cookie: \n" + _exponea.CustomerCookie;
             SessionStartButton.IsVisible = !_exponea.AutomaticSessionTracking;
             SessionEndButton.IsVisible = !_exponea.AutomaticSessionTracking;
+            RegisterForPush.IsVisible = Device.RuntimePlatform == Device.iOS;
         }
 
         void Track_Clicked(System.Object sender, System.EventArgs e)
@@ -134,6 +134,13 @@ namespace XamarinExample
         void Track_Session_End_Clicked(System.Object sender, System.EventArgs e)
         {
             _exponea.TrackSessionEnd();
+        }
+
+        void Register_For_Push_Clicked(System.Object sender, System.EventArgs e)
+        {
+            _exponea.IdentifyCustomer(new Customer("XamarinUser." + Guid.NewGuid()) { ["apple_push_notification_bundle_id"] = "com.exponea.xamarin" });
+            DependencyService.Get<IPushRegistrationHandler>().RegisterForRemoteNotifications();
+            
         }
     }
 }
