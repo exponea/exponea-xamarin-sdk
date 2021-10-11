@@ -9,6 +9,11 @@ SDK is created as .net wrapper for binding libraries of [native Android SDK](htt
 ## Getting started
 
  - Add ExponeaSDK NuGet as a dependency
+ - Register dependency service in Android MainActivity.OnCreate (iOS AppDelegate.FinishedLaunching) method by calling
+
+ ```csharp
+ DependencyService.Register<IExponeaSdk, Exponea.ExponeaSdk>();
+ ```
  - Get Exponea SDK instance by calling 
 
  ```csharp
@@ -26,6 +31,9 @@ SDK is created as .net wrapper for binding libraries of [native Android SDK](htt
   * [In-app messages](./documentation/IN_APP_MESSAGES.md)
   * [Project mapping](./documentation/PROJECT_MAPPING.md)
   * [Android push notifications](./documentation/ANDROID_PUSH.md)
+  * [iOS push notifications](./documentation/IOS_PUSH.md)
+  * [Android univerzal links](./documentation/ANDROID_UNIVERZAL_LINKS.md)
+  * [iOS univerzal links](./documentation/IOS_UNIVERSAL_LINKS.md)
   
 ## Release Notes
 
