@@ -9,6 +9,11 @@ import Foundation
 import ExponeaSDK
 import ExponeaSDKNotifications
 
+// This protocol is used queried using reflection by native iOS SDK to see if it's run by Xamarin SDK
+@objc(IsExponeaXamarinSDK)
+protocol IsExponeaXamarinSDK {
+}
+
 @objc(Exponea)
 public class Exponea : NSObject {
     
