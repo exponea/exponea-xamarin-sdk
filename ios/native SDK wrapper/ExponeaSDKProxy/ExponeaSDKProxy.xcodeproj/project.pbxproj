@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC353BD3273BE9A500319DF9 /* ExponeaSDKProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE77DBA26AFF2D7008866B0 /* ExponeaSDKProxy.framework */; };
+		CC353BE2273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDA273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift */; };
+		CC353BE3273BE9E200319DF9 /* ExponeaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDB273BE9E200319DF9 /* ExponeaSpec.swift */; };
+		CC353BE4273BE9E200319DF9 /* MockExponea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDC273BE9E200319DF9 /* MockExponea.swift */; };
+		CC353BE5273BE9E200319DF9 /* TestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDD273BE9E200319DF9 /* TestUtil.swift */; };
+		CC353BE6273BE9E200319DF9 /* JsonDataParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDE273BE9E200319DF9 /* JsonDataParserSpec.swift */; };
+		CC353BE7273BE9E200319DF9 /* Exponea+FetchingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDF273BE9E200319DF9 /* Exponea+FetchingSpec.swift */; };
+		CC353BE8273BE9E200319DF9 /* Exponea+TrackingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BE0273BE9E200319DF9 /* Exponea+TrackingSpec.swift */; };
+		CC353BE9273BE9E200319DF9 /* ConfigurationParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BE1273BE9E200319DF9 /* ConfigurationParserSpec.swift */; };
+		CC353BEC273BEA5600319DF9 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CC353BEB273BEA5600319DF9 /* Nimble */; };
+		CC353BEF273BEA7400319DF9 /* ExponeaSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CC353BEE273BEA7400319DF9 /* ExponeaSDK */; };
+		CC353BF2273BEA8200319DF9 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CC353BF1273BEA8200319DF9 /* Quick */; };
 		CC38097B26F9F3510009ABCE /* AnyCodable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80A26E0B317000BE419 /* AnyCodable.xcframework */; };
 		CC38097C26F9F3510009ABCE /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80A26E0B317000BE419 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC38097F26F9F3510009ABCE /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80E26E0B317000BE419 /* ExponeaSDKNotifications.xcframework */; };
@@ -27,6 +39,16 @@
 		CCE77DCB26AFF353008866B0 /* Exponea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE77DCA26AFF353008866B0 /* Exponea.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC353BD4273BE9A500319DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE77DB126AFF2D7008866B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE77DB926AFF2D7008866B0;
+			remoteInfo = ExponeaSDKProxy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		CC38098326F9F3510009ABCE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -46,6 +68,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC353BCF273BE9A500319DF9 /* ExponeaSDKProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExponeaSDKProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC353BD9273BE9E100319DF9 /* ExponeaSDKProxyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExponeaSDKProxyTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CC353BDA273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exponea+AnonymizeSpec.swift"; sourceTree = "<group>"; };
+		CC353BDB273BE9E200319DF9 /* ExponeaSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExponeaSpec.swift; sourceTree = "<group>"; };
+		CC353BDC273BE9E200319DF9 /* MockExponea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockExponea.swift; sourceTree = "<group>"; };
+		CC353BDD273BE9E200319DF9 /* TestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtil.swift; sourceTree = "<group>"; };
+		CC353BDE273BE9E200319DF9 /* JsonDataParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataParserSpec.swift; sourceTree = "<group>"; };
+		CC353BDF273BE9E200319DF9 /* Exponea+FetchingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exponea+FetchingSpec.swift"; sourceTree = "<group>"; };
+		CC353BE0273BE9E200319DF9 /* Exponea+TrackingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exponea+TrackingSpec.swift"; sourceTree = "<group>"; };
+		CC353BE1273BE9E200319DF9 /* ConfigurationParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationParserSpec.swift; sourceTree = "<group>"; };
 		CC48EA3326D510B9006B220D /* ConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigParser.swift; sourceTree = "<group>"; };
 		CC82E80A26E0B317000BE419 /* AnyCodable.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AnyCodable.xcframework; path = Carthage/Build/AnyCodable.xcframework; sourceTree = "<group>"; };
 		CC82E80B26E0B317000BE419 /* ExponeaSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExponeaSDK.xcframework; path = Carthage/Build/ExponeaSDK.xcframework; sourceTree = "<group>"; };
@@ -64,6 +96,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CC353BCC273BE9A500319DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC353BD3273BE9A500319DF9 /* ExponeaSDKProxy.framework in Frameworks */,
+				CC353BEC273BEA5600319DF9 /* Nimble in Frameworks */,
+				CC353BF2273BEA8200319DF9 /* Quick in Frameworks */,
+				CC353BEF273BEA7400319DF9 /* ExponeaSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE77DB726AFF2D7008866B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,10 +122,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC353BD0273BE9A500319DF9 /* ExponeaSDKProxyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC353BE1273BE9E200319DF9 /* ConfigurationParserSpec.swift */,
+				CC353BDA273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift */,
+				CC353BDF273BE9E200319DF9 /* Exponea+FetchingSpec.swift */,
+				CC353BE0273BE9E200319DF9 /* Exponea+TrackingSpec.swift */,
+				CC353BDB273BE9E200319DF9 /* ExponeaSpec.swift */,
+				CC353BDE273BE9E200319DF9 /* JsonDataParserSpec.swift */,
+				CC353BDC273BE9E200319DF9 /* MockExponea.swift */,
+				CC353BDD273BE9E200319DF9 /* TestUtil.swift */,
+				CC353BD9273BE9E100319DF9 /* ExponeaSDKProxyTests-Bridging-Header.h */,
+			);
+			path = ExponeaSDKProxyTests;
+			sourceTree = "<group>";
+		};
 		CCE77DB026AFF2D7008866B0 = {
 			isa = PBXGroup;
 			children = (
 				CCE77DBC26AFF2D7008866B0 /* ExponeaSDKProxy */,
+				CC353BD0273BE9A500319DF9 /* ExponeaSDKProxyTests */,
 				CCE77DBB26AFF2D7008866B0 /* Products */,
 				CCE77DCC26AFF62B008866B0 /* Frameworks */,
 			);
@@ -92,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				CCE77DBA26AFF2D7008866B0 /* ExponeaSDKProxy.framework */,
+				CC353BCF273BE9A500319DF9 /* ExponeaSDKProxyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +199,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CC353BCE273BE9A500319DF9 /* ExponeaSDKProxyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC353BD8273BE9A500319DF9 /* Build configuration list for PBXNativeTarget "ExponeaSDKProxyTests" */;
+			buildPhases = (
+				CC353BCB273BE9A500319DF9 /* Sources */,
+				CC353BCC273BE9A500319DF9 /* Frameworks */,
+				CC353BCD273BE9A500319DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC353BD5273BE9A500319DF9 /* PBXTargetDependency */,
+			);
+			name = ExponeaSDKProxyTests;
+			packageProductDependencies = (
+				CC353BEB273BEA5600319DF9 /* Nimble */,
+				CC353BEE273BEA7400319DF9 /* ExponeaSDK */,
+				CC353BF1273BEA8200319DF9 /* Quick */,
+			);
+			productName = ExponeaSDKProxyTests;
+			productReference = CC353BCF273BE9A500319DF9 /* ExponeaSDKProxyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CCE77DB926AFF2D7008866B0 /* ExponeaSDKProxy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCE77DC226AFF2D7008866B0 /* Build configuration list for PBXNativeTarget "ExponeaSDKProxy" */;
@@ -164,9 +248,13 @@
 		CCE77DB126AFF2D7008866B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					CC353BCE273BE9A500319DF9 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
 					CCE77DB926AFF2D7008866B0 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
@@ -182,16 +270,29 @@
 				Base,
 			);
 			mainGroup = CCE77DB026AFF2D7008866B0;
+			packageReferences = (
+				CC353BEA273BEA5600319DF9 /* XCRemoteSwiftPackageReference "Nimble" */,
+				CC353BED273BEA7400319DF9 /* XCRemoteSwiftPackageReference "ios-sdk" */,
+				CC353BF0273BEA8200319DF9 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = CCE77DBB26AFF2D7008866B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CCE77DB926AFF2D7008866B0 /* ExponeaSDKProxy */,
+				CC353BCE273BE9A500319DF9 /* ExponeaSDKProxyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CC353BCD273BE9A500319DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE77DB826AFF2D7008866B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +329,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CC353BCB273BE9A500319DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC353BE9273BE9E200319DF9 /* ConfigurationParserSpec.swift in Sources */,
+				CC353BE2273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift in Sources */,
+				CC353BE3273BE9E200319DF9 /* ExponeaSpec.swift in Sources */,
+				CC353BE8273BE9E200319DF9 /* Exponea+TrackingSpec.swift in Sources */,
+				CC353BE4273BE9E200319DF9 /* MockExponea.swift in Sources */,
+				CC353BE5273BE9E200319DF9 /* TestUtil.swift in Sources */,
+				CC353BE6273BE9E200319DF9 /* JsonDataParserSpec.swift in Sources */,
+				CC353BE7273BE9E200319DF9 /* Exponea+FetchingSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE77DB626AFF2D7008866B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,7 +360,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CC353BD5273BE9A500319DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE77DB926AFF2D7008866B0 /* ExponeaSDKProxy */;
+			targetProxy = CC353BD4273BE9A500319DF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CC353BD6273BE9A500319DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UVDCL7YSZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExponeaSDKProxyTests/ExponeaSDKProxyTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC353BD7273BE9A500319DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UVDCL7YSZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExponeaSDKProxyTests/ExponeaSDKProxyTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CCE77DC026AFF2D7008866B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,12 +564,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -423,7 +598,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -431,6 +606,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC353BD8273BE9A500319DF9 /* Build configuration list for PBXNativeTarget "ExponeaSDKProxyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC353BD6273BE9A500319DF9 /* Debug */,
+				CC353BD7273BE9A500319DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CCE77DB426AFF2D7008866B0 /* Build configuration list for PBXProject "ExponeaSDKProxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -450,6 +634,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC353BEA273BEA5600319DF9 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+		CC353BED273BEA7400319DF9 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/panaxeo/exponea/ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 2.11.1;
+			};
+		};
+		CC353BF0273BEA8200319DF9 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC353BEB273BEA5600319DF9 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC353BEA273BEA5600319DF9 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		CC353BEE273BEA7400319DF9 /* ExponeaSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC353BED273BEA7400319DF9 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = ExponeaSDK;
+		};
+		CC353BF1273BEA8200319DF9 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC353BF0273BEA8200319DF9 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCE77DB126AFF2D7008866B0 /* Project object */;
 }

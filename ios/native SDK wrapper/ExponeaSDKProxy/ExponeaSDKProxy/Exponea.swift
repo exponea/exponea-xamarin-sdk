@@ -21,7 +21,7 @@ public class Exponea : NSObject {
     public static let instance = Exponea()
     
     static let defaultFlushPeriod = 5 * 60
-    static var shared: ExponeaInternal = ExponeaSDK.Exponea.shared
+    static var shared: ExponeaType = ExponeaSDK.Exponea.shared
     
     private var notificationService: ExponeaNotificationService? = nil
     private let notificationContentService = ExponeaNotificationContentService()
@@ -66,6 +66,26 @@ public class Exponea : NSObject {
             print(ExponeaError.parsingError(error: error.localizedDescription).description)
         }
     }
+    
+    @objc
+    public func trackEvent(
+        eventType: String,
+        properties: NSDictionary
+    ) {
+        guard isConfigured() else {
+            print(ExponeaError.notConfigured.description)
+            return
+        }
+        do {
+            Exponea.shared.trackEvent(
+                properties:  try JsonDataParser.parse(dictionary: properties), timestamp: nil,
+                eventType: eventType
+            )
+        } catch {
+            print(ExponeaError.parsingError(error: error.localizedDescription).description)
+        }
+    }
+
     
     @objc
     public func anonymize(
@@ -178,7 +198,9 @@ public class Exponea : NSObject {
     
     @objc
     public func checkPushSetup() {
-        Exponea.shared.checkPushSetup = true
+        if (!isConfigured()) {
+            Exponea.shared.checkPushSetup = true
+        }
     }
     
     @objc
@@ -399,7 +421,7 @@ public class Exponea : NSObject {
         fail: @escaping (String)->()
     ){
         guard isConfigured() else {
-            print(ExponeaError.notConfigured.description)
+            fail(ExponeaError.notConfigured.description)
             return
         }
         Exponea.shared.fetchConsents { result in
@@ -465,7 +487,7 @@ public class Exponea : NSObject {
         fail: @escaping (String)->()
     ){
         guard isConfigured() else {
-            print(ExponeaError.notConfigured.description)
+            fail(ExponeaError.notConfigured.description)
             return
         }
         do {

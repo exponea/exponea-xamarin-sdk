@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9D68BBDC-795B-4044-93C7-A73F41E439F1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16E016AD-8F30-4754-982C-41790980D885"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExponeaSDKProxyTests/Exponea+FetchingSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "16E016AD-8F30-4754-982C-41790980D885 - dfc18f0a6a256eb5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExponeaSDKProxyTests.ExponeaFetchingSpec.consentsResponse.getter : Swift.String"
+                  moduleName = "ExponeaSDKProxyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native%20SDK%20wrapper/ExponeaSDKProxy/ExponeaSDKProxyTests/Exponea+FetchingSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "16E016AD-8F30-4754-982C-41790980D885 - dbf7c63480d2e66a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExponeaSDKProxyTests.ExponeaFetchingSpec.init() -&gt; ExponeaSDKProxyTests.ExponeaFetchingSpec"
+                  moduleName = "ExponeaSDKProxyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native%20SDK%20wrapper/ExponeaSDKProxy/ExponeaSDKProxyTests/Exponea+FetchingSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB334E6D-71C6-4569-9706-502510D9E253"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExponeaSDKProxyTests/MockExponea.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "MockExponea"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AB334E6D-71C6-4569-9706-502510D9E253 - 80460569644a2422"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExponeaSDKProxyTests.MockExponea.fetchRecommendation&lt;&#x3c4;_0_0 where &#x3c4;_0_0: ExponeaSDK.RecommendationUserData&gt;(with: ExponeaSDK.RecommendationOptions, completion: (ExponeaSDKShared.Result&lt;ExponeaSDK.RecommendationResponse&lt;&#x3c4;_0_0&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExponeaSDKProxyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native%20SDK%20wrapper/ExponeaSDKProxy/ExponeaSDKProxyTests/MockExponea.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "217"
+                  endingLineNumber = "217"
+                  offsetFromSymbolStart = "574">
+               </Location>
+               <Location
+                  uuid = "AB334E6D-71C6-4569-9706-502510D9E253 - 80460569644a240d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExponeaSDKProxyTests.MockExponea.fetchRecommendation&lt;&#x3c4;_0_0 where &#x3c4;_0_0: ExponeaSDK.RecommendationUserData&gt;(with: ExponeaSDK.RecommendationOptions, completion: (ExponeaSDKShared.Result&lt;ExponeaSDK.RecommendationResponse&lt;&#x3c4;_0_0&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExponeaSDKProxyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native%20SDK%20wrapper/ExponeaSDKProxy/ExponeaSDKProxyTests/MockExponea.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "AB334E6D-71C6-4569-9706-502510D9E253 - 8abc9768e024e28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExponeaSDKProxyTests.MockExponea.fetchConsents(completion: (ExponeaSDKShared.Result&lt;ExponeaSDK.ConsentsResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ExponeaSDKProxyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native%20SDK%20wrapper/ExponeaSDKProxy/ExponeaSDKProxyTests/MockExponea.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "220"
+                  endingLineNumber = "220"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A690FEEC-9077-4DF8-A510-29B554E76EF1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExponeaSDKProxyTests/MockExponea.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "fetchRecommendation(with:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
