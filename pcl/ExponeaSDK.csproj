@@ -4,7 +4,7 @@
     <Target_iOS>xamarinios10</Target_iOS>
     <Target_Android>monoandroid10.0</Target_Android>
     <TargetFrameworks>netstandard2.0;$(Target_iOS);$(Target_Android)</TargetFrameworks>
-    <PackageVersion>0.2.0.1</PackageVersion>
+    <PackageVersion>0.2.0.3</PackageVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <AssemblyName>ExponeaSdk</AssemblyName>
     <RootNamespace>Exponea</RootNamespace>
@@ -51,7 +51,7 @@
     <PackageReference Include="ExponeaSDK.Android" Version="0.2.0.2" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'xamarinios10'">
-    <PackageReference Include="ExponeaSDK.iOS" Version="0.2.0.1" />
+    <PackageReference Include="ExponeaSDK.iOS" Version="0.2.0.3" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="NuGet.Build.Packaging" />

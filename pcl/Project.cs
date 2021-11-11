@@ -16,8 +16,5 @@ namespace Exponea
         public string ProjectToken { get; set; }
         public string Authorization { get; set; }
         public string BaseUrl { get; set; }
-
-
-
     }
 }

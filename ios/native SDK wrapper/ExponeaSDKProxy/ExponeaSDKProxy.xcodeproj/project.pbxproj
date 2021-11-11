@@ -27,7 +27,7 @@
 		CC38098226F9F3510009ABCE /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80B26E0B317000BE419 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC38098426FB41410009ABCE /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80C26E0B317000BE419 /* ExponeaSDKObjC.xcframework */; };
 		CC38098526FB41410009ABCE /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80C26E0B317000BE419 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CC38098626FB41420009ABCE /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80D26E0B317000BE419 /* ExponeaSDKShared.xcframework */; };
+		CC38098626FB41420009ABCE /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80D26E0B317000BE419 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CC38098726FB41420009ABCE /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC82E80D26E0B317000BE419 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC48EA3426D510B9006B220D /* ConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48EA3326D510B9006B220D /* ConfigParser.swift */; };
 		CCABBB9126D632E000DC0DC4 /* ExponeaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABBB9026D632E000DC0DC4 /* ExponeaError.swift */; };
@@ -78,6 +78,7 @@
 		CC353BDF273BE9E200319DF9 /* Exponea+FetchingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exponea+FetchingSpec.swift"; sourceTree = "<group>"; };
 		CC353BE0273BE9E200319DF9 /* Exponea+TrackingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exponea+TrackingSpec.swift"; sourceTree = "<group>"; };
 		CC353BE1273BE9E200319DF9 /* ConfigurationParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationParserSpec.swift; sourceTree = "<group>"; };
+		CC353BFA273D0C9C00319DF9 /* ExponeaSDKExtensionsProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExponeaSDKExtensionsProxy.h; sourceTree = "<group>"; };
 		CC48EA3326D510B9006B220D /* ConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigParser.swift; sourceTree = "<group>"; };
 		CC82E80A26E0B317000BE419 /* AnyCodable.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AnyCodable.xcframework; path = Carthage/Build/AnyCodable.xcframework; sourceTree = "<group>"; };
 		CC82E80B26E0B317000BE419 /* ExponeaSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExponeaSDK.xcframework; path = Carthage/Build/ExponeaSDK.xcframework; sourceTree = "<group>"; };
@@ -138,11 +139,20 @@
 			path = ExponeaSDKProxyTests;
 			sourceTree = "<group>";
 		};
+		CC353BF9273D0C9C00319DF9 /* ExponeaSDKExtensionsProxy */ = {
+			isa = PBXGroup;
+			children = (
+				CC353BFA273D0C9C00319DF9 /* ExponeaSDKExtensionsProxy.h */,
+			);
+			path = ExponeaSDKExtensionsProxy;
+			sourceTree = "<group>";
+		};
 		CCE77DB026AFF2D7008866B0 = {
 			isa = PBXGroup;
 			children = (
 				CCE77DBC26AFF2D7008866B0 /* ExponeaSDKProxy */,
 				CC353BD0273BE9A500319DF9 /* ExponeaSDKProxyTests */,
+				CC353BF9273D0C9C00319DF9 /* ExponeaSDKExtensionsProxy */,
 				CCE77DBB26AFF2D7008866B0 /* Products */,
 				CCE77DCC26AFF62B008866B0 /* Frameworks */,
 			);
@@ -546,6 +556,7 @@
 		CCE77DC326AFF2D7008866B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -577,6 +588,7 @@
 		CCE77DC426AFF2D7008866B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;

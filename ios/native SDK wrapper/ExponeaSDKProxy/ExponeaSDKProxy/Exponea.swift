@@ -99,15 +99,13 @@ public class Exponea : NSObject {
         do {
             var exponeaProject: ExponeaProject?
             var projectMapping: [EventType: [ExponeaProject]]?
-            if let exponeaProjectValue: NSDictionary
-                = try exponeaProjectDictionary?.getOptionalSafely(property: "exponeaProject") {
+            if let exponeaProjectValue: NSDictionary = exponeaProjectDictionary {
                 exponeaProject = try ConfigurationParser.parseExponeaProject(
                     dictionary: exponeaProjectValue,
                     defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
                 )
             }
-            if let projectMappingValue: NSDictionary
-                = try projectMappingDictionary?.getOptionalSafely(property: "projectMapping") {
+            if let projectMappingValue: NSDictionary = projectMappingDictionary {
                 projectMapping = try ConfigurationParser.parseProjectMapping(
                     dictionary: projectMappingValue,
                     defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl

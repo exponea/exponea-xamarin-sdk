@@ -91,7 +91,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="ExponeaSDK.iOS">
-      <HintPath>..\packages\ExponeaSDK.iOS.0.2.0.1\lib\xamarinios10\ExponeaSDK.iOS.dll</HintPath>
+      <HintPath>..\packages\ExponeaSDK.iOS.0.2.0.3\lib\xamarinios10\ExponeaSDK.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Common.dll" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
@@ -115,7 +115,7 @@
     <Reference Include="OpenTK-1.0" />
     <Reference Include="System.Numerics" />
     <Reference Include="ExponeaSdk">
-      <HintPath>..\packages\ExponeaSDK.0.2.0.1\lib\xamarinios10\ExponeaSdk.dll</HintPath>
+      <HintPath>..\packages\ExponeaSDK.0.2.0.3\lib\xamarinios10\ExponeaSdk.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
       <HintPath>..\packages\Xamarin.Forms.5.0.0.2196\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
