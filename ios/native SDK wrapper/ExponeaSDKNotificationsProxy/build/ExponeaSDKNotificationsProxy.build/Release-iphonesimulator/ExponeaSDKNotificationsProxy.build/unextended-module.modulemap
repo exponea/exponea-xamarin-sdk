@@ -1,0 +1,10 @@
+framework module ExponeaSDKNotificationsProxy {
+  umbrella header "ExponeaSDKNotificationsProxy.h"
+
+  export *
+  module * { export * }
+}
+
+module ExponeaSDKNotificationsProxy.__Swift {
+    exclude header "ExponeaSDKNotificationsProxy-Swift.h"
+}

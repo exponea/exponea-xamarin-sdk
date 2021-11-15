@@ -240,20 +240,22 @@ Create a new Notification Service Extension and give it `App Groups` capability 
 
 ![](./pics/extension2.png)
 
-In the extension, you have to call Exponea methods for processing notifications and handling timeouts.
+In the extension, you have to call Exponea methods for processing notifications and handling timeouts. For iOS extensions, separate App-Extension safe dependency was created. Use ExponeaSDK.iOS.Notifications package as dependecy in extensions.
 
 ``` csharp
 
 using System;
 using Foundation;
 using UserNotifications;
-using Exponea.iOS;
+using ExponeaSdkNotifications;
 
 namespace ExamplePushServiceExtension
 {
     [Register("NotificationService")]
     public class NotificationService : UNNotificationServiceExtension
     {
+
+        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.xamarin");
 
         #region Constructors
         protected NotificationService(IntPtr handle) : base(handle)
@@ -265,12 +267,12 @@ namespace ExamplePushServiceExtension
         #region Override Methods
         public override void DidReceiveNotificationRequest(UNNotificationRequest request, Action<UNNotificationContent> contentHandler)
         {
-            ExponeaNotificationHandler.Instance.ProcessNotificationRequest(request, contentHandler, "group.com.exponea.xamarin");
+            notificationHandler.HandleNotificationRequest(request, contentHandler);
         }
 
         public override void TimeWillExpire()
         {
-            ExponeaNotificationHandler.Instance.TimeWillExpire();
+            notificationHandler.TimeWillExpire();
         }
         #endregion
     }
@@ -284,12 +286,9 @@ namespace ExamplePushServiceExtension
 
 Create a new Notification Content Extension. By default, the extension will contain a storyboard file that you can delete; we'll change the default view controller implementation. The service extension that we created in the previous step will change the notification `categoryIdentifier` to `EXPONEA_ACTIONABLE`. We have to configure the content extension to display push notifications with that category. Open `Info.plist` in created content extension group and add `UNNotificationExtensionCategory`. Next, remove `NSExtensionMainStoryboard` and instead use `NSExtensionPrincipalClass` set to your view controller.
 
-  
-
 Notice the parameter `UNNotificationExtensionInitialContentSizeRatio` (with the default value 1). It specifies the ratio between the width and the height of the content in the push notification. By default, the content is as high as it's wide. This setting is not part of the SDK, but it can cause showing white space when notification is without the content (image). Change this value to 0 if you want the height to be dynamic (it will grow to the needed height if there is an image present, but there will be no blanc space if there is not).
 
   
-
 We also recommend to set `UNNotificationExtensionUserInteractionEnabled` and `UNNotificationExtensionDefaultContentHidden` attributes to true.
 
   
@@ -306,7 +305,7 @@ using Foundation;
 using UIKit;
 using UserNotifications;
 using UserNotificationsUI;
-using Exponea.iOS;
+using ExponeaSdkNotifications;
 
 
 namespace ExamplePushContentExtension
@@ -314,6 +313,9 @@ namespace ExamplePushContentExtension
 
     public partial class NotificationViewController : UIViewController, IUNNotificationContentExtension
     {
+
+        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.xamarin");
+
         #region Constructors
         protected NotificationViewController(IntPtr handle) : base(handle)
         {
@@ -334,7 +336,7 @@ namespace ExamplePushContentExtension
         [Export("didReceiveNotification:")]
         public void DidReceiveNotification(UNNotification notification)
         {
-           ExponeaNotificationHandler.Instance.HandlePushNotificationReceived(notification, ExtensionContext, this);
+           notificationHandler.HandleNotificationReceived(notification, ExtensionContext, this);
         }
         #endregion
     }

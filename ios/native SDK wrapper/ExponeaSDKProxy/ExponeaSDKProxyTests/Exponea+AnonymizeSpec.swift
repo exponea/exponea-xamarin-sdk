@@ -42,11 +42,9 @@ class ExponeaAnonymizeSpec: QuickSpec {
             mockExponea.isConfiguredValue = true
             exponea.anonymize(
                 exponeaProjectDictionary: [
-                    "exponeaProject": [
-                        "baseUrl": "mock-url",
-                        "authorizationToken": "mock-auth-token",
-                        "projectToken": "mock-project-token"
-                    ]
+                    "baseUrl": "mock-url",
+                    "authorizationToken": "mock-auth-token",
+                    "projectToken": "mock-project-token"
                 ],
                 projectMappingDictionary: [:]
             )
@@ -66,20 +64,16 @@ class ExponeaAnonymizeSpec: QuickSpec {
             mockExponea.isConfiguredValue = true
             exponea.anonymize(
                 exponeaProjectDictionary: [
-                    "exponeaProject": [
-                        "baseUrl": "mock-url",
-                        "authorizationToken": "mock-auth-token",
-                        "projectToken": "mock-project-token"
-                    ]
+                    "baseUrl": "mock-url",
+                    "authorizationToken": "mock-auth-token",
+                    "projectToken": "mock-project-token"
                 ],
                 projectMappingDictionary: [
-                    "projectMapping": [
-                        "INSTALL": [[
-                            "baseUrl": "install-mock-url",
-                            "authorizationToken": "install-mock-auth-token",
-                            "projectToken": "install-mock-project-token"
-                        ]]
-                    ]
+                    "INSTALL": [[
+                        "baseUrl": "install-mock-url",
+                        "authorizationToken": "install-mock-auth-token",
+                        "projectToken": "install-mock-project-token"
+                    ]]
                 ]
             )
             expect(mockExponea.calls[0].name).to(equal("isConfigured:get"))

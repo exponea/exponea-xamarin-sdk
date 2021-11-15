@@ -1,0 +1,11 @@
+framework module ExponeaSDKShared {
+  umbrella header "ExponeaSDKShared.h"
+
+  export *
+  module * { export * }
+}
+
+module ExponeaSDKShared.Swift {
+    header "ExponeaSDKShared-Swift.h"
+    requires objc
+}

@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "66a6d8031b8a56e63193fb2acff9fef8bfc27a15f6965002962933a1d025a0d5"
+build_start_time: [1636970560, 192573070]
+build_end_time: [1636970560, 765269041]
+inputs:
+  ? "/Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native SDK wrapper/ExponeaSDKNotificationsProxy/ExponeaSDKNotificationsProxy/ExponeaNotificationHandler.swift"
+  : [1636970549, 376308917]

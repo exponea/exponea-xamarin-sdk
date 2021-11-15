@@ -3,7 +3,7 @@ using Foundation;
 using UIKit;
 using UserNotifications;
 using UserNotificationsUI;
-using Exponea.iOS;
+using ExponeaSdkNotifications;
 
 
 namespace ExamplePushContentExtension
@@ -11,6 +11,9 @@ namespace ExamplePushContentExtension
 
     public partial class NotificationViewController : UIViewController, IUNNotificationContentExtension
     {
+
+        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.xamarin");
+
         #region Constructors
         protected NotificationViewController(IntPtr handle) : base(handle)
         {
@@ -31,7 +34,7 @@ namespace ExamplePushContentExtension
         [Export("didReceiveNotification:")]
         public void DidReceiveNotification(UNNotification notification)
         {
-            ExponeaNotificationHandler.Instance.HandlePushNotificationReceived(notification, ExtensionContext, this);
+            notificationHandler.HandleNotificationReceived(notification, ExtensionContext, this);
         }
         #endregion
     }

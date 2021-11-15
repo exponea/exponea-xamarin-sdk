@@ -1,0 +1,6 @@
+framework module ExponeaSDKObjC {
+  umbrella header "ExponeaSDKObjC.h"
+
+  export *
+  module * { export * }
+}

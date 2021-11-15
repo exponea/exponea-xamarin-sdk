@@ -7,7 +7,7 @@
 
 import Foundation
 import ExponeaSDK
-import ExponeaSDKNotifications
+import UserNotifications
 
 // This protocol is used queried using reflection by native iOS SDK to see if it's run by Xamarin SDK
 @objc(IsExponeaXamarinSDK)
@@ -22,9 +22,6 @@ public class Exponea : NSObject {
     
     static let defaultFlushPeriod = 5 * 60
     static var shared: ExponeaType = ExponeaSDK.Exponea.shared
-    
-    private var notificationService: ExponeaNotificationService? = nil
-    private let notificationContentService = ExponeaNotificationContentService()
     
     @objc
     public func configure(configuration: NSDictionary) {
@@ -100,16 +97,20 @@ public class Exponea : NSObject {
             var exponeaProject: ExponeaProject?
             var projectMapping: [EventType: [ExponeaProject]]?
             if let exponeaProjectValue: NSDictionary = exponeaProjectDictionary {
-                exponeaProject = try ConfigurationParser.parseExponeaProject(
-                    dictionary: exponeaProjectValue,
-                    defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
-                )
+                if (exponeaProjectValue.count != 0) {
+                    exponeaProject = try ConfigurationParser.parseExponeaProject(
+                        dictionary: exponeaProjectValue,
+                        defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
+                    )
+                }
             }
             if let projectMappingValue: NSDictionary = projectMappingDictionary {
-                projectMapping = try ConfigurationParser.parseProjectMapping(
-                    dictionary: projectMappingValue,
-                    defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
-                )
+                if (projectMappingValue.count != 0) {
+                    projectMapping = try ConfigurationParser.parseProjectMapping(
+                        dictionary: projectMappingValue,
+                        defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
+                    )
+                }
             }
             if let exponeaProject = exponeaProject {
                 Exponea.shared.anonymize(exponeaProject: exponeaProject, projectMapping: projectMapping)
@@ -452,30 +453,6 @@ public class Exponea : NSObject {
                 fail(error.localizedDescription)
             }
         }
-    }
-    
-    @objc
-    public func processNotificationRequest(request: UNNotificationRequest, contentHandler: @escaping (UNNotificationContent) -> Void) {
-        notificationService?.process(request: request, contentHandler: contentHandler)
-    }
-    
-    @objc
-    public func initNotificationService(appGroup: String) {
-        if (notificationService == nil) {
-            notificationService = ExponeaNotificationService(appGroup: appGroup)
-        }
-    }
-
-    @objc
-    public func serviceExtensionTimeWillExpire() {
-        notificationService?.serviceExtensionTimeWillExpire()
-    }
-    
-    @objc
-    public func notificationReceived(_ notification: UNNotification,
-                           context: NSExtensionContext?,
-                           viewController: UIViewController) {
-        notificationContentService.didReceive(notification, context: context, viewController: viewController)
     }
     
     @objc
