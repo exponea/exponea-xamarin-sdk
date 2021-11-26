@@ -135,26 +135,10 @@ namespace ExponeaSdk
 		[Export("handlePushNotificationOpenedWithUserInfo:actionIdentifier:")]
 		void HandlePushNotificationOpened(NSDictionary userInfo, [NullAllowed] string actionIdentifier);
 
-		// -(void)processNotificationRequestWithRequest:(UNNotificationRequest * _Nonnull)request contentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler;
-		[Export("processNotificationRequestWithRequest:contentHandler:")]
-		void ProcessNotificationRequest(UNNotificationRequest request, Action<UNNotificationContent> contentHandler);
-
-		// -(void)serviceExtensionTimeWillExpire;
-		[Export("serviceExtensionTimeWillExpire")]
-		void ServiceExtensionTimeWillExpire();
-
-		// -(void)notificationReceived:(UNNotification * _Nonnull)notification context:(NSExtensionContext * _Nullable)context viewController:(UIViewController * _Nonnull)viewController;
-		[Export("notificationReceived:context:viewController:")]
-		void NotificationReceived(UNNotification notification, [NullAllowed] NSExtensionContext context, UIViewController viewController);
-
 		// +(BOOL)isExponeaNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo __attribute__((warn_unused_result("")));
 		[Static]
 		[Export("isExponeaNotificationWithUserInfo:")]
 		bool IsExponeaNotification(NSDictionary userInfo);
-
-		// -(void)initNotificationServiceWithAppGroup:(NSString * _Nonnull)appGroup __attribute__((objc_method_family("none")));
-		[Export("initNotificationServiceWithAppGroup:")]
-		void InitNotificationService(string appGroup);
 
 		// -(void)handleCampaignClickWithUrl:(NSURL * _Nonnull)url timestamp:(double)timestamp;
 		[Export("handleCampaignClickWithUrl:timestamp:")]

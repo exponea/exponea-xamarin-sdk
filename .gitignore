@@ -1,11 +1,11 @@
 bin/
 obj/
 packages/
+Carthage/
+build/
+frameworks/
 .vs/
 *.csproj.user
+/ios/native SDK wrapper/Cartfile.resolved
 
-/ios/native SDK wrapper/ExponeaSDKProxy/build
-/ios/native SDK wrapper/ExponeaSDKProxy/Cartfile.resolved
-/ios/native SDK wrapper/ExponeaSDKProxy/Carthage
-/ios/native SDK wrapper/ExponeaSDKProxy/frameworks
 

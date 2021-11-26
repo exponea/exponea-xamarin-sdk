@@ -1,7 +1,7 @@
 ﻿using System;
 using Foundation;
 using UserNotifications;
-using Exponea.iOS;
+using ExponeaSdkNotifications;
 
 namespace ExamplePushServiceExtension
 {
@@ -12,6 +12,8 @@ namespace ExamplePushServiceExtension
         public Action<UNNotificationContent> ContentHandler { get; set; }
         public UNMutableNotificationContent BestAttemptContent { get; set; }
         #endregion
+
+        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.xamarin");
 
         #region Constructors
         protected NotificationService(IntPtr handle) : base(handle)
@@ -28,7 +30,7 @@ namespace ExamplePushServiceExtension
 
             Console.WriteLine("Notification received! " + BestAttemptContent.UserInfo);
            
-            ExponeaNotificationHandler.Instance.ProcessNotificationRequest(request, contentHandler, "group.com.exponea.xamarin");
+            notificationHandler.HandleNotificationRequest(request, contentHandler);
 
         }
 
@@ -37,7 +39,7 @@ namespace ExamplePushServiceExtension
             // Called just before the extension will be terminated by the system.
             // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
 
-            ExponeaNotificationHandler.Instance.TimeWillExpire();
+           notificationHandler.TimeWillExpire();
         }
         #endregion
     }

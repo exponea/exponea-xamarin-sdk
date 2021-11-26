@@ -48,22 +48,6 @@ namespace Exponea.iOS
 
         }
 
-        public void ProcessNotificationRequest(UNNotificationRequest request, Action<UNNotificationContent> contentHandler, string appGroup)
-        {
-            _exponea.InitNotificationService(appGroup);
-            _exponea.ProcessNotificationRequest(request, contentHandler);
-        }
-
-        public void HandlePushNotificationReceived(UNNotification notification, NSExtensionContext? context, UIKit.UIViewController controller)
-        {
-            _exponea.NotificationReceived(notification, context, controller);
-        }
-
-        public void TimeWillExpire()
-        {
-            _exponea.ServiceExtensionTimeWillExpire();
-        }
-
         public static bool IsExponeaNotification(NSDictionary userInfo)
         {
             return ExponeaSdkIos.Exponea.IsExponeaNotification(userInfo);

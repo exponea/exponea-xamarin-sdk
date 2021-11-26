@@ -4,7 +4,7 @@
     <Target_iOS>xamarinios10</Target_iOS>
     <Target_Android>monoandroid10.0</Target_Android>
     <TargetFrameworks>netstandard2.0;$(Target_iOS);$(Target_Android)</TargetFrameworks>
-    <PackageVersion>0.2.0</PackageVersion>
+    <PackageVersion>0.2.1</PackageVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <AssemblyName>ExponeaSdk</AssemblyName>
     <RootNamespace>Exponea</RootNamespace>
@@ -16,7 +16,7 @@
     <PackageLicenseUrl>https://spdx.org/licenses/MIT</PackageLicenseUrl>
     <Owners>Exponea</Owners>
     <Description>Exponea SDK allows your application to interact with the Exponea Customer Data &amp; Experience Platform. Exponea empowers B2C marketers to raise conversion rates, improve acquisition ROI, and maximize customer lifetime value.</Description>
-    <ReleaseVersion>0.2.0</ReleaseVersion>
+    <ReleaseVersion>0.2.1</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <Title>ExponeaSDK</Title>
     <PackageIconUrl>https://media-exp1.licdn.com/dms/image/C560BAQG46ev9qjCTbQ/company-logo_200_200/0/1631723320052?e=2159024400&amp;v=beta&amp;t=ZgeKC90wtfA47irF7Ds8Bs59WPIjMvi1VH1HWsJNqUQ</PackageIconUrl>
@@ -48,10 +48,10 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'monoandroid10.0'">
-    <PackageReference Include="ExponeaSDK.Android" Version="0.2.0" />
+    <PackageReference Include="ExponeaSDK.Android" Version="0.2.1" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'xamarinios10'">
-    <PackageReference Include="ExponeaSDK.iOS" Version="0.2.0" />
+    <PackageReference Include="ExponeaSDK.iOS" Version="0.2.1" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="NuGet.Build.Packaging" />

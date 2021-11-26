@@ -1,0 +1,31 @@
+{
+  "projectToken": "mock-project-token",
+  "authorizationToken": "mock-authorization-token",
+  "baseUrl": "http://mock-base-url.xxx",
+  "projectMapping": {
+    "BANNER": [
+      {
+        "projectToken": "other-project-token",
+        "authorizationToken": "other-auth-token"
+      }
+    ]
+  },
+  "defaultProperties": {
+    "string": "value",
+    "boolean": false,
+    "number": 3.14159,
+    "array": [
+      "value1",
+      "value2"
+    ],
+    "object": {
+      "key": "value"
+    }
+  },
+  "flushMaxRetries": 10,
+  "sessionTimeout": 20,
+  "automaticSessionTracking": true,
+  "pushTokenTrackingFrequency": "DAILY",
+  "requirePushAuthorization": false,
+  "appGroup": "mock-app-group"
+}

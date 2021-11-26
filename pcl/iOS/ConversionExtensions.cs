@@ -77,8 +77,8 @@ namespace Exponea
                 { new NSString("value"), new NSNumber(payment.Value) },
                 { new NSString("currency"), new NSString(payment.Currency) },
                 { new NSString("paymentSystem"), new NSString(payment.System) },
-                 { new NSString("productId"), new NSString(payment.ProductId) },
-                 { new NSString("productTitle"), new NSString(payment.ProductTitle) }
+                { new NSString("productId"), new NSString(payment.ProductId) },
+                { new NSString("productTitle"), new NSString(payment.ProductTitle) }
             };
 
 

@@ -7,7 +7,12 @@
 
 import Foundation
 import ExponeaSDK
-import ExponeaSDKNotifications
+import UserNotifications
+
+// This protocol is used queried using reflection by native iOS SDK to see if it's run by Xamarin SDK
+@objc(IsExponeaXamarinSDK)
+protocol IsExponeaXamarinSDK {
+}
 
 @objc(Exponea)
 public class Exponea : NSObject {
@@ -16,10 +21,7 @@ public class Exponea : NSObject {
     public static let instance = Exponea()
     
     static let defaultFlushPeriod = 5 * 60
-    static var shared: ExponeaInternal = ExponeaSDK.Exponea.shared
-    
-    private var notificationService: ExponeaNotificationService? = nil
-    private let notificationContentService = ExponeaNotificationContentService()
+    static var shared: ExponeaType = ExponeaSDK.Exponea.shared
     
     @objc
     public func configure(configuration: NSDictionary) {
@@ -63,6 +65,26 @@ public class Exponea : NSObject {
     }
     
     @objc
+    public func trackEvent(
+        eventType: String,
+        properties: NSDictionary
+    ) {
+        guard isConfigured() else {
+            print(ExponeaError.notConfigured.description)
+            return
+        }
+        do {
+            Exponea.shared.trackEvent(
+                properties:  try JsonDataParser.parse(dictionary: properties), timestamp: nil,
+                eventType: eventType
+            )
+        } catch {
+            print(ExponeaError.parsingError(error: error.localizedDescription).description)
+        }
+    }
+
+    
+    @objc
     public func anonymize(
         exponeaProjectDictionary: NSDictionary?,
         projectMappingDictionary: NSDictionary?
@@ -74,19 +96,21 @@ public class Exponea : NSObject {
         do {
             var exponeaProject: ExponeaProject?
             var projectMapping: [EventType: [ExponeaProject]]?
-            if let exponeaProjectValue: NSDictionary
-                = try exponeaProjectDictionary?.getOptionalSafely(property: "exponeaProject") {
-                exponeaProject = try ConfigurationParser.parseExponeaProject(
-                    dictionary: exponeaProjectValue,
-                    defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
-                )
+            if let exponeaProjectValue: NSDictionary = exponeaProjectDictionary {
+                if (exponeaProjectValue.count != 0) {
+                    exponeaProject = try ConfigurationParser.parseExponeaProject(
+                        dictionary: exponeaProjectValue,
+                        defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
+                    )
+                }
             }
-            if let projectMappingValue: NSDictionary
-                = try projectMappingDictionary?.getOptionalSafely(property: "projectMapping") {
-                projectMapping = try ConfigurationParser.parseProjectMapping(
-                    dictionary: projectMappingValue,
-                    defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
-                )
+            if let projectMappingValue: NSDictionary = projectMappingDictionary {
+                if (projectMappingValue.count != 0) {
+                    projectMapping = try ConfigurationParser.parseProjectMapping(
+                        dictionary: projectMappingValue,
+                        defaultBaseUrl: Exponea.shared.configuration?.baseUrl ?? Constants.Repository.baseUrl
+                    )
+                }
             }
             if let exponeaProject = exponeaProject {
                 Exponea.shared.anonymize(exponeaProject: exponeaProject, projectMapping: projectMapping)
@@ -173,7 +197,9 @@ public class Exponea : NSObject {
     
     @objc
     public func checkPushSetup() {
-        Exponea.shared.checkPushSetup = true
+        if (!isConfigured()) {
+            Exponea.shared.checkPushSetup = true
+        }
     }
     
     @objc
@@ -394,7 +420,7 @@ public class Exponea : NSObject {
         fail: @escaping (String)->()
     ){
         guard isConfigured() else {
-            print(ExponeaError.notConfigured.description)
+            fail(ExponeaError.notConfigured.description)
             return
         }
         Exponea.shared.fetchConsents { result in
@@ -430,37 +456,13 @@ public class Exponea : NSObject {
     }
     
     @objc
-    public func processNotificationRequest(request: UNNotificationRequest, contentHandler: @escaping (UNNotificationContent) -> Void) {
-        notificationService?.process(request: request, contentHandler: contentHandler)
-    }
-    
-    @objc
-    public func initNotificationService(appGroup: String) {
-        if (notificationService == nil) {
-            notificationService = ExponeaNotificationService(appGroup: appGroup)
-        }
-    }
-
-    @objc
-    public func serviceExtensionTimeWillExpire() {
-        notificationService?.serviceExtensionTimeWillExpire()
-    }
-    
-    @objc
-    public func notificationReceived(_ notification: UNNotification,
-                           context: NSExtensionContext?,
-                           viewController: UIViewController) {
-        notificationContentService.didReceive(notification, context: context, viewController: viewController)
-    }
-    
-    @objc
     public func fetchRecommendations(
         optionsDictionary: NSDictionary,
         success: @escaping (String)->(),
         fail: @escaping (String)->()
     ){
         guard isConfigured() else {
-            print(ExponeaError.notConfigured.description)
+            fail(ExponeaError.notConfigured.description)
             return
         }
         do {
