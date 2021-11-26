@@ -1,4 +1,12 @@
 ## Release Notes
+## Release Notes for 0.2.1
+#### November 26, 2021
+* Features
+  * Telemetry
+  * iOS Push Notifications Extension SDK part extracted as separate extension-safe dependency
+  * Android Exponea SDK version bump 
+* Fixes
+  * iOS project switch bug fixed
 ## Release Notes for 0.2.0
 #### October 11, 2021
 * Features
