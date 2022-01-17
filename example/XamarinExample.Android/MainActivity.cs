@@ -6,17 +6,12 @@ using Android.Content;
 using Exponea.Android;
 using Xamarin.Forms;
 using Exponea;
+using System.Threading.Tasks;
 
 namespace XamarinExample.Droid
 {
     [Activity(Label = "XamarinExample", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
-    [IntentFilter(new[] { Intent.ActionView },
-        Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
-        DataScheme = "https",
-        DataHost = "old.panaxeo.com",
-        DataPathPattern = "/xamarin/.*",
-        AutoVerify = true
-    )]
+   
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
@@ -27,7 +22,19 @@ namespace XamarinExample.Droid
             Forms.Init(this, savedInstanceState);
             DependencyService.Register<IExponeaSdk, Exponea.ExponeaSdk>();
 
-            ExponeaLinkHandler.Instance.HandleCampaignClick(Intent, ApplicationContext);
+            var link = Intent.GetStringExtra("link");
+
+
+            if (link != null && link.Length != 0) { 
+                AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                AlertDialog alert = dialog.Create();
+                alert.SetTitle("DeepLink received");
+                alert.SetMessage("Deepling received: " + link);
+                alert.SetButton("OK", (c, ev) =>
+                {
+                });
+                alert.Show();
+            }
 
             LoadApplication(new App());
 

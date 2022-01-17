@@ -52,7 +52,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>VS: com.exponea.xamarin Development</CodesignProvision>
