@@ -16,3 +16,33 @@ The SDK hooks into the application lifecycle, and every time an activity is resu
 #### On iOS
 
 Once a message passes the filters, the SDK will try to present the message in the top-most `presentedViewController` (except for the slide-in message that uses `UIWindow` directly).
+
+### Custom in-app message actions
+If you want to override default SDK behavior, when in-app message action is performed (button is clicked, a message is closed), or you want to add your code to be performed along with code executed by the SDK, you can set up InAppMessageDelegate by calling `SetInAppMessageDelegate` on Exponea instance.
+
+```csharp
+ _exponea.SetInAppMessageDelegate(
+ 	overrideDefaultBehavior: false, //If overrideDefaultBehavior is set to true, default in-app action will not be performed ( e.g. deep link )
+ 	trackActions: true, // If trackActions is set to false, click and close in-app events will not be tracked automatically
+ 	action: delegate (InAppMessage message, string buttonText, string buttonUrl, bool interaction) {
+    // Here goes the code you want to be executed on in-app message action
+    // On in-app click, the buttonText and buttonUrl contain button info, and the interaction is true
+    // On in-app close, the buttonText and buttonUrl are null, and the interaction is false.
+ });
+```
+If you set `trackActions` to **false** but you still want to track click/close event under some circumstances, you can call Exponea methods `TrackInAppMessageClick` or `TrackInAppMessageClose`.
+
+```csharp
+ _exponea.SetInAppMessageDelegate(
+ 	overrideDefaultBehavior: true, 
+ 	trackActions: false, 
+ 	action: delegate (InAppMessage message, string buttonText, string buttonUrl, bool interaction) {
+ 	if (<your-special-condition>) {
+	    if (interaction) {
+	        _exponea.TrackInAppMessageClick(message, buttonText, buttonUrl);
+	    } else {
+	        _exponea.TrackInAppMessageClose(message);
+	    }
+    }
+ });
+```

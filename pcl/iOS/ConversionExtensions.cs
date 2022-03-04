@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Foundation;
+using ExponeaSdkIos = ExponeaSdk;
 
 namespace Exponea
 {
@@ -162,6 +163,37 @@ namespace Exponea
                 NSObject o => o,
                 _ => throw new ArgumentException()
             };
+        }
+
+        public static InAppMessage ToNetInAppMessage(this ExponeaSdkIos.SimpleInAppMessage message)
+        {
+            return new InAppMessage(
+                    message.Id,
+                    message.Name,
+                    message.RawMessageType,
+                    message.RawFrequency,
+                    message.VariantId,
+                    message.VariantName,
+                    message.EventType,
+                    message.Priority,
+                    message.DelayMS,
+                    message.TimeoutMS);
+        }
+
+        public static ExponeaSdkIos.SimpleInAppMessage ToNsSimleInAppMessage(this InAppMessage message)
+        {
+            return new ExponeaSdkIos.SimpleInAppMessage(
+                    message.Id,
+                    message.Name,
+                    message.RawMessageType,
+                    message.VariantId,
+                    message.VariantName,
+                    message.RawFrequency,
+                    message.EventType,
+                    message.Priority,
+                    message.DelayMS,
+                    message.TimeoutMS
+                    );
         }
     }
 }

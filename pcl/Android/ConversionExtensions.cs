@@ -79,7 +79,7 @@ namespace Exponea
 
         public static object ToNet(this Java.Lang.Object java)
             => java switch
-            { 
+            {
                 Java.Lang.Short s => (short)s,
                 Java.Lang.Integer i => (int)i,
                 Java.Lang.Long l => (long)l,
@@ -103,5 +103,41 @@ namespace Exponea
                 Java.Lang.Object o => o,
                 _ => throw new NotSupportedException()
             };
+
+        public static ExponeaSdkAndroid.InAppMessage ToAndroidInAppMessage(this InAppMessage message)
+        {
+            return new ExponeaSdkAndroid.InAppMessage(
+                      message.Id,
+                      message.Name,
+                      message.RawMessageType,
+                      message.RawFrequency,
+                      null,
+                      message.VariantId,
+                      message.VariantName,
+                      new ExponeaSdkAndroid.EventFilter.EventFilter(
+                          message.EventType,
+                          new List<ExponeaSdkAndroid.EventFilter.EventPropertyFilter>()),
+                      new ExponeaSdkAndroid.DateFilter(),
+                      new Java.Lang.Integer(message.Priority),
+                      new Java.Lang.Long(message.DelayMS),
+                      new Java.Lang.Long(message.TimeoutMS));
+        }
+
+
+        public static InAppMessage ToNetInAppMessage(this ExponeaSdkAndroid.InAppMessage message)
+        {
+            return new InAppMessage(
+                      message.Id,
+                      message.Name,
+                      message.RawMessageType,
+                      message.RawFrequency,
+                      message.VariantId,
+                      message.VariantName,
+                      message.Trigger?.EventType ?? "session_start",
+                      message.Priority?.IntValue() ?? 0,
+                      message.Delay?.IntValue() ?? 0,
+                      message.Timeout?.IntValue() ?? 0);
+        }
+
     }
 }

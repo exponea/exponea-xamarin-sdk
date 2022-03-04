@@ -515,5 +515,72 @@ public class Exponea : NSObject {
     public static func isExponeaNotification(userInfo: [AnyHashable: Any]) -> Bool {
         return ExponeaSDK.Exponea.isExponeaNotification(userInfo: userInfo)
     }
+    
+    @objc
+    public func setInAppMessageDelegate(
+        overrideDefaultBehavior: Bool,
+        trackActions: Bool,
+        action: @escaping (_ message: SimpleInAppMessage, _ buttonText: String?, _ buttonUrl: String?, _ interaction: Bool)->()) {
+        Exponea.shared.inAppMessagesDelegate = InAppDelegate(overrideDefaultBehavior: overrideDefaultBehavior,
+                                                             trackActions: trackActions,
+                                                             action: action)
+    }
+    
+    @objc
+    public func trackInAppMessageClick(
+        message: SimpleInAppMessage,
+        buttonText: String?,
+        buttonLink: String?) {
+        guard isConfigured() else {
+            print(ExponeaError.notConfigured.description)
+            return
+        }
+        let inAppMessage = InAppMessage(
+            id: message.id,
+            name: message.name,
+            rawMessageType: message.rawMessageType,
+            rawFrequency: message.rawFrequency,
+            variantId: message.variantId,
+            variantName: message.variantName,
+            trigger: EventFilter(eventType: message.eventType, filter: []),
+            dateFilter: DateFilter(
+                enabled: false,
+                startDate: Date(timeIntervalSince1970: 1570744800),
+                endDate: nil
+            ),
+            priority: message.priority,
+            delayMS: message.delayMS,
+            timeoutMS: message.timeoutMS
+            )
+            Exponea.shared.trackInAppMessageClick(message: inAppMessage, buttonText: buttonText, buttonLink: buttonLink)
+            
+    }
+    @objc
+    public func trackInAppMessageClose(
+        message: SimpleInAppMessage
+    ) {
+        guard isConfigured() else {
+            print(ExponeaError.notConfigured.description)
+            return
+        }
+        let inAppMessage = InAppMessage(
+            id: message.id,
+            name: message.name,
+            rawMessageType: message.rawMessageType,
+            rawFrequency: message.rawFrequency,
+            variantId: message.variantId,
+            variantName: message.variantName,
+            trigger: EventFilter(eventType: message.eventType, filter: []),
+            dateFilter: DateFilter(
+                enabled: false,
+                startDate: Date(timeIntervalSince1970: 1570744800),
+                endDate: nil
+            ),
+            priority: message.priority,
+            delayMS: message.delayMS,
+            timeoutMS: message.timeoutMS
+            )
+            Exponea.shared.trackInAppMessageClose(message: inAppMessage)
+    }
 }
 

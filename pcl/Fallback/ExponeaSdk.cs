@@ -107,6 +107,21 @@ namespace Exponea
             throw new NotImplementedException();
         }
 
+        public void SetInAppMessageDelegate(bool overrideDefaultBehavior, bool trackActions, Action<InAppMessage, string, string, bool> action)
+        {
+            throw new NotImplementedException();
+        }
+
         public TokenTrackFrequency TokenTrackFrequency => throw new NotImplementedException();
+
+        public void TrackInAppMessageClick(InAppMessage message, string buttonText, string buttonLink)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackInAppMessageClose(InAppMessage message)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

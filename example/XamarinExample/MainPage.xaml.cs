@@ -18,6 +18,27 @@ namespace XamarinExample
             SessionStartButton.IsVisible = !_exponea.AutomaticSessionTracking;
             SessionEndButton.IsVisible = !_exponea.AutomaticSessionTracking;
             RegisterForPush.IsVisible = Device.RuntimePlatform == Device.iOS;
+            
+            //_exponea.SetInAppMessageDelegate(overrideDefaultBehavior: true, trackActions: false, action: async delegate (InAppMessage message, string buttonText, string buttonUrl, bool interaction)
+            //{
+            //    await DisplayAlert(
+            //        "In-App message action delegate called",
+            //        String.Format(
+            //            "MessageId: {0} \n Button text: {1} \n " +
+            //            "Button url: {2} \n Interaction: {3}",
+            //            message.Id, buttonText, buttonUrl, interaction
+            //            ),
+            //        "OK");
+
+            //    if (interaction)
+            //    {
+            //        _exponea.TrackInAppMessageClick(message, buttonText, buttonUrl);
+            //    }
+            //    else
+            //    {
+            //        _exponea.TrackInAppMessageClose(message);
+            //    }
+            //});
         }
 
         void Track_Clicked(System.Object sender, System.EventArgs e)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Com.Exponea.Sdk.Util;
 using Exponea.Android;
-using ExponeaSdk.Models;
+using ExponeaSdkAndroid = ExponeaSdk.Models;
 using Xamarin.Essentials;
 using Android.App;
 using Result = ExponeaSdk.Models.Result;
@@ -21,7 +21,7 @@ namespace Exponea
 
         public void Configure(Configuration config)
         {
-            var configuration = new ExponeaConfiguration
+            var configuration = new ExponeaSdkAndroid.ExponeaConfiguration
             {
                 ProjectToken = config.ProjectToken,
                 Authorization = "Token " + config.Authorization,
@@ -93,7 +93,7 @@ namespace Exponea
 
         public void SwitchProject(Project project, IDictionary<EventType, IList<Project>> projectMapping = null)
         {
-            _exponea.Anonymize(new ExponeaProject(project.BaseUrl, project.ProjectToken, "Token" + project.Authorization), projectMapping.ToJavaDictionary());
+            _exponea.Anonymize(new ExponeaSdkAndroid.ExponeaProject(project.BaseUrl, project.ProjectToken, "Token" + project.Authorization), projectMapping.ToJavaDictionary());
         }
 
         public string CustomerCookie
@@ -133,30 +133,30 @@ namespace Exponea
 
         public void IdentifyCustomer(Customer customer)
             => _exponea.IdentifyCustomer(
-                new CustomerIds(customer.ExternalIds),
-                new PropertiesList(customer.Attributes.ToJavaDictionary()));
+                new ExponeaSdkAndroid.CustomerIds(customer.ExternalIds),
+                new ExponeaSdkAndroid.PropertiesList(customer.Attributes.ToJavaDictionary()));
 
         public void Track(Click click)
             => _exponea.TrackClickedPush(
-                new NotificationData(click.Attributes.ToJavaDictionary(), new CampaignData() /* ? */),
-                new NotificationAction(click.ActionType, click.ActionName, click.Url),
+                new ExponeaSdkAndroid.NotificationData(click.Attributes.ToJavaDictionary(), new ExponeaSdkAndroid.CampaignData() /* ? */),
+                new ExponeaSdkAndroid.NotificationAction(click.ActionType, click.ActionName, click.Url),
                 Utils.GetTimestamp());
 
         public void Track(Delivery delivery)
             => _exponea.TrackDeliveredPush(
-                new NotificationData(delivery.Attributes.ToJavaDictionary(), new CampaignData() /* ? */),
+                new ExponeaSdkAndroid.NotificationData(delivery.Attributes.ToJavaDictionary(), new ExponeaSdkAndroid.CampaignData() /* ? */),
                 Utils.GetTimestamp());
 
         public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
-                new PropertiesList(evt.Attributes.ToJavaDictionary()),
+                new ExponeaSdkAndroid.PropertiesList(evt.Attributes.ToJavaDictionary()),
                 timestamp != null ? (double)timestamp : Utils.GetTimestamp(),
                 evt.Name);
 
         public void Track(Payment payment, double? timestamp = null)
             => _exponea.TrackPaymentEvent(
                 timestamp != null ? (double)timestamp : Utils.GetTimestamp(),
-                new PurchasedItem((double)payment.Value, payment.Currency, payment.System, payment.ProductId, payment.ProductTitle, payment.Receipt));
+                new ExponeaSdkAndroid.PurchasedItem((double)payment.Value, payment.Currency, payment.System, payment.ProductId, payment.ProductTitle, payment.Receipt));
 
         public Task FlushAsync()
         {
@@ -181,7 +181,7 @@ namespace Exponea
                 }),
                 new KotlinCallback<Result>(r =>
                 {
-                    var err = (FetchError)r.Results;
+                    var err = (ExponeaSdkAndroid.FetchError)r.Results;
                     tcs.SetException(new FetchException(err.Message, err.JsonBody));
                 }));
             return tcs.Task;
@@ -190,7 +190,7 @@ namespace Exponea
         public Task<string> FetchRecommendationsAsync(RecommendationsRequest request)
         {
             var tcs = new TaskCompletionSource<string>();
-            var recommendationOptions = new CustomerRecommendationOptions(
+            var recommendationOptions = new ExponeaSdkAndroid.CustomerRecommendationOptions(
                 request.Id,
                 request.FillWithRandom,
                 request.Size,
@@ -205,7 +205,7 @@ namespace Exponea
                 }),
                 new KotlinCallback<Result>(r =>
                 {
-                    var err = (FetchError)r.Results;
+                    var err = (ExponeaSdkAndroid.FetchError)r.Results;
                     tcs.SetException(new FetchException(err.Message, err.JsonBody));
                 }));
             return tcs.Task;
@@ -229,6 +229,21 @@ namespace Exponea
         public void CheckPushSetup()
         {
             _exponea.CheckPushSetup = true;
+        }
+
+        public void SetInAppMessageDelegate(bool overrideDefaultBehavior, bool trackActions, Action<InAppMessage, string , string, bool> action)
+        {
+            _exponea.InAppMessageActionCallback = new InAppMessageCallback(overrideDefaultBehavior, trackActions, action);
+        }
+
+        public void TrackInAppMessageClick(InAppMessage message, string buttonText, string buttonLink)
+        {
+            _exponea.TrackInAppMessageClick(message.ToAndroidInAppMessage(), buttonText, buttonLink);
+        }
+
+        public void TrackInAppMessageClose(InAppMessage message)
+        {
+            _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage());
         }
     }
 }

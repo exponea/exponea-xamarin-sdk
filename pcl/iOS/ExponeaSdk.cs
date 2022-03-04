@@ -180,5 +180,23 @@ namespace Exponea
         {
             _exponea.CheckPushSetup();
         }
+
+        public void SetInAppMessageDelegate(bool overrideDefaultBehavior, bool trackActions, Action<InAppMessage, string, string, bool> action)
+        {
+            _exponea.SetInAppMessageDelegate(overrideDefaultBehavior, trackActions, delegate (ExponeaSdkIos.SimpleInAppMessage message, NSString buttonText, NSString buttonUrl, bool interaction)
+            {
+                action.Invoke(message.ToNetInAppMessage(), buttonText, buttonUrl, interaction);
+            });
+        }
+
+        public void TrackInAppMessageClick(InAppMessage message, string buttonText, string buttonLink)
+        {
+            _exponea.TrackInAppMessageClick(message.ToNsSimleInAppMessage(), buttonText, buttonLink);
+        }
+
+        public void TrackInAppMessageClose(InAppMessage message)
+        {
+            _exponea.TrackInAppMessageClose(message.ToNsSimleInAppMessage());
+        }
     }
 }

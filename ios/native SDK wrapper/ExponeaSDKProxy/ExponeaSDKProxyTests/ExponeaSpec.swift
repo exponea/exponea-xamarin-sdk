@@ -174,5 +174,27 @@ class ExponeaSpec: QuickSpec {
                 expect(exponea.getDefaultProperties()).to(equal("{}"))
             }
         }
+        context("in-app message delegate") {
+            it("should set in-app message delegate") {
+                exponea.setInAppMessageDelegate(
+                    overrideDefaultBehavior: false,
+                    trackActions: true,
+                    action: { message, text, link, interaction in
+                        
+                    })
+                expect(mockExponea.calls[0].name).to(equal("inAppMessagesDelegate:set"))
+                expect((mockExponea.calls[0].params[0] as! InAppMessageActionDelegate).trackActions).to(equal(true))
+                expect((mockExponea.calls[0].params[0] as! InAppMessageActionDelegate).overrideDefaultBehavior).to(equal(false))
+                exponea.setInAppMessageDelegate(
+                    overrideDefaultBehavior: true,
+                    trackActions: false,
+                    action: { message, text, link, interaction in
+                        
+                    })
+                expect(mockExponea.calls[1].name).to(equal("inAppMessagesDelegate:set"))
+                expect((mockExponea.calls[1].params[0] as! InAppMessageActionDelegate).trackActions).to(equal(false))
+                expect((mockExponea.calls[1].params[0] as! InAppMessageActionDelegate).overrideDefaultBehavior).to(equal(true))
+            }
+        }
     }
 }

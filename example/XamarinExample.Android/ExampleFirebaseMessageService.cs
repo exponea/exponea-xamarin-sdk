@@ -6,15 +6,14 @@ using Firebase.Messaging;
 
 namespace XamarinExample.Droid
 {
-    // Uncoment if you want to use custom message service
-    //[Service(Name = "XamarinExample.Droid.ExampleFirebaseMessageService")]
-    //[IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
-    //[IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
+    [Service(Name = "XamarinExample.Droid.ExampleFirebaseMessageService", Exported = false)]
+    [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
+    [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
     public class ExampleFirebaseMessageService : FirebaseMessagingService
     {
 
         public override void OnMessageReceived(RemoteMessage message)
-        { 
+        {
             var notificationManager = (NotificationManager)GetSystemService(NotificationService);
             Action<Dictionary<string, object>> action = (dictionary) =>
             {
@@ -25,7 +24,8 @@ namespace XamarinExample.Droid
             };
 
             ExponeaNotificationHandler.Instance.SetNotificationDataCallback(action);
-            if (!ExponeaNotificationHandler.Instance.HandleRemoteMessage(ApplicationContext, message, notificationManager, true)) {
+            if (!ExponeaNotificationHandler.Instance.HandleRemoteMessage(ApplicationContext, message.Data, notificationManager, true))
+            {
                 // push notification is from another push provider
             }
             Console.WriteLine("OnMessageReceived was called.");
@@ -33,7 +33,7 @@ namespace XamarinExample.Droid
 
         public override void OnNewToken(string token)
         {
-            ExponeaNotificationHandler.Instance.TrackPushToken(token);
+            ExponeaNotificationHandler.Instance.HandleNewToken(ApplicationContext, token);
         }
     }
 }

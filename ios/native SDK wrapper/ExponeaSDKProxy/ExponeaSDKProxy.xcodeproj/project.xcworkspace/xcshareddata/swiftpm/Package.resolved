@@ -21,11 +21,11 @@
       },
       {
         "package": "ExponeaSDK",
-        "repositoryURL": "https://gitlab.com/panaxeo/exponea/ios-sdk",
+        "repositoryURL": "https://github.com/exponea/exponea-ios-sdk",
         "state": {
           "branch": null,
-          "revision": "190b85533ab3d611daaaa506ecf5bcf7b1e5e0f6",
-          "version": "2.11.1"
+          "revision": "593c32c51ac419f6f13ce370bcdaebcd46a20458",
+          "version": null
         }
       },
       {

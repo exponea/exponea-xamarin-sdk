@@ -51,8 +51,6 @@ namespace XamarinExample
             _exponea.FlushMode = (FlushMode)flushMode.SelectedItem;
             _exponea.LogLevel = Device.RuntimePlatform == Device.iOS ? LogLevel.Verbose : LogLevel.Debug;
 
-           
-
             if (_exponea.FlushMode == FlushMode.Period && period.Text.Trim() != "" )
             {
                 int minutes;
@@ -65,7 +63,6 @@ namespace XamarinExample
                
             }
 
-            
             _exponea.SetDefaultProperties(new Dictionary<string, object>()
             {
                 { "thisIsADefaultStringProperty", "This is a default string value" },

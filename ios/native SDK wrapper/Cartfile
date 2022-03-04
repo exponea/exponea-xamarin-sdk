@@ -1,5 +1,5 @@
-#github "exponea/exponea-ios-sdk" ~> 2.11.1
-#gitlab develop is used, because telemetry changes are not released on github yet
-git "https://gitlab.com/panaxeo/exponea/ios-sdk.git" "develop"
+github "exponea/exponea-ios-sdk" ~> 2.11.3
+#use this to test not released version from gitlab
+#git "https://gitlab.com/panaxeo/exponea/ios-sdk.git" "develop"
 github "Flight-School/AnyCodable" ~> 0.6.0
 

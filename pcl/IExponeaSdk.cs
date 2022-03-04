@@ -34,5 +34,8 @@ namespace Exponea
         IDictionary<string, object> GetDefaultProperties();
         void SetDefaultProperties(IDictionary<string, object> properties);
         void CheckPushSetup();
+        void SetInAppMessageDelegate(bool overrideDefaultBehavior, bool trackActions, Action<InAppMessage, string, string, bool> action);
+        void TrackInAppMessageClick(InAppMessage message, string buttonText, string buttonLink);
+        void TrackInAppMessageClose(InAppMessage message);
     }
 }

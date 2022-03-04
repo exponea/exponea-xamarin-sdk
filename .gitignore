@@ -4,8 +4,10 @@ packages/
 .vs/
 *.csproj.user
 
-/ios/native SDK wrapper/ExponeaSDKProxy/build
-/ios/native SDK wrapper/ExponeaSDKProxy/Cartfile.resolved
-/ios/native SDK wrapper/ExponeaSDKProxy/Carthage
+/ios/native SDK wrapper/Cartfile.resolved
+/ios/native SDK wrapper/Carthage
 /ios/native SDK wrapper/ExponeaSDKProxy/frameworks
+/ios/native SDK wrapper/ExponeaSDKProxy/build
+/ios/native SDK wrapper/ExponeaSDKNotificationsProxy/frameworks
+/ios/native SDK wrapper/ExponeaSDKNotificationsProxy/build
 

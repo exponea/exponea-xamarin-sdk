@@ -2,7 +2,6 @@ using System;
 using Foundation;
 using ObjCRuntime;
 using UserNotifications;
-using UIKit;
 
 namespace ExponeaSdk
 {
@@ -147,5 +146,69 @@ namespace ExponeaSdk
 		// -(void)trackPushTokenWithToken:(NSString * _Nonnull)token;
 		[Export("trackPushTokenWithToken:")]
 		void TrackPushToken(string token);
+
+		// -(void)setInAppMessageDelegateWithOverrideDefaultBehavior:(BOOL)overrideDefaultBehavior trackActions:(BOOL)trackActions action:(void (^ _Nonnull)(SimpleInAppMessage * _Nonnull, NSString * _Nullable, NSString * _Nullable, BOOL))action;
+		[Export("setInAppMessageDelegateWithOverrideDefaultBehavior:trackActions:action:")]
+		void SetInAppMessageDelegate(bool overrideDefaultBehavior, bool trackActions, Action<SimpleInAppMessage, NSString, NSString, bool> action);
+
+		// -(void)trackInAppMessageClickWithMessage:(SimpleInAppMessage * _Nonnull)message buttonText:(NSString * _Nullable)buttonText buttonLink:(NSString * _Nullable)buttonLink;
+		[Export("trackInAppMessageClickWithMessage:buttonText:buttonLink:")]
+		void TrackInAppMessageClick(SimpleInAppMessage message, [NullAllowed] string buttonText, [NullAllowed] string buttonLink);
+
+		// -(void)trackInAppMessageCloseWithMessage:(SimpleInAppMessage * _Nonnull)message;
+		[Export("trackInAppMessageCloseWithMessage:")]
+		void TrackInAppMessageClose(SimpleInAppMessage message);
+	}
+
+	// @interface SimpleInAppMessage : NSObject
+	[BaseType(typeof(NSObject), Name = "_TtC15ExponeaSDKProxy18SimpleInAppMessage")]
+	[DisableDefaultCtor]
+	interface SimpleInAppMessage
+	{
+		// @property (readonly, copy, nonatomic) NSString * _Nonnull id;
+		[Export("id")]
+		string Id { get; }
+
+		// @property (readonly, copy, nonatomic) NSString * _Nonnull name;
+		[Export("name")]
+		string Name { get; }
+
+		// @property (readonly, copy, nonatomic) NSString * _Nonnull rawMessageType;
+		[Export("rawMessageType")]
+		string RawMessageType { get; }
+
+		// @property (readonly, copy, nonatomic) NSString * _Nonnull rawFrequency;
+		[Export("rawFrequency")]
+		string RawFrequency { get; }
+
+		// @property (readonly, nonatomic) NSInteger variantId;
+		[Export("variantId")]
+		int VariantId { get; }
+
+		// @property (readonly, copy, nonatomic) NSString * _Nonnull variantName;
+		[Export("variantName")]
+		string VariantName { get; }
+
+		// @property (readonly, copy, nonatomic) NSString * _Nonnull eventType;
+		[Export("eventType")]
+		string EventType { get; }
+
+		// @property (readonly, nonatomic) NSInteger priority;
+		[Export("priority")]
+		int Priority { get; }
+
+		// @property (readonly, nonatomic) NSInteger delayMS;
+		[Export("delayMS")]
+		int DelayMS { get; }
+
+		// @property (readonly, nonatomic) NSInteger timeoutMS;
+		[Export("timeoutMS")]
+		int TimeoutMS { get; }
+
+		// -(instancetype _Nonnull)initWithId:(NSString * _Nonnull)id name:(NSString * _Nonnull)name rawMessageType:(NSString * _Nonnull)rawMessageType variantId:(NSInteger)variantId variantName:(NSString * _Nonnull)variantName rawFrequency:(NSString * _Nonnull)rawFrequency eventType:(NSString * _Nonnull)eventType priority:(NSInteger)priority delayMS:(NSInteger)delayMS timeoutMS:(NSInteger)timeoutMS __attribute__((objc_designated_initializer));
+		[Export("initWithId:name:rawMessageType:variantId:variantName:rawFrequency:eventType:priority:delayMS:timeoutMS:")]
+		[DesignatedInitializer]
+		IntPtr Constructor(string id, string name, string rawMessageType, int variantId, string variantName, string rawFrequency, string eventType, int priority, int delayMS, int timeoutMS);
+
 	}
 }

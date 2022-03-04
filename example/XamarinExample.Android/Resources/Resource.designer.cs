@@ -61,29 +61,13 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Animation.mtrl_bottom_sheet_slide_in = global::XamarinExample.Droid.Resource.Animation.mtrl_bottom_sheet_slide_in;
 			global::Exponea.Resource.Animation.mtrl_bottom_sheet_slide_out = global::XamarinExample.Droid.Resource.Animation.mtrl_bottom_sheet_slide_out;
 			global::Exponea.Resource.Animation.mtrl_card_lowers_interpolator = global::XamarinExample.Droid.Resource.Animation.mtrl_card_lowers_interpolator;
-			global::Exponea.Resource.Animation.nav_default_enter_anim = global::XamarinExample.Droid.Resource.Animation.nav_default_enter_anim;
-			global::Exponea.Resource.Animation.nav_default_exit_anim = global::XamarinExample.Droid.Resource.Animation.nav_default_exit_anim;
-			global::Exponea.Resource.Animation.nav_default_pop_enter_anim = global::XamarinExample.Droid.Resource.Animation.nav_default_pop_enter_anim;
-			global::Exponea.Resource.Animation.nav_default_pop_exit_anim = global::XamarinExample.Droid.Resource.Animation.nav_default_pop_exit_anim;
 			global::Exponea.Resource.Animator.design_appbar_state_list_animator = global::XamarinExample.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Exponea.Resource.Animator.design_fab_hide_motion_spec = global::XamarinExample.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Exponea.Resource.Animator.design_fab_show_motion_spec = global::XamarinExample.Droid.Resource.Animator.design_fab_show_motion_spec;
-			global::Exponea.Resource.Animator.fragment_close_enter = global::XamarinExample.Droid.Resource.Animator.fragment_close_enter;
-			global::Exponea.Resource.Animator.fragment_close_exit = global::XamarinExample.Droid.Resource.Animator.fragment_close_exit;
-			global::Exponea.Resource.Animator.fragment_fade_enter = global::XamarinExample.Droid.Resource.Animator.fragment_fade_enter;
-			global::Exponea.Resource.Animator.fragment_fade_exit = global::XamarinExample.Droid.Resource.Animator.fragment_fade_exit;
-			global::Exponea.Resource.Animator.fragment_open_enter = global::XamarinExample.Droid.Resource.Animator.fragment_open_enter;
-			global::Exponea.Resource.Animator.fragment_open_exit = global::XamarinExample.Droid.Resource.Animator.fragment_open_exit;
-			global::Exponea.Resource.Animator.linear_indeterminate_line1_head_interpolator = global::XamarinExample.Droid.Resource.Animator.linear_indeterminate_line1_head_interpolator;
-			global::Exponea.Resource.Animator.linear_indeterminate_line1_tail_interpolator = global::XamarinExample.Droid.Resource.Animator.linear_indeterminate_line1_tail_interpolator;
-			global::Exponea.Resource.Animator.linear_indeterminate_line2_head_interpolator = global::XamarinExample.Droid.Resource.Animator.linear_indeterminate_line2_head_interpolator;
-			global::Exponea.Resource.Animator.linear_indeterminate_line2_tail_interpolator = global::XamarinExample.Droid.Resource.Animator.linear_indeterminate_line2_tail_interpolator;
 			global::Exponea.Resource.Animator.mtrl_btn_state_list_anim = global::XamarinExample.Droid.Resource.Animator.mtrl_btn_state_list_anim;
 			global::Exponea.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::XamarinExample.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
 			global::Exponea.Resource.Animator.mtrl_card_state_list_anim = global::XamarinExample.Droid.Resource.Animator.mtrl_card_state_list_anim;
 			global::Exponea.Resource.Animator.mtrl_chip_state_list_anim = global::XamarinExample.Droid.Resource.Animator.mtrl_chip_state_list_anim;
-			global::Exponea.Resource.Animator.mtrl_extended_fab_change_size_collapse_motion_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_extended_fab_change_size_collapse_motion_spec;
-			global::Exponea.Resource.Animator.mtrl_extended_fab_change_size_expand_motion_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_extended_fab_change_size_expand_motion_spec;
 			global::Exponea.Resource.Animator.mtrl_extended_fab_hide_motion_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_extended_fab_hide_motion_spec;
 			global::Exponea.Resource.Animator.mtrl_extended_fab_show_motion_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_extended_fab_show_motion_spec;
 			global::Exponea.Resource.Animator.mtrl_extended_fab_state_list_animator = global::XamarinExample.Droid.Resource.Animator.mtrl_extended_fab_state_list_animator;
@@ -91,11 +75,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Animator.mtrl_fab_show_motion_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
 			global::Exponea.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
 			global::Exponea.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::XamarinExample.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
-			global::Exponea.Resource.Animator.nav_default_enter_anim = global::XamarinExample.Droid.Resource.Animator.nav_default_enter_anim;
-			global::Exponea.Resource.Animator.nav_default_exit_anim = global::XamarinExample.Droid.Resource.Animator.nav_default_exit_anim;
-			global::Exponea.Resource.Animator.nav_default_pop_enter_anim = global::XamarinExample.Droid.Resource.Animator.nav_default_pop_enter_anim;
-			global::Exponea.Resource.Animator.nav_default_pop_exit_anim = global::XamarinExample.Droid.Resource.Animator.nav_default_pop_exit_anim;
-			global::Exponea.Resource.Attribute.action = global::XamarinExample.Droid.Resource.Attribute.action;
 			global::Exponea.Resource.Attribute.actionBarDivider = global::XamarinExample.Droid.Resource.Attribute.actionBarDivider;
 			global::Exponea.Resource.Attribute.actionBarItemBackground = global::XamarinExample.Droid.Resource.Attribute.actionBarItemBackground;
 			global::Exponea.Resource.Attribute.actionBarPopupTheme = global::XamarinExample.Droid.Resource.Attribute.actionBarPopupTheme;
@@ -114,7 +93,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.actionMenuTextColor = global::XamarinExample.Droid.Resource.Attribute.actionMenuTextColor;
 			global::Exponea.Resource.Attribute.actionModeBackground = global::XamarinExample.Droid.Resource.Attribute.actionModeBackground;
 			global::Exponea.Resource.Attribute.actionModeCloseButtonStyle = global::XamarinExample.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Exponea.Resource.Attribute.actionModeCloseContentDescription = global::XamarinExample.Droid.Resource.Attribute.actionModeCloseContentDescription;
 			global::Exponea.Resource.Attribute.actionModeCloseDrawable = global::XamarinExample.Droid.Resource.Attribute.actionModeCloseDrawable;
 			global::Exponea.Resource.Attribute.actionModeCopyDrawable = global::XamarinExample.Droid.Resource.Attribute.actionModeCopyDrawable;
 			global::Exponea.Resource.Attribute.actionModeCutDrawable = global::XamarinExample.Droid.Resource.Attribute.actionModeCutDrawable;
@@ -125,7 +103,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.actionModeShareDrawable = global::XamarinExample.Droid.Resource.Attribute.actionModeShareDrawable;
 			global::Exponea.Resource.Attribute.actionModeSplitBackground = global::XamarinExample.Droid.Resource.Attribute.actionModeSplitBackground;
 			global::Exponea.Resource.Attribute.actionModeStyle = global::XamarinExample.Droid.Resource.Attribute.actionModeStyle;
-			global::Exponea.Resource.Attribute.actionModeTheme = global::XamarinExample.Droid.Resource.Attribute.actionModeTheme;
 			global::Exponea.Resource.Attribute.actionModeWebSearchDrawable = global::XamarinExample.Droid.Resource.Attribute.actionModeWebSearchDrawable;
 			global::Exponea.Resource.Attribute.actionOverflowButtonStyle = global::XamarinExample.Droid.Resource.Attribute.actionOverflowButtonStyle;
 			global::Exponea.Resource.Attribute.actionOverflowMenuStyle = global::XamarinExample.Droid.Resource.Attribute.actionOverflowMenuStyle;
@@ -133,29 +110,21 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.actionTextColorAlpha = global::XamarinExample.Droid.Resource.Attribute.actionTextColorAlpha;
 			global::Exponea.Resource.Attribute.actionViewClass = global::XamarinExample.Droid.Resource.Attribute.actionViewClass;
 			global::Exponea.Resource.Attribute.activityChooserViewStyle = global::XamarinExample.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Exponea.Resource.Attribute.adjustable = global::XamarinExample.Droid.Resource.Attribute.adjustable;
 			global::Exponea.Resource.Attribute.alertDialogButtonGroupStyle = global::XamarinExample.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
 			global::Exponea.Resource.Attribute.alertDialogCenterButtons = global::XamarinExample.Droid.Resource.Attribute.alertDialogCenterButtons;
 			global::Exponea.Resource.Attribute.alertDialogStyle = global::XamarinExample.Droid.Resource.Attribute.alertDialogStyle;
 			global::Exponea.Resource.Attribute.alertDialogTheme = global::XamarinExample.Droid.Resource.Attribute.alertDialogTheme;
-			global::Exponea.Resource.Attribute.allowDividerAbove = global::XamarinExample.Droid.Resource.Attribute.allowDividerAbove;
-			global::Exponea.Resource.Attribute.allowDividerAfterLastItem = global::XamarinExample.Droid.Resource.Attribute.allowDividerAfterLastItem;
-			global::Exponea.Resource.Attribute.allowDividerBelow = global::XamarinExample.Droid.Resource.Attribute.allowDividerBelow;
 			global::Exponea.Resource.Attribute.allowStacking = global::XamarinExample.Droid.Resource.Attribute.allowStacking;
 			global::Exponea.Resource.Attribute.alpha = global::XamarinExample.Droid.Resource.Attribute.alpha;
 			global::Exponea.Resource.Attribute.alphabeticModifiers = global::XamarinExample.Droid.Resource.Attribute.alphabeticModifiers;
 			global::Exponea.Resource.Attribute.altSrc = global::XamarinExample.Droid.Resource.Attribute.altSrc;
-			global::Exponea.Resource.Attribute.animateCircleAngleTo = global::XamarinExample.Droid.Resource.Attribute.animateCircleAngleTo;
-			global::Exponea.Resource.Attribute.animateRelativeTo = global::XamarinExample.Droid.Resource.Attribute.animateRelativeTo;
 			global::Exponea.Resource.Attribute.animationMode = global::XamarinExample.Droid.Resource.Attribute.animationMode;
 			global::Exponea.Resource.Attribute.appBarLayoutStyle = global::XamarinExample.Droid.Resource.Attribute.appBarLayoutStyle;
 			global::Exponea.Resource.Attribute.applyMotionScene = global::XamarinExample.Droid.Resource.Attribute.applyMotionScene;
 			global::Exponea.Resource.Attribute.arcMode = global::XamarinExample.Droid.Resource.Attribute.arcMode;
-			global::Exponea.Resource.Attribute.argType = global::XamarinExample.Droid.Resource.Attribute.argType;
 			global::Exponea.Resource.Attribute.arrowHeadLength = global::XamarinExample.Droid.Resource.Attribute.arrowHeadLength;
 			global::Exponea.Resource.Attribute.arrowShaftLength = global::XamarinExample.Droid.Resource.Attribute.arrowShaftLength;
 			global::Exponea.Resource.Attribute.attributeName = global::XamarinExample.Droid.Resource.Attribute.attributeName;
-			global::Exponea.Resource.Attribute.autoCompleteMode = global::XamarinExample.Droid.Resource.Attribute.autoCompleteMode;
 			global::Exponea.Resource.Attribute.autoCompleteTextViewStyle = global::XamarinExample.Droid.Resource.Attribute.autoCompleteTextViewStyle;
 			global::Exponea.Resource.Attribute.autoSizeMaxTextSize = global::XamarinExample.Droid.Resource.Attribute.autoSizeMaxTextSize;
 			global::Exponea.Resource.Attribute.autoSizeMinTextSize = global::XamarinExample.Droid.Resource.Attribute.autoSizeMinTextSize;
@@ -192,10 +161,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.behavior_peekHeight = global::XamarinExample.Droid.Resource.Attribute.behavior_peekHeight;
 			global::Exponea.Resource.Attribute.behavior_saveFlags = global::XamarinExample.Droid.Resource.Attribute.behavior_saveFlags;
 			global::Exponea.Resource.Attribute.behavior_skipCollapsed = global::XamarinExample.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Exponea.Resource.Attribute.blendSrc = global::XamarinExample.Droid.Resource.Attribute.blendSrc;
 			global::Exponea.Resource.Attribute.borderlessButtonStyle = global::XamarinExample.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Exponea.Resource.Attribute.borderRound = global::XamarinExample.Droid.Resource.Attribute.borderRound;
-			global::Exponea.Resource.Attribute.borderRoundPercent = global::XamarinExample.Droid.Resource.Attribute.borderRoundPercent;
 			global::Exponea.Resource.Attribute.borderWidth = global::XamarinExample.Droid.Resource.Attribute.borderWidth;
 			global::Exponea.Resource.Attribute.bottomAppBarStyle = global::XamarinExample.Droid.Resource.Attribute.bottomAppBarStyle;
 			global::Exponea.Resource.Attribute.bottomNavigationStyle = global::XamarinExample.Droid.Resource.Attribute.bottomNavigationStyle;
@@ -234,25 +200,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.cardPreventCornerOverlap = global::XamarinExample.Droid.Resource.Attribute.cardPreventCornerOverlap;
 			global::Exponea.Resource.Attribute.cardUseCompatPadding = global::XamarinExample.Droid.Resource.Attribute.cardUseCompatPadding;
 			global::Exponea.Resource.Attribute.cardViewStyle = global::XamarinExample.Droid.Resource.Attribute.cardViewStyle;
-			global::Exponea.Resource.Attribute.carousel_backwardTransition = global::XamarinExample.Droid.Resource.Attribute.carousel_backwardTransition;
-			global::Exponea.Resource.Attribute.carousel_emptyViewsBehavior = global::XamarinExample.Droid.Resource.Attribute.carousel_emptyViewsBehavior;
-			global::Exponea.Resource.Attribute.carousel_firstView = global::XamarinExample.Droid.Resource.Attribute.carousel_firstView;
-			global::Exponea.Resource.Attribute.carousel_forwardTransition = global::XamarinExample.Droid.Resource.Attribute.carousel_forwardTransition;
-			global::Exponea.Resource.Attribute.carousel_infinite = global::XamarinExample.Droid.Resource.Attribute.carousel_infinite;
-			global::Exponea.Resource.Attribute.carousel_nextState = global::XamarinExample.Droid.Resource.Attribute.carousel_nextState;
-			global::Exponea.Resource.Attribute.carousel_previousState = global::XamarinExample.Droid.Resource.Attribute.carousel_previousState;
-			global::Exponea.Resource.Attribute.carousel_touchUpMode = global::XamarinExample.Droid.Resource.Attribute.carousel_touchUpMode;
-			global::Exponea.Resource.Attribute.carousel_touchUp_dampeningFactor = global::XamarinExample.Droid.Resource.Attribute.carousel_touchUp_dampeningFactor;
-			global::Exponea.Resource.Attribute.carousel_touchUp_velocityThreshold = global::XamarinExample.Droid.Resource.Attribute.carousel_touchUp_velocityThreshold;
 			global::Exponea.Resource.Attribute.chainUseRtl = global::XamarinExample.Droid.Resource.Attribute.chainUseRtl;
-			global::Exponea.Resource.Attribute.checkBoxPreferenceStyle = global::XamarinExample.Droid.Resource.Attribute.checkBoxPreferenceStyle;
 			global::Exponea.Resource.Attribute.checkboxStyle = global::XamarinExample.Droid.Resource.Attribute.checkboxStyle;
 			global::Exponea.Resource.Attribute.checkedButton = global::XamarinExample.Droid.Resource.Attribute.checkedButton;
 			global::Exponea.Resource.Attribute.checkedChip = global::XamarinExample.Droid.Resource.Attribute.checkedChip;
 			global::Exponea.Resource.Attribute.checkedIcon = global::XamarinExample.Droid.Resource.Attribute.checkedIcon;
 			global::Exponea.Resource.Attribute.checkedIconEnabled = global::XamarinExample.Droid.Resource.Attribute.checkedIconEnabled;
-			global::Exponea.Resource.Attribute.checkedIconMargin = global::XamarinExample.Droid.Resource.Attribute.checkedIconMargin;
-			global::Exponea.Resource.Attribute.checkedIconSize = global::XamarinExample.Droid.Resource.Attribute.checkedIconSize;
 			global::Exponea.Resource.Attribute.checkedIconTint = global::XamarinExample.Droid.Resource.Attribute.checkedIconTint;
 			global::Exponea.Resource.Attribute.checkedIconVisible = global::XamarinExample.Droid.Resource.Attribute.checkedIconVisible;
 			global::Exponea.Resource.Attribute.checkedTextViewStyle = global::XamarinExample.Droid.Resource.Attribute.checkedTextViewStyle;
@@ -277,18 +230,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.chipStyle = global::XamarinExample.Droid.Resource.Attribute.chipStyle;
 			global::Exponea.Resource.Attribute.chipSurfaceColor = global::XamarinExample.Droid.Resource.Attribute.chipSurfaceColor;
 			global::Exponea.Resource.Attribute.circleRadius = global::XamarinExample.Droid.Resource.Attribute.circleRadius;
-			global::Exponea.Resource.Attribute.circularflow_angles = global::XamarinExample.Droid.Resource.Attribute.circularflow_angles;
-			global::Exponea.Resource.Attribute.circularflow_defaultAngle = global::XamarinExample.Droid.Resource.Attribute.circularflow_defaultAngle;
-			global::Exponea.Resource.Attribute.circularflow_defaultRadius = global::XamarinExample.Droid.Resource.Attribute.circularflow_defaultRadius;
-			global::Exponea.Resource.Attribute.circularflow_radiusInDP = global::XamarinExample.Droid.Resource.Attribute.circularflow_radiusInDP;
-			global::Exponea.Resource.Attribute.circularflow_viewCenter = global::XamarinExample.Droid.Resource.Attribute.circularflow_viewCenter;
-			global::Exponea.Resource.Attribute.circularProgressIndicatorStyle = global::XamarinExample.Droid.Resource.Attribute.circularProgressIndicatorStyle;
-			global::Exponea.Resource.Attribute.clearsTag = global::XamarinExample.Droid.Resource.Attribute.clearsTag;
 			global::Exponea.Resource.Attribute.clickAction = global::XamarinExample.Droid.Resource.Attribute.clickAction;
-			global::Exponea.Resource.Attribute.clockFaceBackgroundColor = global::XamarinExample.Droid.Resource.Attribute.clockFaceBackgroundColor;
-			global::Exponea.Resource.Attribute.clockHandColor = global::XamarinExample.Droid.Resource.Attribute.clockHandColor;
-			global::Exponea.Resource.Attribute.clockIcon = global::XamarinExample.Droid.Resource.Attribute.clockIcon;
-			global::Exponea.Resource.Attribute.clockNumberTextColor = global::XamarinExample.Droid.Resource.Attribute.clockNumberTextColor;
 			global::Exponea.Resource.Attribute.closeIcon = global::XamarinExample.Droid.Resource.Attribute.closeIcon;
 			global::Exponea.Resource.Attribute.closeIconEnabled = global::XamarinExample.Droid.Resource.Attribute.closeIconEnabled;
 			global::Exponea.Resource.Attribute.closeIconEndPadding = global::XamarinExample.Droid.Resource.Attribute.closeIconEndPadding;
@@ -298,11 +240,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.closeIconVisible = global::XamarinExample.Droid.Resource.Attribute.closeIconVisible;
 			global::Exponea.Resource.Attribute.closeItemLayout = global::XamarinExample.Droid.Resource.Attribute.closeItemLayout;
 			global::Exponea.Resource.Attribute.collapseContentDescription = global::XamarinExample.Droid.Resource.Attribute.collapseContentDescription;
-			global::Exponea.Resource.Attribute.collapsedSize = global::XamarinExample.Droid.Resource.Attribute.collapsedSize;
 			global::Exponea.Resource.Attribute.collapsedTitleGravity = global::XamarinExample.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Exponea.Resource.Attribute.collapsedTitleTextAppearance = global::XamarinExample.Droid.Resource.Attribute.collapsedTitleTextAppearance;
 			global::Exponea.Resource.Attribute.collapseIcon = global::XamarinExample.Droid.Resource.Attribute.collapseIcon;
-			global::Exponea.Resource.Attribute.collapsingToolbarLayoutStyle = global::XamarinExample.Droid.Resource.Attribute.collapsingToolbarLayoutStyle;
 			global::Exponea.Resource.Attribute.collectionViewStyle = global::XamarinExample.Droid.Resource.Attribute.collectionViewStyle;
 			global::Exponea.Resource.Attribute.color = global::XamarinExample.Droid.Resource.Attribute.color;
 			global::Exponea.Resource.Attribute.colorAccent = global::XamarinExample.Droid.Resource.Attribute.colorAccent;
@@ -327,7 +267,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.colorSurface = global::XamarinExample.Droid.Resource.Attribute.colorSurface;
 			global::Exponea.Resource.Attribute.colorSwitchThumbNormal = global::XamarinExample.Droid.Resource.Attribute.colorSwitchThumbNormal;
 			global::Exponea.Resource.Attribute.commitIcon = global::XamarinExample.Droid.Resource.Attribute.commitIcon;
-			global::Exponea.Resource.Attribute.ConstraintRotate = global::XamarinExample.Droid.Resource.Attribute.ConstraintRotate;
 			global::Exponea.Resource.Attribute.constraints = global::XamarinExample.Droid.Resource.Attribute.constraints;
 			global::Exponea.Resource.Attribute.constraintSet = global::XamarinExample.Droid.Resource.Attribute.constraintSet;
 			global::Exponea.Resource.Attribute.constraintSetEnd = global::XamarinExample.Droid.Resource.Attribute.constraintSetEnd;
@@ -344,10 +283,8 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.contentInsetStartWithNavigation = global::XamarinExample.Droid.Resource.Attribute.contentInsetStartWithNavigation;
 			global::Exponea.Resource.Attribute.contentPadding = global::XamarinExample.Droid.Resource.Attribute.contentPadding;
 			global::Exponea.Resource.Attribute.contentPaddingBottom = global::XamarinExample.Droid.Resource.Attribute.contentPaddingBottom;
-			global::Exponea.Resource.Attribute.contentPaddingEnd = global::XamarinExample.Droid.Resource.Attribute.contentPaddingEnd;
 			global::Exponea.Resource.Attribute.contentPaddingLeft = global::XamarinExample.Droid.Resource.Attribute.contentPaddingLeft;
 			global::Exponea.Resource.Attribute.contentPaddingRight = global::XamarinExample.Droid.Resource.Attribute.contentPaddingRight;
-			global::Exponea.Resource.Attribute.contentPaddingStart = global::XamarinExample.Droid.Resource.Attribute.contentPaddingStart;
 			global::Exponea.Resource.Attribute.contentPaddingTop = global::XamarinExample.Droid.Resource.Attribute.contentPaddingTop;
 			global::Exponea.Resource.Attribute.contentScrim = global::XamarinExample.Droid.Resource.Attribute.contentScrim;
 			global::Exponea.Resource.Attribute.contrast = global::XamarinExample.Droid.Resource.Attribute.contrast;
@@ -381,10 +318,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.customIntegerValue = global::XamarinExample.Droid.Resource.Attribute.customIntegerValue;
 			global::Exponea.Resource.Attribute.customNavigationLayout = global::XamarinExample.Droid.Resource.Attribute.customNavigationLayout;
 			global::Exponea.Resource.Attribute.customPixelDimension = global::XamarinExample.Droid.Resource.Attribute.customPixelDimension;
-			global::Exponea.Resource.Attribute.customReference = global::XamarinExample.Droid.Resource.Attribute.customReference;
 			global::Exponea.Resource.Attribute.customStringValue = global::XamarinExample.Droid.Resource.Attribute.customStringValue;
-			global::Exponea.Resource.Attribute.data = global::XamarinExample.Droid.Resource.Attribute.data;
-			global::Exponea.Resource.Attribute.dataPattern = global::XamarinExample.Droid.Resource.Attribute.dataPattern;
 			global::Exponea.Resource.Attribute.dayInvalidStyle = global::XamarinExample.Droid.Resource.Attribute.dayInvalidStyle;
 			global::Exponea.Resource.Attribute.daySelectedStyle = global::XamarinExample.Droid.Resource.Attribute.daySelectedStyle;
 			global::Exponea.Resource.Attribute.dayStyle = global::XamarinExample.Droid.Resource.Attribute.dayStyle;
@@ -392,21 +326,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.defaultDuration = global::XamarinExample.Droid.Resource.Attribute.defaultDuration;
 			global::Exponea.Resource.Attribute.defaultQueryHint = global::XamarinExample.Droid.Resource.Attribute.defaultQueryHint;
 			global::Exponea.Resource.Attribute.defaultState = global::XamarinExample.Droid.Resource.Attribute.defaultState;
-			global::Exponea.Resource.Attribute.defaultValue = global::XamarinExample.Droid.Resource.Attribute.defaultValue;
 			global::Exponea.Resource.Attribute.deltaPolarAngle = global::XamarinExample.Droid.Resource.Attribute.deltaPolarAngle;
 			global::Exponea.Resource.Attribute.deltaPolarRadius = global::XamarinExample.Droid.Resource.Attribute.deltaPolarRadius;
-			global::Exponea.Resource.Attribute.dependency = global::XamarinExample.Droid.Resource.Attribute.dependency;
 			global::Exponea.Resource.Attribute.deriveConstraintsFrom = global::XamarinExample.Droid.Resource.Attribute.deriveConstraintsFrom;
-			global::Exponea.Resource.Attribute.destination = global::XamarinExample.Droid.Resource.Attribute.destination;
 			global::Exponea.Resource.Attribute.dialogCornerRadius = global::XamarinExample.Droid.Resource.Attribute.dialogCornerRadius;
-			global::Exponea.Resource.Attribute.dialogIcon = global::XamarinExample.Droid.Resource.Attribute.dialogIcon;
-			global::Exponea.Resource.Attribute.dialogLayout = global::XamarinExample.Droid.Resource.Attribute.dialogLayout;
-			global::Exponea.Resource.Attribute.dialogMessage = global::XamarinExample.Droid.Resource.Attribute.dialogMessage;
-			global::Exponea.Resource.Attribute.dialogPreferenceStyle = global::XamarinExample.Droid.Resource.Attribute.dialogPreferenceStyle;
 			global::Exponea.Resource.Attribute.dialogPreferredPadding = global::XamarinExample.Droid.Resource.Attribute.dialogPreferredPadding;
 			global::Exponea.Resource.Attribute.dialogTheme = global::XamarinExample.Droid.Resource.Attribute.dialogTheme;
-			global::Exponea.Resource.Attribute.dialogTitle = global::XamarinExample.Droid.Resource.Attribute.dialogTitle;
-			global::Exponea.Resource.Attribute.disableDependentsState = global::XamarinExample.Droid.Resource.Attribute.disableDependentsState;
 			global::Exponea.Resource.Attribute.displayOptions = global::XamarinExample.Droid.Resource.Attribute.displayOptions;
 			global::Exponea.Resource.Attribute.divider = global::XamarinExample.Droid.Resource.Attribute.divider;
 			global::Exponea.Resource.Attribute.dividerHorizontal = global::XamarinExample.Droid.Resource.Attribute.dividerHorizontal;
@@ -429,18 +354,13 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.drawPath = global::XamarinExample.Droid.Resource.Attribute.drawPath;
 			global::Exponea.Resource.Attribute.dropdownListPreferredItemHeight = global::XamarinExample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Exponea.Resource.Attribute.dropDownListViewStyle = global::XamarinExample.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Exponea.Resource.Attribute.dropdownPreferenceStyle = global::XamarinExample.Droid.Resource.Attribute.dropdownPreferenceStyle;
 			global::Exponea.Resource.Attribute.duration = global::XamarinExample.Droid.Resource.Attribute.duration;
 			global::Exponea.Resource.Attribute.editTextBackground = global::XamarinExample.Droid.Resource.Attribute.editTextBackground;
 			global::Exponea.Resource.Attribute.editTextColor = global::XamarinExample.Droid.Resource.Attribute.editTextColor;
-			global::Exponea.Resource.Attribute.editTextPreferenceStyle = global::XamarinExample.Droid.Resource.Attribute.editTextPreferenceStyle;
 			global::Exponea.Resource.Attribute.editTextStyle = global::XamarinExample.Droid.Resource.Attribute.editTextStyle;
 			global::Exponea.Resource.Attribute.elevation = global::XamarinExample.Droid.Resource.Attribute.elevation;
 			global::Exponea.Resource.Attribute.elevationOverlayColor = global::XamarinExample.Droid.Resource.Attribute.elevationOverlayColor;
 			global::Exponea.Resource.Attribute.elevationOverlayEnabled = global::XamarinExample.Droid.Resource.Attribute.elevationOverlayEnabled;
-			global::Exponea.Resource.Attribute.enableCopying = global::XamarinExample.Droid.Resource.Attribute.enableCopying;
-			global::Exponea.Resource.Attribute.enabled = global::XamarinExample.Droid.Resource.Attribute.enabled;
-			global::Exponea.Resource.Attribute.enableEdgeToEdge = global::XamarinExample.Droid.Resource.Attribute.enableEdgeToEdge;
 			global::Exponea.Resource.Attribute.endIconCheckable = global::XamarinExample.Droid.Resource.Attribute.endIconCheckable;
 			global::Exponea.Resource.Attribute.endIconContentDescription = global::XamarinExample.Droid.Resource.Attribute.endIconContentDescription;
 			global::Exponea.Resource.Attribute.endIconDrawable = global::XamarinExample.Droid.Resource.Attribute.endIconDrawable;
@@ -450,9 +370,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.enforceMaterialTheme = global::XamarinExample.Droid.Resource.Attribute.enforceMaterialTheme;
 			global::Exponea.Resource.Attribute.enforceTextAppearance = global::XamarinExample.Droid.Resource.Attribute.enforceTextAppearance;
 			global::Exponea.Resource.Attribute.ensureMinTouchTargetSize = global::XamarinExample.Droid.Resource.Attribute.ensureMinTouchTargetSize;
-			global::Exponea.Resource.Attribute.enterAnim = global::XamarinExample.Droid.Resource.Attribute.enterAnim;
-			global::Exponea.Resource.Attribute.entries = global::XamarinExample.Droid.Resource.Attribute.entries;
-			global::Exponea.Resource.Attribute.entryValues = global::XamarinExample.Droid.Resource.Attribute.entryValues;
 			global::Exponea.Resource.Attribute.errorContentDescription = global::XamarinExample.Droid.Resource.Attribute.errorContentDescription;
 			global::Exponea.Resource.Attribute.errorEnabled = global::XamarinExample.Droid.Resource.Attribute.errorEnabled;
 			global::Exponea.Resource.Attribute.errorIconDrawable = global::XamarinExample.Droid.Resource.Attribute.errorIconDrawable;
@@ -460,10 +377,8 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.errorIconTintMode = global::XamarinExample.Droid.Resource.Attribute.errorIconTintMode;
 			global::Exponea.Resource.Attribute.errorTextAppearance = global::XamarinExample.Droid.Resource.Attribute.errorTextAppearance;
 			global::Exponea.Resource.Attribute.errorTextColor = global::XamarinExample.Droid.Resource.Attribute.errorTextColor;
-			global::Exponea.Resource.Attribute.exitAnim = global::XamarinExample.Droid.Resource.Attribute.exitAnim;
 			global::Exponea.Resource.Attribute.expandActivityOverflowButtonDrawable = global::XamarinExample.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
 			global::Exponea.Resource.Attribute.expanded = global::XamarinExample.Droid.Resource.Attribute.expanded;
-			global::Exponea.Resource.Attribute.expandedHintEnabled = global::XamarinExample.Droid.Resource.Attribute.expandedHintEnabled;
 			global::Exponea.Resource.Attribute.expandedTitleGravity = global::XamarinExample.Droid.Resource.Attribute.expandedTitleGravity;
 			global::Exponea.Resource.Attribute.expandedTitleMargin = global::XamarinExample.Droid.Resource.Attribute.expandedTitleMargin;
 			global::Exponea.Resource.Attribute.expandedTitleMarginBottom = global::XamarinExample.Droid.Resource.Attribute.expandedTitleMarginBottom;
@@ -473,7 +388,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.expandedTitleTextAppearance = global::XamarinExample.Droid.Resource.Attribute.expandedTitleTextAppearance;
 			global::Exponea.Resource.Attribute.extendedFloatingActionButtonStyle = global::XamarinExample.Droid.Resource.Attribute.extendedFloatingActionButtonStyle;
 			global::Exponea.Resource.Attribute.extendMotionSpec = global::XamarinExample.Droid.Resource.Attribute.extendMotionSpec;
-			global::Exponea.Resource.Attribute.extraMultilineHeightEnabled = global::XamarinExample.Droid.Resource.Attribute.extraMultilineHeightEnabled;
 			global::Exponea.Resource.Attribute.fabAlignmentMode = global::XamarinExample.Droid.Resource.Attribute.fabAlignmentMode;
 			global::Exponea.Resource.Attribute.fabAnimationMode = global::XamarinExample.Droid.Resource.Attribute.fabAnimationMode;
 			global::Exponea.Resource.Attribute.fabCradleMargin = global::XamarinExample.Droid.Resource.Attribute.fabCradleMargin;
@@ -519,14 +433,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.fontStyle = global::XamarinExample.Droid.Resource.Attribute.fontStyle;
 			global::Exponea.Resource.Attribute.fontVariationSettings = global::XamarinExample.Droid.Resource.Attribute.fontVariationSettings;
 			global::Exponea.Resource.Attribute.fontWeight = global::XamarinExample.Droid.Resource.Attribute.fontWeight;
-			global::Exponea.Resource.Attribute.forceApplySystemWindowInsetTop = global::XamarinExample.Droid.Resource.Attribute.forceApplySystemWindowInsetTop;
 			global::Exponea.Resource.Attribute.foregroundInsidePadding = global::XamarinExample.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::Exponea.Resource.Attribute.fragment = global::XamarinExample.Droid.Resource.Attribute.fragment;
 			global::Exponea.Resource.Attribute.framePosition = global::XamarinExample.Droid.Resource.Attribute.framePosition;
 			global::Exponea.Resource.Attribute.gapBetweenBars = global::XamarinExample.Droid.Resource.Attribute.gapBetweenBars;
 			global::Exponea.Resource.Attribute.gestureInsetBottomIgnored = global::XamarinExample.Droid.Resource.Attribute.gestureInsetBottomIgnored;
 			global::Exponea.Resource.Attribute.goIcon = global::XamarinExample.Droid.Resource.Attribute.goIcon;
-			global::Exponea.Resource.Attribute.graph = global::XamarinExample.Droid.Resource.Attribute.graph;
 			global::Exponea.Resource.Attribute.haloColor = global::XamarinExample.Droid.Resource.Attribute.haloColor;
 			global::Exponea.Resource.Attribute.haloRadius = global::XamarinExample.Droid.Resource.Attribute.haloRadius;
 			global::Exponea.Resource.Attribute.headerLayout = global::XamarinExample.Droid.Resource.Attribute.headerLayout;
@@ -535,7 +446,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.helperTextEnabled = global::XamarinExample.Droid.Resource.Attribute.helperTextEnabled;
 			global::Exponea.Resource.Attribute.helperTextTextAppearance = global::XamarinExample.Droid.Resource.Attribute.helperTextTextAppearance;
 			global::Exponea.Resource.Attribute.helperTextTextColor = global::XamarinExample.Droid.Resource.Attribute.helperTextTextColor;
-			global::Exponea.Resource.Attribute.hideAnimationBehavior = global::XamarinExample.Droid.Resource.Attribute.hideAnimationBehavior;
 			global::Exponea.Resource.Attribute.hideMotionSpec = global::XamarinExample.Droid.Resource.Attribute.hideMotionSpec;
 			global::Exponea.Resource.Attribute.hideOnContentScroll = global::XamarinExample.Droid.Resource.Attribute.hideOnContentScroll;
 			global::Exponea.Resource.Attribute.hideOnScroll = global::XamarinExample.Droid.Resource.Attribute.hideOnScroll;
@@ -553,30 +463,15 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.iconifiedByDefault = global::XamarinExample.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Exponea.Resource.Attribute.iconPadding = global::XamarinExample.Droid.Resource.Attribute.iconPadding;
 			global::Exponea.Resource.Attribute.iconSize = global::XamarinExample.Droid.Resource.Attribute.iconSize;
-			global::Exponea.Resource.Attribute.iconSpaceReserved = global::XamarinExample.Droid.Resource.Attribute.iconSpaceReserved;
 			global::Exponea.Resource.Attribute.iconStartPadding = global::XamarinExample.Droid.Resource.Attribute.iconStartPadding;
 			global::Exponea.Resource.Attribute.iconTint = global::XamarinExample.Droid.Resource.Attribute.iconTint;
 			global::Exponea.Resource.Attribute.iconTintMode = global::XamarinExample.Droid.Resource.Attribute.iconTintMode;
-			global::Exponea.Resource.Attribute.ifTagNotSet = global::XamarinExample.Droid.Resource.Attribute.ifTagNotSet;
-			global::Exponea.Resource.Attribute.ifTagSet = global::XamarinExample.Droid.Resource.Attribute.ifTagSet;
 			global::Exponea.Resource.Attribute.imageButtonStyle = global::XamarinExample.Droid.Resource.Attribute.imageButtonStyle;
-			global::Exponea.Resource.Attribute.imagePanX = global::XamarinExample.Droid.Resource.Attribute.imagePanX;
-			global::Exponea.Resource.Attribute.imagePanY = global::XamarinExample.Droid.Resource.Attribute.imagePanY;
-			global::Exponea.Resource.Attribute.imageRotate = global::XamarinExample.Droid.Resource.Attribute.imageRotate;
-			global::Exponea.Resource.Attribute.imageZoom = global::XamarinExample.Droid.Resource.Attribute.imageZoom;
-			global::Exponea.Resource.Attribute.indeterminateAnimationType = global::XamarinExample.Droid.Resource.Attribute.indeterminateAnimationType;
 			global::Exponea.Resource.Attribute.indeterminateProgressStyle = global::XamarinExample.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Exponea.Resource.Attribute.indicatorColor = global::XamarinExample.Droid.Resource.Attribute.indicatorColor;
-			global::Exponea.Resource.Attribute.indicatorDirectionCircular = global::XamarinExample.Droid.Resource.Attribute.indicatorDirectionCircular;
-			global::Exponea.Resource.Attribute.indicatorDirectionLinear = global::XamarinExample.Droid.Resource.Attribute.indicatorDirectionLinear;
-			global::Exponea.Resource.Attribute.indicatorInset = global::XamarinExample.Droid.Resource.Attribute.indicatorInset;
-			global::Exponea.Resource.Attribute.indicatorSize = global::XamarinExample.Droid.Resource.Attribute.indicatorSize;
 			global::Exponea.Resource.Attribute.initialActivityCount = global::XamarinExample.Droid.Resource.Attribute.initialActivityCount;
-			global::Exponea.Resource.Attribute.initialExpandedChildrenCount = global::XamarinExample.Droid.Resource.Attribute.initialExpandedChildrenCount;
 			global::Exponea.Resource.Attribute.insetForeground = global::XamarinExample.Droid.Resource.Attribute.insetForeground;
 			global::Exponea.Resource.Attribute.isLightTheme = global::XamarinExample.Droid.Resource.Attribute.isLightTheme;
 			global::Exponea.Resource.Attribute.isMaterialTheme = global::XamarinExample.Droid.Resource.Attribute.isMaterialTheme;
-			global::Exponea.Resource.Attribute.isPreferenceVisible = global::XamarinExample.Droid.Resource.Attribute.isPreferenceVisible;
 			global::Exponea.Resource.Attribute.itemBackground = global::XamarinExample.Droid.Resource.Attribute.itemBackground;
 			global::Exponea.Resource.Attribute.itemFillColor = global::XamarinExample.Droid.Resource.Attribute.itemFillColor;
 			global::Exponea.Resource.Attribute.itemHorizontalPadding = global::XamarinExample.Droid.Resource.Attribute.itemHorizontalPadding;
@@ -601,15 +496,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.itemTextAppearanceActive = global::XamarinExample.Droid.Resource.Attribute.itemTextAppearanceActive;
 			global::Exponea.Resource.Attribute.itemTextAppearanceInactive = global::XamarinExample.Droid.Resource.Attribute.itemTextAppearanceInactive;
 			global::Exponea.Resource.Attribute.itemTextColor = global::XamarinExample.Droid.Resource.Attribute.itemTextColor;
-			global::Exponea.Resource.Attribute.key = global::XamarinExample.Droid.Resource.Attribute.key;
-			global::Exponea.Resource.Attribute.keyboardIcon = global::XamarinExample.Droid.Resource.Attribute.keyboardIcon;
 			global::Exponea.Resource.Attribute.keylines = global::XamarinExample.Droid.Resource.Attribute.keylines;
 			global::Exponea.Resource.Attribute.keyPositionType = global::XamarinExample.Droid.Resource.Attribute.keyPositionType;
 			global::Exponea.Resource.Attribute.labelBehavior = global::XamarinExample.Droid.Resource.Attribute.labelBehavior;
 			global::Exponea.Resource.Attribute.labelStyle = global::XamarinExample.Droid.Resource.Attribute.labelStyle;
 			global::Exponea.Resource.Attribute.labelVisibilityMode = global::XamarinExample.Droid.Resource.Attribute.labelVisibilityMode;
 			global::Exponea.Resource.Attribute.lastBaselineToBottomHeight = global::XamarinExample.Droid.Resource.Attribute.lastBaselineToBottomHeight;
-			global::Exponea.Resource.Attribute.launchSingleTop = global::XamarinExample.Droid.Resource.Attribute.launchSingleTop;
 			global::Exponea.Resource.Attribute.layout = global::XamarinExample.Droid.Resource.Attribute.layout;
 			global::Exponea.Resource.Attribute.layoutDescription = global::XamarinExample.Droid.Resource.Attribute.layoutDescription;
 			global::Exponea.Resource.Attribute.layoutDuringTransition = global::XamarinExample.Droid.Resource.Attribute.layoutDuringTransition;
@@ -623,8 +515,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.layout_constrainedWidth = global::XamarinExample.Droid.Resource.Attribute.layout_constrainedWidth;
 			global::Exponea.Resource.Attribute.layout_constraintBaseline_creator = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBaseline_creator;
 			global::Exponea.Resource.Attribute.layout_constraintBaseline_toBaselineOf = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBaseline_toBaselineOf;
-			global::Exponea.Resource.Attribute.layout_constraintBaseline_toBottomOf = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBaseline_toBottomOf;
-			global::Exponea.Resource.Attribute.layout_constraintBaseline_toTopOf = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBaseline_toTopOf;
 			global::Exponea.Resource.Attribute.layout_constraintBottom_creator = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBottom_creator;
 			global::Exponea.Resource.Attribute.layout_constraintBottom_toBottomOf = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBottom_toBottomOf;
 			global::Exponea.Resource.Attribute.layout_constraintBottom_toTopOf = global::XamarinExample.Droid.Resource.Attribute.layout_constraintBottom_toTopOf;
@@ -637,7 +527,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.layout_constraintGuide_begin = global::XamarinExample.Droid.Resource.Attribute.layout_constraintGuide_begin;
 			global::Exponea.Resource.Attribute.layout_constraintGuide_end = global::XamarinExample.Droid.Resource.Attribute.layout_constraintGuide_end;
 			global::Exponea.Resource.Attribute.layout_constraintGuide_percent = global::XamarinExample.Droid.Resource.Attribute.layout_constraintGuide_percent;
-			global::Exponea.Resource.Attribute.layout_constraintHeight = global::XamarinExample.Droid.Resource.Attribute.layout_constraintHeight;
 			global::Exponea.Resource.Attribute.layout_constraintHeight_default = global::XamarinExample.Droid.Resource.Attribute.layout_constraintHeight_default;
 			global::Exponea.Resource.Attribute.layout_constraintHeight_max = global::XamarinExample.Droid.Resource.Attribute.layout_constraintHeight_max;
 			global::Exponea.Resource.Attribute.layout_constraintHeight_min = global::XamarinExample.Droid.Resource.Attribute.layout_constraintHeight_min;
@@ -660,7 +549,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.layout_constraintVertical_bias = global::XamarinExample.Droid.Resource.Attribute.layout_constraintVertical_bias;
 			global::Exponea.Resource.Attribute.layout_constraintVertical_chainStyle = global::XamarinExample.Droid.Resource.Attribute.layout_constraintVertical_chainStyle;
 			global::Exponea.Resource.Attribute.layout_constraintVertical_weight = global::XamarinExample.Droid.Resource.Attribute.layout_constraintVertical_weight;
-			global::Exponea.Resource.Attribute.layout_constraintWidth = global::XamarinExample.Droid.Resource.Attribute.layout_constraintWidth;
 			global::Exponea.Resource.Attribute.layout_constraintWidth_default = global::XamarinExample.Droid.Resource.Attribute.layout_constraintWidth_default;
 			global::Exponea.Resource.Attribute.layout_constraintWidth_max = global::XamarinExample.Droid.Resource.Attribute.layout_constraintWidth_max;
 			global::Exponea.Resource.Attribute.layout_constraintWidth_min = global::XamarinExample.Droid.Resource.Attribute.layout_constraintWidth_min;
@@ -668,7 +556,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.layout_dodgeInsetEdges = global::XamarinExample.Droid.Resource.Attribute.layout_dodgeInsetEdges;
 			global::Exponea.Resource.Attribute.layout_editor_absoluteX = global::XamarinExample.Droid.Resource.Attribute.layout_editor_absoluteX;
 			global::Exponea.Resource.Attribute.layout_editor_absoluteY = global::XamarinExample.Droid.Resource.Attribute.layout_editor_absoluteY;
-			global::Exponea.Resource.Attribute.layout_goneMarginBaseline = global::XamarinExample.Droid.Resource.Attribute.layout_goneMarginBaseline;
 			global::Exponea.Resource.Attribute.layout_goneMarginBottom = global::XamarinExample.Droid.Resource.Attribute.layout_goneMarginBottom;
 			global::Exponea.Resource.Attribute.layout_goneMarginEnd = global::XamarinExample.Droid.Resource.Attribute.layout_goneMarginEnd;
 			global::Exponea.Resource.Attribute.layout_goneMarginLeft = global::XamarinExample.Droid.Resource.Attribute.layout_goneMarginLeft;
@@ -677,15 +564,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.layout_goneMarginTop = global::XamarinExample.Droid.Resource.Attribute.layout_goneMarginTop;
 			global::Exponea.Resource.Attribute.layout_insetEdge = global::XamarinExample.Droid.Resource.Attribute.layout_insetEdge;
 			global::Exponea.Resource.Attribute.layout_keyline = global::XamarinExample.Droid.Resource.Attribute.layout_keyline;
-			global::Exponea.Resource.Attribute.layout_marginBaseline = global::XamarinExample.Droid.Resource.Attribute.layout_marginBaseline;
 			global::Exponea.Resource.Attribute.layout_optimizationLevel = global::XamarinExample.Droid.Resource.Attribute.layout_optimizationLevel;
 			global::Exponea.Resource.Attribute.layout_scrollFlags = global::XamarinExample.Droid.Resource.Attribute.layout_scrollFlags;
 			global::Exponea.Resource.Attribute.layout_scrollInterpolator = global::XamarinExample.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Exponea.Resource.Attribute.layout_wrapBehaviorInParent = global::XamarinExample.Droid.Resource.Attribute.layout_wrapBehaviorInParent;
 			global::Exponea.Resource.Attribute.liftOnScroll = global::XamarinExample.Droid.Resource.Attribute.liftOnScroll;
 			global::Exponea.Resource.Attribute.liftOnScrollTargetViewId = global::XamarinExample.Droid.Resource.Attribute.liftOnScrollTargetViewId;
 			global::Exponea.Resource.Attribute.limitBoundsTo = global::XamarinExample.Droid.Resource.Attribute.limitBoundsTo;
-			global::Exponea.Resource.Attribute.linearProgressIndicatorStyle = global::XamarinExample.Droid.Resource.Attribute.linearProgressIndicatorStyle;
 			global::Exponea.Resource.Attribute.lineHeight = global::XamarinExample.Droid.Resource.Attribute.lineHeight;
 			global::Exponea.Resource.Attribute.lineSpacing = global::XamarinExample.Droid.Resource.Attribute.lineSpacing;
 			global::Exponea.Resource.Attribute.listChoiceBackgroundIndicator = global::XamarinExample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
@@ -715,24 +599,16 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.materialButtonToggleGroupStyle = global::XamarinExample.Droid.Resource.Attribute.materialButtonToggleGroupStyle;
 			global::Exponea.Resource.Attribute.materialCalendarDay = global::XamarinExample.Droid.Resource.Attribute.materialCalendarDay;
 			global::Exponea.Resource.Attribute.materialCalendarFullscreenTheme = global::XamarinExample.Droid.Resource.Attribute.materialCalendarFullscreenTheme;
-			global::Exponea.Resource.Attribute.materialCalendarHeaderCancelButton = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderCancelButton;
 			global::Exponea.Resource.Attribute.materialCalendarHeaderConfirmButton = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderConfirmButton;
 			global::Exponea.Resource.Attribute.materialCalendarHeaderDivider = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderDivider;
 			global::Exponea.Resource.Attribute.materialCalendarHeaderLayout = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderLayout;
 			global::Exponea.Resource.Attribute.materialCalendarHeaderSelection = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderSelection;
 			global::Exponea.Resource.Attribute.materialCalendarHeaderTitle = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderTitle;
 			global::Exponea.Resource.Attribute.materialCalendarHeaderToggleButton = global::XamarinExample.Droid.Resource.Attribute.materialCalendarHeaderToggleButton;
-			global::Exponea.Resource.Attribute.materialCalendarMonth = global::XamarinExample.Droid.Resource.Attribute.materialCalendarMonth;
-			global::Exponea.Resource.Attribute.materialCalendarMonthNavigationButton = global::XamarinExample.Droid.Resource.Attribute.materialCalendarMonthNavigationButton;
 			global::Exponea.Resource.Attribute.materialCalendarStyle = global::XamarinExample.Droid.Resource.Attribute.materialCalendarStyle;
 			global::Exponea.Resource.Attribute.materialCalendarTheme = global::XamarinExample.Droid.Resource.Attribute.materialCalendarTheme;
-			global::Exponea.Resource.Attribute.materialCalendarYearNavigationButton = global::XamarinExample.Droid.Resource.Attribute.materialCalendarYearNavigationButton;
 			global::Exponea.Resource.Attribute.materialCardViewStyle = global::XamarinExample.Droid.Resource.Attribute.materialCardViewStyle;
-			global::Exponea.Resource.Attribute.materialCircleRadius = global::XamarinExample.Droid.Resource.Attribute.materialCircleRadius;
-			global::Exponea.Resource.Attribute.materialClockStyle = global::XamarinExample.Droid.Resource.Attribute.materialClockStyle;
 			global::Exponea.Resource.Attribute.materialThemeOverlay = global::XamarinExample.Droid.Resource.Attribute.materialThemeOverlay;
-			global::Exponea.Resource.Attribute.materialTimePickerStyle = global::XamarinExample.Droid.Resource.Attribute.materialTimePickerStyle;
-			global::Exponea.Resource.Attribute.materialTimePickerTheme = global::XamarinExample.Droid.Resource.Attribute.materialTimePickerTheme;
 			global::Exponea.Resource.Attribute.maxAcceleration = global::XamarinExample.Droid.Resource.Attribute.maxAcceleration;
 			global::Exponea.Resource.Attribute.maxActionInlineWidth = global::XamarinExample.Droid.Resource.Attribute.maxActionInlineWidth;
 			global::Exponea.Resource.Attribute.maxButtonHeight = global::XamarinExample.Droid.Resource.Attribute.maxButtonHeight;
@@ -744,13 +620,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.maxWidth = global::XamarinExample.Droid.Resource.Attribute.maxWidth;
 			global::Exponea.Resource.Attribute.measureWithLargestChild = global::XamarinExample.Droid.Resource.Attribute.measureWithLargestChild;
 			global::Exponea.Resource.Attribute.menu = global::XamarinExample.Droid.Resource.Attribute.menu;
-			global::Exponea.Resource.Attribute.menuGravity = global::XamarinExample.Droid.Resource.Attribute.menuGravity;
-			global::Exponea.Resource.Attribute.methodName = global::XamarinExample.Droid.Resource.Attribute.methodName;
-			global::Exponea.Resource.Attribute.mimeType = global::XamarinExample.Droid.Resource.Attribute.mimeType;
-			global::Exponea.Resource.Attribute.min = global::XamarinExample.Droid.Resource.Attribute.min;
 			global::Exponea.Resource.Attribute.minHeight = global::XamarinExample.Droid.Resource.Attribute.minHeight;
-			global::Exponea.Resource.Attribute.minHideDelay = global::XamarinExample.Droid.Resource.Attribute.minHideDelay;
-			global::Exponea.Resource.Attribute.minSeparation = global::XamarinExample.Droid.Resource.Attribute.minSeparation;
 			global::Exponea.Resource.Attribute.minTouchTargetSize = global::XamarinExample.Droid.Resource.Attribute.minTouchTargetSize;
 			global::Exponea.Resource.Attribute.minWidth = global::XamarinExample.Droid.Resource.Attribute.minWidth;
 			global::Exponea.Resource.Attribute.mock_diagonalsColor = global::XamarinExample.Droid.Resource.Attribute.mock_diagonalsColor;
@@ -760,27 +630,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.mock_showDiagonals = global::XamarinExample.Droid.Resource.Attribute.mock_showDiagonals;
 			global::Exponea.Resource.Attribute.mock_showLabel = global::XamarinExample.Droid.Resource.Attribute.mock_showLabel;
 			global::Exponea.Resource.Attribute.motionDebug = global::XamarinExample.Droid.Resource.Attribute.motionDebug;
-			global::Exponea.Resource.Attribute.motionDurationLong1 = global::XamarinExample.Droid.Resource.Attribute.motionDurationLong1;
-			global::Exponea.Resource.Attribute.motionDurationLong2 = global::XamarinExample.Droid.Resource.Attribute.motionDurationLong2;
-			global::Exponea.Resource.Attribute.motionDurationMedium1 = global::XamarinExample.Droid.Resource.Attribute.motionDurationMedium1;
-			global::Exponea.Resource.Attribute.motionDurationMedium2 = global::XamarinExample.Droid.Resource.Attribute.motionDurationMedium2;
-			global::Exponea.Resource.Attribute.motionDurationShort1 = global::XamarinExample.Droid.Resource.Attribute.motionDurationShort1;
-			global::Exponea.Resource.Attribute.motionDurationShort2 = global::XamarinExample.Droid.Resource.Attribute.motionDurationShort2;
-			global::Exponea.Resource.Attribute.motionEasingAccelerated = global::XamarinExample.Droid.Resource.Attribute.motionEasingAccelerated;
-			global::Exponea.Resource.Attribute.motionEasingDecelerated = global::XamarinExample.Droid.Resource.Attribute.motionEasingDecelerated;
-			global::Exponea.Resource.Attribute.motionEasingEmphasized = global::XamarinExample.Droid.Resource.Attribute.motionEasingEmphasized;
-			global::Exponea.Resource.Attribute.motionEasingLinear = global::XamarinExample.Droid.Resource.Attribute.motionEasingLinear;
-			global::Exponea.Resource.Attribute.motionEasingStandard = global::XamarinExample.Droid.Resource.Attribute.motionEasingStandard;
-			global::Exponea.Resource.Attribute.motionEffect_alpha = global::XamarinExample.Droid.Resource.Attribute.motionEffect_alpha;
-			global::Exponea.Resource.Attribute.motionEffect_end = global::XamarinExample.Droid.Resource.Attribute.motionEffect_end;
-			global::Exponea.Resource.Attribute.motionEffect_move = global::XamarinExample.Droid.Resource.Attribute.motionEffect_move;
-			global::Exponea.Resource.Attribute.motionEffect_start = global::XamarinExample.Droid.Resource.Attribute.motionEffect_start;
-			global::Exponea.Resource.Attribute.motionEffect_strict = global::XamarinExample.Droid.Resource.Attribute.motionEffect_strict;
-			global::Exponea.Resource.Attribute.motionEffect_translationX = global::XamarinExample.Droid.Resource.Attribute.motionEffect_translationX;
-			global::Exponea.Resource.Attribute.motionEffect_translationY = global::XamarinExample.Droid.Resource.Attribute.motionEffect_translationY;
-			global::Exponea.Resource.Attribute.motionEffect_viewTransition = global::XamarinExample.Droid.Resource.Attribute.motionEffect_viewTransition;
 			global::Exponea.Resource.Attribute.motionInterpolator = global::XamarinExample.Droid.Resource.Attribute.motionInterpolator;
-			global::Exponea.Resource.Attribute.motionPath = global::XamarinExample.Droid.Resource.Attribute.motionPath;
 			global::Exponea.Resource.Attribute.motionPathRotate = global::XamarinExample.Droid.Resource.Attribute.motionPathRotate;
 			global::Exponea.Resource.Attribute.motionProgress = global::XamarinExample.Droid.Resource.Attribute.motionProgress;
 			global::Exponea.Resource.Attribute.motionStagger = global::XamarinExample.Droid.Resource.Attribute.motionStagger;
@@ -789,18 +639,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.motion_triggerOnCollision = global::XamarinExample.Droid.Resource.Attribute.motion_triggerOnCollision;
 			global::Exponea.Resource.Attribute.moveWhenScrollAtTop = global::XamarinExample.Droid.Resource.Attribute.moveWhenScrollAtTop;
 			global::Exponea.Resource.Attribute.multiChoiceItemLayout = global::XamarinExample.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Exponea.Resource.Attribute.navGraph = global::XamarinExample.Droid.Resource.Attribute.navGraph;
 			global::Exponea.Resource.Attribute.navigationContentDescription = global::XamarinExample.Droid.Resource.Attribute.navigationContentDescription;
 			global::Exponea.Resource.Attribute.navigationIcon = global::XamarinExample.Droid.Resource.Attribute.navigationIcon;
-			global::Exponea.Resource.Attribute.navigationIconTint = global::XamarinExample.Droid.Resource.Attribute.navigationIconTint;
 			global::Exponea.Resource.Attribute.navigationMode = global::XamarinExample.Droid.Resource.Attribute.navigationMode;
-			global::Exponea.Resource.Attribute.navigationRailStyle = global::XamarinExample.Droid.Resource.Attribute.navigationRailStyle;
 			global::Exponea.Resource.Attribute.navigationViewStyle = global::XamarinExample.Droid.Resource.Attribute.navigationViewStyle;
-			global::Exponea.Resource.Attribute.negativeButtonText = global::XamarinExample.Droid.Resource.Attribute.negativeButtonText;
-			global::Exponea.Resource.Attribute.nestedScrollable = global::XamarinExample.Droid.Resource.Attribute.nestedScrollable;
 			global::Exponea.Resource.Attribute.nestedScrollFlags = global::XamarinExample.Droid.Resource.Attribute.nestedScrollFlags;
 			global::Exponea.Resource.Attribute.nestedScrollViewStyle = global::XamarinExample.Droid.Resource.Attribute.nestedScrollViewStyle;
-			global::Exponea.Resource.Attribute.nullable = global::XamarinExample.Droid.Resource.Attribute.nullable;
 			global::Exponea.Resource.Attribute.number = global::XamarinExample.Droid.Resource.Attribute.number;
 			global::Exponea.Resource.Attribute.numericModifiers = global::XamarinExample.Droid.Resource.Attribute.numericModifiers;
 			global::Exponea.Resource.Attribute.onCross = global::XamarinExample.Droid.Resource.Attribute.onCross;
@@ -808,10 +652,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.onNegativeCross = global::XamarinExample.Droid.Resource.Attribute.onNegativeCross;
 			global::Exponea.Resource.Attribute.onPositiveCross = global::XamarinExample.Droid.Resource.Attribute.onPositiveCross;
 			global::Exponea.Resource.Attribute.onShow = global::XamarinExample.Droid.Resource.Attribute.onShow;
-			global::Exponea.Resource.Attribute.onStateTransition = global::XamarinExample.Droid.Resource.Attribute.onStateTransition;
 			global::Exponea.Resource.Attribute.onTouchUp = global::XamarinExample.Droid.Resource.Attribute.onTouchUp;
-			global::Exponea.Resource.Attribute.order = global::XamarinExample.Droid.Resource.Attribute.order;
-			global::Exponea.Resource.Attribute.orderingFromXml = global::XamarinExample.Droid.Resource.Attribute.orderingFromXml;
 			global::Exponea.Resource.Attribute.overlapAnchor = global::XamarinExample.Droid.Resource.Attribute.overlapAnchor;
 			global::Exponea.Resource.Attribute.overlay = global::XamarinExample.Droid.Resource.Attribute.overlay;
 			global::Exponea.Resource.Attribute.paddingBottomNoButtons = global::XamarinExample.Droid.Resource.Attribute.paddingBottomNoButtons;
@@ -821,7 +662,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.paddingRightSystemWindowInsets = global::XamarinExample.Droid.Resource.Attribute.paddingRightSystemWindowInsets;
 			global::Exponea.Resource.Attribute.paddingStart = global::XamarinExample.Droid.Resource.Attribute.paddingStart;
 			global::Exponea.Resource.Attribute.paddingTopNoTitle = global::XamarinExample.Droid.Resource.Attribute.paddingTopNoTitle;
-			global::Exponea.Resource.Attribute.paddingTopSystemWindowInsets = global::XamarinExample.Droid.Resource.Attribute.paddingTopSystemWindowInsets;
 			global::Exponea.Resource.Attribute.panelBackground = global::XamarinExample.Droid.Resource.Attribute.panelBackground;
 			global::Exponea.Resource.Attribute.panelMenuListTheme = global::XamarinExample.Droid.Resource.Attribute.panelMenuListTheme;
 			global::Exponea.Resource.Attribute.panelMenuListWidth = global::XamarinExample.Droid.Resource.Attribute.panelMenuListWidth;
@@ -837,31 +677,15 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.percentX = global::XamarinExample.Droid.Resource.Attribute.percentX;
 			global::Exponea.Resource.Attribute.percentY = global::XamarinExample.Droid.Resource.Attribute.percentY;
 			global::Exponea.Resource.Attribute.perpendicularPath_percent = global::XamarinExample.Droid.Resource.Attribute.perpendicularPath_percent;
-			global::Exponea.Resource.Attribute.persistent = global::XamarinExample.Droid.Resource.Attribute.persistent;
 			global::Exponea.Resource.Attribute.pivotAnchor = global::XamarinExample.Droid.Resource.Attribute.pivotAnchor;
 			global::Exponea.Resource.Attribute.placeholderText = global::XamarinExample.Droid.Resource.Attribute.placeholderText;
 			global::Exponea.Resource.Attribute.placeholderTextAppearance = global::XamarinExample.Droid.Resource.Attribute.placeholderTextAppearance;
 			global::Exponea.Resource.Attribute.placeholderTextColor = global::XamarinExample.Droid.Resource.Attribute.placeholderTextColor;
 			global::Exponea.Resource.Attribute.placeholder_emptyVisibility = global::XamarinExample.Droid.Resource.Attribute.placeholder_emptyVisibility;
-			global::Exponea.Resource.Attribute.polarRelativeTo = global::XamarinExample.Droid.Resource.Attribute.polarRelativeTo;
-			global::Exponea.Resource.Attribute.popEnterAnim = global::XamarinExample.Droid.Resource.Attribute.popEnterAnim;
-			global::Exponea.Resource.Attribute.popExitAnim = global::XamarinExample.Droid.Resource.Attribute.popExitAnim;
 			global::Exponea.Resource.Attribute.popupMenuBackground = global::XamarinExample.Droid.Resource.Attribute.popupMenuBackground;
 			global::Exponea.Resource.Attribute.popupMenuStyle = global::XamarinExample.Droid.Resource.Attribute.popupMenuStyle;
 			global::Exponea.Resource.Attribute.popupTheme = global::XamarinExample.Droid.Resource.Attribute.popupTheme;
-			global::Exponea.Resource.Attribute.popUpTo = global::XamarinExample.Droid.Resource.Attribute.popUpTo;
-			global::Exponea.Resource.Attribute.popUpToInclusive = global::XamarinExample.Droid.Resource.Attribute.popUpToInclusive;
 			global::Exponea.Resource.Attribute.popupWindowStyle = global::XamarinExample.Droid.Resource.Attribute.popupWindowStyle;
-			global::Exponea.Resource.Attribute.positiveButtonText = global::XamarinExample.Droid.Resource.Attribute.positiveButtonText;
-			global::Exponea.Resource.Attribute.preferenceCategoryStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceCategoryStyle;
-			global::Exponea.Resource.Attribute.preferenceCategoryTitleTextAppearance = global::XamarinExample.Droid.Resource.Attribute.preferenceCategoryTitleTextAppearance;
-			global::Exponea.Resource.Attribute.preferenceFragmentCompatStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceFragmentCompatStyle;
-			global::Exponea.Resource.Attribute.preferenceFragmentListStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceFragmentListStyle;
-			global::Exponea.Resource.Attribute.preferenceFragmentStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceFragmentStyle;
-			global::Exponea.Resource.Attribute.preferenceInformationStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceInformationStyle;
-			global::Exponea.Resource.Attribute.preferenceScreenStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceScreenStyle;
-			global::Exponea.Resource.Attribute.preferenceStyle = global::XamarinExample.Droid.Resource.Attribute.preferenceStyle;
-			global::Exponea.Resource.Attribute.preferenceTheme = global::XamarinExample.Droid.Resource.Attribute.preferenceTheme;
 			global::Exponea.Resource.Attribute.prefixText = global::XamarinExample.Droid.Resource.Attribute.prefixText;
 			global::Exponea.Resource.Attribute.prefixTextAppearance = global::XamarinExample.Droid.Resource.Attribute.prefixTextAppearance;
 			global::Exponea.Resource.Attribute.prefixTextColor = global::XamarinExample.Droid.Resource.Attribute.prefixTextColor;
@@ -869,9 +693,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.pressedTranslationZ = global::XamarinExample.Droid.Resource.Attribute.pressedTranslationZ;
 			global::Exponea.Resource.Attribute.progressBarPadding = global::XamarinExample.Droid.Resource.Attribute.progressBarPadding;
 			global::Exponea.Resource.Attribute.progressBarStyle = global::XamarinExample.Droid.Resource.Attribute.progressBarStyle;
-			global::Exponea.Resource.Attribute.quantizeMotionInterpolator = global::XamarinExample.Droid.Resource.Attribute.quantizeMotionInterpolator;
-			global::Exponea.Resource.Attribute.quantizeMotionPhase = global::XamarinExample.Droid.Resource.Attribute.quantizeMotionPhase;
-			global::Exponea.Resource.Attribute.quantizeMotionSteps = global::XamarinExample.Droid.Resource.Attribute.quantizeMotionSteps;
 			global::Exponea.Resource.Attribute.queryBackground = global::XamarinExample.Droid.Resource.Attribute.queryBackground;
 			global::Exponea.Resource.Attribute.queryHint = global::XamarinExample.Droid.Resource.Attribute.queryHint;
 			global::Exponea.Resource.Attribute.queryPatterns = global::XamarinExample.Droid.Resource.Attribute.queryPatterns;
@@ -880,10 +701,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.ratingBarStyle = global::XamarinExample.Droid.Resource.Attribute.ratingBarStyle;
 			global::Exponea.Resource.Attribute.ratingBarStyleIndicator = global::XamarinExample.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Exponea.Resource.Attribute.ratingBarStyleSmall = global::XamarinExample.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Exponea.Resource.Attribute.reactiveGuide_animateChange = global::XamarinExample.Droid.Resource.Attribute.reactiveGuide_animateChange;
-			global::Exponea.Resource.Attribute.reactiveGuide_applyToAllConstraintSets = global::XamarinExample.Droid.Resource.Attribute.reactiveGuide_applyToAllConstraintSets;
-			global::Exponea.Resource.Attribute.reactiveGuide_applyToConstraintSet = global::XamarinExample.Droid.Resource.Attribute.reactiveGuide_applyToConstraintSet;
-			global::Exponea.Resource.Attribute.reactiveGuide_valueId = global::XamarinExample.Droid.Resource.Attribute.reactiveGuide_valueId;
 			global::Exponea.Resource.Attribute.recyclerViewStyle = global::XamarinExample.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Exponea.Resource.Attribute.region_heightLessThan = global::XamarinExample.Droid.Resource.Attribute.region_heightLessThan;
 			global::Exponea.Resource.Attribute.region_heightMoreThan = global::XamarinExample.Droid.Resource.Attribute.region_heightMoreThan;
@@ -891,11 +708,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.region_widthMoreThan = global::XamarinExample.Droid.Resource.Attribute.region_widthMoreThan;
 			global::Exponea.Resource.Attribute.reverseLayout = global::XamarinExample.Droid.Resource.Attribute.reverseLayout;
 			global::Exponea.Resource.Attribute.rippleColor = global::XamarinExample.Droid.Resource.Attribute.rippleColor;
-			global::Exponea.Resource.Attribute.rotationCenterId = global::XamarinExample.Droid.Resource.Attribute.rotationCenterId;
 			global::Exponea.Resource.Attribute.round = global::XamarinExample.Droid.Resource.Attribute.round;
 			global::Exponea.Resource.Attribute.roundPercent = global::XamarinExample.Droid.Resource.Attribute.roundPercent;
 			global::Exponea.Resource.Attribute.saturation = global::XamarinExample.Droid.Resource.Attribute.saturation;
-			global::Exponea.Resource.Attribute.scaleFromTextSize = global::XamarinExample.Droid.Resource.Attribute.scaleFromTextSize;
 			global::Exponea.Resource.Attribute.scrimAnimationDuration = global::XamarinExample.Droid.Resource.Attribute.scrimAnimationDuration;
 			global::Exponea.Resource.Attribute.scrimBackground = global::XamarinExample.Droid.Resource.Attribute.scrimBackground;
 			global::Exponea.Resource.Attribute.scrimVisibleHeightTrigger = global::XamarinExample.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
@@ -903,37 +718,25 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.searchHintIcon = global::XamarinExample.Droid.Resource.Attribute.searchHintIcon;
 			global::Exponea.Resource.Attribute.searchIcon = global::XamarinExample.Droid.Resource.Attribute.searchIcon;
 			global::Exponea.Resource.Attribute.searchViewStyle = global::XamarinExample.Droid.Resource.Attribute.searchViewStyle;
-			global::Exponea.Resource.Attribute.seekBarIncrement = global::XamarinExample.Droid.Resource.Attribute.seekBarIncrement;
-			global::Exponea.Resource.Attribute.seekBarPreferenceStyle = global::XamarinExample.Droid.Resource.Attribute.seekBarPreferenceStyle;
 			global::Exponea.Resource.Attribute.seekBarStyle = global::XamarinExample.Droid.Resource.Attribute.seekBarStyle;
-			global::Exponea.Resource.Attribute.selectable = global::XamarinExample.Droid.Resource.Attribute.selectable;
 			global::Exponea.Resource.Attribute.selectableItemBackground = global::XamarinExample.Droid.Resource.Attribute.selectableItemBackground;
 			global::Exponea.Resource.Attribute.selectableItemBackgroundBorderless = global::XamarinExample.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
 			global::Exponea.Resource.Attribute.selectionRequired = global::XamarinExample.Droid.Resource.Attribute.selectionRequired;
-			global::Exponea.Resource.Attribute.selectorSize = global::XamarinExample.Droid.Resource.Attribute.selectorSize;
-			global::Exponea.Resource.Attribute.setsTag = global::XamarinExample.Droid.Resource.Attribute.setsTag;
 			global::Exponea.Resource.Attribute.shapeAppearance = global::XamarinExample.Droid.Resource.Attribute.shapeAppearance;
 			global::Exponea.Resource.Attribute.shapeAppearanceLargeComponent = global::XamarinExample.Droid.Resource.Attribute.shapeAppearanceLargeComponent;
 			global::Exponea.Resource.Attribute.shapeAppearanceMediumComponent = global::XamarinExample.Droid.Resource.Attribute.shapeAppearanceMediumComponent;
 			global::Exponea.Resource.Attribute.shapeAppearanceOverlay = global::XamarinExample.Droid.Resource.Attribute.shapeAppearanceOverlay;
 			global::Exponea.Resource.Attribute.shapeAppearanceSmallComponent = global::XamarinExample.Droid.Resource.Attribute.shapeAppearanceSmallComponent;
-			global::Exponea.Resource.Attribute.SharedValue = global::XamarinExample.Droid.Resource.Attribute.SharedValue;
-			global::Exponea.Resource.Attribute.SharedValueId = global::XamarinExample.Droid.Resource.Attribute.SharedValueId;
 			global::Exponea.Resource.Attribute.shortcutMatchRequired = global::XamarinExample.Droid.Resource.Attribute.shortcutMatchRequired;
-			global::Exponea.Resource.Attribute.shouldDisableView = global::XamarinExample.Droid.Resource.Attribute.shouldDisableView;
-			global::Exponea.Resource.Attribute.showAnimationBehavior = global::XamarinExample.Droid.Resource.Attribute.showAnimationBehavior;
 			global::Exponea.Resource.Attribute.showAsAction = global::XamarinExample.Droid.Resource.Attribute.showAsAction;
-			global::Exponea.Resource.Attribute.showDelay = global::XamarinExample.Droid.Resource.Attribute.showDelay;
 			global::Exponea.Resource.Attribute.showDividers = global::XamarinExample.Droid.Resource.Attribute.showDividers;
 			global::Exponea.Resource.Attribute.showMotionSpec = global::XamarinExample.Droid.Resource.Attribute.showMotionSpec;
 			global::Exponea.Resource.Attribute.showPaths = global::XamarinExample.Droid.Resource.Attribute.showPaths;
-			global::Exponea.Resource.Attribute.showSeekBarValue = global::XamarinExample.Droid.Resource.Attribute.showSeekBarValue;
 			global::Exponea.Resource.Attribute.showText = global::XamarinExample.Droid.Resource.Attribute.showText;
 			global::Exponea.Resource.Attribute.showTitle = global::XamarinExample.Droid.Resource.Attribute.showTitle;
 			global::Exponea.Resource.Attribute.shrinkMotionSpec = global::XamarinExample.Droid.Resource.Attribute.shrinkMotionSpec;
 			global::Exponea.Resource.Attribute.singleChoiceItemLayout = global::XamarinExample.Droid.Resource.Attribute.singleChoiceItemLayout;
 			global::Exponea.Resource.Attribute.singleLine = global::XamarinExample.Droid.Resource.Attribute.singleLine;
-			global::Exponea.Resource.Attribute.singleLineTitle = global::XamarinExample.Droid.Resource.Attribute.singleLineTitle;
 			global::Exponea.Resource.Attribute.singleSelection = global::XamarinExample.Droid.Resource.Attribute.singleSelection;
 			global::Exponea.Resource.Attribute.sizePercent = global::XamarinExample.Droid.Resource.Attribute.sizePercent;
 			global::Exponea.Resource.Attribute.sliderStyle = global::XamarinExample.Droid.Resource.Attribute.sliderStyle;
@@ -945,15 +748,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.spinnerDropDownItemStyle = global::XamarinExample.Droid.Resource.Attribute.spinnerDropDownItemStyle;
 			global::Exponea.Resource.Attribute.spinnerStyle = global::XamarinExample.Droid.Resource.Attribute.spinnerStyle;
 			global::Exponea.Resource.Attribute.splitTrack = global::XamarinExample.Droid.Resource.Attribute.splitTrack;
-			global::Exponea.Resource.Attribute.springBoundary = global::XamarinExample.Droid.Resource.Attribute.springBoundary;
-			global::Exponea.Resource.Attribute.springDamping = global::XamarinExample.Droid.Resource.Attribute.springDamping;
-			global::Exponea.Resource.Attribute.springMass = global::XamarinExample.Droid.Resource.Attribute.springMass;
-			global::Exponea.Resource.Attribute.springStiffness = global::XamarinExample.Droid.Resource.Attribute.springStiffness;
-			global::Exponea.Resource.Attribute.springStopThreshold = global::XamarinExample.Droid.Resource.Attribute.springStopThreshold;
 			global::Exponea.Resource.Attribute.srcCompat = global::XamarinExample.Droid.Resource.Attribute.srcCompat;
 			global::Exponea.Resource.Attribute.stackFromEnd = global::XamarinExample.Droid.Resource.Attribute.stackFromEnd;
 			global::Exponea.Resource.Attribute.staggered = global::XamarinExample.Droid.Resource.Attribute.staggered;
-			global::Exponea.Resource.Attribute.startDestination = global::XamarinExample.Droid.Resource.Attribute.startDestination;
 			global::Exponea.Resource.Attribute.startIconCheckable = global::XamarinExample.Droid.Resource.Attribute.startIconCheckable;
 			global::Exponea.Resource.Attribute.startIconContentDescription = global::XamarinExample.Droid.Resource.Attribute.startIconContentDescription;
 			global::Exponea.Resource.Attribute.startIconDrawable = global::XamarinExample.Droid.Resource.Attribute.startIconDrawable;
@@ -973,7 +770,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.subMenuArrow = global::XamarinExample.Droid.Resource.Attribute.subMenuArrow;
 			global::Exponea.Resource.Attribute.submitBackground = global::XamarinExample.Droid.Resource.Attribute.submitBackground;
 			global::Exponea.Resource.Attribute.subtitle = global::XamarinExample.Droid.Resource.Attribute.subtitle;
-			global::Exponea.Resource.Attribute.subtitleCentered = global::XamarinExample.Droid.Resource.Attribute.subtitleCentered;
 			global::Exponea.Resource.Attribute.subtitleTextAppearance = global::XamarinExample.Droid.Resource.Attribute.subtitleTextAppearance;
 			global::Exponea.Resource.Attribute.subtitleTextColor = global::XamarinExample.Droid.Resource.Attribute.subtitleTextColor;
 			global::Exponea.Resource.Attribute.subtitleTextStyle = global::XamarinExample.Droid.Resource.Attribute.subtitleTextStyle;
@@ -981,18 +777,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.suffixTextAppearance = global::XamarinExample.Droid.Resource.Attribute.suffixTextAppearance;
 			global::Exponea.Resource.Attribute.suffixTextColor = global::XamarinExample.Droid.Resource.Attribute.suffixTextColor;
 			global::Exponea.Resource.Attribute.suggestionRowLayout = global::XamarinExample.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Exponea.Resource.Attribute.summary = global::XamarinExample.Droid.Resource.Attribute.summary;
-			global::Exponea.Resource.Attribute.summaryOff = global::XamarinExample.Droid.Resource.Attribute.summaryOff;
-			global::Exponea.Resource.Attribute.summaryOn = global::XamarinExample.Droid.Resource.Attribute.summaryOn;
 			global::Exponea.Resource.Attribute.swipeRefreshLayoutProgressSpinnerBackgroundColor = global::XamarinExample.Droid.Resource.Attribute.swipeRefreshLayoutProgressSpinnerBackgroundColor;
 			global::Exponea.Resource.Attribute.switchMinWidth = global::XamarinExample.Droid.Resource.Attribute.switchMinWidth;
 			global::Exponea.Resource.Attribute.switchPadding = global::XamarinExample.Droid.Resource.Attribute.switchPadding;
-			global::Exponea.Resource.Attribute.switchPreferenceCompatStyle = global::XamarinExample.Droid.Resource.Attribute.switchPreferenceCompatStyle;
-			global::Exponea.Resource.Attribute.switchPreferenceStyle = global::XamarinExample.Droid.Resource.Attribute.switchPreferenceStyle;
 			global::Exponea.Resource.Attribute.switchStyle = global::XamarinExample.Droid.Resource.Attribute.switchStyle;
 			global::Exponea.Resource.Attribute.switchTextAppearance = global::XamarinExample.Droid.Resource.Attribute.switchTextAppearance;
-			global::Exponea.Resource.Attribute.switchTextOff = global::XamarinExample.Droid.Resource.Attribute.switchTextOff;
-			global::Exponea.Resource.Attribute.switchTextOn = global::XamarinExample.Droid.Resource.Attribute.switchTextOn;
 			global::Exponea.Resource.Attribute.tabBackground = global::XamarinExample.Droid.Resource.Attribute.tabBackground;
 			global::Exponea.Resource.Attribute.tabContentStart = global::XamarinExample.Droid.Resource.Attribute.tabContentStart;
 			global::Exponea.Resource.Attribute.tabGravity = global::XamarinExample.Droid.Resource.Attribute.tabGravity;
@@ -1000,7 +789,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.tabIconTintMode = global::XamarinExample.Droid.Resource.Attribute.tabIconTintMode;
 			global::Exponea.Resource.Attribute.tabIndicator = global::XamarinExample.Droid.Resource.Attribute.tabIndicator;
 			global::Exponea.Resource.Attribute.tabIndicatorAnimationDuration = global::XamarinExample.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
-			global::Exponea.Resource.Attribute.tabIndicatorAnimationMode = global::XamarinExample.Droid.Resource.Attribute.tabIndicatorAnimationMode;
 			global::Exponea.Resource.Attribute.tabIndicatorColor = global::XamarinExample.Droid.Resource.Attribute.tabIndicatorColor;
 			global::Exponea.Resource.Attribute.tabIndicatorFullWidth = global::XamarinExample.Droid.Resource.Attribute.tabIndicatorFullWidth;
 			global::Exponea.Resource.Attribute.tabIndicatorGravity = global::XamarinExample.Droid.Resource.Attribute.tabIndicatorGravity;
@@ -1021,7 +809,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.tabTextColor = global::XamarinExample.Droid.Resource.Attribute.tabTextColor;
 			global::Exponea.Resource.Attribute.tabUnboundedRipple = global::XamarinExample.Droid.Resource.Attribute.tabUnboundedRipple;
 			global::Exponea.Resource.Attribute.targetId = global::XamarinExample.Droid.Resource.Attribute.targetId;
-			global::Exponea.Resource.Attribute.targetPackage = global::XamarinExample.Droid.Resource.Attribute.targetPackage;
 			global::Exponea.Resource.Attribute.telltales_tailColor = global::XamarinExample.Droid.Resource.Attribute.telltales_tailColor;
 			global::Exponea.Resource.Attribute.telltales_tailScale = global::XamarinExample.Droid.Resource.Attribute.telltales_tailScale;
 			global::Exponea.Resource.Attribute.telltales_velocityMode = global::XamarinExample.Droid.Resource.Attribute.telltales_velocityMode;
@@ -1048,35 +835,19 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.textAppearanceSmallPopupMenu = global::XamarinExample.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::Exponea.Resource.Attribute.textAppearanceSubtitle1 = global::XamarinExample.Droid.Resource.Attribute.textAppearanceSubtitle1;
 			global::Exponea.Resource.Attribute.textAppearanceSubtitle2 = global::XamarinExample.Droid.Resource.Attribute.textAppearanceSubtitle2;
-			global::Exponea.Resource.Attribute.textBackground = global::XamarinExample.Droid.Resource.Attribute.textBackground;
-			global::Exponea.Resource.Attribute.textBackgroundPanX = global::XamarinExample.Droid.Resource.Attribute.textBackgroundPanX;
-			global::Exponea.Resource.Attribute.textBackgroundPanY = global::XamarinExample.Droid.Resource.Attribute.textBackgroundPanY;
-			global::Exponea.Resource.Attribute.textBackgroundRotate = global::XamarinExample.Droid.Resource.Attribute.textBackgroundRotate;
-			global::Exponea.Resource.Attribute.textBackgroundZoom = global::XamarinExample.Droid.Resource.Attribute.textBackgroundZoom;
 			global::Exponea.Resource.Attribute.textColorAlertDialogListItem = global::XamarinExample.Droid.Resource.Attribute.textColorAlertDialogListItem;
 			global::Exponea.Resource.Attribute.textColorSearchUrl = global::XamarinExample.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Exponea.Resource.Attribute.textEndPadding = global::XamarinExample.Droid.Resource.Attribute.textEndPadding;
-			global::Exponea.Resource.Attribute.textFillColor = global::XamarinExample.Droid.Resource.Attribute.textFillColor;
 			global::Exponea.Resource.Attribute.textInputLayoutFocusedRectEnabled = global::XamarinExample.Droid.Resource.Attribute.textInputLayoutFocusedRectEnabled;
 			global::Exponea.Resource.Attribute.textInputStyle = global::XamarinExample.Droid.Resource.Attribute.textInputStyle;
 			global::Exponea.Resource.Attribute.textLocale = global::XamarinExample.Droid.Resource.Attribute.textLocale;
-			global::Exponea.Resource.Attribute.textOutlineColor = global::XamarinExample.Droid.Resource.Attribute.textOutlineColor;
-			global::Exponea.Resource.Attribute.textOutlineThickness = global::XamarinExample.Droid.Resource.Attribute.textOutlineThickness;
-			global::Exponea.Resource.Attribute.textPanX = global::XamarinExample.Droid.Resource.Attribute.textPanX;
-			global::Exponea.Resource.Attribute.textPanY = global::XamarinExample.Droid.Resource.Attribute.textPanY;
 			global::Exponea.Resource.Attribute.textStartPadding = global::XamarinExample.Droid.Resource.Attribute.textStartPadding;
-			global::Exponea.Resource.Attribute.textureBlurFactor = global::XamarinExample.Droid.Resource.Attribute.textureBlurFactor;
-			global::Exponea.Resource.Attribute.textureEffect = global::XamarinExample.Droid.Resource.Attribute.textureEffect;
-			global::Exponea.Resource.Attribute.textureHeight = global::XamarinExample.Droid.Resource.Attribute.textureHeight;
-			global::Exponea.Resource.Attribute.textureWidth = global::XamarinExample.Droid.Resource.Attribute.textureWidth;
 			global::Exponea.Resource.Attribute.theme = global::XamarinExample.Droid.Resource.Attribute.theme;
 			global::Exponea.Resource.Attribute.themeLineHeight = global::XamarinExample.Droid.Resource.Attribute.themeLineHeight;
 			global::Exponea.Resource.Attribute.thickness = global::XamarinExample.Droid.Resource.Attribute.thickness;
 			global::Exponea.Resource.Attribute.thumbColor = global::XamarinExample.Droid.Resource.Attribute.thumbColor;
 			global::Exponea.Resource.Attribute.thumbElevation = global::XamarinExample.Droid.Resource.Attribute.thumbElevation;
 			global::Exponea.Resource.Attribute.thumbRadius = global::XamarinExample.Droid.Resource.Attribute.thumbRadius;
-			global::Exponea.Resource.Attribute.thumbStrokeColor = global::XamarinExample.Droid.Resource.Attribute.thumbStrokeColor;
-			global::Exponea.Resource.Attribute.thumbStrokeWidth = global::XamarinExample.Droid.Resource.Attribute.thumbStrokeWidth;
 			global::Exponea.Resource.Attribute.thumbTextPadding = global::XamarinExample.Droid.Resource.Attribute.thumbTextPadding;
 			global::Exponea.Resource.Attribute.thumbTint = global::XamarinExample.Droid.Resource.Attribute.thumbTint;
 			global::Exponea.Resource.Attribute.thumbTintMode = global::XamarinExample.Droid.Resource.Attribute.thumbTintMode;
@@ -1086,12 +857,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.tickMark = global::XamarinExample.Droid.Resource.Attribute.tickMark;
 			global::Exponea.Resource.Attribute.tickMarkTint = global::XamarinExample.Droid.Resource.Attribute.tickMarkTint;
 			global::Exponea.Resource.Attribute.tickMarkTintMode = global::XamarinExample.Droid.Resource.Attribute.tickMarkTintMode;
-			global::Exponea.Resource.Attribute.tickVisible = global::XamarinExample.Droid.Resource.Attribute.tickVisible;
 			global::Exponea.Resource.Attribute.tint = global::XamarinExample.Droid.Resource.Attribute.tint;
 			global::Exponea.Resource.Attribute.tintMode = global::XamarinExample.Droid.Resource.Attribute.tintMode;
 			global::Exponea.Resource.Attribute.title = global::XamarinExample.Droid.Resource.Attribute.title;
-			global::Exponea.Resource.Attribute.titleCentered = global::XamarinExample.Droid.Resource.Attribute.titleCentered;
-			global::Exponea.Resource.Attribute.titleCollapseMode = global::XamarinExample.Droid.Resource.Attribute.titleCollapseMode;
 			global::Exponea.Resource.Attribute.titleEnabled = global::XamarinExample.Droid.Resource.Attribute.titleEnabled;
 			global::Exponea.Resource.Attribute.titleMargin = global::XamarinExample.Droid.Resource.Attribute.titleMargin;
 			global::Exponea.Resource.Attribute.titleMarginBottom = global::XamarinExample.Droid.Resource.Attribute.titleMarginBottom;
@@ -1116,12 +884,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.trackColor = global::XamarinExample.Droid.Resource.Attribute.trackColor;
 			global::Exponea.Resource.Attribute.trackColorActive = global::XamarinExample.Droid.Resource.Attribute.trackColorActive;
 			global::Exponea.Resource.Attribute.trackColorInactive = global::XamarinExample.Droid.Resource.Attribute.trackColorInactive;
-			global::Exponea.Resource.Attribute.trackCornerRadius = global::XamarinExample.Droid.Resource.Attribute.trackCornerRadius;
 			global::Exponea.Resource.Attribute.trackHeight = global::XamarinExample.Droid.Resource.Attribute.trackHeight;
-			global::Exponea.Resource.Attribute.trackThickness = global::XamarinExample.Droid.Resource.Attribute.trackThickness;
 			global::Exponea.Resource.Attribute.trackTint = global::XamarinExample.Droid.Resource.Attribute.trackTint;
 			global::Exponea.Resource.Attribute.trackTintMode = global::XamarinExample.Droid.Resource.Attribute.trackTintMode;
-			global::Exponea.Resource.Attribute.transformPivotTarget = global::XamarinExample.Droid.Resource.Attribute.transformPivotTarget;
 			global::Exponea.Resource.Attribute.transitionDisable = global::XamarinExample.Droid.Resource.Attribute.transitionDisable;
 			global::Exponea.Resource.Attribute.transitionEasing = global::XamarinExample.Droid.Resource.Attribute.transitionEasing;
 			global::Exponea.Resource.Attribute.transitionFlags = global::XamarinExample.Droid.Resource.Attribute.transitionFlags;
@@ -1131,29 +896,19 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.triggerReceiver = global::XamarinExample.Droid.Resource.Attribute.triggerReceiver;
 			global::Exponea.Resource.Attribute.triggerSlack = global::XamarinExample.Droid.Resource.Attribute.triggerSlack;
 			global::Exponea.Resource.Attribute.ttcIndex = global::XamarinExample.Droid.Resource.Attribute.ttcIndex;
-			global::Exponea.Resource.Attribute.updatesContinuously = global::XamarinExample.Droid.Resource.Attribute.updatesContinuously;
-			global::Exponea.Resource.Attribute.upDuration = global::XamarinExample.Droid.Resource.Attribute.upDuration;
-			global::Exponea.Resource.Attribute.uri = global::XamarinExample.Droid.Resource.Attribute.uri;
 			global::Exponea.Resource.Attribute.useCompatPadding = global::XamarinExample.Droid.Resource.Attribute.useCompatPadding;
 			global::Exponea.Resource.Attribute.useMaterialThemeColors = global::XamarinExample.Droid.Resource.Attribute.useMaterialThemeColors;
-			global::Exponea.Resource.Attribute.useSimpleSummaryProvider = global::XamarinExample.Droid.Resource.Attribute.useSimpleSummaryProvider;
 			global::Exponea.Resource.Attribute.values = global::XamarinExample.Droid.Resource.Attribute.values;
 			global::Exponea.Resource.Attribute.verticalOffset = global::XamarinExample.Droid.Resource.Attribute.verticalOffset;
 			global::Exponea.Resource.Attribute.viewInflaterClass = global::XamarinExample.Droid.Resource.Attribute.viewInflaterClass;
-			global::Exponea.Resource.Attribute.viewTransitionMode = global::XamarinExample.Droid.Resource.Attribute.viewTransitionMode;
-			global::Exponea.Resource.Attribute.viewTransitionOnCross = global::XamarinExample.Droid.Resource.Attribute.viewTransitionOnCross;
-			global::Exponea.Resource.Attribute.viewTransitionOnNegativeCross = global::XamarinExample.Droid.Resource.Attribute.viewTransitionOnNegativeCross;
-			global::Exponea.Resource.Attribute.viewTransitionOnPositiveCross = global::XamarinExample.Droid.Resource.Attribute.viewTransitionOnPositiveCross;
 			global::Exponea.Resource.Attribute.visibilityMode = global::XamarinExample.Droid.Resource.Attribute.visibilityMode;
 			global::Exponea.Resource.Attribute.voiceIcon = global::XamarinExample.Droid.Resource.Attribute.voiceIcon;
 			global::Exponea.Resource.Attribute.warmth = global::XamarinExample.Droid.Resource.Attribute.warmth;
 			global::Exponea.Resource.Attribute.waveDecay = global::XamarinExample.Droid.Resource.Attribute.waveDecay;
 			global::Exponea.Resource.Attribute.waveOffset = global::XamarinExample.Droid.Resource.Attribute.waveOffset;
 			global::Exponea.Resource.Attribute.wavePeriod = global::XamarinExample.Droid.Resource.Attribute.wavePeriod;
-			global::Exponea.Resource.Attribute.wavePhase = global::XamarinExample.Droid.Resource.Attribute.wavePhase;
 			global::Exponea.Resource.Attribute.waveShape = global::XamarinExample.Droid.Resource.Attribute.waveShape;
 			global::Exponea.Resource.Attribute.waveVariesBy = global::XamarinExample.Droid.Resource.Attribute.waveVariesBy;
-			global::Exponea.Resource.Attribute.widgetLayout = global::XamarinExample.Droid.Resource.Attribute.widgetLayout;
 			global::Exponea.Resource.Attribute.windowActionBar = global::XamarinExample.Droid.Resource.Attribute.windowActionBar;
 			global::Exponea.Resource.Attribute.windowActionBarOverlay = global::XamarinExample.Droid.Resource.Attribute.windowActionBarOverlay;
 			global::Exponea.Resource.Attribute.windowActionModeOverlay = global::XamarinExample.Droid.Resource.Attribute.windowActionModeOverlay;
@@ -1169,7 +924,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Attribute.yearTodayStyle = global::XamarinExample.Droid.Resource.Attribute.yearTodayStyle;
 			global::Exponea.Resource.Boolean.abc_action_bar_embed_tabs = global::XamarinExample.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Exponea.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::XamarinExample.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Exponea.Resource.Boolean.config_materialPreferenceIconSpaceReserved = global::XamarinExample.Droid.Resource.Boolean.config_materialPreferenceIconSpaceReserved;
 			global::Exponea.Resource.Boolean.enable_system_alarm_service_default = global::XamarinExample.Droid.Resource.Boolean.enable_system_alarm_service_default;
 			global::Exponea.Resource.Boolean.enable_system_foreground_service_default = global::XamarinExample.Droid.Resource.Boolean.enable_system_foreground_service_default;
 			global::Exponea.Resource.Boolean.enable_system_job_service_default = global::XamarinExample.Droid.Resource.Boolean.enable_system_job_service_default;
@@ -1276,7 +1030,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Color.material_blue_grey_800 = global::XamarinExample.Droid.Resource.Color.material_blue_grey_800;
 			global::Exponea.Resource.Color.material_blue_grey_900 = global::XamarinExample.Droid.Resource.Color.material_blue_grey_900;
 			global::Exponea.Resource.Color.material_blue_grey_950 = global::XamarinExample.Droid.Resource.Color.material_blue_grey_950;
-			global::Exponea.Resource.Color.material_cursor_color = global::XamarinExample.Droid.Resource.Color.material_cursor_color;
 			global::Exponea.Resource.Color.material_deep_teal_200 = global::XamarinExample.Droid.Resource.Color.material_deep_teal_200;
 			global::Exponea.Resource.Color.material_deep_teal_500 = global::XamarinExample.Droid.Resource.Color.material_deep_teal_500;
 			global::Exponea.Resource.Color.material_grey_100 = global::XamarinExample.Droid.Resource.Color.material_grey_100;
@@ -1302,11 +1055,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Color.material_slider_inactive_tick_marks_color = global::XamarinExample.Droid.Resource.Color.material_slider_inactive_tick_marks_color;
 			global::Exponea.Resource.Color.material_slider_inactive_track_color = global::XamarinExample.Droid.Resource.Color.material_slider_inactive_track_color;
 			global::Exponea.Resource.Color.material_slider_thumb_color = global::XamarinExample.Droid.Resource.Color.material_slider_thumb_color;
-			global::Exponea.Resource.Color.material_timepicker_button_background = global::XamarinExample.Droid.Resource.Color.material_timepicker_button_background;
-			global::Exponea.Resource.Color.material_timepicker_button_stroke = global::XamarinExample.Droid.Resource.Color.material_timepicker_button_stroke;
-			global::Exponea.Resource.Color.material_timepicker_clockface = global::XamarinExample.Droid.Resource.Color.material_timepicker_clockface;
-			global::Exponea.Resource.Color.material_timepicker_clock_text_color = global::XamarinExample.Droid.Resource.Color.material_timepicker_clock_text_color;
-			global::Exponea.Resource.Color.material_timepicker_modebutton_tint = global::XamarinExample.Droid.Resource.Color.material_timepicker_modebutton_tint;
 			global::Exponea.Resource.Color.mtrl_btn_bg_color_selector = global::XamarinExample.Droid.Resource.Color.mtrl_btn_bg_color_selector;
 			global::Exponea.Resource.Color.mtrl_btn_ripple_color = global::XamarinExample.Droid.Resource.Color.mtrl_btn_ripple_color;
 			global::Exponea.Resource.Color.mtrl_btn_stroke_color_selector = global::XamarinExample.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
@@ -1334,15 +1082,10 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Color.mtrl_filled_icon_tint = global::XamarinExample.Droid.Resource.Color.mtrl_filled_icon_tint;
 			global::Exponea.Resource.Color.mtrl_filled_stroke_color = global::XamarinExample.Droid.Resource.Color.mtrl_filled_stroke_color;
 			global::Exponea.Resource.Color.mtrl_indicator_text_color = global::XamarinExample.Droid.Resource.Color.mtrl_indicator_text_color;
-			global::Exponea.Resource.Color.mtrl_navigation_bar_colored_item_tint = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_bar_colored_item_tint;
-			global::Exponea.Resource.Color.mtrl_navigation_bar_colored_ripple_color = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_bar_colored_ripple_color;
-			global::Exponea.Resource.Color.mtrl_navigation_bar_item_tint = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_bar_item_tint;
-			global::Exponea.Resource.Color.mtrl_navigation_bar_ripple_color = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_bar_ripple_color;
 			global::Exponea.Resource.Color.mtrl_navigation_item_background_color = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_item_background_color;
 			global::Exponea.Resource.Color.mtrl_navigation_item_icon_tint = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_item_icon_tint;
 			global::Exponea.Resource.Color.mtrl_navigation_item_text_color = global::XamarinExample.Droid.Resource.Color.mtrl_navigation_item_text_color;
 			global::Exponea.Resource.Color.mtrl_on_primary_text_btn_text_color_selector = global::XamarinExample.Droid.Resource.Color.mtrl_on_primary_text_btn_text_color_selector;
-			global::Exponea.Resource.Color.mtrl_on_surface_ripple_color = global::XamarinExample.Droid.Resource.Color.mtrl_on_surface_ripple_color;
 			global::Exponea.Resource.Color.mtrl_outlined_icon_tint = global::XamarinExample.Droid.Resource.Color.mtrl_outlined_icon_tint;
 			global::Exponea.Resource.Color.mtrl_outlined_stroke_color = global::XamarinExample.Droid.Resource.Color.mtrl_outlined_stroke_color;
 			global::Exponea.Resource.Color.mtrl_popupmenu_overlay_color = global::XamarinExample.Droid.Resource.Color.mtrl_popupmenu_overlay_color;
@@ -1361,7 +1104,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Color.notification_action_color_filter = global::XamarinExample.Droid.Resource.Color.notification_action_color_filter;
 			global::Exponea.Resource.Color.notification_icon_bg_color = global::XamarinExample.Droid.Resource.Color.notification_icon_bg_color;
 			global::Exponea.Resource.Color.notification_material_background_media_default_color = global::XamarinExample.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Exponea.Resource.Color.preference_fallback_accent_color = global::XamarinExample.Droid.Resource.Color.preference_fallback_accent_color;
 			global::Exponea.Resource.Color.primary_dark_material_dark = global::XamarinExample.Droid.Resource.Color.primary_dark_material_dark;
 			global::Exponea.Resource.Color.primary_dark_material_light = global::XamarinExample.Droid.Resource.Color.primary_dark_material_light;
 			global::Exponea.Resource.Color.primary_material_dark = global::XamarinExample.Droid.Resource.Color.primary_material_dark;
@@ -1446,9 +1188,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.abc_seekbar_track_background_height_material = global::XamarinExample.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
 			global::Exponea.Resource.Dimension.abc_seekbar_track_progress_height_material = global::XamarinExample.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
 			global::Exponea.Resource.Dimension.abc_select_dialog_padding_start_material = global::XamarinExample.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Exponea.Resource.Dimension.abc_star_big = global::XamarinExample.Droid.Resource.Dimension.abc_star_big;
-			global::Exponea.Resource.Dimension.abc_star_medium = global::XamarinExample.Droid.Resource.Dimension.abc_star_medium;
-			global::Exponea.Resource.Dimension.abc_star_small = global::XamarinExample.Droid.Resource.Dimension.abc_star_small;
 			global::Exponea.Resource.Dimension.abc_switch_padding = global::XamarinExample.Droid.Resource.Dimension.abc_switch_padding;
 			global::Exponea.Resource.Dimension.abc_text_size_body_1_material = global::XamarinExample.Droid.Resource.Dimension.abc_text_size_body_1_material;
 			global::Exponea.Resource.Dimension.abc_text_size_body_2_material = global::XamarinExample.Droid.Resource.Dimension.abc_text_size_body_2_material;
@@ -1475,7 +1214,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.cardview_compat_inset_shadow = global::XamarinExample.Droid.Resource.Dimension.cardview_compat_inset_shadow;
 			global::Exponea.Resource.Dimension.cardview_default_elevation = global::XamarinExample.Droid.Resource.Dimension.cardview_default_elevation;
 			global::Exponea.Resource.Dimension.cardview_default_radius = global::XamarinExample.Droid.Resource.Dimension.cardview_default_radius;
-			global::Exponea.Resource.Dimension.clock_face_margin_start = global::XamarinExample.Droid.Resource.Dimension.clock_face_margin_start;
 			global::Exponea.Resource.Dimension.compat_button_inset_horizontal_material = global::XamarinExample.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
 			global::Exponea.Resource.Dimension.compat_button_inset_vertical_material = global::XamarinExample.Droid.Resource.Dimension.compat_button_inset_vertical_material;
 			global::Exponea.Resource.Dimension.compat_button_padding_horizontal_material = global::XamarinExample.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
@@ -1494,7 +1232,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.design_bottom_navigation_icon_size = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
 			global::Exponea.Resource.Dimension.design_bottom_navigation_item_max_width = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
 			global::Exponea.Resource.Dimension.design_bottom_navigation_item_min_width = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
-			global::Exponea.Resource.Dimension.design_bottom_navigation_label_padding = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_label_padding;
 			global::Exponea.Resource.Dimension.design_bottom_navigation_margin = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_margin;
 			global::Exponea.Resource.Dimension.design_bottom_navigation_shadow_height = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
 			global::Exponea.Resource.Dimension.design_bottom_navigation_text_size = global::XamarinExample.Droid.Resource.Dimension.design_bottom_navigation_text_size;
@@ -1553,41 +1290,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::XamarinExample.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
 			global::Exponea.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::XamarinExample.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
 			global::Exponea.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::XamarinExample.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Exponea.Resource.Dimension.material_bottom_sheet_max_width = global::XamarinExample.Droid.Resource.Dimension.material_bottom_sheet_max_width;
-			global::Exponea.Resource.Dimension.material_clock_display_padding = global::XamarinExample.Droid.Resource.Dimension.material_clock_display_padding;
-			global::Exponea.Resource.Dimension.material_clock_face_margin_top = global::XamarinExample.Droid.Resource.Dimension.material_clock_face_margin_top;
-			global::Exponea.Resource.Dimension.material_clock_hand_center_dot_radius = global::XamarinExample.Droid.Resource.Dimension.material_clock_hand_center_dot_radius;
-			global::Exponea.Resource.Dimension.material_clock_hand_padding = global::XamarinExample.Droid.Resource.Dimension.material_clock_hand_padding;
-			global::Exponea.Resource.Dimension.material_clock_hand_stroke_width = global::XamarinExample.Droid.Resource.Dimension.material_clock_hand_stroke_width;
-			global::Exponea.Resource.Dimension.material_clock_number_text_size = global::XamarinExample.Droid.Resource.Dimension.material_clock_number_text_size;
-			global::Exponea.Resource.Dimension.material_clock_period_toggle_height = global::XamarinExample.Droid.Resource.Dimension.material_clock_period_toggle_height;
-			global::Exponea.Resource.Dimension.material_clock_period_toggle_margin_left = global::XamarinExample.Droid.Resource.Dimension.material_clock_period_toggle_margin_left;
-			global::Exponea.Resource.Dimension.material_clock_period_toggle_width = global::XamarinExample.Droid.Resource.Dimension.material_clock_period_toggle_width;
-			global::Exponea.Resource.Dimension.material_clock_size = global::XamarinExample.Droid.Resource.Dimension.material_clock_size;
-			global::Exponea.Resource.Dimension.material_cursor_inset_bottom = global::XamarinExample.Droid.Resource.Dimension.material_cursor_inset_bottom;
-			global::Exponea.Resource.Dimension.material_cursor_inset_top = global::XamarinExample.Droid.Resource.Dimension.material_cursor_inset_top;
-			global::Exponea.Resource.Dimension.material_cursor_width = global::XamarinExample.Droid.Resource.Dimension.material_cursor_width;
 			global::Exponea.Resource.Dimension.material_emphasis_disabled = global::XamarinExample.Droid.Resource.Dimension.material_emphasis_disabled;
 			global::Exponea.Resource.Dimension.material_emphasis_high_type = global::XamarinExample.Droid.Resource.Dimension.material_emphasis_high_type;
 			global::Exponea.Resource.Dimension.material_emphasis_medium = global::XamarinExample.Droid.Resource.Dimension.material_emphasis_medium;
-			global::Exponea.Resource.Dimension.material_filled_edittext_font_1_3_padding_bottom = global::XamarinExample.Droid.Resource.Dimension.material_filled_edittext_font_1_3_padding_bottom;
-			global::Exponea.Resource.Dimension.material_filled_edittext_font_1_3_padding_top = global::XamarinExample.Droid.Resource.Dimension.material_filled_edittext_font_1_3_padding_top;
-			global::Exponea.Resource.Dimension.material_filled_edittext_font_2_0_padding_bottom = global::XamarinExample.Droid.Resource.Dimension.material_filled_edittext_font_2_0_padding_bottom;
-			global::Exponea.Resource.Dimension.material_filled_edittext_font_2_0_padding_top = global::XamarinExample.Droid.Resource.Dimension.material_filled_edittext_font_2_0_padding_top;
-			global::Exponea.Resource.Dimension.material_font_1_3_box_collapsed_padding_top = global::XamarinExample.Droid.Resource.Dimension.material_font_1_3_box_collapsed_padding_top;
-			global::Exponea.Resource.Dimension.material_font_2_0_box_collapsed_padding_top = global::XamarinExample.Droid.Resource.Dimension.material_font_2_0_box_collapsed_padding_top;
-			global::Exponea.Resource.Dimension.material_helper_text_default_padding_top = global::XamarinExample.Droid.Resource.Dimension.material_helper_text_default_padding_top;
-			global::Exponea.Resource.Dimension.material_helper_text_font_1_3_padding_horizontal = global::XamarinExample.Droid.Resource.Dimension.material_helper_text_font_1_3_padding_horizontal;
-			global::Exponea.Resource.Dimension.material_helper_text_font_1_3_padding_top = global::XamarinExample.Droid.Resource.Dimension.material_helper_text_font_1_3_padding_top;
-			global::Exponea.Resource.Dimension.material_input_text_to_prefix_suffix_padding = global::XamarinExample.Droid.Resource.Dimension.material_input_text_to_prefix_suffix_padding;
-			global::Exponea.Resource.Dimension.material_textinput_default_width = global::XamarinExample.Droid.Resource.Dimension.material_textinput_default_width;
-			global::Exponea.Resource.Dimension.material_textinput_max_width = global::XamarinExample.Droid.Resource.Dimension.material_textinput_max_width;
-			global::Exponea.Resource.Dimension.material_textinput_min_width = global::XamarinExample.Droid.Resource.Dimension.material_textinput_min_width;
 			global::Exponea.Resource.Dimension.material_text_view_test_line_height = global::XamarinExample.Droid.Resource.Dimension.material_text_view_test_line_height;
 			global::Exponea.Resource.Dimension.material_text_view_test_line_height_override = global::XamarinExample.Droid.Resource.Dimension.material_text_view_test_line_height_override;
-			global::Exponea.Resource.Dimension.material_timepicker_dialog_buttons_margin_top = global::XamarinExample.Droid.Resource.Dimension.material_timepicker_dialog_buttons_margin_top;
-			global::Exponea.Resource.Dimension.material_time_picker_minimum_screen_height = global::XamarinExample.Droid.Resource.Dimension.material_time_picker_minimum_screen_height;
-			global::Exponea.Resource.Dimension.material_time_picker_minimum_screen_width = global::XamarinExample.Droid.Resource.Dimension.material_time_picker_minimum_screen_width;
 			global::Exponea.Resource.Dimension.mtrl_alert_dialog_background_inset_bottom = global::XamarinExample.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_bottom;
 			global::Exponea.Resource.Dimension.mtrl_alert_dialog_background_inset_end = global::XamarinExample.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_end;
 			global::Exponea.Resource.Dimension.mtrl_alert_dialog_background_inset_start = global::XamarinExample.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_start;
@@ -1598,8 +1305,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.mtrl_badge_radius = global::XamarinExample.Droid.Resource.Dimension.mtrl_badge_radius;
 			global::Exponea.Resource.Dimension.mtrl_badge_text_horizontal_edge_offset = global::XamarinExample.Droid.Resource.Dimension.mtrl_badge_text_horizontal_edge_offset;
 			global::Exponea.Resource.Dimension.mtrl_badge_text_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_badge_text_size;
-			global::Exponea.Resource.Dimension.mtrl_badge_toolbar_action_menu_item_horizontal_offset = global::XamarinExample.Droid.Resource.Dimension.mtrl_badge_toolbar_action_menu_item_horizontal_offset;
-			global::Exponea.Resource.Dimension.mtrl_badge_toolbar_action_menu_item_vertical_offset = global::XamarinExample.Droid.Resource.Dimension.mtrl_badge_toolbar_action_menu_item_vertical_offset;
 			global::Exponea.Resource.Dimension.mtrl_badge_with_text_radius = global::XamarinExample.Droid.Resource.Dimension.mtrl_badge_with_text_radius;
 			global::Exponea.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::XamarinExample.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
 			global::Exponea.Resource.Dimension.mtrl_bottomappbar_fab_bottom_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_bottomappbar_fab_bottom_margin;
@@ -1618,20 +1323,17 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.mtrl_btn_icon_padding = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_icon_padding;
 			global::Exponea.Resource.Dimension.mtrl_btn_inset = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_inset;
 			global::Exponea.Resource.Dimension.mtrl_btn_letter_spacing = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
-			global::Exponea.Resource.Dimension.mtrl_btn_max_width = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_max_width;
 			global::Exponea.Resource.Dimension.mtrl_btn_padding_bottom = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
 			global::Exponea.Resource.Dimension.mtrl_btn_padding_left = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_padding_left;
 			global::Exponea.Resource.Dimension.mtrl_btn_padding_right = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_padding_right;
 			global::Exponea.Resource.Dimension.mtrl_btn_padding_top = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_padding_top;
 			global::Exponea.Resource.Dimension.mtrl_btn_pressed_z = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_pressed_z;
-			global::Exponea.Resource.Dimension.mtrl_btn_snackbar_margin_horizontal = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_snackbar_margin_horizontal;
 			global::Exponea.Resource.Dimension.mtrl_btn_stroke_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_stroke_size;
 			global::Exponea.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
 			global::Exponea.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
 			global::Exponea.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
 			global::Exponea.Resource.Dimension.mtrl_btn_text_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_text_size;
 			global::Exponea.Resource.Dimension.mtrl_btn_z = global::XamarinExample.Droid.Resource.Dimension.mtrl_btn_z;
-			global::Exponea.Resource.Dimension.mtrl_calendar_action_confirm_button_min_width = global::XamarinExample.Droid.Resource.Dimension.mtrl_calendar_action_confirm_button_min_width;
 			global::Exponea.Resource.Dimension.mtrl_calendar_action_height = global::XamarinExample.Droid.Resource.Dimension.mtrl_calendar_action_height;
 			global::Exponea.Resource.Dimension.mtrl_calendar_action_padding = global::XamarinExample.Droid.Resource.Dimension.mtrl_calendar_action_padding;
 			global::Exponea.Resource.Dimension.mtrl_calendar_bottom_padding = global::XamarinExample.Droid.Resource.Dimension.mtrl_calendar_bottom_padding;
@@ -1716,37 +1418,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.mtrl_low_ripple_hovered_alpha = global::XamarinExample.Droid.Resource.Dimension.mtrl_low_ripple_hovered_alpha;
 			global::Exponea.Resource.Dimension.mtrl_low_ripple_pressed_alpha = global::XamarinExample.Droid.Resource.Dimension.mtrl_low_ripple_pressed_alpha;
 			global::Exponea.Resource.Dimension.mtrl_min_touch_target_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_min_touch_target_size;
-			global::Exponea.Resource.Dimension.mtrl_navigation_bar_item_default_icon_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_bar_item_default_icon_size;
-			global::Exponea.Resource.Dimension.mtrl_navigation_bar_item_default_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_bar_item_default_margin;
 			global::Exponea.Resource.Dimension.mtrl_navigation_elevation = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_elevation;
 			global::Exponea.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
 			global::Exponea.Resource.Dimension.mtrl_navigation_item_icon_padding = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
 			global::Exponea.Resource.Dimension.mtrl_navigation_item_icon_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_item_icon_size;
 			global::Exponea.Resource.Dimension.mtrl_navigation_item_shape_horizontal_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_item_shape_horizontal_margin;
 			global::Exponea.Resource.Dimension.mtrl_navigation_item_shape_vertical_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_item_shape_vertical_margin;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_active_text_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_active_text_size;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_compact_width = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_compact_width;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_default_width = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_default_width;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_elevation = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_elevation;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_icon_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_icon_margin;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_icon_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_icon_size;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_margin;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_text_bottom_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_text_bottom_margin;
-			global::Exponea.Resource.Dimension.mtrl_navigation_rail_text_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_navigation_rail_text_size;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_inset = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_inset;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_inset_extra_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_inset_extra_small;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_inset_medium = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_inset_medium;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_inset_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_inset_small;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_radius = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_radius;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_size = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_size;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_size_extra_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_size_extra_small;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_size_medium = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_size_medium;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_size_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_size_small;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_track_thickness_extra_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_track_thickness_extra_small;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_track_thickness_medium = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_track_thickness_medium;
-			global::Exponea.Resource.Dimension.mtrl_progress_circular_track_thickness_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_circular_track_thickness_small;
-			global::Exponea.Resource.Dimension.mtrl_progress_indicator_full_rounded_corner_radius = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_indicator_full_rounded_corner_radius;
-			global::Exponea.Resource.Dimension.mtrl_progress_track_thickness = global::XamarinExample.Droid.Resource.Dimension.mtrl_progress_track_thickness;
 			global::Exponea.Resource.Dimension.mtrl_shape_corner_size_large_component = global::XamarinExample.Droid.Resource.Dimension.mtrl_shape_corner_size_large_component;
 			global::Exponea.Resource.Dimension.mtrl_shape_corner_size_medium_component = global::XamarinExample.Droid.Resource.Dimension.mtrl_shape_corner_size_medium_component;
 			global::Exponea.Resource.Dimension.mtrl_shape_corner_size_small_component = global::XamarinExample.Droid.Resource.Dimension.mtrl_shape_corner_size_small_component;
@@ -1764,8 +1441,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::XamarinExample.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
 			global::Exponea.Resource.Dimension.mtrl_snackbar_background_overlay_color_alpha = global::XamarinExample.Droid.Resource.Dimension.mtrl_snackbar_background_overlay_color_alpha;
 			global::Exponea.Resource.Dimension.mtrl_snackbar_margin = global::XamarinExample.Droid.Resource.Dimension.mtrl_snackbar_margin;
-			global::Exponea.Resource.Dimension.mtrl_snackbar_message_margin_horizontal = global::XamarinExample.Droid.Resource.Dimension.mtrl_snackbar_message_margin_horizontal;
-			global::Exponea.Resource.Dimension.mtrl_snackbar_padding_horizontal = global::XamarinExample.Droid.Resource.Dimension.mtrl_snackbar_padding_horizontal;
 			global::Exponea.Resource.Dimension.mtrl_switch_thumb_elevation = global::XamarinExample.Droid.Resource.Dimension.mtrl_switch_thumb_elevation;
 			global::Exponea.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::XamarinExample.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
 			global::Exponea.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::XamarinExample.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
@@ -1798,23 +1473,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Dimension.notification_subtext_size = global::XamarinExample.Droid.Resource.Dimension.notification_subtext_size;
 			global::Exponea.Resource.Dimension.notification_top_pad = global::XamarinExample.Droid.Resource.Dimension.notification_top_pad;
 			global::Exponea.Resource.Dimension.notification_top_pad_large_text = global::XamarinExample.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Exponea.Resource.Dimension.preference_dropdown_padding_start = global::XamarinExample.Droid.Resource.Dimension.preference_dropdown_padding_start;
-			global::Exponea.Resource.Dimension.preference_icon_minWidth = global::XamarinExample.Droid.Resource.Dimension.preference_icon_minWidth;
-			global::Exponea.Resource.Dimension.preference_seekbar_padding_horizontal = global::XamarinExample.Droid.Resource.Dimension.preference_seekbar_padding_horizontal;
-			global::Exponea.Resource.Dimension.preference_seekbar_padding_vertical = global::XamarinExample.Droid.Resource.Dimension.preference_seekbar_padding_vertical;
-			global::Exponea.Resource.Dimension.preference_seekbar_value_minWidth = global::XamarinExample.Droid.Resource.Dimension.preference_seekbar_value_minWidth;
 			global::Exponea.Resource.Dimension.test_mtrl_calendar_day_cornerSize = global::XamarinExample.Droid.Resource.Dimension.test_mtrl_calendar_day_cornerSize;
-			global::Exponea.Resource.Dimension.test_navigation_bar_active_item_max_width = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_active_item_max_width;
-			global::Exponea.Resource.Dimension.test_navigation_bar_active_item_min_width = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_active_item_min_width;
-			global::Exponea.Resource.Dimension.test_navigation_bar_active_text_size = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_active_text_size;
-			global::Exponea.Resource.Dimension.test_navigation_bar_elevation = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_elevation;
-			global::Exponea.Resource.Dimension.test_navigation_bar_height = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_height;
-			global::Exponea.Resource.Dimension.test_navigation_bar_icon_size = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_icon_size;
-			global::Exponea.Resource.Dimension.test_navigation_bar_item_max_width = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_item_max_width;
-			global::Exponea.Resource.Dimension.test_navigation_bar_item_min_width = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_item_min_width;
-			global::Exponea.Resource.Dimension.test_navigation_bar_label_padding = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_label_padding;
-			global::Exponea.Resource.Dimension.test_navigation_bar_shadow_height = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_shadow_height;
-			global::Exponea.Resource.Dimension.test_navigation_bar_text_size = global::XamarinExample.Droid.Resource.Dimension.test_navigation_bar_text_size;
 			global::Exponea.Resource.Dimension.tooltip_corner_radius = global::XamarinExample.Droid.Resource.Dimension.tooltip_corner_radius;
 			global::Exponea.Resource.Dimension.tooltip_horizontal_padding = global::XamarinExample.Droid.Resource.Dimension.tooltip_horizontal_padding;
 			global::Exponea.Resource.Dimension.tooltip_margin = global::XamarinExample.Droid.Resource.Dimension.tooltip_margin;
@@ -1886,8 +1545,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Drawable.abc_seekbar_track_material = global::XamarinExample.Droid.Resource.Drawable.abc_seekbar_track_material;
 			global::Exponea.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::XamarinExample.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
 			global::Exponea.Resource.Drawable.abc_spinner_textfield_background_material = global::XamarinExample.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Exponea.Resource.Drawable.abc_star_black_48dp = global::XamarinExample.Droid.Resource.Drawable.abc_star_black_48dp;
-			global::Exponea.Resource.Drawable.abc_star_half_black_48dp = global::XamarinExample.Droid.Resource.Drawable.abc_star_half_black_48dp;
 			global::Exponea.Resource.Drawable.abc_switch_thumb_material = global::XamarinExample.Droid.Resource.Drawable.abc_switch_thumb_material;
 			global::Exponea.Resource.Drawable.abc_switch_track_mtrl_alpha = global::XamarinExample.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::Exponea.Resource.Drawable.abc_tab_indicator_material = global::XamarinExample.Droid.Resource.Drawable.abc_tab_indicator_material;
@@ -1898,9 +1555,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::XamarinExample.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
 			global::Exponea.Resource.Drawable.abc_textfield_search_material = global::XamarinExample.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Exponea.Resource.Drawable.abc_text_cursor_material = global::XamarinExample.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Exponea.Resource.Drawable.abc_text_select_handle_left_mtrl = global::XamarinExample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl;
-			global::Exponea.Resource.Drawable.abc_text_select_handle_middle_mtrl = global::XamarinExample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl;
-			global::Exponea.Resource.Drawable.abc_text_select_handle_right_mtrl = global::XamarinExample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl;
 			global::Exponea.Resource.Drawable.abc_vector_test = global::XamarinExample.Droid.Resource.Drawable.abc_vector_test;
 			global::Exponea.Resource.Drawable.avd_hide_password = global::XamarinExample.Droid.Resource.Drawable.avd_hide_password;
 			global::Exponea.Resource.Drawable.avd_show_password = global::XamarinExample.Droid.Resource.Drawable.avd_show_password;
@@ -1917,9 +1571,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Drawable.design_ic_visibility_off = global::XamarinExample.Droid.Resource.Drawable.design_ic_visibility_off;
 			global::Exponea.Resource.Drawable.design_password_eye = global::XamarinExample.Droid.Resource.Drawable.design_password_eye;
 			global::Exponea.Resource.Drawable.design_snackbar_background = global::XamarinExample.Droid.Resource.Drawable.design_snackbar_background;
-			global::Exponea.Resource.Drawable.ic_arrow_down_24dp = global::XamarinExample.Droid.Resource.Drawable.ic_arrow_down_24dp;
-			global::Exponea.Resource.Drawable.ic_clock_black_24dp = global::XamarinExample.Droid.Resource.Drawable.ic_clock_black_24dp;
-			global::Exponea.Resource.Drawable.ic_keyboard_black_24dp = global::XamarinExample.Droid.Resource.Drawable.ic_keyboard_black_24dp;
 			global::Exponea.Resource.Drawable.ic_mtrl_checked_circle = global::XamarinExample.Droid.Resource.Drawable.ic_mtrl_checked_circle;
 			global::Exponea.Resource.Drawable.ic_mtrl_chip_checked_black = global::XamarinExample.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
 			global::Exponea.Resource.Drawable.ic_mtrl_chip_checked_circle = global::XamarinExample.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
@@ -1929,13 +1580,10 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Drawable.in_app_message_dialog_button = global::XamarinExample.Droid.Resource.Drawable.in_app_message_dialog_button;
 			global::Exponea.Resource.Drawable.in_app_message_slide_in_background = global::XamarinExample.Droid.Resource.Drawable.in_app_message_slide_in_background;
 			global::Exponea.Resource.Drawable.in_app_message_slide_in_button = global::XamarinExample.Droid.Resource.Drawable.in_app_message_slide_in_button;
-			global::Exponea.Resource.Drawable.material_cursor_drawable = global::XamarinExample.Droid.Resource.Drawable.material_cursor_drawable;
 			global::Exponea.Resource.Drawable.material_ic_calendar_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_calendar_black_24dp;
 			global::Exponea.Resource.Drawable.material_ic_clear_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_clear_black_24dp;
 			global::Exponea.Resource.Drawable.material_ic_edit_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_edit_black_24dp;
 			global::Exponea.Resource.Drawable.material_ic_keyboard_arrow_left_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_keyboard_arrow_left_black_24dp;
-			global::Exponea.Resource.Drawable.material_ic_keyboard_arrow_next_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_keyboard_arrow_next_black_24dp;
-			global::Exponea.Resource.Drawable.material_ic_keyboard_arrow_previous_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_keyboard_arrow_previous_black_24dp;
 			global::Exponea.Resource.Drawable.material_ic_keyboard_arrow_right_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_keyboard_arrow_right_black_24dp;
 			global::Exponea.Resource.Drawable.material_ic_menu_arrow_down_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_menu_arrow_down_black_24dp;
 			global::Exponea.Resource.Drawable.material_ic_menu_arrow_up_black_24dp = global::XamarinExample.Droid.Resource.Drawable.material_ic_menu_arrow_up_black_24dp;
@@ -1945,7 +1593,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Drawable.mtrl_ic_arrow_drop_up = global::XamarinExample.Droid.Resource.Drawable.mtrl_ic_arrow_drop_up;
 			global::Exponea.Resource.Drawable.mtrl_ic_cancel = global::XamarinExample.Droid.Resource.Drawable.mtrl_ic_cancel;
 			global::Exponea.Resource.Drawable.mtrl_ic_error = global::XamarinExample.Droid.Resource.Drawable.mtrl_ic_error;
-			global::Exponea.Resource.Drawable.mtrl_navigation_bar_item_background = global::XamarinExample.Droid.Resource.Drawable.mtrl_navigation_bar_item_background;
 			global::Exponea.Resource.Drawable.mtrl_popupmenu_background = global::XamarinExample.Droid.Resource.Drawable.mtrl_popupmenu_background;
 			global::Exponea.Resource.Drawable.mtrl_popupmenu_background_dark = global::XamarinExample.Droid.Resource.Drawable.mtrl_popupmenu_background_dark;
 			global::Exponea.Resource.Drawable.mtrl_tabs_default_indicator = global::XamarinExample.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
@@ -1962,7 +1609,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Drawable.notification_template_icon_low_bg = global::XamarinExample.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Exponea.Resource.Drawable.notification_tile_bg = global::XamarinExample.Droid.Resource.Drawable.notification_tile_bg;
 			global::Exponea.Resource.Drawable.notify_panel_notification_icon_bg = global::XamarinExample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Exponea.Resource.Drawable.preference_list_divider_material = global::XamarinExample.Droid.Resource.Drawable.preference_list_divider_material;
 			global::Exponea.Resource.Drawable.test_custom_background = global::XamarinExample.Droid.Resource.Drawable.test_custom_background;
 			global::Exponea.Resource.Drawable.tooltip_frame_dark = global::XamarinExample.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Exponea.Resource.Drawable.tooltip_frame_light = global::XamarinExample.Droid.Resource.Drawable.tooltip_frame_light;
@@ -2001,10 +1647,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.accessibility_custom_action_8 = global::XamarinExample.Droid.Resource.Id.accessibility_custom_action_8;
 			global::Exponea.Resource.Id.accessibility_custom_action_9 = global::XamarinExample.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Exponea.Resource.Id.action0 = global::XamarinExample.Droid.Resource.Id.action0;
-			global::Exponea.Resource.Id.actionDown = global::XamarinExample.Droid.Resource.Id.actionDown;
-			global::Exponea.Resource.Id.actionDownUp = global::XamarinExample.Droid.Resource.Id.actionDownUp;
 			global::Exponea.Resource.Id.actions = global::XamarinExample.Droid.Resource.Id.actions;
-			global::Exponea.Resource.Id.actionUp = global::XamarinExample.Droid.Resource.Id.actionUp;
 			global::Exponea.Resource.Id.action_bar = global::XamarinExample.Droid.Resource.Id.action_bar;
 			global::Exponea.Resource.Id.action_bar_activity_content = global::XamarinExample.Droid.Resource.Id.action_bar_activity_content;
 			global::Exponea.Resource.Id.action_bar_container = global::XamarinExample.Droid.Resource.Id.action_bar_container;
@@ -2027,14 +1670,10 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.alertTitle = global::XamarinExample.Droid.Resource.Id.alertTitle;
 			global::Exponea.Resource.Id.aligned = global::XamarinExample.Droid.Resource.Id.aligned;
 			global::Exponea.Resource.Id.all = global::XamarinExample.Droid.Resource.Id.all;
-			global::Exponea.Resource.Id.allStates = global::XamarinExample.Droid.Resource.Id.allStates;
 			global::Exponea.Resource.Id.ALT = global::XamarinExample.Droid.Resource.Id.ALT;
 			global::Exponea.Resource.Id.always = global::XamarinExample.Droid.Resource.Id.always;
 			global::Exponea.Resource.Id.animateToEnd = global::XamarinExample.Droid.Resource.Id.animateToEnd;
 			global::Exponea.Resource.Id.animateToStart = global::XamarinExample.Droid.Resource.Id.animateToStart;
-			global::Exponea.Resource.Id.anticipate = global::XamarinExample.Droid.Resource.Id.anticipate;
-			global::Exponea.Resource.Id.antiClockwise = global::XamarinExample.Droid.Resource.Id.antiClockwise;
-			global::Exponea.Resource.Id.arc = global::XamarinExample.Droid.Resource.Id.arc;
 			global::Exponea.Resource.Id.asConfigured = global::XamarinExample.Droid.Resource.Id.asConfigured;
 			global::Exponea.Resource.Id.async = global::XamarinExample.Droid.Resource.Id.async;
 			global::Exponea.Resource.Id.auto = global::XamarinExample.Droid.Resource.Id.auto;
@@ -2045,7 +1684,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.baseline = global::XamarinExample.Droid.Resource.Id.baseline;
 			global::Exponea.Resource.Id.beginning = global::XamarinExample.Droid.Resource.Id.beginning;
 			global::Exponea.Resource.Id.beginOnFirstDraw = global::XamarinExample.Droid.Resource.Id.beginOnFirstDraw;
-			global::Exponea.Resource.Id.bestChoice = global::XamarinExample.Droid.Resource.Id.bestChoice;
 			global::Exponea.Resource.Id.blocking = global::XamarinExample.Droid.Resource.Id.blocking;
 			global::Exponea.Resource.Id.bottom = global::XamarinExample.Droid.Resource.Id.bottom;
 			global::Exponea.Resource.Id.bottomtab_navarea = global::XamarinExample.Droid.Resource.Id.bottomtab_navarea;
@@ -2053,9 +1691,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.BOTTOM_END = global::XamarinExample.Droid.Resource.Id.BOTTOM_END;
 			global::Exponea.Resource.Id.BOTTOM_START = global::XamarinExample.Droid.Resource.Id.BOTTOM_START;
 			global::Exponea.Resource.Id.bounce = global::XamarinExample.Droid.Resource.Id.bounce;
-			global::Exponea.Resource.Id.bounceBoth = global::XamarinExample.Droid.Resource.Id.bounceBoth;
-			global::Exponea.Resource.Id.bounceEnd = global::XamarinExample.Droid.Resource.Id.bounceEnd;
-			global::Exponea.Resource.Id.bounceStart = global::XamarinExample.Droid.Resource.Id.bounceStart;
 			global::Exponea.Resource.Id.browser_actions_header_text = global::XamarinExample.Droid.Resource.Id.browser_actions_header_text;
 			global::Exponea.Resource.Id.browser_actions_menu_items = global::XamarinExample.Droid.Resource.Id.browser_actions_menu_items;
 			global::Exponea.Resource.Id.browser_actions_menu_item_icon = global::XamarinExample.Droid.Resource.Id.browser_actions_menu_item_icon;
@@ -2069,7 +1704,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.cache_measures = global::XamarinExample.Droid.Resource.Id.cache_measures;
 			global::Exponea.Resource.Id.cancel_action = global::XamarinExample.Droid.Resource.Id.cancel_action;
 			global::Exponea.Resource.Id.cancel_button = global::XamarinExample.Droid.Resource.Id.cancel_button;
-			global::Exponea.Resource.Id.carryVelocity = global::XamarinExample.Droid.Resource.Id.carryVelocity;
 			global::Exponea.Resource.Id.center = global::XamarinExample.Droid.Resource.Id.center;
 			global::Exponea.Resource.Id.center_horizontal = global::XamarinExample.Droid.Resource.Id.center_horizontal;
 			global::Exponea.Resource.Id.center_vertical = global::XamarinExample.Droid.Resource.Id.center_vertical;
@@ -2083,25 +1717,17 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.chip3 = global::XamarinExample.Droid.Resource.Id.chip3;
 			global::Exponea.Resource.Id.chip_group = global::XamarinExample.Droid.Resource.Id.chip_group;
 			global::Exponea.Resource.Id.chronometer = global::XamarinExample.Droid.Resource.Id.chronometer;
-			global::Exponea.Resource.Id.circle_center = global::XamarinExample.Droid.Resource.Id.circle_center;
 			global::Exponea.Resource.Id.clear_text = global::XamarinExample.Droid.Resource.Id.clear_text;
 			global::Exponea.Resource.Id.clip_horizontal = global::XamarinExample.Droid.Resource.Id.clip_horizontal;
 			global::Exponea.Resource.Id.clip_vertical = global::XamarinExample.Droid.Resource.Id.clip_vertical;
-			global::Exponea.Resource.Id.clockwise = global::XamarinExample.Droid.Resource.Id.clockwise;
-			global::Exponea.Resource.Id.closest = global::XamarinExample.Droid.Resource.Id.closest;
 			global::Exponea.Resource.Id.collapseActionView = global::XamarinExample.Droid.Resource.Id.collapseActionView;
 			global::Exponea.Resource.Id.confirm_button = global::XamarinExample.Droid.Resource.Id.confirm_button;
-			global::Exponea.Resource.Id.constraint = global::XamarinExample.Droid.Resource.Id.constraint;
 			global::Exponea.Resource.Id.container = global::XamarinExample.Droid.Resource.Id.container;
 			global::Exponea.Resource.Id.content = global::XamarinExample.Droid.Resource.Id.content;
 			global::Exponea.Resource.Id.contentPanel = global::XamarinExample.Droid.Resource.Id.contentPanel;
-			global::Exponea.Resource.Id.contiguous = global::XamarinExample.Droid.Resource.Id.contiguous;
-			global::Exponea.Resource.Id.continuousVelocity = global::XamarinExample.Droid.Resource.Id.continuousVelocity;
 			global::Exponea.Resource.Id.coordinator = global::XamarinExample.Droid.Resource.Id.coordinator;
 			global::Exponea.Resource.Id.cos = global::XamarinExample.Droid.Resource.Id.cos;
-			global::Exponea.Resource.Id.counterclockwise = global::XamarinExample.Droid.Resource.Id.counterclockwise;
 			global::Exponea.Resource.Id.CTRL = global::XamarinExample.Droid.Resource.Id.CTRL;
-			global::Exponea.Resource.Id.currentState = global::XamarinExample.Droid.Resource.Id.currentState;
 			global::Exponea.Resource.Id.custom = global::XamarinExample.Droid.Resource.Id.custom;
 			global::Exponea.Resource.Id.customPanel = global::XamarinExample.Droid.Resource.Id.customPanel;
 			global::Exponea.Resource.Id.cut = global::XamarinExample.Droid.Resource.Id.cut;
@@ -2121,12 +1747,8 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.dimensions = global::XamarinExample.Droid.Resource.Id.dimensions;
 			global::Exponea.Resource.Id.direct = global::XamarinExample.Droid.Resource.Id.direct;
 			global::Exponea.Resource.Id.disableHome = global::XamarinExample.Droid.Resource.Id.disableHome;
-			global::Exponea.Resource.Id.disableIntraAutoTransition = global::XamarinExample.Droid.Resource.Id.disableIntraAutoTransition;
 			global::Exponea.Resource.Id.disablePostScroll = global::XamarinExample.Droid.Resource.Id.disablePostScroll;
 			global::Exponea.Resource.Id.disableScroll = global::XamarinExample.Droid.Resource.Id.disableScroll;
-			global::Exponea.Resource.Id.disjoint = global::XamarinExample.Droid.Resource.Id.disjoint;
-			global::Exponea.Resource.Id.dragAnticlockwise = global::XamarinExample.Droid.Resource.Id.dragAnticlockwise;
-			global::Exponea.Resource.Id.dragClockwise = global::XamarinExample.Droid.Resource.Id.dragClockwise;
 			global::Exponea.Resource.Id.dragDown = global::XamarinExample.Droid.Resource.Id.dragDown;
 			global::Exponea.Resource.Id.dragEnd = global::XamarinExample.Droid.Resource.Id.dragEnd;
 			global::Exponea.Resource.Id.dragLeft = global::XamarinExample.Droid.Resource.Id.dragLeft;
@@ -2137,11 +1759,8 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.easeIn = global::XamarinExample.Droid.Resource.Id.easeIn;
 			global::Exponea.Resource.Id.easeInOut = global::XamarinExample.Droid.Resource.Id.easeInOut;
 			global::Exponea.Resource.Id.easeOut = global::XamarinExample.Droid.Resource.Id.easeOut;
-			global::Exponea.Resource.Id.east = global::XamarinExample.Droid.Resource.Id.east;
 			global::Exponea.Resource.Id.edit_query = global::XamarinExample.Droid.Resource.Id.edit_query;
-			global::Exponea.Resource.Id.elastic = global::XamarinExample.Droid.Resource.Id.elastic;
 			global::Exponea.Resource.Id.end = global::XamarinExample.Droid.Resource.Id.end;
-			global::Exponea.Resource.Id.endToStart = global::XamarinExample.Droid.Resource.Id.endToStart;
 			global::Exponea.Resource.Id.end_padder = global::XamarinExample.Droid.Resource.Id.end_padder;
 			global::Exponea.Resource.Id.enterAlways = global::XamarinExample.Droid.Resource.Id.enterAlways;
 			global::Exponea.Resource.Id.enterAlwaysCollapsed = global::XamarinExample.Droid.Resource.Id.enterAlwaysCollapsed;
@@ -2160,7 +1779,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.flyoutcontent_appbar = global::XamarinExample.Droid.Resource.Id.flyoutcontent_appbar;
 			global::Exponea.Resource.Id.forever = global::XamarinExample.Droid.Resource.Id.forever;
 			global::Exponea.Resource.Id.fragment_container_view_tag = global::XamarinExample.Droid.Resource.Id.fragment_container_view_tag;
-			global::Exponea.Resource.Id.frost = global::XamarinExample.Droid.Resource.Id.frost;
 			global::Exponea.Resource.Id.FUNCTION = global::XamarinExample.Droid.Resource.Id.FUNCTION;
 			global::Exponea.Resource.Id.ghost_view = global::XamarinExample.Droid.Resource.Id.ghost_view;
 			global::Exponea.Resource.Id.ghost_view_holder = global::XamarinExample.Droid.Resource.Id.ghost_view_holder;
@@ -2170,29 +1788,22 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.grouping = global::XamarinExample.Droid.Resource.Id.grouping;
 			global::Exponea.Resource.Id.groups = global::XamarinExample.Droid.Resource.Id.groups;
 			global::Exponea.Resource.Id.group_divider = global::XamarinExample.Droid.Resource.Id.group_divider;
-			global::Exponea.Resource.Id.guideline = global::XamarinExample.Droid.Resource.Id.guideline;
-			global::Exponea.Resource.Id.header_title = global::XamarinExample.Droid.Resource.Id.header_title;
 			global::Exponea.Resource.Id.hideable = global::XamarinExample.Droid.Resource.Id.hideable;
 			global::Exponea.Resource.Id.home = global::XamarinExample.Droid.Resource.Id.home;
 			global::Exponea.Resource.Id.homeAsUp = global::XamarinExample.Droid.Resource.Id.homeAsUp;
 			global::Exponea.Resource.Id.honorRequest = global::XamarinExample.Droid.Resource.Id.honorRequest;
-			global::Exponea.Resource.Id.horizontal_only = global::XamarinExample.Droid.Resource.Id.horizontal_only;
 			global::Exponea.Resource.Id.icon = global::XamarinExample.Droid.Resource.Id.icon;
-			global::Exponea.Resource.Id.icon_frame = global::XamarinExample.Droid.Resource.Id.icon_frame;
 			global::Exponea.Resource.Id.icon_group = global::XamarinExample.Droid.Resource.Id.icon_group;
 			global::Exponea.Resource.Id.ifRoom = global::XamarinExample.Droid.Resource.Id.ifRoom;
 			global::Exponea.Resource.Id.ignore = global::XamarinExample.Droid.Resource.Id.ignore;
 			global::Exponea.Resource.Id.ignoreRequest = global::XamarinExample.Droid.Resource.Id.ignoreRequest;
 			global::Exponea.Resource.Id.image = global::XamarinExample.Droid.Resource.Id.image;
 			global::Exponea.Resource.Id.imageViewImage = global::XamarinExample.Droid.Resource.Id.imageViewImage;
-			global::Exponea.Resource.Id.immediateStop = global::XamarinExample.Droid.Resource.Id.immediateStop;
 			global::Exponea.Resource.Id.inAppMessageDialogContainer = global::XamarinExample.Droid.Resource.Id.inAppMessageDialogContainer;
 			global::Exponea.Resource.Id.inAppMessageDialogRoot = global::XamarinExample.Droid.Resource.Id.inAppMessageDialogRoot;
 			global::Exponea.Resource.Id.inAppMessageSlideInContainer = global::XamarinExample.Droid.Resource.Id.inAppMessageSlideInContainer;
-			global::Exponea.Resource.Id.included = global::XamarinExample.Droid.Resource.Id.included;
 			global::Exponea.Resource.Id.info = global::XamarinExample.Droid.Resource.Id.info;
 			global::Exponea.Resource.Id.invisible = global::XamarinExample.Droid.Resource.Id.invisible;
-			global::Exponea.Resource.Id.inward = global::XamarinExample.Droid.Resource.Id.inward;
 			global::Exponea.Resource.Id.italic = global::XamarinExample.Droid.Resource.Id.italic;
 			global::Exponea.Resource.Id.item_touch_helper_previous_elevation = global::XamarinExample.Droid.Resource.Id.item_touch_helper_previous_elevation;
 			global::Exponea.Resource.Id.jumpToEnd = global::XamarinExample.Droid.Resource.Id.jumpToEnd;
@@ -2200,8 +1811,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.labeled = global::XamarinExample.Droid.Resource.Id.labeled;
 			global::Exponea.Resource.Id.layout = global::XamarinExample.Droid.Resource.Id.layout;
 			global::Exponea.Resource.Id.left = global::XamarinExample.Droid.Resource.Id.left;
-			global::Exponea.Resource.Id.leftToRight = global::XamarinExample.Droid.Resource.Id.leftToRight;
-			global::Exponea.Resource.Id.legacy = global::XamarinExample.Droid.Resource.Id.legacy;
 			global::Exponea.Resource.Id.line1 = global::XamarinExample.Droid.Resource.Id.line1;
 			global::Exponea.Resource.Id.line3 = global::XamarinExample.Droid.Resource.Id.line3;
 			global::Exponea.Resource.Id.linear = global::XamarinExample.Droid.Resource.Id.linear;
@@ -2213,27 +1822,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.main_toolbar = global::XamarinExample.Droid.Resource.Id.main_toolbar;
 			global::Exponea.Resource.Id.main_viewpager = global::XamarinExample.Droid.Resource.Id.main_viewpager;
 			global::Exponea.Resource.Id.masked = global::XamarinExample.Droid.Resource.Id.masked;
-			global::Exponea.Resource.Id.match_constraint = global::XamarinExample.Droid.Resource.Id.match_constraint;
-			global::Exponea.Resource.Id.match_parent = global::XamarinExample.Droid.Resource.Id.match_parent;
-			global::Exponea.Resource.Id.material_clock_display = global::XamarinExample.Droid.Resource.Id.material_clock_display;
-			global::Exponea.Resource.Id.material_clock_face = global::XamarinExample.Droid.Resource.Id.material_clock_face;
-			global::Exponea.Resource.Id.material_clock_hand = global::XamarinExample.Droid.Resource.Id.material_clock_hand;
-			global::Exponea.Resource.Id.material_clock_period_am_button = global::XamarinExample.Droid.Resource.Id.material_clock_period_am_button;
-			global::Exponea.Resource.Id.material_clock_period_pm_button = global::XamarinExample.Droid.Resource.Id.material_clock_period_pm_button;
-			global::Exponea.Resource.Id.material_clock_period_toggle = global::XamarinExample.Droid.Resource.Id.material_clock_period_toggle;
-			global::Exponea.Resource.Id.material_hour_text_input = global::XamarinExample.Droid.Resource.Id.material_hour_text_input;
-			global::Exponea.Resource.Id.material_hour_tv = global::XamarinExample.Droid.Resource.Id.material_hour_tv;
-			global::Exponea.Resource.Id.material_label = global::XamarinExample.Droid.Resource.Id.material_label;
-			global::Exponea.Resource.Id.material_minute_text_input = global::XamarinExample.Droid.Resource.Id.material_minute_text_input;
-			global::Exponea.Resource.Id.material_minute_tv = global::XamarinExample.Droid.Resource.Id.material_minute_tv;
-			global::Exponea.Resource.Id.material_textinput_timepicker = global::XamarinExample.Droid.Resource.Id.material_textinput_timepicker;
-			global::Exponea.Resource.Id.material_timepicker_cancel_button = global::XamarinExample.Droid.Resource.Id.material_timepicker_cancel_button;
-			global::Exponea.Resource.Id.material_timepicker_container = global::XamarinExample.Droid.Resource.Id.material_timepicker_container;
-			global::Exponea.Resource.Id.material_timepicker_edit_text = global::XamarinExample.Droid.Resource.Id.material_timepicker_edit_text;
-			global::Exponea.Resource.Id.material_timepicker_mode_button = global::XamarinExample.Droid.Resource.Id.material_timepicker_mode_button;
-			global::Exponea.Resource.Id.material_timepicker_ok_button = global::XamarinExample.Droid.Resource.Id.material_timepicker_ok_button;
-			global::Exponea.Resource.Id.material_timepicker_view = global::XamarinExample.Droid.Resource.Id.material_timepicker_view;
-			global::Exponea.Resource.Id.material_value_index = global::XamarinExample.Droid.Resource.Id.material_value_index;
 			global::Exponea.Resource.Id.media_actions = global::XamarinExample.Droid.Resource.Id.media_actions;
 			global::Exponea.Resource.Id.media_controller_compat_view_tag = global::XamarinExample.Droid.Resource.Id.media_controller_compat_view_tag;
 			global::Exponea.Resource.Id.message = global::XamarinExample.Droid.Resource.Id.message;
@@ -2247,7 +1835,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.month_navigation_previous = global::XamarinExample.Droid.Resource.Id.month_navigation_previous;
 			global::Exponea.Resource.Id.month_title = global::XamarinExample.Droid.Resource.Id.month_title;
 			global::Exponea.Resource.Id.motion_base = global::XamarinExample.Droid.Resource.Id.motion_base;
-			global::Exponea.Resource.Id.mtrl_anchor_parent = global::XamarinExample.Droid.Resource.Id.mtrl_anchor_parent;
 			global::Exponea.Resource.Id.mtrl_calendar_days_of_week = global::XamarinExample.Droid.Resource.Id.mtrl_calendar_days_of_week;
 			global::Exponea.Resource.Id.mtrl_calendar_day_selector_frame = global::XamarinExample.Droid.Resource.Id.mtrl_calendar_day_selector_frame;
 			global::Exponea.Resource.Id.mtrl_calendar_frame = global::XamarinExample.Droid.Resource.Id.mtrl_calendar_frame;
@@ -2269,22 +1856,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.mtrl_picker_text_input_range_end = global::XamarinExample.Droid.Resource.Id.mtrl_picker_text_input_range_end;
 			global::Exponea.Resource.Id.mtrl_picker_text_input_range_start = global::XamarinExample.Droid.Resource.Id.mtrl_picker_text_input_range_start;
 			global::Exponea.Resource.Id.mtrl_picker_title_text = global::XamarinExample.Droid.Resource.Id.mtrl_picker_title_text;
-			global::Exponea.Resource.Id.mtrl_view_tag_bottom_padding = global::XamarinExample.Droid.Resource.Id.mtrl_view_tag_bottom_padding;
 			global::Exponea.Resource.Id.multiply = global::XamarinExample.Droid.Resource.Id.multiply;
-			global::Exponea.Resource.Id.navigation_bar_item_icon_view = global::XamarinExample.Droid.Resource.Id.navigation_bar_item_icon_view;
-			global::Exponea.Resource.Id.navigation_bar_item_labels_group = global::XamarinExample.Droid.Resource.Id.navigation_bar_item_labels_group;
-			global::Exponea.Resource.Id.navigation_bar_item_large_label_view = global::XamarinExample.Droid.Resource.Id.navigation_bar_item_large_label_view;
-			global::Exponea.Resource.Id.navigation_bar_item_small_label_view = global::XamarinExample.Droid.Resource.Id.navigation_bar_item_small_label_view;
 			global::Exponea.Resource.Id.navigation_header_container = global::XamarinExample.Droid.Resource.Id.navigation_header_container;
-			global::Exponea.Resource.Id.nav_controller_view_tag = global::XamarinExample.Droid.Resource.Id.nav_controller_view_tag;
 			global::Exponea.Resource.Id.never = global::XamarinExample.Droid.Resource.Id.never;
-			global::Exponea.Resource.Id.neverCompleteToEnd = global::XamarinExample.Droid.Resource.Id.neverCompleteToEnd;
-			global::Exponea.Resource.Id.neverCompleteToStart = global::XamarinExample.Droid.Resource.Id.neverCompleteToStart;
 			global::Exponea.Resource.Id.none = global::XamarinExample.Droid.Resource.Id.none;
 			global::Exponea.Resource.Id.normal = global::XamarinExample.Droid.Resource.Id.normal;
-			global::Exponea.Resource.Id.north = global::XamarinExample.Droid.Resource.Id.north;
 			global::Exponea.Resource.Id.noScroll = global::XamarinExample.Droid.Resource.Id.noScroll;
-			global::Exponea.Resource.Id.noState = global::XamarinExample.Droid.Resource.Id.noState;
 			global::Exponea.Resource.Id.notification_background = global::XamarinExample.Droid.Resource.Id.notification_background;
 			global::Exponea.Resource.Id.notification_main_column = global::XamarinExample.Droid.Resource.Id.notification_main_column;
 			global::Exponea.Resource.Id.notification_main_column_container = global::XamarinExample.Droid.Resource.Id.notification_main_column_container;
@@ -2292,8 +1869,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.off = global::XamarinExample.Droid.Resource.Id.off;
 			global::Exponea.Resource.Id.on = global::XamarinExample.Droid.Resource.Id.on;
 			global::Exponea.Resource.Id.outline = global::XamarinExample.Droid.Resource.Id.outline;
-			global::Exponea.Resource.Id.outward = global::XamarinExample.Droid.Resource.Id.outward;
-			global::Exponea.Resource.Id.overshoot = global::XamarinExample.Droid.Resource.Id.overshoot;
 			global::Exponea.Resource.Id.packed = global::XamarinExample.Droid.Resource.Id.packed;
 			global::Exponea.Resource.Id.parallax = global::XamarinExample.Droid.Resource.Id.parallax;
 			global::Exponea.Resource.Id.parent = global::XamarinExample.Droid.Resource.Id.parent;
@@ -2313,10 +1888,8 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.radio = global::XamarinExample.Droid.Resource.Id.radio;
 			global::Exponea.Resource.Id.ratio = global::XamarinExample.Droid.Resource.Id.ratio;
 			global::Exponea.Resource.Id.rectangles = global::XamarinExample.Droid.Resource.Id.rectangles;
-			global::Exponea.Resource.Id.recycler_view = global::XamarinExample.Droid.Resource.Id.recycler_view;
 			global::Exponea.Resource.Id.reverseSawtooth = global::XamarinExample.Droid.Resource.Id.reverseSawtooth;
 			global::Exponea.Resource.Id.right = global::XamarinExample.Droid.Resource.Id.right;
-			global::Exponea.Resource.Id.rightToLeft = global::XamarinExample.Droid.Resource.Id.rightToLeft;
 			global::Exponea.Resource.Id.right_icon = global::XamarinExample.Droid.Resource.Id.right_icon;
 			global::Exponea.Resource.Id.right_side = global::XamarinExample.Droid.Resource.Id.right_side;
 			global::Exponea.Resource.Id.rounded = global::XamarinExample.Droid.Resource.Id.rounded;
@@ -2341,13 +1914,8 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.search_plate = global::XamarinExample.Droid.Resource.Id.search_plate;
 			global::Exponea.Resource.Id.search_src_text = global::XamarinExample.Droid.Resource.Id.search_src_text;
 			global::Exponea.Resource.Id.search_voice_btn = global::XamarinExample.Droid.Resource.Id.search_voice_btn;
-			global::Exponea.Resource.Id.seekbar = global::XamarinExample.Droid.Resource.Id.seekbar;
-			global::Exponea.Resource.Id.seekbar_value = global::XamarinExample.Droid.Resource.Id.seekbar_value;
 			global::Exponea.Resource.Id.selected = global::XamarinExample.Droid.Resource.Id.selected;
-			global::Exponea.Resource.Id.selection_type = global::XamarinExample.Droid.Resource.Id.selection_type;
 			global::Exponea.Resource.Id.select_dialog_listview = global::XamarinExample.Droid.Resource.Id.select_dialog_listview;
-			global::Exponea.Resource.Id.sharedValueSet = global::XamarinExample.Droid.Resource.Id.sharedValueSet;
-			global::Exponea.Resource.Id.sharedValueUnset = global::XamarinExample.Droid.Resource.Id.sharedValueUnset;
 			global::Exponea.Resource.Id.shellcontent_appbar = global::XamarinExample.Droid.Resource.Id.shellcontent_appbar;
 			global::Exponea.Resource.Id.shellcontent_toolbar = global::XamarinExample.Droid.Resource.Id.shellcontent_toolbar;
 			global::Exponea.Resource.Id.SHIFT = global::XamarinExample.Droid.Resource.Id.SHIFT;
@@ -2360,22 +1928,17 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.SHOW_PROGRESS = global::XamarinExample.Droid.Resource.Id.SHOW_PROGRESS;
 			global::Exponea.Resource.Id.sin = global::XamarinExample.Droid.Resource.Id.sin;
 			global::Exponea.Resource.Id.skipCollapsed = global::XamarinExample.Droid.Resource.Id.skipCollapsed;
-			global::Exponea.Resource.Id.skipped = global::XamarinExample.Droid.Resource.Id.skipped;
 			global::Exponea.Resource.Id.slide = global::XamarinExample.Droid.Resource.Id.slide;
 			global::Exponea.Resource.Id.sliding_tabs = global::XamarinExample.Droid.Resource.Id.sliding_tabs;
 			global::Exponea.Resource.Id.snackbar_action = global::XamarinExample.Droid.Resource.Id.snackbar_action;
 			global::Exponea.Resource.Id.snackbar_text = global::XamarinExample.Droid.Resource.Id.snackbar_text;
 			global::Exponea.Resource.Id.snap = global::XamarinExample.Droid.Resource.Id.snap;
 			global::Exponea.Resource.Id.snapMargins = global::XamarinExample.Droid.Resource.Id.snapMargins;
-			global::Exponea.Resource.Id.south = global::XamarinExample.Droid.Resource.Id.south;
 			global::Exponea.Resource.Id.spacer = global::XamarinExample.Droid.Resource.Id.spacer;
-			global::Exponea.Resource.Id.special_effects_controller_view_tag = global::XamarinExample.Droid.Resource.Id.special_effects_controller_view_tag;
-			global::Exponea.Resource.Id.spinner = global::XamarinExample.Droid.Resource.Id.spinner;
 			global::Exponea.Resource.Id.spline = global::XamarinExample.Droid.Resource.Id.spline;
 			global::Exponea.Resource.Id.split_action_bar = global::XamarinExample.Droid.Resource.Id.split_action_bar;
 			global::Exponea.Resource.Id.spread = global::XamarinExample.Droid.Resource.Id.spread;
 			global::Exponea.Resource.Id.spread_inside = global::XamarinExample.Droid.Resource.Id.spread_inside;
-			global::Exponea.Resource.Id.spring = global::XamarinExample.Droid.Resource.Id.spring;
 			global::Exponea.Resource.Id.square = global::XamarinExample.Droid.Resource.Id.square;
 			global::Exponea.Resource.Id.src_atop = global::XamarinExample.Droid.Resource.Id.src_atop;
 			global::Exponea.Resource.Id.src_in = global::XamarinExample.Droid.Resource.Id.src_in;
@@ -2383,7 +1946,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.standard = global::XamarinExample.Droid.Resource.Id.standard;
 			global::Exponea.Resource.Id.start = global::XamarinExample.Droid.Resource.Id.start;
 			global::Exponea.Resource.Id.startHorizontal = global::XamarinExample.Droid.Resource.Id.startHorizontal;
-			global::Exponea.Resource.Id.startToEnd = global::XamarinExample.Droid.Resource.Id.startToEnd;
 			global::Exponea.Resource.Id.startVertical = global::XamarinExample.Droid.Resource.Id.startVertical;
 			global::Exponea.Resource.Id.staticLayout = global::XamarinExample.Droid.Resource.Id.staticLayout;
 			global::Exponea.Resource.Id.staticPostLayout = global::XamarinExample.Droid.Resource.Id.staticPostLayout;
@@ -2392,8 +1954,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.stretch = global::XamarinExample.Droid.Resource.Id.stretch;
 			global::Exponea.Resource.Id.submenuarrow = global::XamarinExample.Droid.Resource.Id.submenuarrow;
 			global::Exponea.Resource.Id.submit_area = global::XamarinExample.Droid.Resource.Id.submit_area;
-			global::Exponea.Resource.Id.supportScrollUp = global::XamarinExample.Droid.Resource.Id.supportScrollUp;
-			global::Exponea.Resource.Id.switchWidget = global::XamarinExample.Droid.Resource.Id.switchWidget;
 			global::Exponea.Resource.Id.SYM = global::XamarinExample.Droid.Resource.Id.SYM;
 			global::Exponea.Resource.Id.tabMode = global::XamarinExample.Droid.Resource.Id.tabMode;
 			global::Exponea.Resource.Id.tag_accessibility_actions = global::XamarinExample.Droid.Resource.Id.tag_accessibility_actions;
@@ -2425,11 +1985,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.textSpacerNoButtons = global::XamarinExample.Droid.Resource.Id.textSpacerNoButtons;
 			global::Exponea.Resource.Id.textSpacerNoTitle = global::XamarinExample.Droid.Resource.Id.textSpacerNoTitle;
 			global::Exponea.Resource.Id.textStart = global::XamarinExample.Droid.Resource.Id.textStart;
-			global::Exponea.Resource.Id.textTop = global::XamarinExample.Droid.Resource.Id.textTop;
 			global::Exponea.Resource.Id.textViewBody = global::XamarinExample.Droid.Resource.Id.textViewBody;
 			global::Exponea.Resource.Id.textViewTitle = global::XamarinExample.Droid.Resource.Id.textViewTitle;
 			global::Exponea.Resource.Id.text_input_end_icon = global::XamarinExample.Droid.Resource.Id.text_input_end_icon;
-			global::Exponea.Resource.Id.text_input_error_icon = global::XamarinExample.Droid.Resource.Id.text_input_error_icon;
 			global::Exponea.Resource.Id.text_input_start_icon = global::XamarinExample.Droid.Resource.Id.text_input_start_icon;
 			global::Exponea.Resource.Id.time = global::XamarinExample.Droid.Resource.Id.time;
 			global::Exponea.Resource.Id.title = global::XamarinExample.Droid.Resource.Id.title;
@@ -2455,41 +2013,25 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Id.unlabeled = global::XamarinExample.Droid.Resource.Id.unlabeled;
 			global::Exponea.Resource.Id.up = global::XamarinExample.Droid.Resource.Id.up;
 			global::Exponea.Resource.Id.useLogo = global::XamarinExample.Droid.Resource.Id.useLogo;
-			global::Exponea.Resource.Id.vertical_only = global::XamarinExample.Droid.Resource.Id.vertical_only;
 			global::Exponea.Resource.Id.view_offset_helper = global::XamarinExample.Droid.Resource.Id.view_offset_helper;
-			global::Exponea.Resource.Id.view_transition = global::XamarinExample.Droid.Resource.Id.view_transition;
 			global::Exponea.Resource.Id.view_tree_lifecycle_owner = global::XamarinExample.Droid.Resource.Id.view_tree_lifecycle_owner;
 			global::Exponea.Resource.Id.view_tree_saved_state_registry_owner = global::XamarinExample.Droid.Resource.Id.view_tree_saved_state_registry_owner;
-			global::Exponea.Resource.Id.view_tree_view_model_store_owner = global::XamarinExample.Droid.Resource.Id.view_tree_view_model_store_owner;
 			global::Exponea.Resource.Id.visible = global::XamarinExample.Droid.Resource.Id.visible;
 			global::Exponea.Resource.Id.visible_removing_fragment_view_tag = global::XamarinExample.Droid.Resource.Id.visible_removing_fragment_view_tag;
-			global::Exponea.Resource.Id.west = global::XamarinExample.Droid.Resource.Id.west;
 			global::Exponea.Resource.Id.withinBounds = global::XamarinExample.Droid.Resource.Id.withinBounds;
 			global::Exponea.Resource.Id.withText = global::XamarinExample.Droid.Resource.Id.withText;
 			global::Exponea.Resource.Id.wrap = global::XamarinExample.Droid.Resource.Id.wrap;
 			global::Exponea.Resource.Id.wrap_content = global::XamarinExample.Droid.Resource.Id.wrap_content;
-			global::Exponea.Resource.Id.wrap_content_constrained = global::XamarinExample.Droid.Resource.Id.wrap_content_constrained;
-			global::Exponea.Resource.Id.x_left = global::XamarinExample.Droid.Resource.Id.x_left;
-			global::Exponea.Resource.Id.x_right = global::XamarinExample.Droid.Resource.Id.x_right;
 			global::Exponea.Resource.Id.zero_corner_chip = global::XamarinExample.Droid.Resource.Id.zero_corner_chip;
 			global::Exponea.Resource.Integer.abc_config_activityDefaultDur = global::XamarinExample.Droid.Resource.Integer.abc_config_activityDefaultDur;
 			global::Exponea.Resource.Integer.abc_config_activityShortDur = global::XamarinExample.Droid.Resource.Integer.abc_config_activityShortDur;
 			global::Exponea.Resource.Integer.app_bar_elevation_anim_duration = global::XamarinExample.Droid.Resource.Integer.app_bar_elevation_anim_duration;
 			global::Exponea.Resource.Integer.bottom_sheet_slide_duration = global::XamarinExample.Droid.Resource.Integer.bottom_sheet_slide_duration;
 			global::Exponea.Resource.Integer.cancel_button_image_alpha = global::XamarinExample.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Exponea.Resource.Integer.config_navAnimTime = global::XamarinExample.Droid.Resource.Integer.config_navAnimTime;
 			global::Exponea.Resource.Integer.config_tooltipAnimTime = global::XamarinExample.Droid.Resource.Integer.config_tooltipAnimTime;
 			global::Exponea.Resource.Integer.design_snackbar_text_max_lines = global::XamarinExample.Droid.Resource.Integer.design_snackbar_text_max_lines;
 			global::Exponea.Resource.Integer.design_tab_indicator_anim_duration_ms = global::XamarinExample.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
-			global::Exponea.Resource.Integer.google_play_services_version = global::XamarinExample.Droid.Resource.Integer.google_play_services_version;
 			global::Exponea.Resource.Integer.hide_password_duration = global::XamarinExample.Droid.Resource.Integer.hide_password_duration;
-			global::Exponea.Resource.Integer.material_motion_duration_long_1 = global::XamarinExample.Droid.Resource.Integer.material_motion_duration_long_1;
-			global::Exponea.Resource.Integer.material_motion_duration_long_2 = global::XamarinExample.Droid.Resource.Integer.material_motion_duration_long_2;
-			global::Exponea.Resource.Integer.material_motion_duration_medium_1 = global::XamarinExample.Droid.Resource.Integer.material_motion_duration_medium_1;
-			global::Exponea.Resource.Integer.material_motion_duration_medium_2 = global::XamarinExample.Droid.Resource.Integer.material_motion_duration_medium_2;
-			global::Exponea.Resource.Integer.material_motion_duration_short_1 = global::XamarinExample.Droid.Resource.Integer.material_motion_duration_short_1;
-			global::Exponea.Resource.Integer.material_motion_duration_short_2 = global::XamarinExample.Droid.Resource.Integer.material_motion_duration_short_2;
-			global::Exponea.Resource.Integer.material_motion_path = global::XamarinExample.Droid.Resource.Integer.material_motion_path;
 			global::Exponea.Resource.Integer.mtrl_badge_max_character_count = global::XamarinExample.Droid.Resource.Integer.mtrl_badge_max_character_count;
 			global::Exponea.Resource.Integer.mtrl_btn_anim_delay_ms = global::XamarinExample.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
 			global::Exponea.Resource.Integer.mtrl_btn_anim_duration_ms = global::XamarinExample.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
@@ -2560,27 +2102,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Layout.design_navigation_menu_item = global::XamarinExample.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Exponea.Resource.Layout.design_text_input_end_icon = global::XamarinExample.Droid.Resource.Layout.design_text_input_end_icon;
 			global::Exponea.Resource.Layout.design_text_input_start_icon = global::XamarinExample.Droid.Resource.Layout.design_text_input_start_icon;
-			global::Exponea.Resource.Layout.expand_button = global::XamarinExample.Droid.Resource.Layout.expand_button;
 			global::Exponea.Resource.Layout.FallbackTabbarDoNotUse = global::XamarinExample.Droid.Resource.Layout.FallbackTabbarDoNotUse;
 			global::Exponea.Resource.Layout.FallbackToolbarDoNotUse = global::XamarinExample.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Exponea.Resource.Layout.FlyoutContent = global::XamarinExample.Droid.Resource.Layout.FlyoutContent;
-			global::Exponea.Resource.Layout.image_frame = global::XamarinExample.Droid.Resource.Layout.image_frame;
 			global::Exponea.Resource.Layout.in_app_message_dialog = global::XamarinExample.Droid.Resource.Layout.in_app_message_dialog;
 			global::Exponea.Resource.Layout.in_app_message_slide_in = global::XamarinExample.Droid.Resource.Layout.in_app_message_slide_in;
-			global::Exponea.Resource.Layout.material_chip_input_combo = global::XamarinExample.Droid.Resource.Layout.material_chip_input_combo;
-			global::Exponea.Resource.Layout.material_clockface_textview = global::XamarinExample.Droid.Resource.Layout.material_clockface_textview;
-			global::Exponea.Resource.Layout.material_clockface_view = global::XamarinExample.Droid.Resource.Layout.material_clockface_view;
-			global::Exponea.Resource.Layout.material_clock_display = global::XamarinExample.Droid.Resource.Layout.material_clock_display;
-			global::Exponea.Resource.Layout.material_clock_display_divider = global::XamarinExample.Droid.Resource.Layout.material_clock_display_divider;
-			global::Exponea.Resource.Layout.material_clock_period_toggle = global::XamarinExample.Droid.Resource.Layout.material_clock_period_toggle;
-			global::Exponea.Resource.Layout.material_clock_period_toggle_land = global::XamarinExample.Droid.Resource.Layout.material_clock_period_toggle_land;
-			global::Exponea.Resource.Layout.material_radial_view_group = global::XamarinExample.Droid.Resource.Layout.material_radial_view_group;
-			global::Exponea.Resource.Layout.material_textinput_timepicker = global::XamarinExample.Droid.Resource.Layout.material_textinput_timepicker;
-			global::Exponea.Resource.Layout.material_timepicker = global::XamarinExample.Droid.Resource.Layout.material_timepicker;
-			global::Exponea.Resource.Layout.material_timepicker_dialog = global::XamarinExample.Droid.Resource.Layout.material_timepicker_dialog;
-			global::Exponea.Resource.Layout.material_timepicker_textinput_display = global::XamarinExample.Droid.Resource.Layout.material_timepicker_textinput_display;
-			global::Exponea.Resource.Layout.material_time_chip = global::XamarinExample.Droid.Resource.Layout.material_time_chip;
-			global::Exponea.Resource.Layout.material_time_input = global::XamarinExample.Droid.Resource.Layout.material_time_input;
 			global::Exponea.Resource.Layout.mtrl_alert_dialog = global::XamarinExample.Droid.Resource.Layout.mtrl_alert_dialog;
 			global::Exponea.Resource.Layout.mtrl_alert_dialog_actions = global::XamarinExample.Droid.Resource.Layout.mtrl_alert_dialog_actions;
 			global::Exponea.Resource.Layout.mtrl_alert_dialog_title = global::XamarinExample.Droid.Resource.Layout.mtrl_alert_dialog_title;
@@ -2599,7 +2125,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Layout.mtrl_calendar_year = global::XamarinExample.Droid.Resource.Layout.mtrl_calendar_year;
 			global::Exponea.Resource.Layout.mtrl_layout_snackbar = global::XamarinExample.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Exponea.Resource.Layout.mtrl_layout_snackbar_include = global::XamarinExample.Droid.Resource.Layout.mtrl_layout_snackbar_include;
-			global::Exponea.Resource.Layout.mtrl_navigation_rail_item = global::XamarinExample.Droid.Resource.Layout.mtrl_navigation_rail_item;
 			global::Exponea.Resource.Layout.mtrl_picker_actions = global::XamarinExample.Droid.Resource.Layout.mtrl_picker_actions;
 			global::Exponea.Resource.Layout.mtrl_picker_dialog = global::XamarinExample.Droid.Resource.Layout.mtrl_picker_dialog;
 			global::Exponea.Resource.Layout.mtrl_picker_fullscreen = global::XamarinExample.Droid.Resource.Layout.mtrl_picker_fullscreen;
@@ -2625,22 +2150,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Layout.notification_template_media_custom = global::XamarinExample.Droid.Resource.Layout.notification_template_media_custom;
 			global::Exponea.Resource.Layout.notification_template_part_chronometer = global::XamarinExample.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Exponea.Resource.Layout.notification_template_part_time = global::XamarinExample.Droid.Resource.Layout.notification_template_part_time;
-			global::Exponea.Resource.Layout.preference = global::XamarinExample.Droid.Resource.Layout.preference;
-			global::Exponea.Resource.Layout.preference_category = global::XamarinExample.Droid.Resource.Layout.preference_category;
-			global::Exponea.Resource.Layout.preference_category_material = global::XamarinExample.Droid.Resource.Layout.preference_category_material;
-			global::Exponea.Resource.Layout.preference_dialog_edittext = global::XamarinExample.Droid.Resource.Layout.preference_dialog_edittext;
-			global::Exponea.Resource.Layout.preference_dropdown = global::XamarinExample.Droid.Resource.Layout.preference_dropdown;
-			global::Exponea.Resource.Layout.preference_dropdown_material = global::XamarinExample.Droid.Resource.Layout.preference_dropdown_material;
-			global::Exponea.Resource.Layout.preference_information = global::XamarinExample.Droid.Resource.Layout.preference_information;
-			global::Exponea.Resource.Layout.preference_information_material = global::XamarinExample.Droid.Resource.Layout.preference_information_material;
-			global::Exponea.Resource.Layout.preference_list_fragment = global::XamarinExample.Droid.Resource.Layout.preference_list_fragment;
-			global::Exponea.Resource.Layout.preference_material = global::XamarinExample.Droid.Resource.Layout.preference_material;
-			global::Exponea.Resource.Layout.preference_recyclerview = global::XamarinExample.Droid.Resource.Layout.preference_recyclerview;
-			global::Exponea.Resource.Layout.preference_widget_checkbox = global::XamarinExample.Droid.Resource.Layout.preference_widget_checkbox;
-			global::Exponea.Resource.Layout.preference_widget_seekbar = global::XamarinExample.Droid.Resource.Layout.preference_widget_seekbar;
-			global::Exponea.Resource.Layout.preference_widget_seekbar_material = global::XamarinExample.Droid.Resource.Layout.preference_widget_seekbar_material;
-			global::Exponea.Resource.Layout.preference_widget_switch = global::XamarinExample.Droid.Resource.Layout.preference_widget_switch;
-			global::Exponea.Resource.Layout.preference_widget_switch_compat = global::XamarinExample.Droid.Resource.Layout.preference_widget_switch_compat;
 			global::Exponea.Resource.Layout.RootLayout = global::XamarinExample.Droid.Resource.Layout.RootLayout;
 			global::Exponea.Resource.Layout.select_dialog_item_material = global::XamarinExample.Droid.Resource.Layout.select_dialog_item_material;
 			global::Exponea.Resource.Layout.select_dialog_multichoice_material = global::XamarinExample.Droid.Resource.Layout.select_dialog_multichoice_material;
@@ -2652,7 +2161,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Layout.test_chip_zero_corner_radius = global::XamarinExample.Droid.Resource.Layout.test_chip_zero_corner_radius;
 			global::Exponea.Resource.Layout.test_design_checkbox = global::XamarinExample.Droid.Resource.Layout.test_design_checkbox;
 			global::Exponea.Resource.Layout.test_design_radiobutton = global::XamarinExample.Droid.Resource.Layout.test_design_radiobutton;
-			global::Exponea.Resource.Layout.test_navigation_bar_item_layout = global::XamarinExample.Droid.Resource.Layout.test_navigation_bar_item_layout;
 			global::Exponea.Resource.Layout.test_reflow_chipgroup = global::XamarinExample.Droid.Resource.Layout.test_reflow_chipgroup;
 			global::Exponea.Resource.Layout.test_toolbar = global::XamarinExample.Droid.Resource.Layout.test_toolbar;
 			global::Exponea.Resource.Layout.test_toolbar_custom_background = global::XamarinExample.Droid.Resource.Layout.test_toolbar_custom_background;
@@ -2693,51 +2201,29 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.String.abc_shareactionprovider_share_with = global::XamarinExample.Droid.Resource.String.abc_shareactionprovider_share_with;
 			global::Exponea.Resource.String.abc_shareactionprovider_share_with_application = global::XamarinExample.Droid.Resource.String.abc_shareactionprovider_share_with_application;
 			global::Exponea.Resource.String.abc_toolbar_collapse_description = global::XamarinExample.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Exponea.Resource.String.androidx_startup = global::XamarinExample.Droid.Resource.String.androidx_startup;
 			global::Exponea.Resource.String.appbar_scrolling_view_behavior = global::XamarinExample.Droid.Resource.String.appbar_scrolling_view_behavior;
 			global::Exponea.Resource.String.app_name = global::XamarinExample.Droid.Resource.String.app_name;
 			global::Exponea.Resource.String.automaticSessionTracking = global::XamarinExample.Droid.Resource.String.automaticSessionTracking;
-			global::Exponea.Resource.String.bottomsheet_action_expand_halfway = global::XamarinExample.Droid.Resource.String.bottomsheet_action_expand_halfway;
 			global::Exponea.Resource.String.bottom_sheet_behavior = global::XamarinExample.Droid.Resource.String.bottom_sheet_behavior;
 			global::Exponea.Resource.String.character_counter_content_description = global::XamarinExample.Droid.Resource.String.character_counter_content_description;
 			global::Exponea.Resource.String.character_counter_overflowed_content_description = global::XamarinExample.Droid.Resource.String.character_counter_overflowed_content_description;
 			global::Exponea.Resource.String.character_counter_pattern = global::XamarinExample.Droid.Resource.String.character_counter_pattern;
 			global::Exponea.Resource.String.chip_text = global::XamarinExample.Droid.Resource.String.chip_text;
 			global::Exponea.Resource.String.clear_text_end_icon_content_description = global::XamarinExample.Droid.Resource.String.clear_text_end_icon_content_description;
-			global::Exponea.Resource.String.common_google_play_services_unknown_issue = global::XamarinExample.Droid.Resource.String.common_google_play_services_unknown_issue;
-			global::Exponea.Resource.String.copy = global::XamarinExample.Droid.Resource.String.copy;
 			global::Exponea.Resource.String.copy_toast_msg = global::XamarinExample.Droid.Resource.String.copy_toast_msg;
 			global::Exponea.Resource.String.error_icon_content_description = global::XamarinExample.Droid.Resource.String.error_icon_content_description;
-			global::Exponea.Resource.String.expand_button_title = global::XamarinExample.Droid.Resource.String.expand_button_title;
 			global::Exponea.Resource.String.exposed_dropdown_menu_content_description = global::XamarinExample.Droid.Resource.String.exposed_dropdown_menu_content_description;
 			global::Exponea.Resource.String.fab_transformation_scrim_behavior = global::XamarinExample.Droid.Resource.String.fab_transformation_scrim_behavior;
 			global::Exponea.Resource.String.fab_transformation_sheet_behavior = global::XamarinExample.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Exponea.Resource.String.fallback_menu_item_copy_link = global::XamarinExample.Droid.Resource.String.fallback_menu_item_copy_link;
 			global::Exponea.Resource.String.fallback_menu_item_open_in_browser = global::XamarinExample.Droid.Resource.String.fallback_menu_item_open_in_browser;
 			global::Exponea.Resource.String.fallback_menu_item_share_link = global::XamarinExample.Droid.Resource.String.fallback_menu_item_share_link;
-			global::Exponea.Resource.String.fcm_fallback_notification_channel_label = global::XamarinExample.Droid.Resource.String.fcm_fallback_notification_channel_label;
 			global::Exponea.Resource.String.hide_bottom_view_on_scroll_behavior = global::XamarinExample.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Exponea.Resource.String.icon_content_description = global::XamarinExample.Droid.Resource.String.icon_content_description;
 			global::Exponea.Resource.String.item_view_role_description = global::XamarinExample.Droid.Resource.String.item_view_role_description;
-			global::Exponea.Resource.String.material_clock_display_divider = global::XamarinExample.Droid.Resource.String.material_clock_display_divider;
-			global::Exponea.Resource.String.material_clock_toggle_content_description = global::XamarinExample.Droid.Resource.String.material_clock_toggle_content_description;
-			global::Exponea.Resource.String.material_hour_selection = global::XamarinExample.Droid.Resource.String.material_hour_selection;
-			global::Exponea.Resource.String.material_hour_suffix = global::XamarinExample.Droid.Resource.String.material_hour_suffix;
-			global::Exponea.Resource.String.material_minute_selection = global::XamarinExample.Droid.Resource.String.material_minute_selection;
-			global::Exponea.Resource.String.material_minute_suffix = global::XamarinExample.Droid.Resource.String.material_minute_suffix;
-			global::Exponea.Resource.String.material_motion_easing_accelerated = global::XamarinExample.Droid.Resource.String.material_motion_easing_accelerated;
-			global::Exponea.Resource.String.material_motion_easing_decelerated = global::XamarinExample.Droid.Resource.String.material_motion_easing_decelerated;
-			global::Exponea.Resource.String.material_motion_easing_emphasized = global::XamarinExample.Droid.Resource.String.material_motion_easing_emphasized;
-			global::Exponea.Resource.String.material_motion_easing_linear = global::XamarinExample.Droid.Resource.String.material_motion_easing_linear;
-			global::Exponea.Resource.String.material_motion_easing_standard = global::XamarinExample.Droid.Resource.String.material_motion_easing_standard;
 			global::Exponea.Resource.String.material_slider_range_end = global::XamarinExample.Droid.Resource.String.material_slider_range_end;
 			global::Exponea.Resource.String.material_slider_range_start = global::XamarinExample.Droid.Resource.String.material_slider_range_start;
-			global::Exponea.Resource.String.material_timepicker_am = global::XamarinExample.Droid.Resource.String.material_timepicker_am;
-			global::Exponea.Resource.String.material_timepicker_clock_mode_description = global::XamarinExample.Droid.Resource.String.material_timepicker_clock_mode_description;
-			global::Exponea.Resource.String.material_timepicker_hour = global::XamarinExample.Droid.Resource.String.material_timepicker_hour;
-			global::Exponea.Resource.String.material_timepicker_minute = global::XamarinExample.Droid.Resource.String.material_timepicker_minute;
-			global::Exponea.Resource.String.material_timepicker_pm = global::XamarinExample.Droid.Resource.String.material_timepicker_pm;
-			global::Exponea.Resource.String.material_timepicker_select_time = global::XamarinExample.Droid.Resource.String.material_timepicker_select_time;
-			global::Exponea.Resource.String.material_timepicker_text_input_mode_description = global::XamarinExample.Droid.Resource.String.material_timepicker_text_input_mode_description;
 			global::Exponea.Resource.String.mtrl_badge_numberless_content_description = global::XamarinExample.Droid.Resource.String.mtrl_badge_numberless_content_description;
 			global::Exponea.Resource.String.mtrl_chip_close_icon_content_description = global::XamarinExample.Droid.Resource.String.mtrl_chip_close_icon_content_description;
 			global::Exponea.Resource.String.mtrl_exceed_max_badge_number_content_description = global::XamarinExample.Droid.Resource.String.mtrl_exceed_max_badge_number_content_description;
@@ -2773,23 +2259,16 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.String.mtrl_picker_toggle_to_day_selection = global::XamarinExample.Droid.Resource.String.mtrl_picker_toggle_to_day_selection;
 			global::Exponea.Resource.String.mtrl_picker_toggle_to_text_input_mode = global::XamarinExample.Droid.Resource.String.mtrl_picker_toggle_to_text_input_mode;
 			global::Exponea.Resource.String.mtrl_picker_toggle_to_year_selection = global::XamarinExample.Droid.Resource.String.mtrl_picker_toggle_to_year_selection;
-			global::Exponea.Resource.String.nav_app_bar_navigate_up_description = global::XamarinExample.Droid.Resource.String.nav_app_bar_navigate_up_description;
-			global::Exponea.Resource.String.nav_app_bar_open_drawer_description = global::XamarinExample.Droid.Resource.String.nav_app_bar_open_drawer_description;
-			global::Exponea.Resource.String.not_set = global::XamarinExample.Droid.Resource.String.not_set;
 			global::Exponea.Resource.String.overflow_tab_title = global::XamarinExample.Droid.Resource.String.overflow_tab_title;
 			global::Exponea.Resource.String.password_toggle_content_description = global::XamarinExample.Droid.Resource.String.password_toggle_content_description;
 			global::Exponea.Resource.String.path_password_eye = global::XamarinExample.Droid.Resource.String.path_password_eye;
 			global::Exponea.Resource.String.path_password_eye_mask_strike_through = global::XamarinExample.Droid.Resource.String.path_password_eye_mask_strike_through;
 			global::Exponea.Resource.String.path_password_eye_mask_visible = global::XamarinExample.Droid.Resource.String.path_password_eye_mask_visible;
 			global::Exponea.Resource.String.path_password_strike_through = global::XamarinExample.Droid.Resource.String.path_password_strike_through;
-			global::Exponea.Resource.String.preference_copied = global::XamarinExample.Droid.Resource.String.preference_copied;
 			global::Exponea.Resource.String.projectToken = global::XamarinExample.Droid.Resource.String.projectToken;
 			global::Exponea.Resource.String.search_menu_title = global::XamarinExample.Droid.Resource.String.search_menu_title;
 			global::Exponea.Resource.String.sessionTimeout = global::XamarinExample.Droid.Resource.String.sessionTimeout;
 			global::Exponea.Resource.String.status_bar_notification_info_overflow = global::XamarinExample.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Exponea.Resource.String.summary_collapsed_preference_list = global::XamarinExample.Droid.Resource.String.summary_collapsed_preference_list;
-			global::Exponea.Resource.String.v7_preference_off = global::XamarinExample.Droid.Resource.String.v7_preference_off;
-			global::Exponea.Resource.String.v7_preference_on = global::XamarinExample.Droid.Resource.String.v7_preference_on;
 			global::Exponea.Resource.Style.AlertDialog_AppCompat = global::XamarinExample.Droid.Resource.Style.AlertDialog_AppCompat;
 			global::Exponea.Resource.Style.AlertDialog_AppCompat_Light = global::XamarinExample.Droid.Resource.Style.AlertDialog_AppCompat_Light;
 			global::Exponea.Resource.Style.AndroidThemeColorAccentYellow = global::XamarinExample.Droid.Resource.Style.AndroidThemeColorAccentYellow;
@@ -2907,7 +2386,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Bridge = global::XamarinExample.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Bridge;
 			global::Exponea.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::XamarinExample.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
 			global::Exponea.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::XamarinExample.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Exponea.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_BottomSheetDialog = global::XamarinExample.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_BottomSheetDialog;
 			global::Exponea.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::XamarinExample.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
 			global::Exponea.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::XamarinExample.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
 			global::Exponea.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog = global::XamarinExample.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog;
@@ -2921,7 +2399,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::XamarinExample.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
 			global::Exponea.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge = global::XamarinExample.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge;
 			global::Exponea.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::XamarinExample.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Exponea.Resource.Style.Base_V21_ThemeOverlay_MaterialComponents_BottomSheetDialog = global::XamarinExample.Droid.Resource.Style.Base_V21_ThemeOverlay_MaterialComponents_BottomSheetDialog;
 			global::Exponea.Resource.Style.Base_V21_Theme_AppCompat = global::XamarinExample.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Exponea.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::XamarinExample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Exponea.Resource.Style.Base_V21_Theme_AppCompat_Light = global::XamarinExample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
@@ -3009,13 +2486,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_AutoCompleteTextView = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_AutoCompleteTextView;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_CheckedTextView = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_CheckedTextView;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_Chip = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
-			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_MaterialCalendar_NavigationButton = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_MaterialCalendar_NavigationButton;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_PopupMenu = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ContextMenu = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ContextMenu;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_Overflow = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_Overflow;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_Slider = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_Slider;
-			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_Snackbar = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_Snackbar;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
 			global::Exponea.Resource.Style.Base_Widget_MaterialComponents_TextView = global::XamarinExample.Droid.Resource.Style.Base_Widget_MaterialComponents_TextView;
@@ -3050,37 +2525,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Platform_V25_AppCompat = global::XamarinExample.Droid.Resource.Style.Platform_V25_AppCompat;
 			global::Exponea.Resource.Style.Platform_V25_AppCompat_Light = global::XamarinExample.Droid.Resource.Style.Platform_V25_AppCompat_Light;
 			global::Exponea.Resource.Style.Platform_Widget_AppCompat_Spinner = global::XamarinExample.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Exponea.Resource.Style.Preference = global::XamarinExample.Droid.Resource.Style.Preference;
-			global::Exponea.Resource.Style.PreferenceCategoryTitleTextStyle = global::XamarinExample.Droid.Resource.Style.PreferenceCategoryTitleTextStyle;
-			global::Exponea.Resource.Style.PreferenceFragment = global::XamarinExample.Droid.Resource.Style.PreferenceFragment;
-			global::Exponea.Resource.Style.PreferenceFragmentList = global::XamarinExample.Droid.Resource.Style.PreferenceFragmentList;
-			global::Exponea.Resource.Style.PreferenceFragmentList_Material = global::XamarinExample.Droid.Resource.Style.PreferenceFragmentList_Material;
-			global::Exponea.Resource.Style.PreferenceFragment_Material = global::XamarinExample.Droid.Resource.Style.PreferenceFragment_Material;
-			global::Exponea.Resource.Style.PreferenceSummaryTextStyle = global::XamarinExample.Droid.Resource.Style.PreferenceSummaryTextStyle;
-			global::Exponea.Resource.Style.PreferenceThemeOverlay = global::XamarinExample.Droid.Resource.Style.PreferenceThemeOverlay;
-			global::Exponea.Resource.Style.PreferenceThemeOverlay_v14 = global::XamarinExample.Droid.Resource.Style.PreferenceThemeOverlay_v14;
-			global::Exponea.Resource.Style.PreferenceThemeOverlay_v14_Material = global::XamarinExample.Droid.Resource.Style.PreferenceThemeOverlay_v14_Material;
-			global::Exponea.Resource.Style.Preference_Category = global::XamarinExample.Droid.Resource.Style.Preference_Category;
-			global::Exponea.Resource.Style.Preference_Category_Material = global::XamarinExample.Droid.Resource.Style.Preference_Category_Material;
-			global::Exponea.Resource.Style.Preference_CheckBoxPreference = global::XamarinExample.Droid.Resource.Style.Preference_CheckBoxPreference;
-			global::Exponea.Resource.Style.Preference_CheckBoxPreference_Material = global::XamarinExample.Droid.Resource.Style.Preference_CheckBoxPreference_Material;
-			global::Exponea.Resource.Style.Preference_DialogPreference = global::XamarinExample.Droid.Resource.Style.Preference_DialogPreference;
-			global::Exponea.Resource.Style.Preference_DialogPreference_EditTextPreference = global::XamarinExample.Droid.Resource.Style.Preference_DialogPreference_EditTextPreference;
-			global::Exponea.Resource.Style.Preference_DialogPreference_EditTextPreference_Material = global::XamarinExample.Droid.Resource.Style.Preference_DialogPreference_EditTextPreference_Material;
-			global::Exponea.Resource.Style.Preference_DialogPreference_Material = global::XamarinExample.Droid.Resource.Style.Preference_DialogPreference_Material;
-			global::Exponea.Resource.Style.Preference_DropDown = global::XamarinExample.Droid.Resource.Style.Preference_DropDown;
-			global::Exponea.Resource.Style.Preference_DropDown_Material = global::XamarinExample.Droid.Resource.Style.Preference_DropDown_Material;
-			global::Exponea.Resource.Style.Preference_Information = global::XamarinExample.Droid.Resource.Style.Preference_Information;
-			global::Exponea.Resource.Style.Preference_Information_Material = global::XamarinExample.Droid.Resource.Style.Preference_Information_Material;
-			global::Exponea.Resource.Style.Preference_Material = global::XamarinExample.Droid.Resource.Style.Preference_Material;
-			global::Exponea.Resource.Style.Preference_PreferenceScreen = global::XamarinExample.Droid.Resource.Style.Preference_PreferenceScreen;
-			global::Exponea.Resource.Style.Preference_PreferenceScreen_Material = global::XamarinExample.Droid.Resource.Style.Preference_PreferenceScreen_Material;
-			global::Exponea.Resource.Style.Preference_SeekBarPreference = global::XamarinExample.Droid.Resource.Style.Preference_SeekBarPreference;
-			global::Exponea.Resource.Style.Preference_SeekBarPreference_Material = global::XamarinExample.Droid.Resource.Style.Preference_SeekBarPreference_Material;
-			global::Exponea.Resource.Style.Preference_SwitchPreference = global::XamarinExample.Droid.Resource.Style.Preference_SwitchPreference;
-			global::Exponea.Resource.Style.Preference_SwitchPreferenceCompat = global::XamarinExample.Droid.Resource.Style.Preference_SwitchPreferenceCompat;
-			global::Exponea.Resource.Style.Preference_SwitchPreferenceCompat_Material = global::XamarinExample.Droid.Resource.Style.Preference_SwitchPreferenceCompat_Material;
-			global::Exponea.Resource.Style.Preference_SwitchPreference_Material = global::XamarinExample.Droid.Resource.Style.Preference_SwitchPreference_Material;
 			global::Exponea.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::XamarinExample.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
 			global::Exponea.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::XamarinExample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
 			global::Exponea.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::XamarinExample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
@@ -3216,7 +2660,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.TextAppearance_MaterialComponents_Overline = global::XamarinExample.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
 			global::Exponea.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::XamarinExample.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
 			global::Exponea.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::XamarinExample.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
-			global::Exponea.Resource.Style.TextAppearance_MaterialComponents_TimePicker_Title = global::XamarinExample.Droid.Resource.Style.TextAppearance_MaterialComponents_TimePicker_Title;
 			global::Exponea.Resource.Style.TextAppearance_MaterialComponents_Tooltip = global::XamarinExample.Droid.Resource.Style.TextAppearance_MaterialComponents_Tooltip;
 			global::Exponea.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::XamarinExample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Exponea.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::XamarinExample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
@@ -3266,8 +2709,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
 			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
 			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
-			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_TimePicker = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TimePicker;
-			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_TimePicker_Display = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TimePicker_Display;
 			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Primary = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Primary;
 			global::Exponea.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Surface = global::XamarinExample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Surface;
 			global::Exponea.Resource.Style.Theme_AppCompat = global::XamarinExample.Droid.Resource.Style.Theme_AppCompat;
@@ -3473,11 +2914,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator_ExtraSmall = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator_ExtraSmall;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator_Medium = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator_Medium;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator_Small = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CircularProgressIndicator_Small;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_CollapsingToolbar = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CollapsingToolbar;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_CompoundButton_CheckBox = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_CheckBox;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_CompoundButton_RadioButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_RadioButton;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_CompoundButton_Switch = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_Switch;
@@ -3485,7 +2921,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Widget_MaterialComponents_ExtendedFloatingActionButton_Icon = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_ExtendedFloatingActionButton_Icon;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Light_ActionBar_Solid = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Light_ActionBar_Solid;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_LinearProgressIndicator = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_LinearProgressIndicator;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialButtonToggleGroup = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialButtonToggleGroup;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day;
@@ -3494,7 +2929,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Selected = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Selected;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Today = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Today;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Fullscreen = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Fullscreen;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderCancelButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderCancelButton;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderDivider = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderDivider;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderLayout = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderLayout;
@@ -3503,23 +2937,14 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderTitle = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderTitle;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Item = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Item;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_MonthNavigationButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_MonthNavigationButton;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_MonthTextView = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_MonthTextView;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_YearNavigationButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_YearNavigationButton;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Selected = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Selected;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Today = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Today;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_NavigationRailView = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_NavigationRailView;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_NavigationRailView_Colored = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_NavigationRailView_Colored;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_NavigationRailView_Colored_Compact = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_NavigationRailView_Colored_Compact;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_NavigationRailView_Compact = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_NavigationRailView_Compact;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_NavigationRailView_PrimarySurface = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_NavigationRailView_PrimarySurface;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_NavigationView = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_PopupMenu = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_PopupMenu_ContextMenu = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_ContextMenu;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_PopupMenu_ListPopupWindow = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_ListPopupWindow;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_PopupMenu_Overflow = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_Overflow;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_ProgressIndicator = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_ProgressIndicator;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_ShapeableImageView = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_ShapeableImageView;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Slider = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Slider;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Snackbar = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
@@ -3541,13 +2966,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_TextView = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TextView;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker_Button = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker_Button;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker_Clock = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker_Clock;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker_Display = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker_Display;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker_Display_TextInputEditText = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker_Display_TextInputEditText;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker_ImageButton = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker_ImageButton;
-			global::Exponea.Resource.Style.Widget_MaterialComponents_TimePicker_ImageButton_ShapeAppearance = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_TimePicker_ImageButton_ShapeAppearance;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Toolbar = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Toolbar_Primary = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_Primary;
 			global::Exponea.Resource.Style.Widget_MaterialComponents_Toolbar_PrimarySurface = global::XamarinExample.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_PrimarySurface;
@@ -3599,12 +3017,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ActivityChooserView = global::XamarinExample.Droid.Resource.Styleable.ActivityChooserView;
 			global::Exponea.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::XamarinExample.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
 			global::Exponea.Resource.Styleable.ActivityChooserView_initialActivityCount = global::XamarinExample.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Exponea.Resource.Styleable.ActivityNavigator = global::XamarinExample.Droid.Resource.Styleable.ActivityNavigator;
-			global::Exponea.Resource.Styleable.ActivityNavigator_action = global::XamarinExample.Droid.Resource.Styleable.ActivityNavigator_action;
-			global::Exponea.Resource.Styleable.ActivityNavigator_android_name = global::XamarinExample.Droid.Resource.Styleable.ActivityNavigator_android_name;
-			global::Exponea.Resource.Styleable.ActivityNavigator_data = global::XamarinExample.Droid.Resource.Styleable.ActivityNavigator_data;
-			global::Exponea.Resource.Styleable.ActivityNavigator_dataPattern = global::XamarinExample.Droid.Resource.Styleable.ActivityNavigator_dataPattern;
-			global::Exponea.Resource.Styleable.ActivityNavigator_targetPackage = global::XamarinExample.Droid.Resource.Styleable.ActivityNavigator_targetPackage;
 			global::Exponea.Resource.Styleable.AlertDialog = global::XamarinExample.Droid.Resource.Styleable.AlertDialog;
 			global::Exponea.Resource.Styleable.AlertDialog_android_layout = global::XamarinExample.Droid.Resource.Styleable.AlertDialog_android_layout;
 			global::Exponea.Resource.Styleable.AlertDialog_buttonIconDimen = global::XamarinExample.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
@@ -3704,7 +3116,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeBackground = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeCloseContentDescription = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseContentDescription;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
@@ -3715,7 +3126,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeStyle = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeTheme = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeTheme;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
 			global::Exponea.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
@@ -3814,9 +3224,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
 			global::Exponea.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
 			global::Exponea.Resource.Styleable.AppCompatTheme_windowNoTitle = global::XamarinExample.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Exponea.Resource.Styleable.BackgroundStyle = global::XamarinExample.Droid.Resource.Styleable.BackgroundStyle;
-			global::Exponea.Resource.Styleable.BackgroundStyle_android_selectableItemBackground = global::XamarinExample.Droid.Resource.Styleable.BackgroundStyle_android_selectableItemBackground;
-			global::Exponea.Resource.Styleable.BackgroundStyle_selectableItemBackground = global::XamarinExample.Droid.Resource.Styleable.BackgroundStyle_selectableItemBackground;
 			global::Exponea.Resource.Styleable.Badge = global::XamarinExample.Droid.Resource.Styleable.Badge;
 			global::Exponea.Resource.Styleable.Badge_backgroundColor = global::XamarinExample.Droid.Resource.Styleable.Badge_backgroundColor;
 			global::Exponea.Resource.Styleable.Badge_badgeGravity = global::XamarinExample.Droid.Resource.Styleable.Badge_badgeGravity;
@@ -3825,16 +3232,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Badge_maxCharacterCount = global::XamarinExample.Droid.Resource.Styleable.Badge_maxCharacterCount;
 			global::Exponea.Resource.Styleable.Badge_number = global::XamarinExample.Droid.Resource.Styleable.Badge_number;
 			global::Exponea.Resource.Styleable.Badge_verticalOffset = global::XamarinExample.Droid.Resource.Styleable.Badge_verticalOffset;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_android_indeterminate = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_android_indeterminate;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_hideAnimationBehavior = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_hideAnimationBehavior;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_indicatorColor = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_indicatorColor;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_minHideDelay = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_minHideDelay;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_showAnimationBehavior = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_showAnimationBehavior;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_showDelay = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_showDelay;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_trackColor = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_trackColor;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_trackCornerRadius = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_trackCornerRadius;
-			global::Exponea.Resource.Styleable.BaseProgressIndicator_trackThickness = global::XamarinExample.Droid.Resource.Styleable.BaseProgressIndicator_trackThickness;
 			global::Exponea.Resource.Styleable.BottomAppBar = global::XamarinExample.Droid.Resource.Styleable.BottomAppBar;
 			global::Exponea.Resource.Styleable.BottomAppBar_backgroundTint = global::XamarinExample.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
 			global::Exponea.Resource.Styleable.BottomAppBar_elevation = global::XamarinExample.Droid.Resource.Styleable.BottomAppBar_elevation;
@@ -3851,7 +3248,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::XamarinExample.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_android_elevation = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_android_elevation;
-			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_android_maxWidth = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_android_maxWidth;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_backgroundTint = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_backgroundTint;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_behavior_draggable = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_draggable;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_behavior_expandedOffset = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_expandedOffset;
@@ -3862,10 +3258,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_behavior_saveFlags = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_saveFlags;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_gestureInsetBottomIgnored = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_gestureInsetBottomIgnored;
-			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_paddingBottomSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_paddingBottomSystemWindowInsets;
-			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_paddingLeftSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_paddingLeftSystemWindowInsets;
-			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_paddingRightSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_paddingRightSystemWindowInsets;
-			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_paddingTopSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_paddingTopSystemWindowInsets;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearance = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearance;
 			global::Exponea.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearanceOverlay = global::XamarinExample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearanceOverlay;
 			global::Exponea.Resource.Styleable.ButtonBarLayout = global::XamarinExample.Droid.Resource.Styleable.ButtonBarLayout;
@@ -3887,24 +3279,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.CardView_contentPaddingLeft = global::XamarinExample.Droid.Resource.Styleable.CardView_contentPaddingLeft;
 			global::Exponea.Resource.Styleable.CardView_contentPaddingRight = global::XamarinExample.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::Exponea.Resource.Styleable.CardView_contentPaddingTop = global::XamarinExample.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Exponea.Resource.Styleable.Carousel = global::XamarinExample.Droid.Resource.Styleable.Carousel;
-			global::Exponea.Resource.Styleable.Carousel_carousel_backwardTransition = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_backwardTransition;
-			global::Exponea.Resource.Styleable.Carousel_carousel_emptyViewsBehavior = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_emptyViewsBehavior;
-			global::Exponea.Resource.Styleable.Carousel_carousel_firstView = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_firstView;
-			global::Exponea.Resource.Styleable.Carousel_carousel_forwardTransition = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_forwardTransition;
-			global::Exponea.Resource.Styleable.Carousel_carousel_infinite = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_infinite;
-			global::Exponea.Resource.Styleable.Carousel_carousel_nextState = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_nextState;
-			global::Exponea.Resource.Styleable.Carousel_carousel_previousState = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_previousState;
-			global::Exponea.Resource.Styleable.Carousel_carousel_touchUpMode = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_touchUpMode;
-			global::Exponea.Resource.Styleable.Carousel_carousel_touchUp_dampeningFactor = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_touchUp_dampeningFactor;
-			global::Exponea.Resource.Styleable.Carousel_carousel_touchUp_velocityThreshold = global::XamarinExample.Droid.Resource.Styleable.Carousel_carousel_touchUp_velocityThreshold;
-			global::Exponea.Resource.Styleable.CheckBoxPreference = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference;
-			global::Exponea.Resource.Styleable.CheckBoxPreference_android_disableDependentsState = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference_android_disableDependentsState;
-			global::Exponea.Resource.Styleable.CheckBoxPreference_android_summaryOff = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference_android_summaryOff;
-			global::Exponea.Resource.Styleable.CheckBoxPreference_android_summaryOn = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference_android_summaryOn;
-			global::Exponea.Resource.Styleable.CheckBoxPreference_disableDependentsState = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference_disableDependentsState;
-			global::Exponea.Resource.Styleable.CheckBoxPreference_summaryOff = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference_summaryOff;
-			global::Exponea.Resource.Styleable.CheckBoxPreference_summaryOn = global::XamarinExample.Droid.Resource.Styleable.CheckBoxPreference_summaryOn;
 			global::Exponea.Resource.Styleable.Chip = global::XamarinExample.Droid.Resource.Styleable.Chip;
 			global::Exponea.Resource.Styleable.ChipGroup = global::XamarinExample.Droid.Resource.Styleable.ChipGroup;
 			global::Exponea.Resource.Styleable.ChipGroup_checkedChip = global::XamarinExample.Droid.Resource.Styleable.ChipGroup_checkedChip;
@@ -3920,7 +3294,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Chip_android_text = global::XamarinExample.Droid.Resource.Styleable.Chip_android_text;
 			global::Exponea.Resource.Styleable.Chip_android_textAppearance = global::XamarinExample.Droid.Resource.Styleable.Chip_android_textAppearance;
 			global::Exponea.Resource.Styleable.Chip_android_textColor = global::XamarinExample.Droid.Resource.Styleable.Chip_android_textColor;
-			global::Exponea.Resource.Styleable.Chip_android_textSize = global::XamarinExample.Droid.Resource.Styleable.Chip_android_textSize;
 			global::Exponea.Resource.Styleable.Chip_checkedIcon = global::XamarinExample.Droid.Resource.Styleable.Chip_checkedIcon;
 			global::Exponea.Resource.Styleable.Chip_checkedIconEnabled = global::XamarinExample.Droid.Resource.Styleable.Chip_checkedIconEnabled;
 			global::Exponea.Resource.Styleable.Chip_checkedIconTint = global::XamarinExample.Droid.Resource.Styleable.Chip_checkedIconTint;
@@ -3956,17 +3329,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Chip_showMotionSpec = global::XamarinExample.Droid.Resource.Styleable.Chip_showMotionSpec;
 			global::Exponea.Resource.Styleable.Chip_textEndPadding = global::XamarinExample.Droid.Resource.Styleable.Chip_textEndPadding;
 			global::Exponea.Resource.Styleable.Chip_textStartPadding = global::XamarinExample.Droid.Resource.Styleable.Chip_textStartPadding;
-			global::Exponea.Resource.Styleable.CircularProgressIndicator = global::XamarinExample.Droid.Resource.Styleable.CircularProgressIndicator;
-			global::Exponea.Resource.Styleable.CircularProgressIndicator_indicatorDirectionCircular = global::XamarinExample.Droid.Resource.Styleable.CircularProgressIndicator_indicatorDirectionCircular;
-			global::Exponea.Resource.Styleable.CircularProgressIndicator_indicatorInset = global::XamarinExample.Droid.Resource.Styleable.CircularProgressIndicator_indicatorInset;
-			global::Exponea.Resource.Styleable.CircularProgressIndicator_indicatorSize = global::XamarinExample.Droid.Resource.Styleable.CircularProgressIndicator_indicatorSize;
-			global::Exponea.Resource.Styleable.ClockFaceView = global::XamarinExample.Droid.Resource.Styleable.ClockFaceView;
-			global::Exponea.Resource.Styleable.ClockFaceView_clockFaceBackgroundColor = global::XamarinExample.Droid.Resource.Styleable.ClockFaceView_clockFaceBackgroundColor;
-			global::Exponea.Resource.Styleable.ClockFaceView_clockNumberTextColor = global::XamarinExample.Droid.Resource.Styleable.ClockFaceView_clockNumberTextColor;
-			global::Exponea.Resource.Styleable.ClockHandView = global::XamarinExample.Droid.Resource.Styleable.ClockHandView;
-			global::Exponea.Resource.Styleable.ClockHandView_clockHandColor = global::XamarinExample.Droid.Resource.Styleable.ClockHandView_clockHandColor;
-			global::Exponea.Resource.Styleable.ClockHandView_materialCircleRadius = global::XamarinExample.Droid.Resource.Styleable.ClockHandView_materialCircleRadius;
-			global::Exponea.Resource.Styleable.ClockHandView_selectorSize = global::XamarinExample.Droid.Resource.Styleable.ClockHandView_selectorSize;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
@@ -3978,8 +3340,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_extraMultilineHeightEnabled = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_extraMultilineHeightEnabled;
-			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_forceApplySystemWindowInsetTop = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_forceApplySystemWindowInsetTop;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_Layout = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
@@ -3988,7 +3348,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_title = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_titleCollapseMode = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_titleCollapseMode;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
 			global::Exponea.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::XamarinExample.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
 			global::Exponea.Resource.Styleable.ColorStateListItem = global::XamarinExample.Droid.Resource.Styleable.ColorStateListItem;
@@ -4003,17 +3362,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Constraint = global::XamarinExample.Droid.Resource.Styleable.Constraint;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_elevation = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_elevation;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_height = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_height;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_margin = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_margin;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginBottom = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginBottom;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginEnd = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginEnd;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginHorizontal = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginHorizontal;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginLeft = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginLeft;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginRight = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginRight;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginStart = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginStart;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginTop = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginTop;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginVertical = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_marginVertical;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_layout_width = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_layout_width;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_maxHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_maxHeight;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_maxWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_maxWidth;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_android_minHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_android_minHeight;
@@ -4031,11 +3379,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_barrierDirection = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_barrierDirection;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_barrierMargin = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_barrierMargin;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_chainUseRtl = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_chainUseRtl;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_circularflow_angles = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_circularflow_angles;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_circularflow_defaultAngle = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_circularflow_defaultAngle;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_circularflow_defaultRadius = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_circularflow_defaultRadius;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_circularflow_radiusInDP = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_circularflow_radiusInDP;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_circularflow_viewCenter = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_circularflow_viewCenter;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_constraintSet = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_constraintSet;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_ids = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_ids;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_tags = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_tags;
@@ -4062,8 +3405,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedWidth;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_creator;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBottomOf;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toTopOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toTopOf;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_creator;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toBottomOf;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toTopOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toTopOf;
@@ -4076,7 +3417,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_begin = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_begin;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_end = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_end;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_percent = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_percent;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_default = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_default;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_max = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_max;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_min = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_min;
@@ -4099,139 +3439,22 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_bias = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_bias;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_chainStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_chainStyle;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_weight = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_weight;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_default = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_default;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_max = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_max;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_min = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_min;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_percent = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_percent;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteX = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteX;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteY = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteY;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBaseline = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBaseline;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBottom = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBottom;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginEnd = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginEnd;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginLeft = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginLeft;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginRight = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginRight;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginStart = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginStart;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginTop = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginTop;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_marginBaseline = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_marginBaseline;
 			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_optimizationLevel = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_optimizationLevel;
-			global::Exponea.Resource.Styleable.ConstraintLayout_Layout_layout_wrapBehaviorInParent = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_wrapBehaviorInParent;
 			global::Exponea.Resource.Styleable.ConstraintLayout_placeholder = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_placeholder;
 			global::Exponea.Resource.Styleable.ConstraintLayout_placeholder_content = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_placeholder_content;
 			global::Exponea.Resource.Styleable.ConstraintLayout_placeholder_placeholder_emptyVisibility = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_placeholder_placeholder_emptyVisibility;
-			global::Exponea.Resource.Styleable.ConstraintLayout_ReactiveGuide = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_ReactiveGuide;
-			global::Exponea.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_animateChange = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_animateChange;
-			global::Exponea.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_applyToAllConstraintSets = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_applyToAllConstraintSets;
-			global::Exponea.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_applyToConstraintSet = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_applyToConstraintSet;
-			global::Exponea.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_valueId = global::XamarinExample.Droid.Resource.Styleable.ConstraintLayout_ReactiveGuide_reactiveGuide_valueId;
-			global::Exponea.Resource.Styleable.ConstraintOverride = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_alpha = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_alpha;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_elevation = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_elevation;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_id = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_id;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_height = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_height;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_marginBottom = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_marginBottom;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_marginEnd = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_marginEnd;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_marginLeft = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_marginLeft;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_marginRight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_marginRight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_marginStart = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_marginStart;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_marginTop = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_marginTop;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_layout_width = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_layout_width;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_maxHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_maxHeight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_maxWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_maxWidth;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_minHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_minHeight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_minWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_minWidth;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_orientation = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_orientation;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_rotation = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_rotation;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_rotationX = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_rotationX;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_rotationY = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_rotationY;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_scaleX = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_scaleX;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_scaleY = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_scaleY;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_transformPivotX = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_transformPivotX;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_transformPivotY = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_transformPivotY;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_translationX = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_translationX;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_translationY = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_translationY;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_translationZ = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_translationZ;
-			global::Exponea.Resource.Styleable.ConstraintOverride_android_visibility = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_android_visibility;
-			global::Exponea.Resource.Styleable.ConstraintOverride_animateCircleAngleTo = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_animateCircleAngleTo;
-			global::Exponea.Resource.Styleable.ConstraintOverride_animateRelativeTo = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_animateRelativeTo;
-			global::Exponea.Resource.Styleable.ConstraintOverride_barrierAllowsGoneWidgets = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_barrierAllowsGoneWidgets;
-			global::Exponea.Resource.Styleable.ConstraintOverride_barrierDirection = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_barrierDirection;
-			global::Exponea.Resource.Styleable.ConstraintOverride_barrierMargin = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_barrierMargin;
-			global::Exponea.Resource.Styleable.ConstraintOverride_chainUseRtl = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_chainUseRtl;
-			global::Exponea.Resource.Styleable.ConstraintOverride_constraint_referenced_ids = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_constraint_referenced_ids;
-			global::Exponea.Resource.Styleable.ConstraintOverride_drawPath = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_drawPath;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_firstHorizontalBias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_firstHorizontalBias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_firstHorizontalStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_firstHorizontalStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_firstVerticalBias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_firstVerticalBias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_firstVerticalStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_firstVerticalStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_horizontalAlign = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_horizontalAlign;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_horizontalBias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_horizontalBias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_horizontalGap = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_horizontalGap;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_horizontalStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_horizontalStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_lastHorizontalBias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_lastHorizontalBias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_lastHorizontalStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_lastHorizontalStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_lastVerticalBias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_lastVerticalBias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_lastVerticalStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_lastVerticalStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_maxElementsWrap = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_maxElementsWrap;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_verticalAlign = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_verticalAlign;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_verticalBias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_verticalBias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_verticalGap = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_verticalGap;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_verticalStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_verticalStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_flow_wrapMode = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_flow_wrapMode;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constrainedHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constrainedHeight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constrainedWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constrainedWidth;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintBaseline_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintBaseline_creator;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintBottom_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintBottom_creator;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintCircleAngle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintCircleAngle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintCircleRadius = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintCircleRadius;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintDimensionRatio = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintDimensionRatio;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintGuide_begin = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintGuide_begin;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintGuide_end = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintGuide_end;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintGuide_percent = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintGuide_percent;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHeight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHeight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHeight_default = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHeight_default;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHeight_max = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHeight_max;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHeight_min = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHeight_min;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHeight_percent = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHeight_percent;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHorizontal_bias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHorizontal_bias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHorizontal_chainStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHorizontal_chainStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintHorizontal_weight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintHorizontal_weight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintLeft_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintLeft_creator;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintRight_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintRight_creator;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintTag = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintTag;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintTop_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintTop_creator;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintVertical_bias = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintVertical_bias;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintVertical_chainStyle = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintVertical_chainStyle;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintVertical_weight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintVertical_weight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintWidth;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintWidth_default = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintWidth_default;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintWidth_max = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintWidth_max;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintWidth_min = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintWidth_min;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_constraintWidth_percent = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_constraintWidth_percent;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_editor_absoluteX = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_editor_absoluteX;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_editor_absoluteY = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_editor_absoluteY;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginBaseline = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginBaseline;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginBottom = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginBottom;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginEnd = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginEnd;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginLeft = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginLeft;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginRight = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginRight;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginStart = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginStart;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_goneMarginTop = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_goneMarginTop;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_marginBaseline = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_marginBaseline;
-			global::Exponea.Resource.Styleable.ConstraintOverride_layout_wrapBehaviorInParent = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_layout_wrapBehaviorInParent;
-			global::Exponea.Resource.Styleable.ConstraintOverride_motionProgress = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_motionProgress;
-			global::Exponea.Resource.Styleable.ConstraintOverride_motionStagger = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_motionStagger;
-			global::Exponea.Resource.Styleable.ConstraintOverride_motionTarget = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_motionTarget;
-			global::Exponea.Resource.Styleable.ConstraintOverride_pathMotionArc = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_pathMotionArc;
-			global::Exponea.Resource.Styleable.ConstraintOverride_pivotAnchor = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_pivotAnchor;
-			global::Exponea.Resource.Styleable.ConstraintOverride_polarRelativeTo = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_polarRelativeTo;
-			global::Exponea.Resource.Styleable.ConstraintOverride_quantizeMotionInterpolator = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_quantizeMotionInterpolator;
-			global::Exponea.Resource.Styleable.ConstraintOverride_quantizeMotionPhase = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_quantizeMotionPhase;
-			global::Exponea.Resource.Styleable.ConstraintOverride_quantizeMotionSteps = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_quantizeMotionSteps;
-			global::Exponea.Resource.Styleable.ConstraintOverride_transformPivotTarget = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_transformPivotTarget;
-			global::Exponea.Resource.Styleable.ConstraintOverride_transitionEasing = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_transitionEasing;
-			global::Exponea.Resource.Styleable.ConstraintOverride_transitionPathRotate = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_transitionPathRotate;
-			global::Exponea.Resource.Styleable.ConstraintOverride_visibilityMode = global::XamarinExample.Droid.Resource.Styleable.ConstraintOverride_visibilityMode;
 			global::Exponea.Resource.Styleable.ConstraintSet = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet;
 			global::Exponea.Resource.Styleable.ConstraintSet_android_alpha = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_android_alpha;
 			global::Exponea.Resource.Styleable.ConstraintSet_android_elevation = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_android_elevation;
@@ -4262,13 +3485,10 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintSet_android_translationY = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_android_translationY;
 			global::Exponea.Resource.Styleable.ConstraintSet_android_translationZ = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_android_translationZ;
 			global::Exponea.Resource.Styleable.ConstraintSet_android_visibility = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_android_visibility;
-			global::Exponea.Resource.Styleable.ConstraintSet_animateCircleAngleTo = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_animateCircleAngleTo;
-			global::Exponea.Resource.Styleable.ConstraintSet_animateRelativeTo = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_animateRelativeTo;
 			global::Exponea.Resource.Styleable.ConstraintSet_barrierAllowsGoneWidgets = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_barrierAllowsGoneWidgets;
 			global::Exponea.Resource.Styleable.ConstraintSet_barrierDirection = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_barrierDirection;
 			global::Exponea.Resource.Styleable.ConstraintSet_barrierMargin = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_barrierMargin;
 			global::Exponea.Resource.Styleable.ConstraintSet_chainUseRtl = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_chainUseRtl;
-			global::Exponea.Resource.Styleable.ConstraintSet_ConstraintRotate = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_ConstraintRotate;
 			global::Exponea.Resource.Styleable.ConstraintSet_constraint_referenced_ids = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_constraint_referenced_ids;
 			global::Exponea.Resource.Styleable.ConstraintSet_constraint_referenced_tags = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_constraint_referenced_tags;
 			global::Exponea.Resource.Styleable.ConstraintSet_deriveConstraintsFrom = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_deriveConstraintsFrom;
@@ -4295,8 +3515,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constrainedWidth = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constrainedWidth;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBaseline_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_creator;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBaselineOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBaselineOf;
-			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBottomOf;
-			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toTopOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toTopOf;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBottom_creator = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_creator;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBottom_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_toBottomOf;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintBottom_toTopOf = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_toTopOf;
@@ -4337,21 +3555,16 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_constraintWidth_percent = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_percent;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_editor_absoluteX = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_editor_absoluteX;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_editor_absoluteY = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_editor_absoluteY;
-			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginBaseline = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginBaseline;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginBottom = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginBottom;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginEnd = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginEnd;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginLeft = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginLeft;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginRight = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginRight;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginStart = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginStart;
 			global::Exponea.Resource.Styleable.ConstraintSet_layout_goneMarginTop = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginTop;
-			global::Exponea.Resource.Styleable.ConstraintSet_layout_marginBaseline = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_marginBaseline;
-			global::Exponea.Resource.Styleable.ConstraintSet_layout_wrapBehaviorInParent = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_layout_wrapBehaviorInParent;
 			global::Exponea.Resource.Styleable.ConstraintSet_motionProgress = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_motionProgress;
 			global::Exponea.Resource.Styleable.ConstraintSet_motionStagger = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_motionStagger;
 			global::Exponea.Resource.Styleable.ConstraintSet_pathMotionArc = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_pathMotionArc;
 			global::Exponea.Resource.Styleable.ConstraintSet_pivotAnchor = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_pivotAnchor;
-			global::Exponea.Resource.Styleable.ConstraintSet_polarRelativeTo = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_polarRelativeTo;
-			global::Exponea.Resource.Styleable.ConstraintSet_quantizeMotionSteps = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_quantizeMotionSteps;
 			global::Exponea.Resource.Styleable.ConstraintSet_transitionEasing = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_transitionEasing;
 			global::Exponea.Resource.Styleable.ConstraintSet_transitionPathRotate = global::XamarinExample.Droid.Resource.Styleable.ConstraintSet_transitionPathRotate;
 			global::Exponea.Resource.Styleable.Constraint_android_alpha = global::XamarinExample.Droid.Resource.Styleable.Constraint_android_alpha;
@@ -4381,8 +3594,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Constraint_android_translationY = global::XamarinExample.Droid.Resource.Styleable.Constraint_android_translationY;
 			global::Exponea.Resource.Styleable.Constraint_android_translationZ = global::XamarinExample.Droid.Resource.Styleable.Constraint_android_translationZ;
 			global::Exponea.Resource.Styleable.Constraint_android_visibility = global::XamarinExample.Droid.Resource.Styleable.Constraint_android_visibility;
-			global::Exponea.Resource.Styleable.Constraint_animateCircleAngleTo = global::XamarinExample.Droid.Resource.Styleable.Constraint_animateCircleAngleTo;
-			global::Exponea.Resource.Styleable.Constraint_animateRelativeTo = global::XamarinExample.Droid.Resource.Styleable.Constraint_animateRelativeTo;
 			global::Exponea.Resource.Styleable.Constraint_barrierAllowsGoneWidgets = global::XamarinExample.Droid.Resource.Styleable.Constraint_barrierAllowsGoneWidgets;
 			global::Exponea.Resource.Styleable.Constraint_barrierDirection = global::XamarinExample.Droid.Resource.Styleable.Constraint_barrierDirection;
 			global::Exponea.Resource.Styleable.Constraint_barrierMargin = global::XamarinExample.Droid.Resource.Styleable.Constraint_barrierMargin;
@@ -4412,8 +3623,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Constraint_layout_constrainedWidth = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constrainedWidth;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintBaseline_creator = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBaseline_creator;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintBaseline_toBaselineOf = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBaseline_toBaselineOf;
-			global::Exponea.Resource.Styleable.Constraint_layout_constraintBaseline_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBaseline_toBottomOf;
-			global::Exponea.Resource.Styleable.Constraint_layout_constraintBaseline_toTopOf = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBaseline_toTopOf;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintBottom_creator = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBottom_creator;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintBottom_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBottom_toBottomOf;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintBottom_toTopOf = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintBottom_toTopOf;
@@ -4426,7 +3635,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintGuide_begin = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintGuide_begin;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintGuide_end = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintGuide_end;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintGuide_percent = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintGuide_percent;
-			global::Exponea.Resource.Styleable.Constraint_layout_constraintHeight = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintHeight;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintHeight_default = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintHeight_default;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintHeight_max = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintHeight_max;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintHeight_min = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintHeight_min;
@@ -4449,31 +3657,22 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintVertical_bias = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintVertical_bias;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintVertical_chainStyle = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintVertical_chainStyle;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintVertical_weight = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintVertical_weight;
-			global::Exponea.Resource.Styleable.Constraint_layout_constraintWidth = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintWidth;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintWidth_default = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintWidth_default;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintWidth_max = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintWidth_max;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintWidth_min = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintWidth_min;
 			global::Exponea.Resource.Styleable.Constraint_layout_constraintWidth_percent = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_constraintWidth_percent;
 			global::Exponea.Resource.Styleable.Constraint_layout_editor_absoluteX = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_editor_absoluteX;
 			global::Exponea.Resource.Styleable.Constraint_layout_editor_absoluteY = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_editor_absoluteY;
-			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginBaseline = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginBaseline;
 			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginBottom = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginBottom;
 			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginEnd = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginEnd;
 			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginLeft = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginLeft;
 			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginRight = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginRight;
 			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginStart = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginStart;
 			global::Exponea.Resource.Styleable.Constraint_layout_goneMarginTop = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_goneMarginTop;
-			global::Exponea.Resource.Styleable.Constraint_layout_marginBaseline = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_marginBaseline;
-			global::Exponea.Resource.Styleable.Constraint_layout_wrapBehaviorInParent = global::XamarinExample.Droid.Resource.Styleable.Constraint_layout_wrapBehaviorInParent;
 			global::Exponea.Resource.Styleable.Constraint_motionProgress = global::XamarinExample.Droid.Resource.Styleable.Constraint_motionProgress;
 			global::Exponea.Resource.Styleable.Constraint_motionStagger = global::XamarinExample.Droid.Resource.Styleable.Constraint_motionStagger;
 			global::Exponea.Resource.Styleable.Constraint_pathMotionArc = global::XamarinExample.Droid.Resource.Styleable.Constraint_pathMotionArc;
 			global::Exponea.Resource.Styleable.Constraint_pivotAnchor = global::XamarinExample.Droid.Resource.Styleable.Constraint_pivotAnchor;
-			global::Exponea.Resource.Styleable.Constraint_polarRelativeTo = global::XamarinExample.Droid.Resource.Styleable.Constraint_polarRelativeTo;
-			global::Exponea.Resource.Styleable.Constraint_quantizeMotionInterpolator = global::XamarinExample.Droid.Resource.Styleable.Constraint_quantizeMotionInterpolator;
-			global::Exponea.Resource.Styleable.Constraint_quantizeMotionPhase = global::XamarinExample.Droid.Resource.Styleable.Constraint_quantizeMotionPhase;
-			global::Exponea.Resource.Styleable.Constraint_quantizeMotionSteps = global::XamarinExample.Droid.Resource.Styleable.Constraint_quantizeMotionSteps;
-			global::Exponea.Resource.Styleable.Constraint_transformPivotTarget = global::XamarinExample.Droid.Resource.Styleable.Constraint_transformPivotTarget;
 			global::Exponea.Resource.Styleable.Constraint_transitionEasing = global::XamarinExample.Droid.Resource.Styleable.Constraint_transitionEasing;
 			global::Exponea.Resource.Styleable.Constraint_transitionPathRotate = global::XamarinExample.Droid.Resource.Styleable.Constraint_transitionPathRotate;
 			global::Exponea.Resource.Styleable.Constraint_visibilityMode = global::XamarinExample.Droid.Resource.Styleable.Constraint_visibilityMode;
@@ -4497,22 +3696,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.CustomAttribute_customFloatValue = global::XamarinExample.Droid.Resource.Styleable.CustomAttribute_customFloatValue;
 			global::Exponea.Resource.Styleable.CustomAttribute_customIntegerValue = global::XamarinExample.Droid.Resource.Styleable.CustomAttribute_customIntegerValue;
 			global::Exponea.Resource.Styleable.CustomAttribute_customPixelDimension = global::XamarinExample.Droid.Resource.Styleable.CustomAttribute_customPixelDimension;
-			global::Exponea.Resource.Styleable.CustomAttribute_customReference = global::XamarinExample.Droid.Resource.Styleable.CustomAttribute_customReference;
 			global::Exponea.Resource.Styleable.CustomAttribute_customStringValue = global::XamarinExample.Droid.Resource.Styleable.CustomAttribute_customStringValue;
-			global::Exponea.Resource.Styleable.CustomAttribute_methodName = global::XamarinExample.Droid.Resource.Styleable.CustomAttribute_methodName;
-			global::Exponea.Resource.Styleable.DialogPreference = global::XamarinExample.Droid.Resource.Styleable.DialogPreference;
-			global::Exponea.Resource.Styleable.DialogPreference_android_dialogIcon = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_android_dialogIcon;
-			global::Exponea.Resource.Styleable.DialogPreference_android_dialogLayout = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_android_dialogLayout;
-			global::Exponea.Resource.Styleable.DialogPreference_android_dialogMessage = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_android_dialogMessage;
-			global::Exponea.Resource.Styleable.DialogPreference_android_dialogTitle = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_android_dialogTitle;
-			global::Exponea.Resource.Styleable.DialogPreference_android_negativeButtonText = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_android_negativeButtonText;
-			global::Exponea.Resource.Styleable.DialogPreference_android_positiveButtonText = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_android_positiveButtonText;
-			global::Exponea.Resource.Styleable.DialogPreference_dialogIcon = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_dialogIcon;
-			global::Exponea.Resource.Styleable.DialogPreference_dialogLayout = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_dialogLayout;
-			global::Exponea.Resource.Styleable.DialogPreference_dialogMessage = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_dialogMessage;
-			global::Exponea.Resource.Styleable.DialogPreference_dialogTitle = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_dialogTitle;
-			global::Exponea.Resource.Styleable.DialogPreference_negativeButtonText = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_negativeButtonText;
-			global::Exponea.Resource.Styleable.DialogPreference_positiveButtonText = global::XamarinExample.Droid.Resource.Styleable.DialogPreference_positiveButtonText;
 			global::Exponea.Resource.Styleable.DrawerArrowToggle = global::XamarinExample.Droid.Resource.Styleable.DrawerArrowToggle;
 			global::Exponea.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::XamarinExample.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Exponea.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::XamarinExample.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -4524,13 +3708,10 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.DrawerArrowToggle_thickness = global::XamarinExample.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
 			global::Exponea.Resource.Styleable.DrawerLayout = global::XamarinExample.Droid.Resource.Styleable.DrawerLayout;
 			global::Exponea.Resource.Styleable.DrawerLayout_elevation = global::XamarinExample.Droid.Resource.Styleable.DrawerLayout_elevation;
-			global::Exponea.Resource.Styleable.EditTextPreference = global::XamarinExample.Droid.Resource.Styleable.EditTextPreference;
-			global::Exponea.Resource.Styleable.EditTextPreference_useSimpleSummaryProvider = global::XamarinExample.Droid.Resource.Styleable.EditTextPreference_useSimpleSummaryProvider;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink;
-			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_collapsedSize = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_collapsedSize;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_elevation = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_elevation;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_extendMotionSpec = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_extendMotionSpec;
 			global::Exponea.Resource.Styleable.ExtendedFloatingActionButton_hideMotionSpec = global::XamarinExample.Droid.Resource.Styleable.ExtendedFloatingActionButton_hideMotionSpec;
@@ -4607,26 +3788,18 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.GradientColor_android_type = global::XamarinExample.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Exponea.Resource.Styleable.ImageFilterView = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView;
 			global::Exponea.Resource.Styleable.ImageFilterView_altSrc = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_altSrc;
-			global::Exponea.Resource.Styleable.ImageFilterView_blendSrc = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_blendSrc;
 			global::Exponea.Resource.Styleable.ImageFilterView_brightness = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_brightness;
 			global::Exponea.Resource.Styleable.ImageFilterView_contrast = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_contrast;
 			global::Exponea.Resource.Styleable.ImageFilterView_crossfade = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_crossfade;
-			global::Exponea.Resource.Styleable.ImageFilterView_imagePanX = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_imagePanX;
-			global::Exponea.Resource.Styleable.ImageFilterView_imagePanY = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_imagePanY;
-			global::Exponea.Resource.Styleable.ImageFilterView_imageRotate = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_imageRotate;
-			global::Exponea.Resource.Styleable.ImageFilterView_imageZoom = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_imageZoom;
 			global::Exponea.Resource.Styleable.ImageFilterView_overlay = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_overlay;
 			global::Exponea.Resource.Styleable.ImageFilterView_round = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_round;
 			global::Exponea.Resource.Styleable.ImageFilterView_roundPercent = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_roundPercent;
 			global::Exponea.Resource.Styleable.ImageFilterView_saturation = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_saturation;
 			global::Exponea.Resource.Styleable.ImageFilterView_warmth = global::XamarinExample.Droid.Resource.Styleable.ImageFilterView_warmth;
-			global::Exponea.Resource.Styleable.include = global::XamarinExample.Droid.Resource.Styleable.include;
-			global::Exponea.Resource.Styleable.include_constraintSet = global::XamarinExample.Droid.Resource.Styleable.include_constraintSet;
 			global::Exponea.Resource.Styleable.Insets = global::XamarinExample.Droid.Resource.Styleable.Insets;
 			global::Exponea.Resource.Styleable.Insets_paddingBottomSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.Insets_paddingBottomSystemWindowInsets;
 			global::Exponea.Resource.Styleable.Insets_paddingLeftSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.Insets_paddingLeftSystemWindowInsets;
 			global::Exponea.Resource.Styleable.Insets_paddingRightSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.Insets_paddingRightSystemWindowInsets;
-			global::Exponea.Resource.Styleable.Insets_paddingTopSystemWindowInsets = global::XamarinExample.Droid.Resource.Styleable.Insets_paddingTopSystemWindowInsets;
 			global::Exponea.Resource.Styleable.ItemsViewRendererTheme = global::XamarinExample.Droid.Resource.Styleable.ItemsViewRendererTheme;
 			global::Exponea.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::XamarinExample.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
 			global::Exponea.Resource.Styleable.KeyAttribute = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute;
@@ -4646,7 +3819,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.KeyAttribute_framePosition = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute_framePosition;
 			global::Exponea.Resource.Styleable.KeyAttribute_motionProgress = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute_motionProgress;
 			global::Exponea.Resource.Styleable.KeyAttribute_motionTarget = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute_motionTarget;
-			global::Exponea.Resource.Styleable.KeyAttribute_transformPivotTarget = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute_transformPivotTarget;
 			global::Exponea.Resource.Styleable.KeyAttribute_transitionEasing = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute_transitionEasing;
 			global::Exponea.Resource.Styleable.KeyAttribute_transitionPathRotate = global::XamarinExample.Droid.Resource.Styleable.KeyAttribute_transitionPathRotate;
 			global::Exponea.Resource.Styleable.KeyCycle = global::XamarinExample.Droid.Resource.Styleable.KeyCycle;
@@ -4668,7 +3840,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.KeyCycle_transitionPathRotate = global::XamarinExample.Droid.Resource.Styleable.KeyCycle_transitionPathRotate;
 			global::Exponea.Resource.Styleable.KeyCycle_waveOffset = global::XamarinExample.Droid.Resource.Styleable.KeyCycle_waveOffset;
 			global::Exponea.Resource.Styleable.KeyCycle_wavePeriod = global::XamarinExample.Droid.Resource.Styleable.KeyCycle_wavePeriod;
-			global::Exponea.Resource.Styleable.KeyCycle_wavePhase = global::XamarinExample.Droid.Resource.Styleable.KeyCycle_wavePhase;
 			global::Exponea.Resource.Styleable.KeyCycle_waveShape = global::XamarinExample.Droid.Resource.Styleable.KeyCycle_waveShape;
 			global::Exponea.Resource.Styleable.KeyCycle_waveVariesBy = global::XamarinExample.Droid.Resource.Styleable.KeyCycle_waveVariesBy;
 			global::Exponea.Resource.Styleable.KeyFrame = global::XamarinExample.Droid.Resource.Styleable.KeyFrame;
@@ -4707,7 +3878,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.KeyTimeCycle_waveDecay = global::XamarinExample.Droid.Resource.Styleable.KeyTimeCycle_waveDecay;
 			global::Exponea.Resource.Styleable.KeyTimeCycle_waveOffset = global::XamarinExample.Droid.Resource.Styleable.KeyTimeCycle_waveOffset;
 			global::Exponea.Resource.Styleable.KeyTimeCycle_wavePeriod = global::XamarinExample.Droid.Resource.Styleable.KeyTimeCycle_wavePeriod;
-			global::Exponea.Resource.Styleable.KeyTimeCycle_wavePhase = global::XamarinExample.Droid.Resource.Styleable.KeyTimeCycle_wavePhase;
 			global::Exponea.Resource.Styleable.KeyTimeCycle_waveShape = global::XamarinExample.Droid.Resource.Styleable.KeyTimeCycle_waveShape;
 			global::Exponea.Resource.Styleable.KeyTrigger = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger;
 			global::Exponea.Resource.Styleable.KeyTrigger_framePosition = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_framePosition;
@@ -4720,9 +3890,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.KeyTrigger_triggerId = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_triggerId;
 			global::Exponea.Resource.Styleable.KeyTrigger_triggerReceiver = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_triggerReceiver;
 			global::Exponea.Resource.Styleable.KeyTrigger_triggerSlack = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_triggerSlack;
-			global::Exponea.Resource.Styleable.KeyTrigger_viewTransitionOnCross = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_viewTransitionOnCross;
-			global::Exponea.Resource.Styleable.KeyTrigger_viewTransitionOnNegativeCross = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_viewTransitionOnNegativeCross;
-			global::Exponea.Resource.Styleable.KeyTrigger_viewTransitionOnPositiveCross = global::XamarinExample.Droid.Resource.Styleable.KeyTrigger_viewTransitionOnPositiveCross;
 			global::Exponea.Resource.Styleable.Layout = global::XamarinExample.Droid.Resource.Styleable.Layout;
 			global::Exponea.Resource.Styleable.Layout_android_layout_height = global::XamarinExample.Droid.Resource.Styleable.Layout_android_layout_height;
 			global::Exponea.Resource.Styleable.Layout_android_layout_marginBottom = global::XamarinExample.Droid.Resource.Styleable.Layout_android_layout_marginBottom;
@@ -4743,8 +3910,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Layout_layout_constrainedWidth = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constrainedWidth;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintBaseline_creator = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBaseline_creator;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintBaseline_toBaselineOf = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBaseline_toBaselineOf;
-			global::Exponea.Resource.Styleable.Layout_layout_constraintBaseline_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBaseline_toBottomOf;
-			global::Exponea.Resource.Styleable.Layout_layout_constraintBaseline_toTopOf = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBaseline_toTopOf;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintBottom_creator = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBottom_creator;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintBottom_toBottomOf = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBottom_toBottomOf;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintBottom_toTopOf = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintBottom_toTopOf;
@@ -4757,7 +3922,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Layout_layout_constraintGuide_begin = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintGuide_begin;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintGuide_end = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintGuide_end;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintGuide_percent = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintGuide_percent;
-			global::Exponea.Resource.Styleable.Layout_layout_constraintHeight = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintHeight;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintHeight_default = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintHeight_default;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintHeight_max = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintHeight_max;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintHeight_min = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintHeight_min;
@@ -4779,22 +3943,18 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Layout_layout_constraintVertical_bias = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintVertical_bias;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintVertical_chainStyle = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintVertical_chainStyle;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintVertical_weight = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintVertical_weight;
-			global::Exponea.Resource.Styleable.Layout_layout_constraintWidth = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintWidth;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintWidth_default = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintWidth_default;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintWidth_max = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintWidth_max;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintWidth_min = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintWidth_min;
 			global::Exponea.Resource.Styleable.Layout_layout_constraintWidth_percent = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_constraintWidth_percent;
 			global::Exponea.Resource.Styleable.Layout_layout_editor_absoluteX = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_editor_absoluteX;
 			global::Exponea.Resource.Styleable.Layout_layout_editor_absoluteY = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_editor_absoluteY;
-			global::Exponea.Resource.Styleable.Layout_layout_goneMarginBaseline = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginBaseline;
 			global::Exponea.Resource.Styleable.Layout_layout_goneMarginBottom = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginBottom;
 			global::Exponea.Resource.Styleable.Layout_layout_goneMarginEnd = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginEnd;
 			global::Exponea.Resource.Styleable.Layout_layout_goneMarginLeft = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginLeft;
 			global::Exponea.Resource.Styleable.Layout_layout_goneMarginRight = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginRight;
 			global::Exponea.Resource.Styleable.Layout_layout_goneMarginStart = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginStart;
 			global::Exponea.Resource.Styleable.Layout_layout_goneMarginTop = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_goneMarginTop;
-			global::Exponea.Resource.Styleable.Layout_layout_marginBaseline = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_marginBaseline;
-			global::Exponea.Resource.Styleable.Layout_layout_wrapBehaviorInParent = global::XamarinExample.Droid.Resource.Styleable.Layout_layout_wrapBehaviorInParent;
 			global::Exponea.Resource.Styleable.Layout_maxHeight = global::XamarinExample.Droid.Resource.Styleable.Layout_maxHeight;
 			global::Exponea.Resource.Styleable.Layout_maxWidth = global::XamarinExample.Droid.Resource.Styleable.Layout_maxWidth;
 			global::Exponea.Resource.Styleable.Layout_minHeight = global::XamarinExample.Droid.Resource.Styleable.Layout_minHeight;
@@ -4814,18 +3974,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::XamarinExample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
 			global::Exponea.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::XamarinExample.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
 			global::Exponea.Resource.Styleable.LinearLayoutCompat_showDividers = global::XamarinExample.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Exponea.Resource.Styleable.LinearProgressIndicator = global::XamarinExample.Droid.Resource.Styleable.LinearProgressIndicator;
-			global::Exponea.Resource.Styleable.LinearProgressIndicator_indeterminateAnimationType = global::XamarinExample.Droid.Resource.Styleable.LinearProgressIndicator_indeterminateAnimationType;
-			global::Exponea.Resource.Styleable.LinearProgressIndicator_indicatorDirectionLinear = global::XamarinExample.Droid.Resource.Styleable.LinearProgressIndicator_indicatorDirectionLinear;
 			global::Exponea.Resource.Styleable.ListPopupWindow = global::XamarinExample.Droid.Resource.Styleable.ListPopupWindow;
 			global::Exponea.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::XamarinExample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
 			global::Exponea.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::XamarinExample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Exponea.Resource.Styleable.ListPreference = global::XamarinExample.Droid.Resource.Styleable.ListPreference;
-			global::Exponea.Resource.Styleable.ListPreference_android_entries = global::XamarinExample.Droid.Resource.Styleable.ListPreference_android_entries;
-			global::Exponea.Resource.Styleable.ListPreference_android_entryValues = global::XamarinExample.Droid.Resource.Styleable.ListPreference_android_entryValues;
-			global::Exponea.Resource.Styleable.ListPreference_entries = global::XamarinExample.Droid.Resource.Styleable.ListPreference_entries;
-			global::Exponea.Resource.Styleable.ListPreference_entryValues = global::XamarinExample.Droid.Resource.Styleable.ListPreference_entryValues;
-			global::Exponea.Resource.Styleable.ListPreference_useSimpleSummaryProvider = global::XamarinExample.Droid.Resource.Styleable.ListPreference_useSimpleSummaryProvider;
 			global::Exponea.Resource.Styleable.MaterialAlertDialog = global::XamarinExample.Droid.Resource.Styleable.MaterialAlertDialog;
 			global::Exponea.Resource.Styleable.MaterialAlertDialogTheme = global::XamarinExample.Droid.Resource.Styleable.MaterialAlertDialogTheme;
 			global::Exponea.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle = global::XamarinExample.Droid.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle;
@@ -4882,7 +4033,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.MaterialCalendar_daySelectedStyle = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_daySelectedStyle;
 			global::Exponea.Resource.Styleable.MaterialCalendar_dayStyle = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_dayStyle;
 			global::Exponea.Resource.Styleable.MaterialCalendar_dayTodayStyle = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_dayTodayStyle;
-			global::Exponea.Resource.Styleable.MaterialCalendar_nestedScrollable = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_nestedScrollable;
 			global::Exponea.Resource.Styleable.MaterialCalendar_rangeFillColor = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_rangeFillColor;
 			global::Exponea.Resource.Styleable.MaterialCalendar_yearSelectedStyle = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_yearSelectedStyle;
 			global::Exponea.Resource.Styleable.MaterialCalendar_yearStyle = global::XamarinExample.Droid.Resource.Styleable.MaterialCalendar_yearStyle;
@@ -4891,8 +4041,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.MaterialCardView_android_checkable = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_android_checkable;
 			global::Exponea.Resource.Styleable.MaterialCardView_cardForegroundColor = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_cardForegroundColor;
 			global::Exponea.Resource.Styleable.MaterialCardView_checkedIcon = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_checkedIcon;
-			global::Exponea.Resource.Styleable.MaterialCardView_checkedIconMargin = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_checkedIconMargin;
-			global::Exponea.Resource.Styleable.MaterialCardView_checkedIconSize = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_checkedIconSize;
 			global::Exponea.Resource.Styleable.MaterialCardView_checkedIconTint = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_checkedIconTint;
 			global::Exponea.Resource.Styleable.MaterialCardView_rippleColor = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_rippleColor;
 			global::Exponea.Resource.Styleable.MaterialCardView_shapeAppearance = global::XamarinExample.Droid.Resource.Styleable.MaterialCardView_shapeAppearance;
@@ -4910,20 +4058,12 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.MaterialShape_shapeAppearance = global::XamarinExample.Droid.Resource.Styleable.MaterialShape_shapeAppearance;
 			global::Exponea.Resource.Styleable.MaterialShape_shapeAppearanceOverlay = global::XamarinExample.Droid.Resource.Styleable.MaterialShape_shapeAppearanceOverlay;
 			global::Exponea.Resource.Styleable.MaterialTextAppearance = global::XamarinExample.Droid.Resource.Styleable.MaterialTextAppearance;
-			global::Exponea.Resource.Styleable.MaterialTextAppearance_android_letterSpacing = global::XamarinExample.Droid.Resource.Styleable.MaterialTextAppearance_android_letterSpacing;
 			global::Exponea.Resource.Styleable.MaterialTextAppearance_android_lineHeight = global::XamarinExample.Droid.Resource.Styleable.MaterialTextAppearance_android_lineHeight;
 			global::Exponea.Resource.Styleable.MaterialTextAppearance_lineHeight = global::XamarinExample.Droid.Resource.Styleable.MaterialTextAppearance_lineHeight;
 			global::Exponea.Resource.Styleable.MaterialTextView = global::XamarinExample.Droid.Resource.Styleable.MaterialTextView;
 			global::Exponea.Resource.Styleable.MaterialTextView_android_lineHeight = global::XamarinExample.Droid.Resource.Styleable.MaterialTextView_android_lineHeight;
 			global::Exponea.Resource.Styleable.MaterialTextView_android_textAppearance = global::XamarinExample.Droid.Resource.Styleable.MaterialTextView_android_textAppearance;
 			global::Exponea.Resource.Styleable.MaterialTextView_lineHeight = global::XamarinExample.Droid.Resource.Styleable.MaterialTextView_lineHeight;
-			global::Exponea.Resource.Styleable.MaterialTimePicker = global::XamarinExample.Droid.Resource.Styleable.MaterialTimePicker;
-			global::Exponea.Resource.Styleable.MaterialTimePicker_clockIcon = global::XamarinExample.Droid.Resource.Styleable.MaterialTimePicker_clockIcon;
-			global::Exponea.Resource.Styleable.MaterialTimePicker_keyboardIcon = global::XamarinExample.Droid.Resource.Styleable.MaterialTimePicker_keyboardIcon;
-			global::Exponea.Resource.Styleable.MaterialToolbar = global::XamarinExample.Droid.Resource.Styleable.MaterialToolbar;
-			global::Exponea.Resource.Styleable.MaterialToolbar_navigationIconTint = global::XamarinExample.Droid.Resource.Styleable.MaterialToolbar_navigationIconTint;
-			global::Exponea.Resource.Styleable.MaterialToolbar_subtitleCentered = global::XamarinExample.Droid.Resource.Styleable.MaterialToolbar_subtitleCentered;
-			global::Exponea.Resource.Styleable.MaterialToolbar_titleCentered = global::XamarinExample.Droid.Resource.Styleable.MaterialToolbar_titleCentered;
 			global::Exponea.Resource.Styleable.MenuGroup = global::XamarinExample.Droid.Resource.Styleable.MenuGroup;
 			global::Exponea.Resource.Styleable.MenuGroup_android_checkableBehavior = global::XamarinExample.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
 			global::Exponea.Resource.Styleable.MenuGroup_android_enabled = global::XamarinExample.Droid.Resource.Styleable.MenuGroup_android_enabled;
@@ -4973,44 +4113,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.MockView_mock_showDiagonals = global::XamarinExample.Droid.Resource.Styleable.MockView_mock_showDiagonals;
 			global::Exponea.Resource.Styleable.MockView_mock_showLabel = global::XamarinExample.Droid.Resource.Styleable.MockView_mock_showLabel;
 			global::Exponea.Resource.Styleable.Motion = global::XamarinExample.Droid.Resource.Styleable.Motion;
-			global::Exponea.Resource.Styleable.MotionEffect = global::XamarinExample.Droid.Resource.Styleable.MotionEffect;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_alpha = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_alpha;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_end = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_end;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_move = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_move;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_start = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_start;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_strict = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_strict;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_translationX = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_translationX;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_translationY = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_translationY;
-			global::Exponea.Resource.Styleable.MotionEffect_motionEffect_viewTransition = global::XamarinExample.Droid.Resource.Styleable.MotionEffect_motionEffect_viewTransition;
 			global::Exponea.Resource.Styleable.MotionHelper = global::XamarinExample.Droid.Resource.Styleable.MotionHelper;
 			global::Exponea.Resource.Styleable.MotionHelper_onHide = global::XamarinExample.Droid.Resource.Styleable.MotionHelper_onHide;
 			global::Exponea.Resource.Styleable.MotionHelper_onShow = global::XamarinExample.Droid.Resource.Styleable.MotionHelper_onShow;
-			global::Exponea.Resource.Styleable.MotionLabel = global::XamarinExample.Droid.Resource.Styleable.MotionLabel;
-			global::Exponea.Resource.Styleable.MotionLabel_android_autoSizeTextType = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_autoSizeTextType;
-			global::Exponea.Resource.Styleable.MotionLabel_android_fontFamily = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_fontFamily;
-			global::Exponea.Resource.Styleable.MotionLabel_android_gravity = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_gravity;
-			global::Exponea.Resource.Styleable.MotionLabel_android_shadowRadius = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_shadowRadius;
-			global::Exponea.Resource.Styleable.MotionLabel_android_text = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_text;
-			global::Exponea.Resource.Styleable.MotionLabel_android_textColor = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_textColor;
-			global::Exponea.Resource.Styleable.MotionLabel_android_textSize = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_textSize;
-			global::Exponea.Resource.Styleable.MotionLabel_android_textStyle = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_textStyle;
-			global::Exponea.Resource.Styleable.MotionLabel_android_typeface = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_android_typeface;
-			global::Exponea.Resource.Styleable.MotionLabel_borderRound = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_borderRound;
-			global::Exponea.Resource.Styleable.MotionLabel_borderRoundPercent = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_borderRoundPercent;
-			global::Exponea.Resource.Styleable.MotionLabel_scaleFromTextSize = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_scaleFromTextSize;
-			global::Exponea.Resource.Styleable.MotionLabel_textBackground = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textBackground;
-			global::Exponea.Resource.Styleable.MotionLabel_textBackgroundPanX = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textBackgroundPanX;
-			global::Exponea.Resource.Styleable.MotionLabel_textBackgroundPanY = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textBackgroundPanY;
-			global::Exponea.Resource.Styleable.MotionLabel_textBackgroundRotate = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textBackgroundRotate;
-			global::Exponea.Resource.Styleable.MotionLabel_textBackgroundZoom = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textBackgroundZoom;
-			global::Exponea.Resource.Styleable.MotionLabel_textOutlineColor = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textOutlineColor;
-			global::Exponea.Resource.Styleable.MotionLabel_textOutlineThickness = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textOutlineThickness;
-			global::Exponea.Resource.Styleable.MotionLabel_textPanX = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textPanX;
-			global::Exponea.Resource.Styleable.MotionLabel_textPanY = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textPanY;
-			global::Exponea.Resource.Styleable.MotionLabel_textureBlurFactor = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textureBlurFactor;
-			global::Exponea.Resource.Styleable.MotionLabel_textureEffect = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textureEffect;
-			global::Exponea.Resource.Styleable.MotionLabel_textureHeight = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textureHeight;
-			global::Exponea.Resource.Styleable.MotionLabel_textureWidth = global::XamarinExample.Droid.Resource.Styleable.MotionLabel_textureWidth;
 			global::Exponea.Resource.Styleable.MotionLayout = global::XamarinExample.Droid.Resource.Styleable.MotionLayout;
 			global::Exponea.Resource.Styleable.MotionLayout_applyMotionScene = global::XamarinExample.Droid.Resource.Styleable.MotionLayout_applyMotionScene;
 			global::Exponea.Resource.Styleable.MotionLayout_currentState = global::XamarinExample.Droid.Resource.Styleable.MotionLayout_currentState;
@@ -5025,60 +4130,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.MotionTelltales_telltales_tailColor = global::XamarinExample.Droid.Resource.Styleable.MotionTelltales_telltales_tailColor;
 			global::Exponea.Resource.Styleable.MotionTelltales_telltales_tailScale = global::XamarinExample.Droid.Resource.Styleable.MotionTelltales_telltales_tailScale;
 			global::Exponea.Resource.Styleable.MotionTelltales_telltales_velocityMode = global::XamarinExample.Droid.Resource.Styleable.MotionTelltales_telltales_velocityMode;
-			global::Exponea.Resource.Styleable.Motion_animateCircleAngleTo = global::XamarinExample.Droid.Resource.Styleable.Motion_animateCircleAngleTo;
-			global::Exponea.Resource.Styleable.Motion_animateRelativeTo = global::XamarinExample.Droid.Resource.Styleable.Motion_animateRelativeTo;
 			global::Exponea.Resource.Styleable.Motion_drawPath = global::XamarinExample.Droid.Resource.Styleable.Motion_drawPath;
 			global::Exponea.Resource.Styleable.Motion_motionPathRotate = global::XamarinExample.Droid.Resource.Styleable.Motion_motionPathRotate;
 			global::Exponea.Resource.Styleable.Motion_motionStagger = global::XamarinExample.Droid.Resource.Styleable.Motion_motionStagger;
 			global::Exponea.Resource.Styleable.Motion_pathMotionArc = global::XamarinExample.Droid.Resource.Styleable.Motion_pathMotionArc;
-			global::Exponea.Resource.Styleable.Motion_quantizeMotionInterpolator = global::XamarinExample.Droid.Resource.Styleable.Motion_quantizeMotionInterpolator;
-			global::Exponea.Resource.Styleable.Motion_quantizeMotionPhase = global::XamarinExample.Droid.Resource.Styleable.Motion_quantizeMotionPhase;
-			global::Exponea.Resource.Styleable.Motion_quantizeMotionSteps = global::XamarinExample.Droid.Resource.Styleable.Motion_quantizeMotionSteps;
 			global::Exponea.Resource.Styleable.Motion_transitionEasing = global::XamarinExample.Droid.Resource.Styleable.Motion_transitionEasing;
-			global::Exponea.Resource.Styleable.MultiSelectListPreference = global::XamarinExample.Droid.Resource.Styleable.MultiSelectListPreference;
-			global::Exponea.Resource.Styleable.MultiSelectListPreference_android_entries = global::XamarinExample.Droid.Resource.Styleable.MultiSelectListPreference_android_entries;
-			global::Exponea.Resource.Styleable.MultiSelectListPreference_android_entryValues = global::XamarinExample.Droid.Resource.Styleable.MultiSelectListPreference_android_entryValues;
-			global::Exponea.Resource.Styleable.MultiSelectListPreference_entries = global::XamarinExample.Droid.Resource.Styleable.MultiSelectListPreference_entries;
-			global::Exponea.Resource.Styleable.MultiSelectListPreference_entryValues = global::XamarinExample.Droid.Resource.Styleable.MultiSelectListPreference_entryValues;
-			global::Exponea.Resource.Styleable.NavAction = global::XamarinExample.Droid.Resource.Styleable.NavAction;
-			global::Exponea.Resource.Styleable.NavAction_android_id = global::XamarinExample.Droid.Resource.Styleable.NavAction_android_id;
-			global::Exponea.Resource.Styleable.NavAction_destination = global::XamarinExample.Droid.Resource.Styleable.NavAction_destination;
-			global::Exponea.Resource.Styleable.NavAction_enterAnim = global::XamarinExample.Droid.Resource.Styleable.NavAction_enterAnim;
-			global::Exponea.Resource.Styleable.NavAction_exitAnim = global::XamarinExample.Droid.Resource.Styleable.NavAction_exitAnim;
-			global::Exponea.Resource.Styleable.NavAction_launchSingleTop = global::XamarinExample.Droid.Resource.Styleable.NavAction_launchSingleTop;
-			global::Exponea.Resource.Styleable.NavAction_popEnterAnim = global::XamarinExample.Droid.Resource.Styleable.NavAction_popEnterAnim;
-			global::Exponea.Resource.Styleable.NavAction_popExitAnim = global::XamarinExample.Droid.Resource.Styleable.NavAction_popExitAnim;
-			global::Exponea.Resource.Styleable.NavAction_popUpTo = global::XamarinExample.Droid.Resource.Styleable.NavAction_popUpTo;
-			global::Exponea.Resource.Styleable.NavAction_popUpToInclusive = global::XamarinExample.Droid.Resource.Styleable.NavAction_popUpToInclusive;
-			global::Exponea.Resource.Styleable.NavArgument = global::XamarinExample.Droid.Resource.Styleable.NavArgument;
-			global::Exponea.Resource.Styleable.NavArgument_android_defaultValue = global::XamarinExample.Droid.Resource.Styleable.NavArgument_android_defaultValue;
-			global::Exponea.Resource.Styleable.NavArgument_android_name = global::XamarinExample.Droid.Resource.Styleable.NavArgument_android_name;
-			global::Exponea.Resource.Styleable.NavArgument_argType = global::XamarinExample.Droid.Resource.Styleable.NavArgument_argType;
-			global::Exponea.Resource.Styleable.NavArgument_nullable = global::XamarinExample.Droid.Resource.Styleable.NavArgument_nullable;
-			global::Exponea.Resource.Styleable.NavDeepLink = global::XamarinExample.Droid.Resource.Styleable.NavDeepLink;
-			global::Exponea.Resource.Styleable.NavDeepLink_action = global::XamarinExample.Droid.Resource.Styleable.NavDeepLink_action;
-			global::Exponea.Resource.Styleable.NavDeepLink_android_autoVerify = global::XamarinExample.Droid.Resource.Styleable.NavDeepLink_android_autoVerify;
-			global::Exponea.Resource.Styleable.NavDeepLink_mimeType = global::XamarinExample.Droid.Resource.Styleable.NavDeepLink_mimeType;
-			global::Exponea.Resource.Styleable.NavDeepLink_uri = global::XamarinExample.Droid.Resource.Styleable.NavDeepLink_uri;
-			global::Exponea.Resource.Styleable.NavGraphNavigator = global::XamarinExample.Droid.Resource.Styleable.NavGraphNavigator;
-			global::Exponea.Resource.Styleable.NavGraphNavigator_startDestination = global::XamarinExample.Droid.Resource.Styleable.NavGraphNavigator_startDestination;
-			global::Exponea.Resource.Styleable.NavHost = global::XamarinExample.Droid.Resource.Styleable.NavHost;
-			global::Exponea.Resource.Styleable.NavHost_navGraph = global::XamarinExample.Droid.Resource.Styleable.NavHost_navGraph;
-			global::Exponea.Resource.Styleable.NavigationBarView = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView;
-			global::Exponea.Resource.Styleable.NavigationBarView_backgroundTint = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_backgroundTint;
-			global::Exponea.Resource.Styleable.NavigationBarView_elevation = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_elevation;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemBackground = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemBackground;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemIconSize = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemIconSize;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemIconTint = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemIconTint;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemRippleColor = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemRippleColor;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemTextAppearanceActive = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemTextAppearanceActive;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemTextAppearanceInactive = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemTextAppearanceInactive;
-			global::Exponea.Resource.Styleable.NavigationBarView_itemTextColor = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_itemTextColor;
-			global::Exponea.Resource.Styleable.NavigationBarView_labelVisibilityMode = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_labelVisibilityMode;
-			global::Exponea.Resource.Styleable.NavigationBarView_menu = global::XamarinExample.Droid.Resource.Styleable.NavigationBarView_menu;
-			global::Exponea.Resource.Styleable.NavigationRailView = global::XamarinExample.Droid.Resource.Styleable.NavigationRailView;
-			global::Exponea.Resource.Styleable.NavigationRailView_headerLayout = global::XamarinExample.Droid.Resource.Styleable.NavigationRailView_headerLayout;
-			global::Exponea.Resource.Styleable.NavigationRailView_menuGravity = global::XamarinExample.Droid.Resource.Styleable.NavigationRailView_menuGravity;
 			global::Exponea.Resource.Styleable.NavigationView = global::XamarinExample.Droid.Resource.Styleable.NavigationView;
 			global::Exponea.Resource.Styleable.NavigationView_android_background = global::XamarinExample.Droid.Resource.Styleable.NavigationView_android_background;
 			global::Exponea.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::XamarinExample.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
@@ -5101,18 +4157,10 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.NavigationView_itemTextAppearance = global::XamarinExample.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
 			global::Exponea.Resource.Styleable.NavigationView_itemTextColor = global::XamarinExample.Droid.Resource.Styleable.NavigationView_itemTextColor;
 			global::Exponea.Resource.Styleable.NavigationView_menu = global::XamarinExample.Droid.Resource.Styleable.NavigationView_menu;
-			global::Exponea.Resource.Styleable.NavigationView_shapeAppearance = global::XamarinExample.Droid.Resource.Styleable.NavigationView_shapeAppearance;
-			global::Exponea.Resource.Styleable.NavigationView_shapeAppearanceOverlay = global::XamarinExample.Droid.Resource.Styleable.NavigationView_shapeAppearanceOverlay;
-			global::Exponea.Resource.Styleable.Navigator = global::XamarinExample.Droid.Resource.Styleable.Navigator;
-			global::Exponea.Resource.Styleable.Navigator_android_id = global::XamarinExample.Droid.Resource.Styleable.Navigator_android_id;
-			global::Exponea.Resource.Styleable.Navigator_android_label = global::XamarinExample.Droid.Resource.Styleable.Navigator_android_label;
-			global::Exponea.Resource.Styleable.NavInclude = global::XamarinExample.Droid.Resource.Styleable.NavInclude;
-			global::Exponea.Resource.Styleable.NavInclude_graph = global::XamarinExample.Droid.Resource.Styleable.NavInclude_graph;
 			global::Exponea.Resource.Styleable.OnClick = global::XamarinExample.Droid.Resource.Styleable.OnClick;
 			global::Exponea.Resource.Styleable.OnClick_clickAction = global::XamarinExample.Droid.Resource.Styleable.OnClick_clickAction;
 			global::Exponea.Resource.Styleable.OnClick_targetId = global::XamarinExample.Droid.Resource.Styleable.OnClick_targetId;
 			global::Exponea.Resource.Styleable.OnSwipe = global::XamarinExample.Droid.Resource.Styleable.OnSwipe;
-			global::Exponea.Resource.Styleable.OnSwipe_autoCompleteMode = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_autoCompleteMode;
 			global::Exponea.Resource.Styleable.OnSwipe_dragDirection = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_dragDirection;
 			global::Exponea.Resource.Styleable.OnSwipe_dragScale = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_dragScale;
 			global::Exponea.Resource.Styleable.OnSwipe_dragThreshold = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_dragThreshold;
@@ -5122,12 +4170,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.OnSwipe_moveWhenScrollAtTop = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_moveWhenScrollAtTop;
 			global::Exponea.Resource.Styleable.OnSwipe_nestedScrollFlags = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_nestedScrollFlags;
 			global::Exponea.Resource.Styleable.OnSwipe_onTouchUp = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_onTouchUp;
-			global::Exponea.Resource.Styleable.OnSwipe_rotationCenterId = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_rotationCenterId;
-			global::Exponea.Resource.Styleable.OnSwipe_springBoundary = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_springBoundary;
-			global::Exponea.Resource.Styleable.OnSwipe_springDamping = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_springDamping;
-			global::Exponea.Resource.Styleable.OnSwipe_springMass = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_springMass;
-			global::Exponea.Resource.Styleable.OnSwipe_springStiffness = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_springStiffness;
-			global::Exponea.Resource.Styleable.OnSwipe_springStopThreshold = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_springStopThreshold;
 			global::Exponea.Resource.Styleable.OnSwipe_touchAnchorId = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_touchAnchorId;
 			global::Exponea.Resource.Styleable.OnSwipe_touchAnchorSide = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_touchAnchorSide;
 			global::Exponea.Resource.Styleable.OnSwipe_touchRegionId = global::XamarinExample.Droid.Resource.Styleable.OnSwipe_touchRegionId;
@@ -5137,89 +4179,13 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::XamarinExample.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::Exponea.Resource.Styleable.PopupWindow_android_popupBackground = global::XamarinExample.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::Exponea.Resource.Styleable.PopupWindow_overlapAnchor = global::XamarinExample.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Exponea.Resource.Styleable.Preference = global::XamarinExample.Droid.Resource.Styleable.Preference;
-			global::Exponea.Resource.Styleable.PreferenceFragment = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragment;
-			global::Exponea.Resource.Styleable.PreferenceFragmentCompat = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragmentCompat;
-			global::Exponea.Resource.Styleable.PreferenceFragmentCompat_allowDividerAfterLastItem = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragmentCompat_allowDividerAfterLastItem;
-			global::Exponea.Resource.Styleable.PreferenceFragmentCompat_android_divider = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragmentCompat_android_divider;
-			global::Exponea.Resource.Styleable.PreferenceFragmentCompat_android_dividerHeight = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragmentCompat_android_dividerHeight;
-			global::Exponea.Resource.Styleable.PreferenceFragmentCompat_android_layout = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragmentCompat_android_layout;
-			global::Exponea.Resource.Styleable.PreferenceFragment_allowDividerAfterLastItem = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragment_allowDividerAfterLastItem;
-			global::Exponea.Resource.Styleable.PreferenceFragment_android_divider = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragment_android_divider;
-			global::Exponea.Resource.Styleable.PreferenceFragment_android_dividerHeight = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragment_android_dividerHeight;
-			global::Exponea.Resource.Styleable.PreferenceFragment_android_layout = global::XamarinExample.Droid.Resource.Styleable.PreferenceFragment_android_layout;
-			global::Exponea.Resource.Styleable.PreferenceGroup = global::XamarinExample.Droid.Resource.Styleable.PreferenceGroup;
-			global::Exponea.Resource.Styleable.PreferenceGroup_android_orderingFromXml = global::XamarinExample.Droid.Resource.Styleable.PreferenceGroup_android_orderingFromXml;
-			global::Exponea.Resource.Styleable.PreferenceGroup_initialExpandedChildrenCount = global::XamarinExample.Droid.Resource.Styleable.PreferenceGroup_initialExpandedChildrenCount;
-			global::Exponea.Resource.Styleable.PreferenceGroup_orderingFromXml = global::XamarinExample.Droid.Resource.Styleable.PreferenceGroup_orderingFromXml;
-			global::Exponea.Resource.Styleable.PreferenceImageView = global::XamarinExample.Droid.Resource.Styleable.PreferenceImageView;
-			global::Exponea.Resource.Styleable.PreferenceImageView_android_maxHeight = global::XamarinExample.Droid.Resource.Styleable.PreferenceImageView_android_maxHeight;
-			global::Exponea.Resource.Styleable.PreferenceImageView_android_maxWidth = global::XamarinExample.Droid.Resource.Styleable.PreferenceImageView_android_maxWidth;
-			global::Exponea.Resource.Styleable.PreferenceImageView_maxHeight = global::XamarinExample.Droid.Resource.Styleable.PreferenceImageView_maxHeight;
-			global::Exponea.Resource.Styleable.PreferenceImageView_maxWidth = global::XamarinExample.Droid.Resource.Styleable.PreferenceImageView_maxWidth;
-			global::Exponea.Resource.Styleable.PreferenceTheme = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme;
-			global::Exponea.Resource.Styleable.PreferenceTheme_checkBoxPreferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_checkBoxPreferenceStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_dialogPreferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_dialogPreferenceStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_dropdownPreferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_dropdownPreferenceStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_editTextPreferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_editTextPreferenceStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceCategoryStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceCategoryStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceCategoryTitleTextAppearance = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceCategoryTitleTextAppearance;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceFragmentCompatStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceFragmentCompatStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceFragmentListStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceFragmentListStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceFragmentStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceFragmentStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceInformationStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceInformationStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceScreenStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceScreenStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_preferenceTheme = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_preferenceTheme;
-			global::Exponea.Resource.Styleable.PreferenceTheme_seekBarPreferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_seekBarPreferenceStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_switchPreferenceCompatStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_switchPreferenceCompatStyle;
-			global::Exponea.Resource.Styleable.PreferenceTheme_switchPreferenceStyle = global::XamarinExample.Droid.Resource.Styleable.PreferenceTheme_switchPreferenceStyle;
-			global::Exponea.Resource.Styleable.Preference_allowDividerAbove = global::XamarinExample.Droid.Resource.Styleable.Preference_allowDividerAbove;
-			global::Exponea.Resource.Styleable.Preference_allowDividerBelow = global::XamarinExample.Droid.Resource.Styleable.Preference_allowDividerBelow;
-			global::Exponea.Resource.Styleable.Preference_android_defaultValue = global::XamarinExample.Droid.Resource.Styleable.Preference_android_defaultValue;
-			global::Exponea.Resource.Styleable.Preference_android_dependency = global::XamarinExample.Droid.Resource.Styleable.Preference_android_dependency;
-			global::Exponea.Resource.Styleable.Preference_android_enabled = global::XamarinExample.Droid.Resource.Styleable.Preference_android_enabled;
-			global::Exponea.Resource.Styleable.Preference_android_fragment = global::XamarinExample.Droid.Resource.Styleable.Preference_android_fragment;
-			global::Exponea.Resource.Styleable.Preference_android_icon = global::XamarinExample.Droid.Resource.Styleable.Preference_android_icon;
-			global::Exponea.Resource.Styleable.Preference_android_iconSpaceReserved = global::XamarinExample.Droid.Resource.Styleable.Preference_android_iconSpaceReserved;
-			global::Exponea.Resource.Styleable.Preference_android_key = global::XamarinExample.Droid.Resource.Styleable.Preference_android_key;
-			global::Exponea.Resource.Styleable.Preference_android_layout = global::XamarinExample.Droid.Resource.Styleable.Preference_android_layout;
-			global::Exponea.Resource.Styleable.Preference_android_order = global::XamarinExample.Droid.Resource.Styleable.Preference_android_order;
-			global::Exponea.Resource.Styleable.Preference_android_persistent = global::XamarinExample.Droid.Resource.Styleable.Preference_android_persistent;
-			global::Exponea.Resource.Styleable.Preference_android_selectable = global::XamarinExample.Droid.Resource.Styleable.Preference_android_selectable;
-			global::Exponea.Resource.Styleable.Preference_android_shouldDisableView = global::XamarinExample.Droid.Resource.Styleable.Preference_android_shouldDisableView;
-			global::Exponea.Resource.Styleable.Preference_android_singleLineTitle = global::XamarinExample.Droid.Resource.Styleable.Preference_android_singleLineTitle;
-			global::Exponea.Resource.Styleable.Preference_android_summary = global::XamarinExample.Droid.Resource.Styleable.Preference_android_summary;
-			global::Exponea.Resource.Styleable.Preference_android_title = global::XamarinExample.Droid.Resource.Styleable.Preference_android_title;
-			global::Exponea.Resource.Styleable.Preference_android_widgetLayout = global::XamarinExample.Droid.Resource.Styleable.Preference_android_widgetLayout;
-			global::Exponea.Resource.Styleable.Preference_defaultValue = global::XamarinExample.Droid.Resource.Styleable.Preference_defaultValue;
-			global::Exponea.Resource.Styleable.Preference_dependency = global::XamarinExample.Droid.Resource.Styleable.Preference_dependency;
-			global::Exponea.Resource.Styleable.Preference_enableCopying = global::XamarinExample.Droid.Resource.Styleable.Preference_enableCopying;
-			global::Exponea.Resource.Styleable.Preference_enabled = global::XamarinExample.Droid.Resource.Styleable.Preference_enabled;
-			global::Exponea.Resource.Styleable.Preference_fragment = global::XamarinExample.Droid.Resource.Styleable.Preference_fragment;
-			global::Exponea.Resource.Styleable.Preference_icon = global::XamarinExample.Droid.Resource.Styleable.Preference_icon;
-			global::Exponea.Resource.Styleable.Preference_iconSpaceReserved = global::XamarinExample.Droid.Resource.Styleable.Preference_iconSpaceReserved;
-			global::Exponea.Resource.Styleable.Preference_isPreferenceVisible = global::XamarinExample.Droid.Resource.Styleable.Preference_isPreferenceVisible;
-			global::Exponea.Resource.Styleable.Preference_key = global::XamarinExample.Droid.Resource.Styleable.Preference_key;
-			global::Exponea.Resource.Styleable.Preference_layout = global::XamarinExample.Droid.Resource.Styleable.Preference_layout;
-			global::Exponea.Resource.Styleable.Preference_order = global::XamarinExample.Droid.Resource.Styleable.Preference_order;
-			global::Exponea.Resource.Styleable.Preference_persistent = global::XamarinExample.Droid.Resource.Styleable.Preference_persistent;
-			global::Exponea.Resource.Styleable.Preference_selectable = global::XamarinExample.Droid.Resource.Styleable.Preference_selectable;
-			global::Exponea.Resource.Styleable.Preference_shouldDisableView = global::XamarinExample.Droid.Resource.Styleable.Preference_shouldDisableView;
-			global::Exponea.Resource.Styleable.Preference_singleLineTitle = global::XamarinExample.Droid.Resource.Styleable.Preference_singleLineTitle;
-			global::Exponea.Resource.Styleable.Preference_summary = global::XamarinExample.Droid.Resource.Styleable.Preference_summary;
-			global::Exponea.Resource.Styleable.Preference_title = global::XamarinExample.Droid.Resource.Styleable.Preference_title;
-			global::Exponea.Resource.Styleable.Preference_widgetLayout = global::XamarinExample.Droid.Resource.Styleable.Preference_widgetLayout;
 			global::Exponea.Resource.Styleable.PropertySet = global::XamarinExample.Droid.Resource.Styleable.PropertySet;
 			global::Exponea.Resource.Styleable.PropertySet_android_alpha = global::XamarinExample.Droid.Resource.Styleable.PropertySet_android_alpha;
 			global::Exponea.Resource.Styleable.PropertySet_android_visibility = global::XamarinExample.Droid.Resource.Styleable.PropertySet_android_visibility;
 			global::Exponea.Resource.Styleable.PropertySet_layout_constraintTag = global::XamarinExample.Droid.Resource.Styleable.PropertySet_layout_constraintTag;
 			global::Exponea.Resource.Styleable.PropertySet_motionProgress = global::XamarinExample.Droid.Resource.Styleable.PropertySet_motionProgress;
 			global::Exponea.Resource.Styleable.PropertySet_visibilityMode = global::XamarinExample.Droid.Resource.Styleable.PropertySet_visibilityMode;
-			global::Exponea.Resource.Styleable.RadialViewGroup = global::XamarinExample.Droid.Resource.Styleable.RadialViewGroup;
-			global::Exponea.Resource.Styleable.RadialViewGroup_materialCircleRadius = global::XamarinExample.Droid.Resource.Styleable.RadialViewGroup_materialCircleRadius;
 			global::Exponea.Resource.Styleable.RangeSlider = global::XamarinExample.Droid.Resource.Styleable.RangeSlider;
-			global::Exponea.Resource.Styleable.RangeSlider_minSeparation = global::XamarinExample.Droid.Resource.Styleable.RangeSlider_minSeparation;
 			global::Exponea.Resource.Styleable.RangeSlider_values = global::XamarinExample.Droid.Resource.Styleable.RangeSlider_values;
 			global::Exponea.Resource.Styleable.RecycleListView = global::XamarinExample.Droid.Resource.Styleable.RecycleListView;
 			global::Exponea.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::XamarinExample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
@@ -5261,22 +4227,7 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.SearchView_submitBackground = global::XamarinExample.Droid.Resource.Styleable.SearchView_submitBackground;
 			global::Exponea.Resource.Styleable.SearchView_suggestionRowLayout = global::XamarinExample.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::Exponea.Resource.Styleable.SearchView_voiceIcon = global::XamarinExample.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Exponea.Resource.Styleable.SeekBarPreference = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference;
-			global::Exponea.Resource.Styleable.SeekBarPreference_adjustable = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_adjustable;
-			global::Exponea.Resource.Styleable.SeekBarPreference_android_layout = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_android_layout;
-			global::Exponea.Resource.Styleable.SeekBarPreference_android_max = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_android_max;
-			global::Exponea.Resource.Styleable.SeekBarPreference_min = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_min;
-			global::Exponea.Resource.Styleable.SeekBarPreference_seekBarIncrement = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_seekBarIncrement;
-			global::Exponea.Resource.Styleable.SeekBarPreference_showSeekBarValue = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_showSeekBarValue;
-			global::Exponea.Resource.Styleable.SeekBarPreference_updatesContinuously = global::XamarinExample.Droid.Resource.Styleable.SeekBarPreference_updatesContinuously;
 			global::Exponea.Resource.Styleable.ShapeableImageView = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPadding = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPadding;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPaddingBottom = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPaddingBottom;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPaddingEnd = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPaddingEnd;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPaddingLeft = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPaddingLeft;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPaddingRight = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPaddingRight;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPaddingStart = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPaddingStart;
-			global::Exponea.Resource.Styleable.ShapeableImageView_contentPaddingTop = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_contentPaddingTop;
 			global::Exponea.Resource.Styleable.ShapeableImageView_shapeAppearance = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_shapeAppearance;
 			global::Exponea.Resource.Styleable.ShapeableImageView_shapeAppearanceOverlay = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_shapeAppearanceOverlay;
 			global::Exponea.Resource.Styleable.ShapeableImageView_strokeColor = global::XamarinExample.Droid.Resource.Styleable.ShapeableImageView_strokeColor;
@@ -5305,12 +4256,9 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Slider_thumbColor = global::XamarinExample.Droid.Resource.Styleable.Slider_thumbColor;
 			global::Exponea.Resource.Styleable.Slider_thumbElevation = global::XamarinExample.Droid.Resource.Styleable.Slider_thumbElevation;
 			global::Exponea.Resource.Styleable.Slider_thumbRadius = global::XamarinExample.Droid.Resource.Styleable.Slider_thumbRadius;
-			global::Exponea.Resource.Styleable.Slider_thumbStrokeColor = global::XamarinExample.Droid.Resource.Styleable.Slider_thumbStrokeColor;
-			global::Exponea.Resource.Styleable.Slider_thumbStrokeWidth = global::XamarinExample.Droid.Resource.Styleable.Slider_thumbStrokeWidth;
 			global::Exponea.Resource.Styleable.Slider_tickColor = global::XamarinExample.Droid.Resource.Styleable.Slider_tickColor;
 			global::Exponea.Resource.Styleable.Slider_tickColorActive = global::XamarinExample.Droid.Resource.Styleable.Slider_tickColorActive;
 			global::Exponea.Resource.Styleable.Slider_tickColorInactive = global::XamarinExample.Droid.Resource.Styleable.Slider_tickColorInactive;
-			global::Exponea.Resource.Styleable.Slider_tickVisible = global::XamarinExample.Droid.Resource.Styleable.Slider_tickVisible;
 			global::Exponea.Resource.Styleable.Slider_trackColor = global::XamarinExample.Droid.Resource.Styleable.Slider_trackColor;
 			global::Exponea.Resource.Styleable.Slider_trackColorActive = global::XamarinExample.Droid.Resource.Styleable.Slider_trackColorActive;
 			global::Exponea.Resource.Styleable.Slider_trackColorInactive = global::XamarinExample.Droid.Resource.Styleable.Slider_trackColorInactive;
@@ -5367,28 +4315,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.SwitchCompat_trackTintMode = global::XamarinExample.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
 			global::Exponea.Resource.Styleable.SwitchMaterial = global::XamarinExample.Droid.Resource.Styleable.SwitchMaterial;
 			global::Exponea.Resource.Styleable.SwitchMaterial_useMaterialThemeColors = global::XamarinExample.Droid.Resource.Styleable.SwitchMaterial_useMaterialThemeColors;
-			global::Exponea.Resource.Styleable.SwitchPreference = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_android_disableDependentsState = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_android_disableDependentsState;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_android_summaryOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_android_summaryOff;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_android_summaryOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_android_summaryOn;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_android_switchTextOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_android_switchTextOff;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_android_switchTextOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_android_switchTextOn;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_disableDependentsState = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_disableDependentsState;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_summaryOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_summaryOff;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_summaryOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_summaryOn;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_switchTextOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_switchTextOff;
-			global::Exponea.Resource.Styleable.SwitchPreferenceCompat_switchTextOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreferenceCompat_switchTextOn;
-			global::Exponea.Resource.Styleable.SwitchPreference_android_disableDependentsState = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_android_disableDependentsState;
-			global::Exponea.Resource.Styleable.SwitchPreference_android_summaryOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_android_summaryOff;
-			global::Exponea.Resource.Styleable.SwitchPreference_android_summaryOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_android_summaryOn;
-			global::Exponea.Resource.Styleable.SwitchPreference_android_switchTextOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_android_switchTextOff;
-			global::Exponea.Resource.Styleable.SwitchPreference_android_switchTextOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_android_switchTextOn;
-			global::Exponea.Resource.Styleable.SwitchPreference_disableDependentsState = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_disableDependentsState;
-			global::Exponea.Resource.Styleable.SwitchPreference_summaryOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_summaryOff;
-			global::Exponea.Resource.Styleable.SwitchPreference_summaryOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_summaryOn;
-			global::Exponea.Resource.Styleable.SwitchPreference_switchTextOff = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_switchTextOff;
-			global::Exponea.Resource.Styleable.SwitchPreference_switchTextOn = global::XamarinExample.Droid.Resource.Styleable.SwitchPreference_switchTextOn;
 			global::Exponea.Resource.Styleable.TabItem = global::XamarinExample.Droid.Resource.Styleable.TabItem;
 			global::Exponea.Resource.Styleable.TabItem_android_icon = global::XamarinExample.Droid.Resource.Styleable.TabItem_android_icon;
 			global::Exponea.Resource.Styleable.TabItem_android_layout = global::XamarinExample.Droid.Resource.Styleable.TabItem_android_layout;
@@ -5401,7 +4327,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.TabLayout_tabIconTintMode = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
 			global::Exponea.Resource.Styleable.TabLayout_tabIndicator = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIndicator;
 			global::Exponea.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
-			global::Exponea.Resource.Styleable.TabLayout_tabIndicatorAnimationMode = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationMode;
 			global::Exponea.Resource.Styleable.TabLayout_tabIndicatorColor = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
 			global::Exponea.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
 			global::Exponea.Resource.Styleable.TabLayout_tabIndicatorGravity = global::XamarinExample.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
@@ -5437,28 +4362,11 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.TextAppearance_fontVariationSettings = global::XamarinExample.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Exponea.Resource.Styleable.TextAppearance_textAllCaps = global::XamarinExample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
 			global::Exponea.Resource.Styleable.TextAppearance_textLocale = global::XamarinExample.Droid.Resource.Styleable.TextAppearance_textLocale;
-			global::Exponea.Resource.Styleable.TextEffects = global::XamarinExample.Droid.Resource.Styleable.TextEffects;
-			global::Exponea.Resource.Styleable.TextEffects_android_fontFamily = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_fontFamily;
-			global::Exponea.Resource.Styleable.TextEffects_android_shadowColor = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_shadowColor;
-			global::Exponea.Resource.Styleable.TextEffects_android_shadowDx = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_shadowDx;
-			global::Exponea.Resource.Styleable.TextEffects_android_shadowDy = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_shadowDy;
-			global::Exponea.Resource.Styleable.TextEffects_android_shadowRadius = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_shadowRadius;
-			global::Exponea.Resource.Styleable.TextEffects_android_text = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_text;
-			global::Exponea.Resource.Styleable.TextEffects_android_textSize = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_textSize;
-			global::Exponea.Resource.Styleable.TextEffects_android_textStyle = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_textStyle;
-			global::Exponea.Resource.Styleable.TextEffects_android_typeface = global::XamarinExample.Droid.Resource.Styleable.TextEffects_android_typeface;
-			global::Exponea.Resource.Styleable.TextEffects_borderRound = global::XamarinExample.Droid.Resource.Styleable.TextEffects_borderRound;
-			global::Exponea.Resource.Styleable.TextEffects_borderRoundPercent = global::XamarinExample.Droid.Resource.Styleable.TextEffects_borderRoundPercent;
-			global::Exponea.Resource.Styleable.TextEffects_textFillColor = global::XamarinExample.Droid.Resource.Styleable.TextEffects_textFillColor;
-			global::Exponea.Resource.Styleable.TextEffects_textOutlineColor = global::XamarinExample.Droid.Resource.Styleable.TextEffects_textOutlineColor;
-			global::Exponea.Resource.Styleable.TextEffects_textOutlineThickness = global::XamarinExample.Droid.Resource.Styleable.TextEffects_textOutlineThickness;
 			global::Exponea.Resource.Styleable.TextInputEditText = global::XamarinExample.Droid.Resource.Styleable.TextInputEditText;
 			global::Exponea.Resource.Styleable.TextInputEditText_textInputLayoutFocusedRectEnabled = global::XamarinExample.Droid.Resource.Styleable.TextInputEditText_textInputLayoutFocusedRectEnabled;
 			global::Exponea.Resource.Styleable.TextInputLayout = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout;
 			global::Exponea.Resource.Styleable.TextInputLayout_android_enabled = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_android_enabled;
 			global::Exponea.Resource.Styleable.TextInputLayout_android_hint = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Exponea.Resource.Styleable.TextInputLayout_android_maxWidth = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_android_maxWidth;
-			global::Exponea.Resource.Styleable.TextInputLayout_android_minWidth = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_android_minWidth;
 			global::Exponea.Resource.Styleable.TextInputLayout_android_textColorHint = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
 			global::Exponea.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
 			global::Exponea.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
@@ -5490,7 +4398,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.TextInputLayout_errorIconTintMode = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_errorIconTintMode;
 			global::Exponea.Resource.Styleable.TextInputLayout_errorTextAppearance = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
 			global::Exponea.Resource.Styleable.TextInputLayout_errorTextColor = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_errorTextColor;
-			global::Exponea.Resource.Styleable.TextInputLayout_expandedHintEnabled = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_expandedHintEnabled;
 			global::Exponea.Resource.Styleable.TextInputLayout_helperText = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_helperText;
 			global::Exponea.Resource.Styleable.TextInputLayout_helperTextEnabled = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
 			global::Exponea.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::XamarinExample.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
@@ -5575,7 +4482,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.Transform_android_translationX = global::XamarinExample.Droid.Resource.Styleable.Transform_android_translationX;
 			global::Exponea.Resource.Styleable.Transform_android_translationY = global::XamarinExample.Droid.Resource.Styleable.Transform_android_translationY;
 			global::Exponea.Resource.Styleable.Transform_android_translationZ = global::XamarinExample.Droid.Resource.Styleable.Transform_android_translationZ;
-			global::Exponea.Resource.Styleable.Transform_transformPivotTarget = global::XamarinExample.Droid.Resource.Styleable.Transform_transformPivotTarget;
 			global::Exponea.Resource.Styleable.Transition = global::XamarinExample.Droid.Resource.Styleable.Transition;
 			global::Exponea.Resource.Styleable.Transition_android_id = global::XamarinExample.Droid.Resource.Styleable.Transition_android_id;
 			global::Exponea.Resource.Styleable.Transition_autoTransition = global::XamarinExample.Droid.Resource.Styleable.Transition_autoTransition;
@@ -5605,22 +4511,6 @@ namespace XamarinExample.Droid
 			global::Exponea.Resource.Styleable.ViewStubCompat_android_id = global::XamarinExample.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Exponea.Resource.Styleable.ViewStubCompat_android_inflatedId = global::XamarinExample.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Exponea.Resource.Styleable.ViewStubCompat_android_layout = global::XamarinExample.Droid.Resource.Styleable.ViewStubCompat_android_layout;
-			global::Exponea.Resource.Styleable.ViewTransition = global::XamarinExample.Droid.Resource.Styleable.ViewTransition;
-			global::Exponea.Resource.Styleable.ViewTransition_android_id = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_android_id;
-			global::Exponea.Resource.Styleable.ViewTransition_clearsTag = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_clearsTag;
-			global::Exponea.Resource.Styleable.ViewTransition_duration = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_duration;
-			global::Exponea.Resource.Styleable.ViewTransition_ifTagNotSet = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_ifTagNotSet;
-			global::Exponea.Resource.Styleable.ViewTransition_ifTagSet = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_ifTagSet;
-			global::Exponea.Resource.Styleable.ViewTransition_motionInterpolator = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_motionInterpolator;
-			global::Exponea.Resource.Styleable.ViewTransition_motionTarget = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_motionTarget;
-			global::Exponea.Resource.Styleable.ViewTransition_onStateTransition = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_onStateTransition;
-			global::Exponea.Resource.Styleable.ViewTransition_pathMotionArc = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_pathMotionArc;
-			global::Exponea.Resource.Styleable.ViewTransition_setsTag = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_setsTag;
-			global::Exponea.Resource.Styleable.ViewTransition_SharedValue = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_SharedValue;
-			global::Exponea.Resource.Styleable.ViewTransition_SharedValueId = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_SharedValueId;
-			global::Exponea.Resource.Styleable.ViewTransition_transitionDisable = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_transitionDisable;
-			global::Exponea.Resource.Styleable.ViewTransition_upDuration = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_upDuration;
-			global::Exponea.Resource.Styleable.ViewTransition_viewTransitionMode = global::XamarinExample.Droid.Resource.Styleable.ViewTransition_viewTransitionMode;
 			global::Exponea.Resource.Styleable.View_android_focusable = global::XamarinExample.Droid.Resource.Styleable.View_android_focusable;
 			global::Exponea.Resource.Styleable.View_android_theme = global::XamarinExample.Droid.Resource.Styleable.View_android_theme;
 			global::Exponea.Resource.Styleable.View_paddingEnd = global::XamarinExample.Droid.Resource.Styleable.View_paddingEnd;
@@ -24732,371 +23622,374 @@ namespace XamarinExample.Droid
 			// aapt resource value: 0x7F0E001A
 			public const int abc_toolbar_collapse_description = 2131623962;
 			
-			// aapt resource value: 0x7F0E001C
-			public const int appbar_scrolling_view_behavior = 2131623964;
-			
 			// aapt resource value: 0x7F0E001B
-			public const int app_name = 2131623963;
+			public const int androidx_startup = 2131623963;
 			
 			// aapt resource value: 0x7F0E001D
-			public const int automaticSessionTracking = 2131623965;
+			public const int appbar_scrolling_view_behavior = 2131623965;
 			
-			// aapt resource value: 0x7F0E001F
-			public const int bottomsheet_action_expand_halfway = 2131623967;
+			// aapt resource value: 0x7F0E001C
+			public const int app_name = 2131623964;
 			
 			// aapt resource value: 0x7F0E001E
-			public const int bottom_sheet_behavior = 2131623966;
+			public const int automaticSessionTracking = 2131623966;
 			
 			// aapt resource value: 0x7F0E0020
-			public const int character_counter_content_description = 2131623968;
+			public const int bottomsheet_action_expand_halfway = 2131623968;
+			
+			// aapt resource value: 0x7F0E001F
+			public const int bottom_sheet_behavior = 2131623967;
 			
 			// aapt resource value: 0x7F0E0021
-			public const int character_counter_overflowed_content_description = 2131623969;
+			public const int character_counter_content_description = 2131623969;
 			
 			// aapt resource value: 0x7F0E0022
-			public const int character_counter_pattern = 2131623970;
+			public const int character_counter_overflowed_content_description = 2131623970;
 			
 			// aapt resource value: 0x7F0E0023
-			public const int chip_text = 2131623971;
+			public const int character_counter_pattern = 2131623971;
 			
 			// aapt resource value: 0x7F0E0024
-			public const int clear_text_end_icon_content_description = 2131623972;
+			public const int chip_text = 2131623972;
 			
 			// aapt resource value: 0x7F0E0025
-			public const int common_google_play_services_enable_button = 2131623973;
+			public const int clear_text_end_icon_content_description = 2131623973;
 			
 			// aapt resource value: 0x7F0E0026
-			public const int common_google_play_services_enable_text = 2131623974;
+			public const int common_google_play_services_enable_button = 2131623974;
 			
 			// aapt resource value: 0x7F0E0027
-			public const int common_google_play_services_enable_title = 2131623975;
+			public const int common_google_play_services_enable_text = 2131623975;
 			
 			// aapt resource value: 0x7F0E0028
-			public const int common_google_play_services_install_button = 2131623976;
+			public const int common_google_play_services_enable_title = 2131623976;
 			
 			// aapt resource value: 0x7F0E0029
-			public const int common_google_play_services_install_text = 2131623977;
+			public const int common_google_play_services_install_button = 2131623977;
 			
 			// aapt resource value: 0x7F0E002A
-			public const int common_google_play_services_install_title = 2131623978;
+			public const int common_google_play_services_install_text = 2131623978;
 			
 			// aapt resource value: 0x7F0E002B
-			public const int common_google_play_services_notification_channel_name = 2131623979;
+			public const int common_google_play_services_install_title = 2131623979;
 			
 			// aapt resource value: 0x7F0E002C
-			public const int common_google_play_services_notification_ticker = 2131623980;
+			public const int common_google_play_services_notification_channel_name = 2131623980;
 			
 			// aapt resource value: 0x7F0E002D
-			public const int common_google_play_services_unknown_issue = 2131623981;
+			public const int common_google_play_services_notification_ticker = 2131623981;
 			
 			// aapt resource value: 0x7F0E002E
-			public const int common_google_play_services_unsupported_text = 2131623982;
+			public const int common_google_play_services_unknown_issue = 2131623982;
 			
 			// aapt resource value: 0x7F0E002F
-			public const int common_google_play_services_update_button = 2131623983;
+			public const int common_google_play_services_unsupported_text = 2131623983;
 			
 			// aapt resource value: 0x7F0E0030
-			public const int common_google_play_services_update_text = 2131623984;
+			public const int common_google_play_services_update_button = 2131623984;
 			
 			// aapt resource value: 0x7F0E0031
-			public const int common_google_play_services_update_title = 2131623985;
+			public const int common_google_play_services_update_text = 2131623985;
 			
 			// aapt resource value: 0x7F0E0032
-			public const int common_google_play_services_updating_text = 2131623986;
+			public const int common_google_play_services_update_title = 2131623986;
 			
 			// aapt resource value: 0x7F0E0033
-			public const int common_google_play_services_wear_update_text = 2131623987;
+			public const int common_google_play_services_updating_text = 2131623987;
 			
 			// aapt resource value: 0x7F0E0034
-			public const int common_open_on_phone = 2131623988;
+			public const int common_google_play_services_wear_update_text = 2131623988;
 			
 			// aapt resource value: 0x7F0E0035
-			public const int common_signin_button_text = 2131623989;
+			public const int common_open_on_phone = 2131623989;
 			
 			// aapt resource value: 0x7F0E0036
-			public const int common_signin_button_text_long = 2131623990;
+			public const int common_signin_button_text = 2131623990;
 			
 			// aapt resource value: 0x7F0E0037
-			public const int copy = 2131623991;
+			public const int common_signin_button_text_long = 2131623991;
 			
 			// aapt resource value: 0x7F0E0038
-			public const int copy_toast_msg = 2131623992;
+			public const int copy = 2131623992;
 			
 			// aapt resource value: 0x7F0E0039
-			public const int default_web_client_id = 2131623993;
+			public const int copy_toast_msg = 2131623993;
 			
 			// aapt resource value: 0x7F0E003A
-			public const int error_icon_content_description = 2131623994;
+			public const int default_web_client_id = 2131623994;
 			
 			// aapt resource value: 0x7F0E003B
-			public const int expand_button_title = 2131623995;
+			public const int error_icon_content_description = 2131623995;
 			
 			// aapt resource value: 0x7F0E003C
-			public const int exposed_dropdown_menu_content_description = 2131623996;
+			public const int expand_button_title = 2131623996;
 			
 			// aapt resource value: 0x7F0E003D
-			public const int fab_transformation_scrim_behavior = 2131623997;
+			public const int exposed_dropdown_menu_content_description = 2131623997;
 			
 			// aapt resource value: 0x7F0E003E
-			public const int fab_transformation_sheet_behavior = 2131623998;
+			public const int fab_transformation_scrim_behavior = 2131623998;
 			
 			// aapt resource value: 0x7F0E003F
-			public const int fallback_menu_item_copy_link = 2131623999;
+			public const int fab_transformation_sheet_behavior = 2131623999;
 			
 			// aapt resource value: 0x7F0E0040
-			public const int fallback_menu_item_open_in_browser = 2131624000;
+			public const int fallback_menu_item_copy_link = 2131624000;
 			
 			// aapt resource value: 0x7F0E0041
-			public const int fallback_menu_item_share_link = 2131624001;
+			public const int fallback_menu_item_open_in_browser = 2131624001;
 			
 			// aapt resource value: 0x7F0E0042
-			public const int fcm_fallback_notification_channel_label = 2131624002;
+			public const int fallback_menu_item_share_link = 2131624002;
 			
 			// aapt resource value: 0x7F0E0043
-			public const int firebase_database_url = 2131624003;
+			public const int fcm_fallback_notification_channel_label = 2131624003;
 			
 			// aapt resource value: 0x7F0E0044
-			public const int gcm_defaultSenderId = 2131624004;
+			public const int firebase_database_url = 2131624004;
 			
 			// aapt resource value: 0x7F0E0045
-			public const int google_api_key = 2131624005;
+			public const int gcm_defaultSenderId = 2131624005;
 			
 			// aapt resource value: 0x7F0E0046
-			public const int google_app_id = 2131624006;
+			public const int google_api_key = 2131624006;
 			
 			// aapt resource value: 0x7F0E0047
-			public const int google_crash_reporting_api_key = 2131624007;
+			public const int google_app_id = 2131624007;
 			
 			// aapt resource value: 0x7F0E0048
-			public const int google_storage_bucket = 2131624008;
+			public const int google_crash_reporting_api_key = 2131624008;
 			
 			// aapt resource value: 0x7F0E0049
-			public const int hide_bottom_view_on_scroll_behavior = 2131624009;
+			public const int google_storage_bucket = 2131624009;
 			
 			// aapt resource value: 0x7F0E004A
-			public const int icon_content_description = 2131624010;
+			public const int hide_bottom_view_on_scroll_behavior = 2131624010;
 			
 			// aapt resource value: 0x7F0E004B
-			public const int item_view_role_description = 2131624011;
+			public const int icon_content_description = 2131624011;
 			
 			// aapt resource value: 0x7F0E004C
-			public const int material_clock_display_divider = 2131624012;
+			public const int item_view_role_description = 2131624012;
 			
 			// aapt resource value: 0x7F0E004D
-			public const int material_clock_toggle_content_description = 2131624013;
+			public const int material_clock_display_divider = 2131624013;
 			
 			// aapt resource value: 0x7F0E004E
-			public const int material_hour_selection = 2131624014;
+			public const int material_clock_toggle_content_description = 2131624014;
 			
 			// aapt resource value: 0x7F0E004F
-			public const int material_hour_suffix = 2131624015;
+			public const int material_hour_selection = 2131624015;
 			
 			// aapt resource value: 0x7F0E0050
-			public const int material_minute_selection = 2131624016;
+			public const int material_hour_suffix = 2131624016;
 			
 			// aapt resource value: 0x7F0E0051
-			public const int material_minute_suffix = 2131624017;
+			public const int material_minute_selection = 2131624017;
 			
 			// aapt resource value: 0x7F0E0052
-			public const int material_motion_easing_accelerated = 2131624018;
+			public const int material_minute_suffix = 2131624018;
 			
 			// aapt resource value: 0x7F0E0053
-			public const int material_motion_easing_decelerated = 2131624019;
+			public const int material_motion_easing_accelerated = 2131624019;
 			
 			// aapt resource value: 0x7F0E0054
-			public const int material_motion_easing_emphasized = 2131624020;
+			public const int material_motion_easing_decelerated = 2131624020;
 			
 			// aapt resource value: 0x7F0E0055
-			public const int material_motion_easing_linear = 2131624021;
+			public const int material_motion_easing_emphasized = 2131624021;
 			
 			// aapt resource value: 0x7F0E0056
-			public const int material_motion_easing_standard = 2131624022;
+			public const int material_motion_easing_linear = 2131624022;
 			
 			// aapt resource value: 0x7F0E0057
-			public const int material_slider_range_end = 2131624023;
+			public const int material_motion_easing_standard = 2131624023;
 			
 			// aapt resource value: 0x7F0E0058
-			public const int material_slider_range_start = 2131624024;
+			public const int material_slider_range_end = 2131624024;
 			
 			// aapt resource value: 0x7F0E0059
-			public const int material_timepicker_am = 2131624025;
+			public const int material_slider_range_start = 2131624025;
 			
 			// aapt resource value: 0x7F0E005A
-			public const int material_timepicker_clock_mode_description = 2131624026;
+			public const int material_timepicker_am = 2131624026;
 			
 			// aapt resource value: 0x7F0E005B
-			public const int material_timepicker_hour = 2131624027;
+			public const int material_timepicker_clock_mode_description = 2131624027;
 			
 			// aapt resource value: 0x7F0E005C
-			public const int material_timepicker_minute = 2131624028;
+			public const int material_timepicker_hour = 2131624028;
 			
 			// aapt resource value: 0x7F0E005D
-			public const int material_timepicker_pm = 2131624029;
+			public const int material_timepicker_minute = 2131624029;
 			
 			// aapt resource value: 0x7F0E005E
-			public const int material_timepicker_select_time = 2131624030;
+			public const int material_timepicker_pm = 2131624030;
 			
 			// aapt resource value: 0x7F0E005F
-			public const int material_timepicker_text_input_mode_description = 2131624031;
+			public const int material_timepicker_select_time = 2131624031;
 			
 			// aapt resource value: 0x7F0E0060
-			public const int mtrl_badge_numberless_content_description = 2131624032;
+			public const int material_timepicker_text_input_mode_description = 2131624032;
 			
 			// aapt resource value: 0x7F0E0061
-			public const int mtrl_chip_close_icon_content_description = 2131624033;
+			public const int mtrl_badge_numberless_content_description = 2131624033;
 			
 			// aapt resource value: 0x7F0E0062
-			public const int mtrl_exceed_max_badge_number_content_description = 2131624034;
+			public const int mtrl_chip_close_icon_content_description = 2131624034;
 			
 			// aapt resource value: 0x7F0E0063
-			public const int mtrl_exceed_max_badge_number_suffix = 2131624035;
+			public const int mtrl_exceed_max_badge_number_content_description = 2131624035;
 			
 			// aapt resource value: 0x7F0E0064
-			public const int mtrl_picker_a11y_next_month = 2131624036;
+			public const int mtrl_exceed_max_badge_number_suffix = 2131624036;
 			
 			// aapt resource value: 0x7F0E0065
-			public const int mtrl_picker_a11y_prev_month = 2131624037;
+			public const int mtrl_picker_a11y_next_month = 2131624037;
 			
 			// aapt resource value: 0x7F0E0066
-			public const int mtrl_picker_announce_current_selection = 2131624038;
+			public const int mtrl_picker_a11y_prev_month = 2131624038;
 			
 			// aapt resource value: 0x7F0E0067
-			public const int mtrl_picker_cancel = 2131624039;
+			public const int mtrl_picker_announce_current_selection = 2131624039;
 			
 			// aapt resource value: 0x7F0E0068
-			public const int mtrl_picker_confirm = 2131624040;
+			public const int mtrl_picker_cancel = 2131624040;
 			
 			// aapt resource value: 0x7F0E0069
-			public const int mtrl_picker_date_header_selected = 2131624041;
+			public const int mtrl_picker_confirm = 2131624041;
 			
 			// aapt resource value: 0x7F0E006A
-			public const int mtrl_picker_date_header_title = 2131624042;
+			public const int mtrl_picker_date_header_selected = 2131624042;
 			
 			// aapt resource value: 0x7F0E006B
-			public const int mtrl_picker_date_header_unselected = 2131624043;
+			public const int mtrl_picker_date_header_title = 2131624043;
 			
 			// aapt resource value: 0x7F0E006C
-			public const int mtrl_picker_day_of_week_column_header = 2131624044;
+			public const int mtrl_picker_date_header_unselected = 2131624044;
 			
 			// aapt resource value: 0x7F0E006D
-			public const int mtrl_picker_invalid_format = 2131624045;
+			public const int mtrl_picker_day_of_week_column_header = 2131624045;
 			
 			// aapt resource value: 0x7F0E006E
-			public const int mtrl_picker_invalid_format_example = 2131624046;
+			public const int mtrl_picker_invalid_format = 2131624046;
 			
 			// aapt resource value: 0x7F0E006F
-			public const int mtrl_picker_invalid_format_use = 2131624047;
+			public const int mtrl_picker_invalid_format_example = 2131624047;
 			
 			// aapt resource value: 0x7F0E0070
-			public const int mtrl_picker_invalid_range = 2131624048;
+			public const int mtrl_picker_invalid_format_use = 2131624048;
 			
 			// aapt resource value: 0x7F0E0071
-			public const int mtrl_picker_navigate_to_year_description = 2131624049;
+			public const int mtrl_picker_invalid_range = 2131624049;
 			
 			// aapt resource value: 0x7F0E0072
-			public const int mtrl_picker_out_of_range = 2131624050;
+			public const int mtrl_picker_navigate_to_year_description = 2131624050;
 			
 			// aapt resource value: 0x7F0E0073
-			public const int mtrl_picker_range_header_only_end_selected = 2131624051;
+			public const int mtrl_picker_out_of_range = 2131624051;
 			
 			// aapt resource value: 0x7F0E0074
-			public const int mtrl_picker_range_header_only_start_selected = 2131624052;
+			public const int mtrl_picker_range_header_only_end_selected = 2131624052;
 			
 			// aapt resource value: 0x7F0E0075
-			public const int mtrl_picker_range_header_selected = 2131624053;
+			public const int mtrl_picker_range_header_only_start_selected = 2131624053;
 			
 			// aapt resource value: 0x7F0E0076
-			public const int mtrl_picker_range_header_title = 2131624054;
+			public const int mtrl_picker_range_header_selected = 2131624054;
 			
 			// aapt resource value: 0x7F0E0077
-			public const int mtrl_picker_range_header_unselected = 2131624055;
+			public const int mtrl_picker_range_header_title = 2131624055;
 			
 			// aapt resource value: 0x7F0E0078
-			public const int mtrl_picker_save = 2131624056;
+			public const int mtrl_picker_range_header_unselected = 2131624056;
 			
 			// aapt resource value: 0x7F0E0079
-			public const int mtrl_picker_text_input_date_hint = 2131624057;
+			public const int mtrl_picker_save = 2131624057;
 			
 			// aapt resource value: 0x7F0E007A
-			public const int mtrl_picker_text_input_date_range_end_hint = 2131624058;
+			public const int mtrl_picker_text_input_date_hint = 2131624058;
 			
 			// aapt resource value: 0x7F0E007B
-			public const int mtrl_picker_text_input_date_range_start_hint = 2131624059;
+			public const int mtrl_picker_text_input_date_range_end_hint = 2131624059;
 			
 			// aapt resource value: 0x7F0E007C
-			public const int mtrl_picker_text_input_day_abbr = 2131624060;
+			public const int mtrl_picker_text_input_date_range_start_hint = 2131624060;
 			
 			// aapt resource value: 0x7F0E007D
-			public const int mtrl_picker_text_input_month_abbr = 2131624061;
+			public const int mtrl_picker_text_input_day_abbr = 2131624061;
 			
 			// aapt resource value: 0x7F0E007E
-			public const int mtrl_picker_text_input_year_abbr = 2131624062;
+			public const int mtrl_picker_text_input_month_abbr = 2131624062;
 			
 			// aapt resource value: 0x7F0E007F
-			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131624063;
+			public const int mtrl_picker_text_input_year_abbr = 2131624063;
 			
 			// aapt resource value: 0x7F0E0080
-			public const int mtrl_picker_toggle_to_day_selection = 2131624064;
+			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131624064;
 			
 			// aapt resource value: 0x7F0E0081
-			public const int mtrl_picker_toggle_to_text_input_mode = 2131624065;
+			public const int mtrl_picker_toggle_to_day_selection = 2131624065;
 			
 			// aapt resource value: 0x7F0E0082
-			public const int mtrl_picker_toggle_to_year_selection = 2131624066;
+			public const int mtrl_picker_toggle_to_text_input_mode = 2131624066;
 			
 			// aapt resource value: 0x7F0E0083
-			public const int nav_app_bar_navigate_up_description = 2131624067;
+			public const int mtrl_picker_toggle_to_year_selection = 2131624067;
 			
 			// aapt resource value: 0x7F0E0084
-			public const int nav_app_bar_open_drawer_description = 2131624068;
+			public const int nav_app_bar_navigate_up_description = 2131624068;
 			
 			// aapt resource value: 0x7F0E0085
-			public const int not_set = 2131624069;
+			public const int nav_app_bar_open_drawer_description = 2131624069;
 			
 			// aapt resource value: 0x7F0E0086
-			public const int overflow_tab_title = 2131624070;
+			public const int not_set = 2131624070;
 			
 			// aapt resource value: 0x7F0E0087
-			public const int password_toggle_content_description = 2131624071;
+			public const int overflow_tab_title = 2131624071;
 			
 			// aapt resource value: 0x7F0E0088
-			public const int path_password_eye = 2131624072;
+			public const int password_toggle_content_description = 2131624072;
 			
 			// aapt resource value: 0x7F0E0089
-			public const int path_password_eye_mask_strike_through = 2131624073;
+			public const int path_password_eye = 2131624073;
 			
 			// aapt resource value: 0x7F0E008A
-			public const int path_password_eye_mask_visible = 2131624074;
+			public const int path_password_eye_mask_strike_through = 2131624074;
 			
 			// aapt resource value: 0x7F0E008B
-			public const int path_password_strike_through = 2131624075;
+			public const int path_password_eye_mask_visible = 2131624075;
 			
 			// aapt resource value: 0x7F0E008C
-			public const int preference_copied = 2131624076;
+			public const int path_password_strike_through = 2131624076;
 			
 			// aapt resource value: 0x7F0E008D
-			public const int projectToken = 2131624077;
+			public const int preference_copied = 2131624077;
 			
 			// aapt resource value: 0x7F0E008E
-			public const int project_id = 2131624078;
+			public const int projectToken = 2131624078;
 			
 			// aapt resource value: 0x7F0E008F
-			public const int search_menu_title = 2131624079;
+			public const int project_id = 2131624079;
 			
 			// aapt resource value: 0x7F0E0090
-			public const int sessionTimeout = 2131624080;
+			public const int search_menu_title = 2131624080;
 			
 			// aapt resource value: 0x7F0E0091
-			public const int status_bar_notification_info_overflow = 2131624081;
+			public const int sessionTimeout = 2131624081;
 			
 			// aapt resource value: 0x7F0E0092
-			public const int summary_collapsed_preference_list = 2131624082;
+			public const int status_bar_notification_info_overflow = 2131624082;
 			
 			// aapt resource value: 0x7F0E0093
-			public const int v7_preference_off = 2131624083;
+			public const int summary_collapsed_preference_list = 2131624083;
 			
 			// aapt resource value: 0x7F0E0094
-			public const int v7_preference_on = 2131624084;
+			public const int v7_preference_off = 2131624084;
+			
+			// aapt resource value: 0x7F0E0095
+			public const int v7_preference_on = 2131624085;
 			
 			static String()
 			{

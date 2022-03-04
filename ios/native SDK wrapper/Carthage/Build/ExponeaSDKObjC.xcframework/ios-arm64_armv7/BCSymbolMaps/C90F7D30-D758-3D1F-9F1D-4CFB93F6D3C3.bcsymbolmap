@@ -1,9 +1,0 @@
-BCSymbolMap Version: 2.0
-Apple clang version 13.0.0 (clang-1300.0.29.3)
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
-iPhoneOS15.0.sdk
-/Users/mista/Library/Caches/org.carthage.CarthageKit/DerivedData/13.0_13A233/ios-sdk/6a85129aaa856c3439672e709b331b63d3948b60/Build/Intermediates.noindex/ArchiveIntermediates/ExponeaSDKObjC/IntermediateBuildFilesPath/ExponeaSDK.build/Release-iphoneos/ExponeaSDKObjC.build/DerivedSources/ExponeaSDKObjC_vers.c
-/Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native SDK wrapper/ExponeaSDKProxy/Carthage/Checkouts/ios-sdk/ExponeaSDK
-/Users/mista/Work/exponea_Xamarin_retry/xamarin-sdk/ios/native SDK wrapper/ExponeaSDKProxy/Carthage/Checkouts/ios-sdk/ExponeaSDK/ExponeaSDKObjC/objc_tryCatch.m
-objc_tryCatch
-ExponeaSDKObjC/objc_tryCatch.m

@@ -127,7 +127,7 @@
       <HintPath>..\packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="NativeLibrary">
-      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.0.2.1\lib\xamarinios10\NativeLibrary.dll</HintPath>
+      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.11.3\lib\xamarinios10\NativeLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

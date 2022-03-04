@@ -79,6 +79,17 @@ class MockExponea: ExponeaType {
             pushNotificationsDelegateValue = newValue
         }
     }
+    var inAppMessagesDelegateValue: InAppMessageActionDelegate = InAppDelegate()
+    var inAppMessagesDelegate: InAppMessageActionDelegate {
+        get {
+            calls.append(Call(name: "inAppMessagesDelegate:get", params: []))
+            return inAppMessagesDelegateValue
+        }
+        set {
+            calls.append(Call(name: "inAppMessagesDelegate:set", params: [newValue]))
+            inAppMessagesDelegateValue = newValue
+        }
+    }
 
     var safeModeEnabled: Bool {
         get { fatalError("Not implemented") }
@@ -227,4 +238,24 @@ class MockExponea: ExponeaType {
     func anonymize(exponeaProject: ExponeaProject, projectMapping: [EventType: [ExponeaProject]]?) {
         calls.append(Call(name: "anonymize", params: [exponeaProject, projectMapping]))
     }
+    
+    func trackInAppMessageClick(message: InAppMessage, buttonText: String?, buttonLink: String?) {
+        calls.append(Call(name: "trackInAppMessageClick", params: [message, buttonText, buttonLink]))
+    }
+    
+    func trackInAppMessageClose(message: InAppMessage) {
+        calls.append(Call(name: "trackInAppMessageClose", params: [message]))
+    }
+}
+
+public class InAppDelegate: InAppMessageActionDelegate {
+    public var overrideDefaultBehavior = false
+    public var trackActions = true
+    
+    init(override: Bool = false, track: Bool = true) {
+        overrideDefaultBehavior = override
+        trackActions = track
+    }
+
+    public func inAppMessageAction(with message: InAppMessage, button: InAppMessageButton?, interaction: Bool) {}
 }

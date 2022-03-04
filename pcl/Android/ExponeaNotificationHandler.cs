@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Android.App;
 using Android.Content;
-using Firebase.Messaging;
 using Google.Gson.Internal;
 
 namespace Exponea.Android
@@ -31,9 +30,9 @@ namespace Exponea.Android
             }
         }
 
-        public bool HandleRemoteMessage(Context applicationContext, RemoteMessage message, NotificationManager manager, bool showNotification)
+        public bool HandleRemoteMessage(Context applicationContext, IDictionary<string, string> messageData, NotificationManager manager, bool showNotification)
         {
-           return _exponea.HandleRemoteMessage(applicationContext, message, manager, showNotification);
+           return _exponea.HandleRemoteMessage(applicationContext, messageData, manager, showNotification);
         }
 
         public void TrackPushToken(string fcmToken)
@@ -41,9 +40,19 @@ namespace Exponea.Android
            _exponea.TrackPushToken(fcmToken);
         }
 
-        public bool IsExponeaNotification(RemoteMessage remoteMessage)
+        public void HandleNewToken(Context applicationContext, string fcmToken)
         {
-            return _exponea.IsExponeaPushNotification(remoteMessage);
+            _exponea.HandleNewToken(applicationContext, fcmToken);
+        }
+
+        public void HandleNewHmsToken(Context applicationContext, string fcmToken)
+        { 
+            _exponea.HandleNewHmsToken(applicationContext, fcmToken);
+        }
+
+        public bool IsExponeaNotification(IDictionary<string, string> messageData)
+        {
+            return _exponea.IsExponeaPushNotification(messageData);
         }
 
         public void SetNotificationDataCallback(Action<Dictionary<string, object>> action)

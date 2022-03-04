@@ -13,6 +13,7 @@ import Nimble
 import protocol ExponeaSDK.JSONConvertible
 
 @testable import ExponeaSDKProxy
+@testable import ExponeaSDK
 
 class ExponeaTrackingSpec: QuickSpec {
     override func spec() {
@@ -146,6 +147,70 @@ class ExponeaTrackingSpec: QuickSpec {
                     exponea.trackSessionEnd()
                     expect(mockExponea.calls[0].name).to(equal("isConfigured:get"))
                     expect(mockExponea.calls.count).to(equal(1))
+                }
+            }
+            context("in-app action tracking") {
+                it("should track in-app message click event") {
+                    mockExponea.isConfiguredValue = true
+                    exponea.trackInAppMessageClick(
+                        message: SimpleInAppMessage(
+                            id: "mock-id",
+                            name: "mock-name",
+                            rawMessageType: "mock-raw-meessage-type",
+                            variantId: 12345,
+                            variantName: "mock-variant-name",
+                            rawFrequency: "mock-raw_frequency",
+                            eventType: "mock-event-type",
+                            priority: 123,
+                            delayMS: 321,
+                            timeoutMS: 987),
+                        buttonText: "mock-button-text",
+                        buttonLink: "mock-button-link"
+                    )
+                    expect(mockExponea.calls[0].name).to(equal("isConfigured:get"))
+                    expect(mockExponea.calls[1].name).to(equal("trackInAppMessageClick"))
+                    let message = mockExponea.calls[1].params[0] as! InAppMessage
+                    expect(message.id).to(equal("mock-id"))
+                    expect(message.name).to(equal("mock-name"))
+                    expect(message.rawMessageType).to(equal("mock-raw-meessage-type"))
+                    expect(message.variantId).to(equal(12345))
+                    expect(message.variantName).to(equal("mock-variant-name"))
+                    expect(message.rawFrequency).to(equal("mock-raw_frequency"))
+                    expect(message.trigger.eventType).to(equal("mock-event-type"))
+                    expect(message.priority).to(equal(123))
+                    expect(message.delayMS).to(equal(321))
+                    expect(message.timeoutMS).to(equal(987))
+                    expect(mockExponea.calls[1].params[1] as? String).to(equal("mock-button-text"))
+                    expect(mockExponea.calls[1].params[2] as? String).to(equal("mock-button-link"))
+                }
+                it("should track in-app message close event") {
+                    mockExponea.isConfiguredValue = true
+                    exponea.trackInAppMessageClose(
+                        message: SimpleInAppMessage(
+                            id: "mock-id",
+                            name: "mock-name",
+                            rawMessageType: "mock-raw-meessage-type",
+                            variantId: 12345,
+                            variantName: "mock-variant-name",
+                            rawFrequency: "mock-raw_frequency",
+                            eventType: "mock-event-type",
+                            priority: 123,
+                            delayMS: 321,
+                            timeoutMS: 987)
+                    )
+                    expect(mockExponea.calls[0].name).to(equal("isConfigured:get"))
+                    expect(mockExponea.calls[1].name).to(equal("trackInAppMessageClose"))
+                    let message = mockExponea.calls[1].params[0] as! InAppMessage
+                    expect(message.id).to(equal("mock-id"))
+                    expect(message.name).to(equal("mock-name"))
+                    expect(message.rawMessageType).to(equal("mock-raw-meessage-type"))
+                    expect(message.variantId).to(equal(12345))
+                    expect(message.variantName).to(equal("mock-variant-name"))
+                    expect(message.rawFrequency).to(equal("mock-raw_frequency"))
+                    expect(message.trigger.eventType).to(equal("mock-event-type"))
+                    expect(message.priority).to(equal(123))
+                    expect(message.delayMS).to(equal(321))
+                    expect(message.timeoutMS).to(equal(987))
                 }
             }
         }
