@@ -27,24 +27,31 @@ For push notifications to work, you'll need to set up a few things:
 To handle incoming push messages, you will have to create your FirebaseMessagingService implementation, which calls the SDK method `HandleRemoteMessage` when the message is received and `HandleNewToken` when the token is obtained from the Firebase.
 
 ``` csharp
-[Service(Name = "XamarinExample.Droid.ExampleFirebaseMessageService", Exported = false)]
-[IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
-[IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
-public class ExampleFirebaseMessageService : FirebaseMessagingService {
+...
+using Exponea.Android;
+using Firebase.Messaging;
 
-        public override void OnMessageReceived(RemoteMessage message)
-        {
-            var notificationManager = (NotificationManager)GetSystemService(NotificationService);
-            if (!ExponeaNotificationHandler.Instance.HandleRemoteMessage(ApplicationContext, message.Data, notificationManager, true))
+namespace YourNameSpace
+{
+    [Service(Name = "yournamespace.ExampleFirebaseMessageService", Exported = false)]
+    [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
+    [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
+    public class ExampleFirebaseMessageService : FirebaseMessagingService {
+
+            public override void OnMessageReceived(RemoteMessage message)
             {
-                // push notification is from another push provider
+                var notificationManager = (NotificationManager)GetSystemService(NotificationService);
+                if (!ExponeaNotificationHandler.Instance.HandleRemoteMessage(ApplicationContext, message.Data, notificationManager, true))
+                {
+                    // push notification is from another push provider
+                }
             }
-        }
 
-        public override void OnNewToken(string token)
-        {
-            ExponeaNotificationHandler.Instance.HandleNewToken(ApplicationContext, token);
-        }
+            public override void OnNewToken(string token)
+            {
+                ExponeaNotificationHandler.Instance.HandleNewToken(ApplicationContext, token);
+            }
+    }
 }
 ```
 
@@ -74,23 +81,30 @@ Some of the necessary steps may not be mentioned directly in Huawei documentatio
 To handle incoming push messages, you will have to create your HmsMessageService implementation, which calls the SDK method `HandleRemoteMessage` when the message is received and `HandleNewHmsToken` when the token is obtained from the Huawei Messaging Service.
 
 ``` csharp
-[Service(Name = "XamarinExample.Droid.ExampleHuaweiMessageService", Exported = false)]
-[IntentFilter(new[] { "com.huawei.push.action.MESSAGING_EVENT" })]
-public class ExampleHuaweiMessageService : HmsMessageService {
+...
+using Exponea.Android;
+using Huawei.Hms.Push;
 
-        public override void OnMessageReceived(RemoteMessage message)
-        { 
-            var notificationManager = (NotificationManager)GetSystemService(NotificationService);
-            if (!ExponeaNotificationHandler.Instance.HandleRemoteMessage(ApplicationContext, message.DataOfMap, notificationManager, true))
-            {
-                // push notification is from another push provider
+namespace YourNameSpace
+{
+[Service(Name = "yournamespace.ExampleHuaweiMessageService", Exported = false)]
+    [IntentFilter(new[] { "com.huawei.push.action.MESSAGING_EVENT" })]
+    public class ExampleHuaweiMessageService : HmsMessageService {
+
+            public override void OnMessageReceived(RemoteMessage message)
+            { 
+                var notificationManager = (NotificationManager)GetSystemService(NotificationService);
+                if (!ExponeaNotificationHandler.Instance.HandleRemoteMessage(ApplicationContext, message.DataOfMap, notificationManager, true))
+                {
+                    // push notification is from another push provider
+                }
             }
-        }
 
-        public override void OnNewToken(string token)
-        {
-            ExponeaNotificationHandler.Instance.HandleNewHmsToken(ApplicationContext, token);
-        }
+            public override void OnNewToken(string token)
+            {
+                ExponeaNotificationHandler.Instance.HandleNewHmsToken(ApplicationContext, token);
+            }
+    }
 }
 ```
 

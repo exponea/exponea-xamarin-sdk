@@ -6,7 +6,7 @@ using Huawei.Hms.Push;
 
 namespace XamarinExample.Droid
 {
-    [Service(Name = "XamarinExample.Droid.ExampleHuaweiMessageService", Exported = false)]
+    [Service(Name = "xamarinexample.droid.ExampleHuaweiMessageService", Exported = false)]
     [IntentFilter(new[] { "com.huawei.push.action.MESSAGING_EVENT" })]
     public class ExampleHuaweiMessageService : HmsMessageService
     {

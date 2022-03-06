@@ -6,7 +6,7 @@ using Firebase.Messaging;
 
 namespace XamarinExample.Droid
 {
-    [Service(Name = "XamarinExample.Droid.ExampleFirebaseMessageService", Exported = false)]
+    [Service(Name = "xamarinexample.droid.ExampleFirebaseMessageService", Exported = false)]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
     public class ExampleFirebaseMessageService : FirebaseMessagingService
