@@ -280,8 +280,6 @@ namespace ExamplePushServiceExtension
 
 ```
 
-  
-
 ### Notification Content Extension
 
 Create a new Notification Content Extension. By default, the extension will contain a storyboard file that you can delete; we'll change the default view controller implementation. The service extension that we created in the previous step will change the notification `categoryIdentifier` to `EXPONEA_ACTIONABLE`. We have to configure the content extension to display push notifications with that category. Open `Info.plist` in created content extension group and add `UNNotificationExtensionCategory`. Next, remove `NSExtensionMainStoryboard` and instead use `NSExtensionPrincipalClass` set to your view controller.
@@ -354,6 +352,5 @@ namespace ExamplePushContentExtension
 
 You should now be able to use Exponea push notifications.
 
-  
 
 To further configure push notifications, check the complete documentation for [Configuration](./CONFIG.md).
