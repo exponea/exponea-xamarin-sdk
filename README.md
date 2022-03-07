@@ -34,6 +34,7 @@ SDK is created as .net wrapper for binding libraries of [native Android SDK](htt
   * [iOS push notifications](./documentation/IOS_PUSH.md)
   * [Android univerzal links](./documentation/ANDROID_UNIVERZAL_LINKS.md)
   * [iOS univerzal links](./documentation/IOS_UNIVERSAL_LINKS.md)
+  * [Necessary changes between major versions](./documentation/VERSION_UPDATE.md)
   
 ## Release Notes
 
