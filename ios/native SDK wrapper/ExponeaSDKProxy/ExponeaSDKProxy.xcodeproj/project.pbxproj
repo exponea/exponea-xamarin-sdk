@@ -19,14 +19,10 @@
 		CC353BEC273BEA5600319DF9 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CC353BEB273BEA5600319DF9 /* Nimble */; };
 		CC353BF2273BEA8200319DF9 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CC353BF1273BEA8200319DF9 /* Quick */; };
 		CC353C45273D275300319DF9 /* AnyCodable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; };
-		CC353C46273D275300319DF9 /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC48EA3426D510B9006B220D /* ConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48EA3326D510B9006B220D /* ConfigParser.swift */; };
 		CC6D2C7727D0F24900DDF046 /* ExponeaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; };
-		CC6D2C7827D0F24900DDF046 /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC6D2C7927D0F24900DDF046 /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; };
-		CC6D2C7A27D0F24900DDF046 /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC6D2C7B27D0F24900DDF046 /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; };
-		CC6D2C7C27D0F24900DDF046 /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCABBB9126D632E000DC0DC4 /* ExponeaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABBB9026D632E000DC0DC4 /* ExponeaError.swift */; };
 		CCABBB9326D632F200DC0DC4 /* ExponeaDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABBB9226D632F200DC0DC4 /* ExponeaDataError.swift */; };
 		CCABBB9526D6330D00DC0DC4 /* JsonDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABBB9426D6330D00DC0DC4 /* JsonDataParser.swift */; };
@@ -47,23 +43,6 @@
 			remoteInfo = ExponeaSDKProxy;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CC353C49273D275300319DF9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CC6D2C7C27D0F24900DDF046 /* ExponeaSDKShared.xcframework in Embed Frameworks */,
-				CC6D2C7A27D0F24900DDF046 /* ExponeaSDKObjC.xcframework in Embed Frameworks */,
-				CC353C46273D275300319DF9 /* AnyCodable.xcframework in Embed Frameworks */,
-				CC6D2C7827D0F24900DDF046 /* ExponeaSDK.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC353BCF273BE9A500319DF9 /* ExponeaSDKProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExponeaSDKProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,7 +207,6 @@
 				CCE77DB626AFF2D7008866B0 /* Sources */,
 				CCE77DB726AFF2D7008866B0 /* Frameworks */,
 				CCE77DB826AFF2D7008866B0 /* Resources */,
-				CC353C49273D275300319DF9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,9 +353,11 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UVDCL7YSZS;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,6 +368,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "ExponeaSDKProxyTests/ExponeaSDKProxyTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -401,9 +383,11 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UVDCL7YSZS;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -414,6 +398,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "ExponeaSDKProxyTests/ExponeaSDKProxyTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -551,9 +537,11 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UVDCL7YSZS;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -569,6 +557,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -583,9 +573,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UVDCL7YSZS;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -600,6 +591,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

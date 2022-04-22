@@ -13,7 +13,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>ExponeaSDK.iOS.Notifications</PackageId>
-    <PackageVersion>2.11.3</PackageVersion>
+    <PackageVersion>2.11.3.1</PackageVersion>
     <Authors>Exponea</Authors>
     <Description>Binding library for ExponeaSDKNotifications</Description>
     <Owners>Exponea</Owners>

@@ -10,6 +10,7 @@
     <RootNamespace>ExamplePushContentExtension</RootNamespace>
     <AssemblyName>ExamplePushContentExtension</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>1.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,15 +39,16 @@
     <DefineConstants></DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <CodesignKey>iPhone Distribution: Panaxeo, s.r.o. (UVDCL7YSZS)</CodesignKey>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
-    <CodesignProvision>Exponea Xamarin Content Ext1</CodesignProvision>
+    <CodesignExtraArgs>--deep</CodesignExtraArgs>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <CodesignProvision>Exponea Xamarin Content Distribution</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -71,7 +73,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -82,8 +84,8 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
-    <CodesignProvision>Exponea Xamarin Content Ext1</CodesignProvision>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Exponea Xamarin Example Content Development</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -127,7 +129,7 @@
       <HintPath>..\packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="NativeLibrary">
-      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.11.3\lib\xamarinios10\NativeLibrary.dll</HintPath>
+      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.11.3.1\lib\xamarinios10\NativeLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

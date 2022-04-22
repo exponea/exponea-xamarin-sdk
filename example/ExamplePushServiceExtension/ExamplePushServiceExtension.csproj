@@ -10,6 +10,7 @@
     <RootNamespace>ExamplePushServiceExtension</RootNamespace>
     <AssemblyName>ExamplePushServiceExtension</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>1.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +39,7 @@
     <DefineConstants></DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Panaxeo, s.r.o. (UVDCL7YSZS)</CodesignKey>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
@@ -46,7 +47,8 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
-    <CodesignProvision>Exponea Xamarin Service ext</CodesignProvision>
+    <CodesignExtraArgs>--deep</CodesignExtraArgs>
+    <CodesignProvision>Exponea Examarin Service Distribution</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -82,8 +84,8 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
-    <CodesignProvision>Exponea Xamarin Service ext</CodesignProvision>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Exponea Xamarin Example Service Development</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -127,7 +129,7 @@
       <HintPath>..\packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="NativeLibrary">
-      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.11.3\lib\xamarinios10\NativeLibrary.dll</HintPath>
+      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.11.3.1\lib\xamarinios10\NativeLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
