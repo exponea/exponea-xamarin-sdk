@@ -1,5 +1,4 @@
-github "exponea/exponea-ios-sdk" ~> 2.11.3
+github "exponea/exponea-ios-sdk" == 2.12.2
 #use this to test not released version from gitlab
-#git "https://gitlab.com/panaxeo/exponea/ios-sdk.git" "develop"
-github "Flight-School/AnyCodable" ~> 0.6.0
-
+#git "file:///Users/adammihalik/exponea/ios-sdk" "fix/expi-245-2"
+github "Flight-School/AnyCodable" == 0.6.0

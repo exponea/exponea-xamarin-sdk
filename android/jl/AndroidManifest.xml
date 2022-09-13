@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.exponea.sdk" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity
+            android:name="com.exponea.sdk.view.InAppMessageActivity"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.InAppMessageActivity" />
+        <activity
+            android:name="com.exponea.sdk.services.ExponeaPushTrackingActivity"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+            <!-- we need this to be called before the app is opened to process campaign data inside the notification -->
+            <intent-filter android:priority="999" >
+                <action android:name="com.exponea.sdk.action.PUSH_CLICKED" />
+                <action android:name="com.exponea.sdk.action.PUSH_DEEPLINK_CLICKED" />
+                <action android:name="com.exponea.sdk.action.PUSH_URL_CLICKED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.exponea.sdk.services.ExponeaPushTrackingActivityOlderApi"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+            <!-- we need this to be called before the app is opened to process campaign data inside the notification -->
+            <intent-filter android:priority="999" >
+                <action android:name="com.exponea.sdk.action.PUSH_CLICKED" />
+                <action android:name="com.exponea.sdk.action.PUSH_DEEPLINK_CLICKED" />
+                <action android:name="com.exponea.sdk.action.PUSH_URL_CLICKED" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

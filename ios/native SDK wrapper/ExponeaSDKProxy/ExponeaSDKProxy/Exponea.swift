@@ -13,6 +13,13 @@ import UserNotifications
 @objc(IsExponeaXamarinSDK)
 protocol IsExponeaXamarinSDK {
 }
+@objc(ExponeaXamarinVersion)
+public class ExponeaXamarinVersion: NSObject, ExponeaVersionProvider {
+    required public override init() { }
+    public func getVersion() -> String {
+        "0.9.9"
+    }
+}
 
 @objc(Exponea)
 public class Exponea : NSObject {
@@ -550,7 +557,9 @@ public class Exponea : NSObject {
             ),
             priority: message.priority,
             delayMS: message.delayMS,
-            timeoutMS: message.timeoutMS
+            timeoutMS: message.timeoutMS,
+            payloadHtml: nil,
+            isHtml: message.rawMessageType == "freeform"
             )
             Exponea.shared.trackInAppMessageClick(message: inAppMessage, buttonText: buttonText, buttonLink: buttonLink)
             
@@ -578,7 +587,9 @@ public class Exponea : NSObject {
             ),
             priority: message.priority,
             delayMS: message.delayMS,
-            timeoutMS: message.timeoutMS
+            timeoutMS: message.timeoutMS,
+            payloadHtml: nil,
+            isHtml: message.rawMessageType == "freeform"
             )
             Exponea.shared.trackInAppMessageClose(message: inAppMessage)
     }

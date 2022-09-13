@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="exponea_sdk_in_app_message_dialog_corner_radius">15dp</dimen>
+    <dimen name="exponea_sdk_in_app_message_dialog_padding">20dp</dimen>
+    <dimen name="exponea_sdk_in_app_message_fullscreen_padding">10dp</dimen>
+    <dimen name="exponea_sdk_in_app_message_max_button_width">300dp</dimen>
+    <dimen name="exponea_sdk_in_app_message_max_buttons_width">140dp</dimen>
+    <dimen name="exponea_sdk_in_app_message_slide_in_corner_radius">5dp</dimen>
+    <string name="app_name">Sdk</string>
+    <string name="automaticSessionTracking">false</string>
+    <string name="projectToken">testToken</string>
+    <string name="sessionTimeout">20</string>
+    <style name="Theme.InAppMessageActivity" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

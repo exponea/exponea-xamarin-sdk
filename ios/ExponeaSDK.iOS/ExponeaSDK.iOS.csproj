@@ -12,10 +12,10 @@
     <AssemblyName>ExponeaSDK.iOS</AssemblyName>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackageId>ExponeaSDK.iOS</PackageId>
-    <PackageVersion>2.11.3.1</PackageVersion>
+    <PackageVersion>2.12.2.1</PackageVersion>
     <Authors>Exponea</Authors>
     <Description>Binding library for native iOS ExponeaSDK</Description>
-    <ReleaseVersion>2.11.3.1</ReleaseVersion>
+    <ReleaseVersion>2.12.2.1</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
     <Owners>Exponea</Owners>
@@ -69,6 +69,9 @@
       <Kind>Framework</Kind>
     </NativeReference>
     <NativeReference Include="..\native SDK wrapper\ExponeaSDKProxy\frameworks\AnyCodable.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <NativeReference Include="..\native SDK wrapper\ExponeaSDKProxy\frameworks\SwiftSoup.framework">
       <Kind>Framework</Kind>
     </NativeReference>
   </ItemGroup>

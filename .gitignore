@@ -3,6 +3,8 @@ obj/
 packages/
 .vs/
 *.csproj.user
+.DS_Store
+.idea
 
 /ios/native SDK wrapper/Cartfile.resolved
 /ios/native SDK wrapper/Carthage

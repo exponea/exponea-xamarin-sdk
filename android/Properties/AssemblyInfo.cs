@@ -24,4 +24,5 @@ using Android.App;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: MetaData("ExponeaXamarinSDK", Value = "true")]
+[assembly: MetaData("ExponeaXamarinVersion", Value = "0.9.9")]
 

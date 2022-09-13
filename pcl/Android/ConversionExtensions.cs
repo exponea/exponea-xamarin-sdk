@@ -86,6 +86,7 @@ namespace Exponea
                 Java.Lang.Float f => (float)f,
                 Java.Lang.Double d => (double)d,
                 Java.Lang.String s => (string)s,
+                Java.Lang.Boolean b => (bool)b,
                 IDictionary<string, Java.Lang.Object> dic => dic.ToNetDictionary(),
                 _ => java
             };
@@ -100,6 +101,7 @@ namespace Exponea
                 float f => new Java.Lang.Float(f),
                 double d => new Java.Lang.Double(d),
                 string s => new Java.Lang.String(s),
+                bool b => new Java.Lang.Boolean(b),
                 Java.Lang.Object o => o,
                 _ => throw new NotSupportedException()
             };
@@ -120,7 +122,10 @@ namespace Exponea
                       new ExponeaSdkAndroid.DateFilter(),
                       new Java.Lang.Integer(message.Priority),
                       new Java.Lang.Long(message.DelayMS),
-                      new Java.Lang.Long(message.TimeoutMS));
+                      new Java.Lang.Long(message.TimeoutMS),
+                      null,
+                      new Java.Lang.Boolean(message.RawMessageType == "freeform")
+            );
         }
 
 
@@ -129,7 +134,7 @@ namespace Exponea
             return new InAppMessage(
                       message.Id,
                       message.Name,
-                      message.RawMessageType,
+                      ((bool)message.IsHtml()) ? "freeform" : message.RawMessageType,
                       message.RawFrequency,
                       message.VariantId,
                       message.VariantName,

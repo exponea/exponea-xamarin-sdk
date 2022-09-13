@@ -25,7 +25,7 @@ public class SimpleInAppMessage: NSObject {
     public init( inAppMessage: InAppMessage) {
         id = inAppMessage.id
         name = inAppMessage.name
-        rawMessageType = inAppMessage.rawMessageType
+        rawMessageType = inAppMessage.isHtml == true ? "freeform" : inAppMessage.rawMessageType!
         variantId = inAppMessage.variantId
         variantName = inAppMessage.variantName
         rawFrequency = inAppMessage.rawFrequency

@@ -30,4 +30,7 @@ Global
 		{93E1B943-4034-444D-9CDD-DC9548601638}.Release|x86.ActiveCfg = Release|Any CPU
 		{93E1B943-4034-444D-9CDD-DC9548601638}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.2.0.1
+	EndGlobalSection
 EndGlobal

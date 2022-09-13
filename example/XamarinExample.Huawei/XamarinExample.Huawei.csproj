@@ -23,7 +23,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
-    <ReleaseVersion>1.0.1</ReleaseVersion>
+    <ReleaseVersion>1.0.3</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +75,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Huawei.Hms.Push">
       <Version>6.3.0.402</Version>
+    </PackageReference>
+    <PackageReference Include="ExponeaSDK">
+      <Version>1.1.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
