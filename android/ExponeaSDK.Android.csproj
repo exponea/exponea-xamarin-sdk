@@ -20,13 +20,13 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>ExponeaSDK.Android</PackageId>
-    <PackageVersion>3.1.0.1</PackageVersion>
+    <PackageVersion>3.1.0</PackageVersion>
     <Authors>Exponea</Authors>
     <Copyright>Exponea</Copyright>
     <Owners>Exponea</Owners>
     <Title>ExponeaSDK.Android</Title>
     <Description>Binding library for Exponea Android SDK</Description>
-    <ReleaseVersion>3.1.0.1</ReleaseVersion>
+    <ReleaseVersion>3.1.0</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <Summary>Binding library for Exponea Android SDK</Summary>
     <PackageLicenseUrl>https://spdx.org/licenses/MIT</PackageLicenseUrl>
