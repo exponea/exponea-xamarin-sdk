@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Exponea
 {
@@ -12,9 +13,16 @@ namespace Exponea
 
         void Track(Event evt, double? timestamp = null);
         void Track(Delivery delivery);
+        void TrackWithoutTrackingConsent(Delivery delivery);
         void Track(Click click);
+        void TrackWithoutTrackingConsent(Click click);
+        void HandlePushNotificationOpened(Click click, string actionIdentifier);
+        void HandlePushNotificationOpenedWithoutTrackingConsent(Click click, string actionIdentifier);
+        void TrackCampaign(Uri url, double? timestamp = null);
         void Track(Payment payment, double? timestamp = null);
         void TrackPushToken(string token);
+        void HandlePushToken(string token);
+        void HandleHmsPushToken(string token);
         void TrackSessionStart();
         void TrackSessionEnd();
         void Anonymize();
@@ -36,6 +44,24 @@ namespace Exponea
         void CheckPushSetup();
         void SetInAppMessageDelegate(bool overrideDefaultBehavior, bool trackActions, Action<InAppMessage, string, string, bool> action);
         void TrackInAppMessageClick(InAppMessage message, string buttonText, string buttonLink);
-        void TrackInAppMessageClose(InAppMessage message);
+        void TrackInAppMessageClickWithoutTrackingConsent(InAppMessage message, string buttonText, string buttonLink);
+        void TrackInAppMessageClose(InAppMessage message, bool? isUserInteraction = null);
+        void TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction = null);
+        void SetAppInboxProvider(IDictionary<string, object> data);
+        View GetAppInboxButton();
+        void SetPushNotificationsDelegate(
+            Action<
+                NotificationActionType, //type, NonNull
+                string,    // value, Nullable
+                IDictionary<string, object> // extraData, Nullable
+            > action
+        );
+        void TrackAppInboxOpened(AppInboxMessage message);
+        void TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message);
+        void TrackAppInboxClick(AppInboxAction action, AppInboxMessage message);
+        void TrackAppInboxClickWithoutTrackingConsent(AppInboxAction action, AppInboxMessage message);
+        Task<bool> MarkAppInboxAsRead(AppInboxMessage message);
+        Task<IList<AppInboxMessage>> FetchAppInbox();
+        Task<AppInboxMessage> FetchAppInboxItem(string messageId);
     }
 }

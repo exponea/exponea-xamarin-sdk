@@ -16,10 +16,10 @@ namespace XamarinExample
 
             projectToken.Text = Preferences.Get("projectToken", "");
             authorization.Text = Preferences.Get("authorization", "");
+            advancedPrivKey.Text = Preferences.Get("advancedPrivKey", "k0h1bw1hp2tcb1wpymyrhha80x11irpwvpsm4ojt731pueu3djxsc73iiy1n2tyu");
             url.Text = Preferences.Get("baseURL", "https://api.exponea.com");
             flushMode.SelectedIndex = 0;
 
-            
             if (_exponea.IsConfigured)
             {
                 GoToNextPage();
@@ -32,7 +32,7 @@ namespace XamarinExample
 
             var config = new Configuration(projectToken.Text, authorization.Text, url.Text);
             config.AutomaticSessionTracking = automaticSessionTracking.IsToggled;
-            
+
             var props = new Dictionary<string, object>()
             {
                 { "thisIsADefaultStringProperty", "This is a default string value" },
@@ -47,6 +47,15 @@ namespace XamarinExample
             int colorId = System.Drawing.Color.FromArgb(0, 0, 255).ToInt();
             config.AndroidConfiguration = new AndroidConfiguration(pushIcon: "push_icon", pushAccentColor: colorId, automaticPushNotification: true);
 
+            config.AdvancedAuthEnabled = true;
+
+            // Prepare Example Advanced Auth
+            CustomerTokenStorage.INSTANCE.Configure(
+                host: url.Text,
+                projectToken: projectToken.Text,
+                publicKey: advancedPrivKey.Text
+            );
+
             _exponea.Configure(config);
             _exponea.FlushMode = (FlushMode)flushMode.SelectedItem;
             _exponea.LogLevel = Device.RuntimePlatform == Device.iOS ? LogLevel.Verbose : LogLevel.Debug;
@@ -60,7 +69,7 @@ namespace XamarinExample
                     _exponea.FlushPeriod = new System.TimeSpan(0, minutes: minutes, 0);
                 else
                     Console.WriteLine("Period could not be parsed.");
-               
+
             }
 
             _exponea.SetDefaultProperties(new Dictionary<string, object>()

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550AD5552A0151620025F52D /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3A273D268F00319DF9 /* ExponeaSDKNotifications.xcframework */; };
+		550AD5572A0151620025F52D /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3E273D269800319DF9 /* ExponeaSDKShared.xcframework */; };
 		CC353C2F273D236D00319DF9 /* ExponeaSDKNotificationsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = CC353C2E273D236D00319DF9 /* ExponeaSDKNotificationsProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC353C42273D26E100319DF9 /* ExponeaNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353C41273D26E100319DF9 /* ExponeaNotificationHandler.swift */; };
-		CC6D2C7227D0F14800DDF046 /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3A273D268F00319DF9 /* ExponeaSDKNotifications.xcframework */; };
-		CC6D2C7427D0F14800DDF046 /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3E273D269800319DF9 /* ExponeaSDKShared.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6D2C7427D0F14800DDF046 /* ExponeaSDKShared.xcframework in Frameworks */,
-				CC6D2C7227D0F14800DDF046 /* ExponeaSDKNotifications.xcframework in Frameworks */,
+				550AD5572A0151620025F52D /* ExponeaSDKShared.xcframework in Frameworks */,
+				550AD5552A0151620025F52D /* ExponeaSDKNotifications.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +296,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +331,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

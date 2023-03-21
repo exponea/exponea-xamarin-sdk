@@ -43,7 +43,9 @@ public class Exponea : NSObject {
                 pushNotificationTracking: try parser.parsePushNotificationTracking(),
                 automaticSessionTracking: try parser.parseSessionTracking(),
                 defaultProperties: try parser.parseDefaultProperties(),
-                flushingSetup: try parser.parseFlushingSetup()
+                flushingSetup: try parser.parseFlushingSetup(),
+                allowDefaultCustomerProperties: false,
+                advancedAuthEnabled: false
             )
         } catch {
             print(ExponeaError.parsingError(error: error.localizedDescription).description)
@@ -559,7 +561,9 @@ public class Exponea : NSObject {
             delayMS: message.delayMS,
             timeoutMS: message.timeoutMS,
             payloadHtml: nil,
-            isHtml: message.rawMessageType == "freeform"
+            isHtml: message.rawMessageType == "freeform",
+            hasTrackingConsent: false,
+            consentCategoryTracking: nil
             )
             Exponea.shared.trackInAppMessageClick(message: inAppMessage, buttonText: buttonText, buttonLink: buttonLink)
             
@@ -589,9 +593,103 @@ public class Exponea : NSObject {
             delayMS: message.delayMS,
             timeoutMS: message.timeoutMS,
             payloadHtml: nil,
-            isHtml: message.rawMessageType == "freeform"
+            isHtml: message.rawMessageType == "freeform",
+            hasTrackingConsent: false,
+            consentCategoryTracking: nil
             )
-            Exponea.shared.trackInAppMessageClose(message: inAppMessage)
+            Exponea.shared.trackInAppMessageClose(message: inAppMessage, isUserInteraction: true)
+    }
+
+    @objc
+    public func setAppInboxProvider(data: NSDictionary) {
+        Exponea.shared.appInboxProvider = CustomAppInboxProvider(data: data)
+    }
+    
+    @objc
+    public func getAppInboxButton() -> UIButton {
+        Exponea.shared.getAppInboxButton()
+    }
+    
+    @objc
+    public func getAppInboxListViewController() -> UIViewController {
+        Exponea.shared.getAppInboxListViewController()
+    }
+    
+    @objc
+    public func getAppInboxDetailViewController(_ messageId: String) -> UIViewController {
+        Exponea.shared.getAppInboxDetailViewController(messageId)
+    }
+    
+    @objc
+    public func fetchAppInbox(completion: @escaping TypeBlock<[AppInboxData]>, errorCompletion: @escaping TypeBlock<Error>) {
+        Exponea.shared.fetchAppInbox { data in
+            switch data {
+            case let .success(items):
+                completion(items.map { .init(message: $0) })
+            case let .failure(error):
+                errorCompletion(error)
+            }
+        }
     }
 }
 
+public class AppInboxData: NSObject {
+    let message: MessageItem
+    
+    init(message: MessageItem) {
+        self.message = message
+    }
+}
+
+import UIKit
+
+public class CustomAppInboxProvider: AppInboxProvider {
+    
+    private let data: NSDictionary
+    
+    init(data: NSDictionary) {
+        self.data = data
+    }
+
+    open func getAppInboxButton() -> UIButton {
+        let button = UIButton()
+        button.setTitle(data["title"] as? String, for: .normal)
+        button.addTarget(self, action: #selector(buttonAction(sender:)), for: .primaryActionTriggered)
+        return button
+    }
+    
+    open func getAppInboxListViewController() -> UIViewController {
+        AppInboxListViewController()
+    }
+
+    open func getAppInboxDetailViewController(_ messageId: String) -> UIViewController {
+        let detailViewController = AppInboxDetailViewController()
+        Exponea.shared.fetchAppInboxItem(messageId) { result in
+            switch result {
+            case .success(let message):
+                detailViewController.withData(message)
+            case .failure: break
+            }
+        }
+        return detailViewController
+    }
+
+    @objc
+    private func buttonAction(sender: UIButton!) {
+        var window = UIApplication.shared.keyWindow?.rootViewController?.navigationController?.topViewController
+        if window == nil {
+            window = UIApplication.shared.keyWindow?.rootViewController
+        }
+        guard let topViewController = window else {
+            return
+        }
+        let listView = getAppInboxListViewController()
+        let naviController = UINavigationController(rootViewController: listView)
+        naviController.modalPresentationStyle = .formSheet
+        topViewController.present(naviController, animated: true)
+    }
+
+    open func getAppInboxListTableViewCell(_ cell: UITableViewCell) -> UITableViewCell {
+        cell
+    }
+}

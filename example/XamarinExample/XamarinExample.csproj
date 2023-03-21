@@ -12,13 +12,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
-    <PackageReference Include="System.Text.Json" Version="6.0.3" />
-    <PackageReference Include="ExponeaSDK" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+    <PackageReference Include="ExponeaSDK" Version="1.1.0.11" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="System.Numerics.Vectors" />
     <None Remove="ExponeaSDK" />
+    <None Remove="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>

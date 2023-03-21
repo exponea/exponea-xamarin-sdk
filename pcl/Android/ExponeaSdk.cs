@@ -4,9 +4,15 @@ using System.Threading.Tasks;
 using Com.Exponea.Sdk.Util;
 using Exponea.Android;
 using ExponeaSdkAndroid = ExponeaSdk.Models;
-using Xamarin.Essentials;
-using Android.App;
+using Essentials = Xamarin.Essentials;
+using AndroidApp = Android.App;
 using Result = ExponeaSdk.Models.Result;
+using Newtonsoft.Json;
+using Com.Exponea.Style;
+using Com.Exponea.Sdk.Style.Appinbox;
+using NativeAndroid = Android.Widget;
+using AndroidForms = Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 namespace Exponea
 {
@@ -19,71 +25,74 @@ namespace Exponea
           
         }
 
-        public void Configure(Configuration config)
+        public void Configure(Configuration source)
         {
-            var configuration = new ExponeaSdkAndroid.ExponeaConfiguration
+            var target = new ExponeaSdkAndroid.ExponeaConfiguration
             {
-                ProjectToken = config.ProjectToken,
-                Authorization = "Token " + config.Authorization,
-                BaseURL = config.BaseUrl,
+                ProjectToken = source.ProjectToken,
+                Authorization = "Token " + source.Authorization,
+                BaseURL = source.BaseUrl,
 
             };
 
-            if (config.AutomaticSessionTracking != null) {
-                configuration.AutomaticSessionTracking = (bool)config.AutomaticSessionTracking;
+            if (source.AutomaticSessionTracking != null) {
+                target.AutomaticSessionTracking = (bool)source.AutomaticSessionTracking;
             }
-            if (config.DefaultProperties != null)
+            if (source.DefaultProperties != null)
             {
-                configuration.DefaultProperties = config.DefaultProperties.ToJavaDictionary();
+                target.DefaultProperties = source.DefaultProperties.ToJavaDictionary();
             }
-            if (config.MaxTries != null)
+            if (source.MaxTries != null)
             {
-                configuration.MaxTries = (int)config.MaxTries;
+                target.MaxTries = (int)source.MaxTries;
             }
-            if (config.SessionTimeout != null)
+            if (source.SessionTimeout != null)
             {
-                configuration.SessionTimeout = (double)config.SessionTimeout;
+                target.SessionTimeout = (double)source.SessionTimeout;
             }
-            if (config.ProjectRouteMap != null)
+            if (source.ProjectRouteMap != null)
             {
-                configuration.ProjectRouteMap = config.ProjectRouteMap.ToJavaDictionary();
+                target.ProjectRouteMap = source.ProjectRouteMap.ToJavaDictionary();
             }
 
-            configuration.TokenTrackFrequency = global::ExponeaSdk.Models.ExponeaConfiguration.TokenFrequency.ValueOf(
-                    config.TokenTrackFrequency.ToJavaEnumName<TokenTrackFrequencyInternal, TokenTrackFrequency>()
+            target.TokenTrackFrequency = global::ExponeaSdk.Models.ExponeaConfiguration.TokenFrequency.ValueOf(
+                    source.TokenTrackFrequency.ToJavaEnumName<TokenTrackFrequencyInternal, TokenTrackFrequency>()
             );
 
-            if (config.AndroidConfiguration != null)
+            if (source.AndroidConfiguration != null)
             {
-                var androidConfig = config.AndroidConfiguration;
-                configuration.AutomaticPushNotification = androidConfig.AutomaticPushNotification;
+                var androidConfig = source.AndroidConfiguration;
+                target.AutomaticPushNotification = androidConfig.AutomaticPushNotification;
                 if (androidConfig.PushAccentColor != null)
                 {
-                    configuration.PushAccentColor = new Java.Lang.Integer((int)androidConfig.PushAccentColor);
+                    target.PushAccentColor = new Java.Lang.Integer((int)androidConfig.PushAccentColor);
                 }
                 if (androidConfig.PushIcon != null)
                 {
-                    configuration.PushIcon = Utils.GetResourceId(Application.Context, androidConfig.PushIcon);
+                    target.PushIcon = Utils.GetResourceId(AndroidApp.Application.Context, androidConfig.PushIcon);
                 }
                 if (androidConfig.PushChannelDescription != null)
                 {
-                    configuration.PushChannelDescription = (string)androidConfig.PushChannelDescription;
+                    target.PushChannelDescription = (string)androidConfig.PushChannelDescription;
                 }
                 if (androidConfig.PushChannelName != null)
                 {
-                    configuration.PushChannelName = (string)androidConfig.PushChannelName;
+                    target.PushChannelName = (string)androidConfig.PushChannelName;
                 }
                 if (androidConfig.PushChannelId != null)
                 {
-                    configuration.PushChannelId = (string)androidConfig.PushChannelId;
+                    target.PushChannelId = (string)androidConfig.PushChannelId;
                 }
                 if (androidConfig.PushNotificationImportance != null)
                 {
-                    configuration.PushNotificationImportance = (int)androidConfig.PushNotificationImportance;
+                    target.PushNotificationImportance = (int)androidConfig.PushNotificationImportance;
                 }
             }
 
-            _exponea.Init(Platform.CurrentActivity, configuration);
+            target.AllowDefaultCustomerProperties = source.AllowDefaultCustomerProperties;
+            target.AdvancedAuthEnabled = source.AdvancedAuthEnabled;
+
+            _exponea.Init(Essentials.Platform.CurrentActivity, target);
         }
 
         public bool IsConfigured
@@ -137,15 +146,39 @@ namespace Exponea
                 new ExponeaSdkAndroid.PropertiesList(customer.Attributes.ToJavaDictionary()));
 
         public void Track(Click click)
-            => _exponea.TrackClickedPush(
-                new ExponeaSdkAndroid.NotificationData(click.Attributes.ToJavaDictionary(), new ExponeaSdkAndroid.CampaignData() /* ? */),
+        {
+            var consentCategoryTracking = click.Attributes.GetValueOrDefault("consent_category_tracking");
+            var hasTrackingConsent = click.Attributes.GetValueOrDefault("has_tracking_consent");
+            _exponea.TrackClickedPush(
+                new ExponeaSdkAndroid.NotificationData(
+                    click.Attributes.ToJavaDictionary(),
+                    new ExponeaSdkAndroid.CampaignData(),
+                    consentCategoryTracking == null ? null : (string)consentCategoryTracking,
+                    Com.Exponea.Sdk.Util.GdprTracking.Instance.HasTrackingConsent(
+                        hasTrackingConsent.ToJava()
+                    )
+                ),
                 new ExponeaSdkAndroid.NotificationAction(click.ActionType, click.ActionName, click.Url),
-                Utils.GetTimestamp());
-
+                Utils.GetTimestamp()
+            );
+        }
+        
         public void Track(Delivery delivery)
-            => _exponea.TrackDeliveredPush(
-                new ExponeaSdkAndroid.NotificationData(delivery.Attributes.ToJavaDictionary(), new ExponeaSdkAndroid.CampaignData() /* ? */),
-                Utils.GetTimestamp());
+        {
+            var consentCategoryTracking = delivery.Attributes.GetValueOrDefault("consent_category_tracking");
+            var hasTrackingConsent = delivery.Attributes.GetValueOrDefault("has_tracking_consent");
+            _exponea.TrackDeliveredPush(
+                new ExponeaSdkAndroid.NotificationData(
+                    delivery.Attributes.ToJavaDictionary(),
+                    new ExponeaSdkAndroid.CampaignData(),
+                    consentCategoryTracking == null ? null : (string)consentCategoryTracking,
+                    Com.Exponea.Sdk.Util.GdprTracking.Instance.HasTrackingConsent(
+                        hasTrackingConsent.ToJava()
+                    )
+                ),
+                Utils.GetTimestamp()
+            );
+        }
 
         public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
@@ -243,7 +276,165 @@ namespace Exponea
 
         public void TrackInAppMessageClose(InAppMessage message)
         {
-            _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage());
+            _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage(), Java.Lang.Boolean.True);
+        }
+
+        public void TrackInAppMessageClose(InAppMessage message, bool userInteraction)
+        {
+            _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage(), (Java.Lang.Boolean)userInteraction.ToJava());
+        }
+
+        public void SetAppInboxProvider(IDictionary<string, object> data)
+        {
+            AppInboxStyle appInboxStyle = new AppInboxStyleParser(data.ToJavaDictionary()).Parse();
+            _exponea.AppInboxProvider = new StyledAppInboxProvider(appInboxStyle);
+        }
+
+        public AndroidForms.View GetAppInboxButton()
+        {
+            AndroidForms.ContentView wrapper = new AndroidForms.ContentView();
+            AndroidForms.StackLayout stackLayout = new AndroidForms.StackLayout();
+            wrapper.Content = stackLayout;
+            NativeAndroid.Button button = (NativeAndroid.Button)_exponea.GetAppInboxButton(AndroidApp.Application.Context);
+            stackLayout.Children.Add(button);
+            return wrapper;
+        }
+
+        void IExponeaSdk.TrackWithoutTrackingConsent(Delivery delivery)
+        {
+            var consentCategoryTracking = delivery.Attributes.GetValueOrDefault("consent_category_tracking");
+            var hasTrackingConsent = delivery.Attributes.GetValueOrDefault("has_tracking_consent");
+            _exponea.TrackDeliveredPushWithoutTrackingConsent(
+                new ExponeaSdkAndroid.NotificationData(
+                    delivery.Attributes.ToJavaDictionary(),
+                    new ExponeaSdkAndroid.CampaignData(),
+                    consentCategoryTracking == null ? null : (string)consentCategoryTracking,
+                    Com.Exponea.Sdk.Util.GdprTracking.Instance.HasTrackingConsent(
+                        hasTrackingConsent.ToJava()
+                    )
+                ),
+                Utils.GetTimestamp()
+            );
+        }
+
+        void IExponeaSdk.TrackWithoutTrackingConsent(Click click)
+        {
+            var consentCategoryTracking = click.Attributes.GetValueOrDefault("consent_category_tracking");
+            var hasTrackingConsent = click.Attributes.GetValueOrDefault("has_tracking_consent");
+            _exponea.TrackClickedPushWithoutTrackingConsent(
+                new ExponeaSdkAndroid.NotificationData(
+                    click.Attributes.ToJavaDictionary(),
+                    new ExponeaSdkAndroid.CampaignData(),
+                    consentCategoryTracking == null ? null : (string)consentCategoryTracking,
+                    Com.Exponea.Sdk.Util.GdprTracking.Instance.HasTrackingConsent(
+                        hasTrackingConsent.ToJava()
+                    )
+                ),
+                new ExponeaSdkAndroid.NotificationAction(click.ActionType, click.ActionName, click.Url),
+                new Java.Lang.Double(Utils.GetTimestamp())
+            );
+        }
+
+        void IExponeaSdk.HandlePushNotificationOpened(Click click, string actionIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.HandlePushNotificationOpenedWithoutTrackingConsent(Click click, string actionIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackCampaign(Uri url, double? timestamp)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.HandlePushToken(string token)
+        {
+            _exponea.HandleNewToken(AndroidApp.Application.Context, token);
+        }
+
+        void IExponeaSdk.HandleHmsPushToken(string token)
+        {
+            _exponea.HandleNewHmsToken(AndroidApp.Application.Context, token);
+        }
+
+        void IExponeaSdk.TrackInAppMessageClickWithoutTrackingConsent(InAppMessage message, string buttonText, string buttonLink)
+        {
+            _exponea.TrackInAppMessageClickWithoutTrackingConsent(message.ToAndroidInAppMessage(), buttonText, buttonLink);
+        }
+
+        void IExponeaSdk.TrackInAppMessageClose(InAppMessage message, bool? isUserInteraction)
+        {
+            _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage(), isUserInteraction.ToJava());
+        }
+
+        void IExponeaSdk.TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction)
+        {
+            _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage(), isUserInteraction.ToJava());
+        }
+
+        void IExponeaSdk.SetPushNotificationsDelegate(Action<NotificationActionType, string, IDictionary<string, object>> action)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackAppInboxOpened(AppInboxMessage message)
+        {
+            _exponea.TrackAppInboxOpened(message.ToAndroidAppInboxMessage());
+        }
+
+        void IExponeaSdk.TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message)
+        {
+            _exponea.TrackAppInboxOpenedWithoutTrackingConsent(message.ToAndroidAppInboxMessage());
+        }
+
+        void IExponeaSdk.TrackAppInboxClick(AppInboxAction action, AppInboxMessage message)
+        {
+            _exponea.TrackAppInboxClick(action.ToJavaAppInboxAction(), message.ToAndroidAppInboxMessage());
+        }
+
+        void IExponeaSdk.TrackAppInboxClickWithoutTrackingConsent(AppInboxAction action, AppInboxMessage message)
+        {
+            _exponea.TrackAppInboxClickWithoutTrackingConsent(action.ToJavaAppInboxAction(), message.ToAndroidAppInboxMessage());
+        }
+
+        Task<bool> IExponeaSdk.MarkAppInboxAsRead(AppInboxMessage message)
+        {
+            var tcs = new TaskCompletionSource<bool>();
+            _exponea.MarkAppInboxAsRead(
+                message.ToAndroidAppInboxMessage(),
+                new KotlinCallback<Java.Lang.Boolean>(r =>
+                {
+                    tcs.SetResult((bool)r.ToNet());
+                })
+            );
+            return tcs.Task;
+        }
+
+        Task<IList<AppInboxMessage>> IExponeaSdk.FetchAppInbox()
+        {
+            var tcs = new TaskCompletionSource<IList<AppInboxMessage>>();
+            _exponea.FetchAppInbox(new KotlinCallback<Java.Lang.Object>(nativeR =>
+            {
+                string nativeJson = JsonConvert.SerializeObject(nativeR);
+                IList<AppInboxMessage> csharpResult = JsonConvert.DeserializeObject<IList<AppInboxMessage>>(nativeJson);
+                tcs.SetResult(csharpResult);
+            }));
+            return tcs.Task;
+        }
+
+        Task<AppInboxMessage> IExponeaSdk.FetchAppInboxItem(string messageId)
+        {
+            var tcs = new TaskCompletionSource<AppInboxMessage>();
+            _exponea.FetchAppInboxItem(messageId, new KotlinCallback<Java.Lang.Object>(nativeR =>
+            {
+                string nativeJson = JsonConvert.SerializeObject(nativeR);
+                AppInboxMessage csharpResult = JsonConvert.DeserializeObject<AppInboxMessage>(nativeJson);
+                tcs.SetResult(csharpResult);
+            }));
+            return tcs.Task;
         }
     }
 }

@@ -106,6 +106,26 @@ namespace Exponea
                 _ => throw new NotSupportedException()
             };
 
+        public static Java.Lang.Boolean ToJava(this bool? value)
+            => value switch
+            {
+                null => null,
+                bool b => new Java.Lang.Boolean(b)
+            };
+
+        public static Java.Lang.Boolean ToJava(this bool value)
+            => new Java.Lang.Boolean(value);
+
+        public static Java.Lang.Double ToJava(this double? value)
+            => value switch
+            {
+                null => null,
+                double d => new Java.Lang.Double(d)
+            };
+
+        public static Java.Lang.Double ToJava(this double value)
+            => new Java.Lang.Double(value);
+
         public static ExponeaSdkAndroid.InAppMessage ToAndroidInAppMessage(this InAppMessage message)
         {
             return new ExponeaSdkAndroid.InAppMessage(
@@ -123,25 +143,69 @@ namespace Exponea
                       new Java.Lang.Integer(message.Priority),
                       new Java.Lang.Long(message.DelayMS),
                       new Java.Lang.Long(message.TimeoutMS),
-                      null,
-                      new Java.Lang.Boolean(message.RawMessageType == "freeform")
+                      message.PayloadHtml,
+                      new Java.Lang.Boolean(message.IsHtml),
+                      new Java.Lang.Boolean(message.RawHasTrackingConsent),
+                      message.ConsentCategoryTracking
             );
         }
 
+        public static string ToStringCode(this AppInboxMessageType value)
+            => value switch
+            {
+                AppInboxMessageType.HTML => "html",
+                AppInboxMessageType.PUSH => "push",
+                AppInboxMessageType.UNKNOWN => "unknown",
+                _ => throw new NotImplementedException(),
+            };
+
+        public static ExponeaSdkAndroid.MessageItemAction.Type ToAndroidAppInboxMessageType(this AppInboxActionType source)
+        => source switch
+        {
+            AppInboxActionType.APP => ExponeaSdkAndroid.MessageItemAction.Type.App,
+            AppInboxActionType.BROWSER => ExponeaSdkAndroid.MessageItemAction.Type.Browser,
+            AppInboxActionType.DEEPLINK => ExponeaSdkAndroid.MessageItemAction.Type.Deeplink,
+            AppInboxActionType.NO_ACTION => ExponeaSdkAndroid.MessageItemAction.Type.NoAction,
+            _ => throw new NotImplementedException(),
+        };
+
+        public static ExponeaSdkAndroid.MessageItem ToAndroidAppInboxMessage(this AppInboxMessage message)
+        {
+            return new ExponeaSdkAndroid.MessageItem(
+                message.Id,
+                message.type.ToStringCode(),
+                message.IsRead.ToJava(),
+                message.ReceivedTime.ToJava(),
+                message.content.ToJavaDictionary()
+            );
+        }
+        public static ExponeaSdkAndroid.MessageItemAction ToJavaAppInboxAction(this AppInboxAction source)
+        {
+            ExponeaSdkAndroid.MessageItemAction target = new ExponeaSdkAndroid.MessageItemAction();
+            target.SetType(source.Type.ToAndroidAppInboxMessageType());
+            target.Title = source.Title;
+            target.Url = source.Url;
+            return target;
+        }
 
         public static InAppMessage ToNetInAppMessage(this ExponeaSdkAndroid.InAppMessage message)
         {
             return new InAppMessage(
                       message.Id,
                       message.Name,
-                      ((bool)message.IsHtml()) ? "freeform" : message.RawMessageType,
+                      message.RawMessageType,
                       message.RawFrequency,
                       message.VariantId,
                       message.VariantName,
                       message.Trigger?.EventType ?? "session_start",
                       message.Priority?.IntValue() ?? 0,
                       message.Delay?.IntValue() ?? 0,
-                      message.Timeout?.IntValue() ?? 0);
+                      message.Timeout?.IntValue() ?? 0,
+                      message.PayloadHtml,
+                      message.IsHtml().BooleanValue(),
+                      message.RawHasTrackingConsent.BooleanValue(),
+                      message.ConsentCategoryTracking
+                      );
         }
 
     }

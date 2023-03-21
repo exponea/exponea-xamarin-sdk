@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <Target_iOS>xamarinios10</Target_iOS>
-    <Target_Android>monoandroid11.0</Target_Android>
+    <Target_Android>monoandroid13.0</Target_Android>
     <TargetFrameworks>netstandard2.0;$(Target_iOS);$(Target_Android)</TargetFrameworks>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.1.0.11</PackageVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <AssemblyName>ExponeaSdk</AssemblyName>
     <RootNamespace>Exponea</RootNamespace>
@@ -16,7 +16,7 @@
     <PackageLicenseUrl>https://spdx.org/licenses/MIT</PackageLicenseUrl>
     <Owners>Exponea</Owners>
     <Description>Exponea SDK allows your application to interact with the Exponea Customer Data &amp; Experience Platform. Exponea empowers B2C marketers to raise conversion rates, improve acquisition ROI, and maximize customer lifetime value.</Description>
-    <ReleaseVersion>1.1.0</ReleaseVersion>
+    <ReleaseVersion>1.1.0.11</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <Title>ExponeaSDK</Title>
     <PackageIconUrl>https://media-exp1.licdn.com/dms/image/C560BAQG46ev9qjCTbQ/company-logo_200_200/0/1631723320052?e=2159024400&amp;v=beta&amp;t=ZgeKC90wtfA47irF7Ds8Bs59WPIjMvi1VH1HWsJNqUQ</PackageIconUrl>
@@ -33,6 +33,7 @@
     <Compile Include="Fallback/*.cs" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == '$(Target_iOS)' ">
@@ -47,16 +48,62 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'monoandroid11.0'">
     <PackageReference Include="Xamarin.Android.Google.Code.Gson" Version="2.8.8" />
-    <PackageReference Include="ExponeaSDK.Android" Version="3.1.0" />
+    <PackageReference Include="ExponeaSDK.Android" Version="3.6.0.15" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'monoandroid13.0'">
+    <PackageReference Include="Xamarin.Android.Google.Code.Gson" Version="2.8.8" />
+    <PackageReference Include="ExponeaSDK.Android" Version="3.6.0.15" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'xamarinios10'">
     <PackageReference Include="System.Text.Json" Version="6.0.3" />
-    <PackageReference Include="ExponeaSDK.iOS" Version="2.12.2" />
+    <PackageReference Include="ExponeaSDK.iOS" Version="2.16.0.3" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="NuGet.Build.Packaging" />
     <None Remove="Xamarin.Essentials" />
     <None Remove="Xamarin.Forms" />
     <None Remove="Xamarin.Android.Google.Code.Gson" />
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="TokenTrackFrequency %28copy%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HttpLoggingLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HttpLoggingLevel %28copy%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NotificationActionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Payment %28copy%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppInboxMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NotificationActionType %28copy%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppInboxMessateType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageItemContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageItemContent %28copy%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppInboxAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppInboxActionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppInboxButtonView.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

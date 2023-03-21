@@ -23,6 +23,10 @@ namespace Exponea
         public bool? AutomaticSessionTracking { get; set; }
         public Dictionary<string, Object>? DefaultProperties { get; set; }
         public TokenTrackFrequency TokenTrackFrequency { get; set; } = TokenTrackFrequency.OnTokenChange;
+        public HttpLoggingLevel? HttpLoggingLevel { get; set; }
+        public double? CampaignTTL { get; set; }
+        public bool AllowDefaultCustomerProperties { get; set; } = true;
+        public bool AdvancedAuthEnabled { get; set; } = false;
         public AndroidConfiguration? AndroidConfiguration { get; set; }
         public iOSConfiguration? iOSConfiguration { get; set; }
     }
@@ -68,8 +72,6 @@ namespace Exponea
             RequirePushAuthorization = requirePushAuthorization;
             AppGroup = appGroup;
         }
-
-
         public bool? RequirePushAuthorization { get; set; }
         public string? AppGroup { get; set; }
     }

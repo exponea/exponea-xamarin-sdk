@@ -4,6 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Threading.Tasks;
+using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 using ExponeaSdkIos = ExponeaSdk;
 
 
@@ -136,8 +139,6 @@ namespace Exponea
             _exponea.IdentifyCustomer(customer.ExternalIds.ToNsDictionary(), customer.Attributes.ToNsDictionary());
         }
 
-       
-
         public void Track(Event evt, double? timestamp = null)
             => _exponea.TrackEvent(
                 evt.Name,
@@ -197,6 +198,112 @@ namespace Exponea
         public void TrackInAppMessageClose(InAppMessage message)
         {
             _exponea.TrackInAppMessageClose(message.ToNsSimleInAppMessage());
+        }
+
+        public void SetAppInboxProvider(IDictionary<string, object> data)
+        {
+            _exponea.setAppInboxProvider(data.ToNsDictionary());
+        }
+
+        public View GetAppInboxButton()
+        {
+            ContentView wrapper = new ContentView();
+            StackLayout stackLayout = new StackLayout();
+            wrapper.Content = stackLayout;
+            UIButton button = (UIButton) _exponea.getAppInboxButton();
+            stackLayout.Children.Add(button);
+            return wrapper;
+        }
+
+        void IExponeaSdk.TrackWithoutTrackingConsent(Delivery delivery)
+        {
+            throw new NotSupportedException();
+        }
+
+        void IExponeaSdk.TrackWithoutTrackingConsent(Click click)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.HandlePushNotificationOpened(Click click, string actionIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.HandlePushNotificationOpenedWithoutTrackingConsent(Click click, string actionIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackCampaign(Uri url, double? timestamp)
+        {
+            // shoud be _exponea.TrackCampaignClick(Url, double)
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.HandlePushToken(string token)
+        {
+            _exponea.HandlePushNotificationToken(new NSData());
+        }
+
+        void IExponeaSdk.HandleHmsPushToken(string token)
+        {
+            throw new NotSupportedException();
+        }
+
+        void IExponeaSdk.TrackInAppMessageClickWithoutTrackingConsent(InAppMessage message, string buttonText, string buttonLink)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackInAppMessageClose(InAppMessage message, bool? isUserInteraction)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.SetPushNotificationsDelegate(Action<NotificationActionType, string, IDictionary<string, object>> action)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackAppInboxOpened(AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackAppInboxClick(AppInboxAction action, AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IExponeaSdk.TrackAppInboxClickWithoutTrackingConsent(AppInboxAction action, AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IList<AppInboxMessage>> IExponeaSdk.FetchAppInbox()
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<AppInboxMessage> IExponeaSdk.FetchAppInboxItem(string messageId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> MarkAppInboxAsRead(AppInboxMessage message)
+        {
+            throw new NotImplementedException();
         }
     }
 }

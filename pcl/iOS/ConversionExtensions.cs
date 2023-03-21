@@ -91,58 +91,60 @@ namespace Exponea
             return dict;
         }
 
-        public static NSMutableDictionary ToNSDictionary(this Configuration config)
+        public static NSMutableDictionary ToNSDictionary(this Configuration source)
         {
-            var configDictionary = new NSMutableDictionary
+            var target = new NSMutableDictionary
             {
-                { new NSString("projectToken"), new NSString(config.ProjectToken) },
-                { new NSString("authorizationToken"), new NSString(config.Authorization) },
-                { new NSString("baseUrl"), new NSString(config.BaseUrl) }
+                { new NSString("projectToken"), new NSString(source.ProjectToken) },
+                { new NSString("authorizationToken"), new NSString(source.Authorization) },
+                { new NSString("baseUrl"), new NSString(source.BaseUrl) }
             };
 
-            if (config.AutomaticSessionTracking != null)
+            if (source.AutomaticSessionTracking != null)
             {
-                configDictionary.Add(new NSString("automaticSessionTracking"), new NSNumber((bool)config.AutomaticSessionTracking));
+                target.Add(new NSString("automaticSessionTracking"), new NSNumber((bool)source.AutomaticSessionTracking));
             }
 
-            if (config.DefaultProperties != null)
+            if (source.DefaultProperties != null)
             {
-                configDictionary.Add(new NSString("defaultProperties"), config.DefaultProperties.ToNsDictionary<object>());
+                target.Add(new NSString("defaultProperties"), source.DefaultProperties.ToNsDictionary<object>());
             }
 
-            if (config.MaxTries != null)
+            if (source.MaxTries != null)
             {
-                configDictionary.Add(new NSString("maxTries"), new NSNumber((int)config.MaxTries));
+                target.Add(new NSString("maxTries"), new NSNumber((int)source.MaxTries));
             }
 
-            if (config.SessionTimeout != null)
+            if (source.SessionTimeout != null)
             {
-                configDictionary.Add(new NSString("sessionTimeout"), new NSNumber((double)config.SessionTimeout));
+                target.Add(new NSString("sessionTimeout"), new NSNumber((double)source.SessionTimeout));
             }
 
-            if (config.ProjectRouteMap != null)
+            if (source.ProjectRouteMap != null)
             {
-                configDictionary.Add(new NSString("projectMapping"), config.ProjectRouteMap.ToNsDictionary());
+                target.Add(new NSString("projectMapping"), source.ProjectRouteMap.ToNsDictionary());
             }
 
-            configDictionary.Add(new NSString("pushTokenTrackingFrequency"), new NSString(((TokenTrackFrequencyInternal)config.TokenTrackFrequency).ToString()));
+            target.Add(new NSString("pushTokenTrackingFrequency"), new NSString(((TokenTrackFrequencyInternal)source.TokenTrackFrequency).ToString()));
 
-            if (config.iOSConfiguration != null)
+            if (source.iOSConfiguration != null)
             {
-                var iosConfig = config.iOSConfiguration;
+                var iosConfig = source.iOSConfiguration;
 
                 if (iosConfig.RequirePushAuthorization != null)
                 {
-                    configDictionary.Add(new NSString("requirePushAuthorization"), new NSNumber((bool)iosConfig.RequirePushAuthorization));
+                    target.Add(new NSString("requirePushAuthorization"), new NSNumber((bool)iosConfig.RequirePushAuthorization));
                 }
                 if (iosConfig.AppGroup != null)
                 {
-                    configDictionary.Add(new NSString("appGroup"), new NSString(iosConfig.AppGroup));
+                    target.Add(new NSString("appGroup"), new NSString(iosConfig.AppGroup));
                 }
             }
 
-            
-            return configDictionary;
+            target.Add(new NSString("allowDefaultCustomerProperties"), new NSNumber((bool)source.AllowDefaultCustomerProperties));
+            target.Add(new NSString("advancedAuthEnabled"), new NSNumber((bool)source.AdvancedAuthEnabled));
+
+            return target;
         }
 
         public static NSString ToNsString(this string s)
@@ -177,7 +179,12 @@ namespace Exponea
                     message.EventType,
                     message.Priority,
                     message.DelayMS,
-                    message.TimeoutMS);
+                    message.TimeoutMS,
+                    message.PayloadHtml,
+                    message.IsHtml,
+                    message.RawHasTrackingConsent,
+                    message.ConsentCategoryTracking
+                    );
         }
 
         public static ExponeaSdkIos.SimpleInAppMessage ToNsSimleInAppMessage(this InAppMessage message)
@@ -192,7 +199,11 @@ namespace Exponea
                     message.EventType,
                     message.Priority,
                     message.DelayMS,
-                    message.TimeoutMS
+                    message.TimeoutMS,
+                    message.PayloadHtml,
+                    message.IsHtml,
+                    message.RawHasTrackingConsent,
+                    message.ConsentCategoryTracking
                     );
         }
     }

@@ -2,6 +2,7 @@
 using Exponea;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace XamarinExample
 {
@@ -18,6 +19,13 @@ namespace XamarinExample
             SessionStartButton.IsVisible = !_exponea.AutomaticSessionTracking;
             SessionEndButton.IsVisible = !_exponea.AutomaticSessionTracking;
             RegisterForPush.IsVisible = Device.RuntimePlatform == Device.iOS;
+
+            Dictionary<string, object> dic = new Dictionary<string, object>();
+            dic.Add("title", "ČAU Z XAMARINU");
+            //_exponea.SetAppInboxProvider(dic);
+
+            View button = _exponea.GetAppInboxButton();
+            AppInboxButtonHere.Children.Add(button);
 
             //Uncomment this to test InAppMessageDelegate
             //_exponea.SetInAppMessageDelegate(overrideDefaultBehavior: true, trackActions: false, action: async delegate (InAppMessage message, string buttonText, string buttonUrl, bool interaction)
@@ -162,7 +170,11 @@ namespace XamarinExample
         {
             _exponea.IdentifyCustomer(new Customer("XamarinUser." + Guid.NewGuid()) { ["apple_push_notification_bundle_id"] = "com.exponea.xamarin" });
             DependencyService.Get<IPushRegistrationHandler>().RegisterForRemoteNotifications();
-            
+        }
+
+        void AppInboxButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            //Navigation.PushModalAsync((Page)_exponea.GetAppInboxListViewController());
         }
     }
 }

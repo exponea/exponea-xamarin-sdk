@@ -3,7 +3,7 @@
 # Builds a fat library for a given xcode project (framework)
 
 echo "Define parameters"
-IOS_SDK_VERSION="15.5" # xcodebuild -showsdks
+IOS_SDK_VERSION="16.0" # xcodebuild -showsdks
 SWIFT_PROJECT_NAME="ExponeaSDKNotificationsProxy"
 declare -a frameworks=("ExponeaSDKNotificationsProxy" "ExponeaSDKNotifications" "ExponeaSDKShared")
 
@@ -13,8 +13,8 @@ SWIFT_OUTPUT_PATH="./frameworks"
 
 echo "Build iOS framework for simulator and device"
 rm -Rf "$SWIFT_BUILD_PATH"
-xcodebuild -sdk iphonesimulator$IOS_SDK_VERSION -arch x86_64 -arch i386 -arch armv7 -arch armv7s -project "$SWIFT_PROJECT_PATH" -configuration Release
-xcodebuild -sdk iphonesimulator$IOS_SDK_VERSION -arch x86_64 -arch i386 -arch armv7 -arch armv7s -project "$SWIFT_PROJECT_PATH" -configuration Debug
+xcodebuild -sdk iphonesimulator$IOS_SDK_VERSION -arch x86_64 -arch arm64 -arch armv7 -arch armv7s -project "$SWIFT_PROJECT_PATH" -configuration Release
+xcodebuild -sdk iphonesimulator$IOS_SDK_VERSION -arch x86_64 -arch arm64 -arch armv7 -arch armv7s -project "$SWIFT_PROJECT_PATH" -configuration Debug
 xcodebuild -sdk iphoneos$IOS_SDK_VERSION -project "$SWIFT_PROJECT_PATH" -configuration Release
 xcodebuild -sdk iphoneos$IOS_SDK_VERSION -project "$SWIFT_PROJECT_PATH" -configuration Debug
 

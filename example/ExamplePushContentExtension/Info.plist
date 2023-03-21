@@ -35,7 +35,7 @@
 		<string>NotificationViewController</string>
 	</dict>
 	<key>MinimumOSVersion</key>
-	<string>10.3</string>
+	<string>15.4</string>
 	<key>CFBundleVersion</key>
 	<string>4</string>
 </dict>

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Exponea
 {
@@ -120,6 +121,106 @@ namespace Exponea
         }
 
         public void TrackInAppMessageClose(InAppMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetAppInboxProvider(IDictionary<string, object> data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public View GetAppInboxButton()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackWithoutTrackingConsent(Delivery delivery)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackWithoutTrackingConsent(Click click)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandlePushNotificationOpened(Click click, string actionIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandlePushNotificationOpenedWithoutTrackingConsent(Click click, string actionIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackCampaign(Uri url, double? timestamp = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandlePushToken(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandleHmsPushToken(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackInAppMessageClickWithoutTrackingConsent(InAppMessage message, string buttonText, string buttonLink)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackInAppMessageClose(InAppMessage message, bool? isUserInteraction = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetPushNotificationsDelegate(Action<NotificationActionType, string, IDictionary<string, object>> action)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackAppInboxOpened(AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackAppInboxClick(AppInboxAction action, AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TrackAppInboxClickWithoutTrackingConsent(AppInboxAction action, AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> MarkAppInboxAsRead(AppInboxMessage message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IList<AppInboxMessage>> FetchAppInbox()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<AppInboxMessage> FetchAppInboxItem(string messageId)
         {
             throw new NotImplementedException();
         }

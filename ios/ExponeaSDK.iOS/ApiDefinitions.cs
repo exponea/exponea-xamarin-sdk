@@ -1,4 +1,5 @@
 using System;
+using AVFoundation;
 using Foundation;
 using ObjCRuntime;
 using UserNotifications;
@@ -158,6 +159,22 @@ namespace ExponeaSdk
 		// -(void)trackInAppMessageCloseWithMessage:(SimpleInAppMessage * _Nonnull)message;
 		[Export("trackInAppMessageCloseWithMessage:")]
 		void TrackInAppMessageClose(SimpleInAppMessage message);
+
+		// -(void)setAppInboxProvider(NSDictionary*)data;
+		[Export("setAppInboxProviderWithData:")]
+		void setAppInboxProvider(NSDictionary data);
+
+		// -(void)getAppInboxButton;
+		[Export("getAppInboxButton")]
+		NSObject getAppInboxButton();
+
+        // -(UIViewController)getAppInboxListViewController;
+        [Export("getAppInboxListViewController")]
+        NSObject getAppInboxListViewController();
+
+        // -(UIViewController)getAppInboxDetailViewController;
+        [Export("getAppInboxDetailViewControllerWithMessageId:")]
+        NSObject getAppInboxDetailViewController(NSString messageId);
 	}
 
 	// @interface SimpleInAppMessage : NSObject
@@ -205,10 +222,26 @@ namespace ExponeaSdk
 		[Export("timeoutMS")]
 		int TimeoutMS { get; }
 
-		// -(instancetype _Nonnull)initWithId:(NSString * _Nonnull)id name:(NSString * _Nonnull)name rawMessageType:(NSString * _Nonnull)rawMessageType variantId:(NSInteger)variantId variantName:(NSString * _Nonnull)variantName rawFrequency:(NSString * _Nonnull)rawFrequency eventType:(NSString * _Nonnull)eventType priority:(NSInteger)priority delayMS:(NSInteger)delayMS timeoutMS:(NSInteger)timeoutMS __attribute__((objc_designated_initializer));
-		[Export("initWithId:name:rawMessageType:variantId:variantName:rawFrequency:eventType:priority:delayMS:timeoutMS:")]
+        // @property (readonly, copy, nonatomic) NSString * _Nullable payloadHtml;
+        [Export("payloadHtml")]
+        string PayloadHtml { get; }
+
+        // @property (readonly, nonatomic) BOOL isHtml;
+        [Export("isHtml")]
+        bool IsHtml { get; }
+
+        // @property (readonly, nonatomic) BOOL rawHasTrackingConsent;
+        [Export("rawHasTrackingConsent")]
+        bool RawHasTrackingConsent { get; }
+
+        // @property (readonly, copy, nonatomic) NSString * _Nullable consentCategoryTracking;
+        [Export("consentCategoryTracking")]
+        string ConsentCategoryTracking { get; }
+
+        // -(instancetype _Nonnull)initWithId:(NSString * _Nonnull)id name:(NSString * _Nonnull)name rawMessageType:(NSString * _Nonnull)rawMessageType variantId:(NSInteger)variantId variantName:(NSString * _Nonnull)variantName rawFrequency:(NSString * _Nonnull)rawFrequency eventType:(NSString * _Nonnull)eventType priority:(NSInteger)priority delayMS:(NSInteger)delayMS timeoutMS:(NSInteger)timeoutMS payloadHtml:(NSString * _Nullable)payloadHtml isHtml:(BOOL)isHtml rawHasTrackingConsent:(BOOL)rawHasTrackingConsent consentCategoryTracking:(NSString * _Nullable)consentCategoryTracking __attribute__((objc_designated_initializer));
+        [Export("initWithId:name:rawMessageType:variantId:variantName:rawFrequency:eventType:priority:delayMS:timeoutMS:payloadHtml:isHtml:rawHasTrackingConsent:consentCategoryTracking:")]
 		[DesignatedInitializer]
-		IntPtr Constructor(string id, string name, string rawMessageType, int variantId, string variantName, string rawFrequency, string eventType, int priority, int delayMS, int timeoutMS);
+		IntPtr Constructor(string id, string name, string rawMessageType, int variantId, string variantName, string rawFrequency, string eventType, int priority, int delayMS, int timeoutMS, string payloadHtml, bool isHtml, bool rawHasTrackingConsent, string consentCategoryTracking);
 
 	}
 }

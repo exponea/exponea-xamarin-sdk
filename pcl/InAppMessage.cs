@@ -13,6 +13,14 @@ namespace Exponea
         public int Priority { get; set; }
         public int DelayMS { get; set; }
         public int TimeoutMS { get; set; }
+        public string PayloadHtml { get; set; }
+        public bool IsHtml { get; set; }
+        public bool RawHasTrackingConsent { get; set; }
+        public string ConsentCategoryTracking { get; set; }
+
+        //payload: InAppMessagePayload?,
+        //trigger: EventFilter?,
+        //dateFilter: DateFilter,
 
         public InAppMessage(
             string id,
@@ -24,7 +32,11 @@ namespace Exponea
             string eventType,
             int priority,
             int delayMs,
-            int timeoutMs
+            int timeoutMs,
+            string payloadHtml,
+            bool isHtml,
+            bool rawHasTrackingConsent,
+            string consentCategoryTracking
             )
         {
             Id = id;
@@ -37,6 +49,10 @@ namespace Exponea
             Priority = priority;
             DelayMS = delayMs;
             TimeoutMS = timeoutMs;
+            PayloadHtml = payloadHtml;
+            IsHtml = isHtml;
+            RawHasTrackingConsent = rawHasTrackingConsent;
+            ConsentCategoryTracking = consentCategoryTracking;
         }
     }
 }

@@ -21,6 +21,10 @@ public class SimpleInAppMessage: NSObject {
     @objc public let priority: Int
     @objc public let delayMS: Int
     @objc public let timeoutMS: Int
+    @objc public let payloadHtml: String?
+    @objc public let isHtml: Bool
+    @objc public let rawHasTrackingConsent: Bool
+    @objc public let consentCategoryTracking: String?
     
     public init( inAppMessage: InAppMessage) {
         id = inAppMessage.id
@@ -33,6 +37,10 @@ public class SimpleInAppMessage: NSObject {
         priority = inAppMessage.priority ?? 0
         delayMS = inAppMessage.delayMS ?? 0
         timeoutMS = inAppMessage.timeoutMS ?? 0
+        payloadHtml = inAppMessage.payloadHtml
+        isHtml = inAppMessage.isHtml
+        rawHasTrackingConsent = inAppMessage.hasTrackingConsent
+        consentCategoryTracking = inAppMessage.consentCategoryTracking
     }
     
     @objc
@@ -46,16 +54,25 @@ public class SimpleInAppMessage: NSObject {
         eventType: String,
         priority: Int,
         delayMS: Int,
-        timeoutMS: Int) {
-            self.id = id
-            self.name = name
-            self.rawMessageType = rawMessageType
-            self.variantId = variantId
-            self.variantName = variantName
-            self.rawFrequency = rawFrequency
-            self.eventType = eventType
-            self.priority = priority
-            self.delayMS = delayMS
-            self.timeoutMS = timeoutMS
+        timeoutMS: Int,
+        payloadHtml: String?,
+        isHtml: Bool,
+        rawHasTrackingConsent: Bool,
+        consentCategoryTracking: String?
+    ) {
+        self.id = id
+        self.name = name
+        self.rawMessageType = rawMessageType
+        self.variantId = variantId
+        self.variantName = variantName
+        self.rawFrequency = rawFrequency
+        self.eventType = eventType
+        self.priority = priority
+        self.delayMS = delayMS
+        self.timeoutMS = timeoutMS
+        self.payloadHtml = payloadHtml
+        self.isHtml = isHtml
+        self.rawHasTrackingConsent = rawHasTrackingConsent
+        self.consentCategoryTracking = consentCategoryTracking
     }
 }

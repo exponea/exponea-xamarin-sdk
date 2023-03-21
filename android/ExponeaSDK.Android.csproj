@@ -14,19 +14,19 @@
     <AssemblyName>ExponeaSDK.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
-    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>ExponeaSDK.Android</PackageId>
-    <PackageVersion>3.1.0</PackageVersion>
+    <PackageVersion>3.6.0.15</PackageVersion>
     <Authors>Exponea</Authors>
     <Copyright>Exponea</Copyright>
     <Owners>Exponea</Owners>
     <Title>ExponeaSDK.Android</Title>
     <Description>Binding library for Exponea Android SDK</Description>
-    <ReleaseVersion>3.1.0</ReleaseVersion>
+    <ReleaseVersion>3.6.0.15</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <Summary>Binding library for Exponea Android SDK</Summary>
     <PackageLicenseUrl>https://spdx.org/licenses/MIT</PackageLicenseUrl>
@@ -42,6 +42,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
     <DebugType></DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -50,9 +51,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,7 +111,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\sdk-3.1.0.aar" />
+    <LibraryProjectZip Include="Jars\sdk-3.16.0.9.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
