@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550AD5482A0150430025F52D /* AnyCodable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; };
-		550AD5492A0150430025F52D /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		550AD54A2A0150430025F52D /* ExponeaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; };
-		550AD54B2A0150430025F52D /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		550AD54C2A0150430025F52D /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; };
-		550AD54D2A0150430025F52D /* ExponeaSDKNotifications.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		550AD54E2A0150430025F52D /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; };
-		550AD54F2A0150430025F52D /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		550AD5502A0150430025F52D /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; };
-		550AD5512A0150430025F52D /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		550AD5522A0150430025F52D /* SwiftSoup.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; };
-		550AD5532A0150430025F52D /* SwiftSoup.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F73EF02A0D2C1A0047FDE4 /* AnyCodable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; };
+		55F73EF12A0D2C1A0047FDE4 /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F73EF22A0D2C1A0047FDE4 /* ExponeaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; };
+		55F73EF32A0D2C1A0047FDE4 /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F73EF42A0D2C1A0047FDE4 /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; };
+		55F73EF52A0D2C1A0047FDE4 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F73EF62A0D2C1A0047FDE4 /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; };
+		55F73EF72A0D2C1A0047FDE4 /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F73EF82A0D2C1A0047FDE4 /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; };
+		55F73EF92A0D2C1A0047FDE4 /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F73EFA2A0D2C1A0047FDE4 /* SwiftSoup.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; };
+		55F73EFB2A0D2C1A0047FDE4 /* SwiftSoup.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC353BD3273BE9A500319DF9 /* ExponeaSDKProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE77DBA26AFF2D7008866B0 /* ExponeaSDKProxy.framework */; };
 		CC353BE2273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDA273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift */; };
 		CC353BE3273BE9E200319DF9 /* ExponeaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDB273BE9E200319DF9 /* ExponeaSpec.swift */; };
@@ -53,18 +53,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		550AD5542A0150430025F52D /* Embed Frameworks */ = {
+		55F73EFC2A0D2C1A0047FDE4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				550AD5512A0150430025F52D /* ExponeaSDKShared.xcframework in Embed Frameworks */,
-				550AD5492A0150430025F52D /* AnyCodable.xcframework in Embed Frameworks */,
-				550AD54F2A0150430025F52D /* ExponeaSDKObjC.xcframework in Embed Frameworks */,
-				550AD54D2A0150430025F52D /* ExponeaSDKNotifications.xcframework in Embed Frameworks */,
-				550AD5532A0150430025F52D /* SwiftSoup.xcframework in Embed Frameworks */,
-				550AD54B2A0150430025F52D /* ExponeaSDK.xcframework in Embed Frameworks */,
+				55F73EF92A0D2C1A0047FDE4 /* ExponeaSDKShared.xcframework in Embed Frameworks */,
+				55F73EF12A0D2C1A0047FDE4 /* AnyCodable.xcframework in Embed Frameworks */,
+				55F73EF72A0D2C1A0047FDE4 /* ExponeaSDKObjC.xcframework in Embed Frameworks */,
+				55F73EF52A0D2C1A0047FDE4 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */,
+				55F73EFB2A0D2C1A0047FDE4 /* SwiftSoup.xcframework in Embed Frameworks */,
+				55F73EF32A0D2C1A0047FDE4 /* ExponeaSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,12 +117,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550AD5502A0150430025F52D /* ExponeaSDKShared.xcframework in Frameworks */,
-				550AD5482A0150430025F52D /* AnyCodable.xcframework in Frameworks */,
-				550AD54E2A0150430025F52D /* ExponeaSDKObjC.xcframework in Frameworks */,
-				550AD54C2A0150430025F52D /* ExponeaSDKNotifications.xcframework in Frameworks */,
-				550AD5522A0150430025F52D /* SwiftSoup.xcframework in Frameworks */,
-				550AD54A2A0150430025F52D /* ExponeaSDK.xcframework in Frameworks */,
+				55F73EF82A0D2C1A0047FDE4 /* ExponeaSDKShared.xcframework in Frameworks */,
+				55F73EF02A0D2C1A0047FDE4 /* AnyCodable.xcframework in Frameworks */,
+				55F73EF62A0D2C1A0047FDE4 /* ExponeaSDKObjC.xcframework in Frameworks */,
+				55F73EF42A0D2C1A0047FDE4 /* ExponeaSDKNotifications.xcframework in Frameworks */,
+				55F73EFA2A0D2C1A0047FDE4 /* SwiftSoup.xcframework in Frameworks */,
+				55F73EF22A0D2C1A0047FDE4 /* ExponeaSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +240,7 @@
 				CCE77DB626AFF2D7008866B0 /* Sources */,
 				CCE77DB726AFF2D7008866B0 /* Frameworks */,
 				CCE77DB826AFF2D7008866B0 /* Resources */,
-				550AD5542A0150430025F52D /* Embed Frameworks */,
+				55F73EFC2A0D2C1A0047FDE4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

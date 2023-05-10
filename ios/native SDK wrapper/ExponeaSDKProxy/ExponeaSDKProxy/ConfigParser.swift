@@ -115,6 +115,14 @@ class ConfigurationParser {
             ?? ExponeaSDK.Constants.Session.maxRetries
         return ExponeaSDK.Exponea.FlushingSetup(mode: .immediate, maxRetries: maxRetries)
     }
+    
+    func parseAllowDefaultCustomerProperties() throws -> Bool? {
+        return try dictionary.getOptionalSafely(property: "allowDefaultCustomerProperties")
+    }
+    
+    func parseAdvancedAuthEnabled() throws -> Bool? {
+        return try dictionary.getOptionalSafely(property: "advancedAuthEnabled")
+    }
 }
 
 

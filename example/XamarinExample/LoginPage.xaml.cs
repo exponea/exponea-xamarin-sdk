@@ -16,7 +16,7 @@ namespace XamarinExample
 
             projectToken.Text = Preferences.Get("projectToken", "");
             authorization.Text = Preferences.Get("authorization", "");
-            advancedPrivKey.Text = Preferences.Get("advancedPrivKey", "k0h1bw1hp2tcb1wpymyrhha80x11irpwvpsm4ojt731pueu3djxsc73iiy1n2tyu");
+            advancedPrivKey.Text = Preferences.Get("advancedPrivKey", "");
             url.Text = Preferences.Get("baseURL", "https://api.exponea.com");
             flushMode.SelectedIndex = 0;
 

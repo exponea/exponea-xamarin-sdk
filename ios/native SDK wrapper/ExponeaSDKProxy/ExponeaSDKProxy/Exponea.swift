@@ -21,6 +21,14 @@ public class ExponeaXamarinVersion: NSObject, ExponeaVersionProvider {
     }
 }
 
+@objc(XamarinAuthorizationProvider)
+public class XamarinAuthorizationProvider : NSObject, AuthorizationProviderType {
+    required public override init() { }
+    public func getAuthorizationToken() -> String? {
+        ""
+    }
+}
+
 @objc(Exponea)
 public class Exponea : NSObject {
     
@@ -44,8 +52,8 @@ public class Exponea : NSObject {
                 automaticSessionTracking: try parser.parseSessionTracking(),
                 defaultProperties: try parser.parseDefaultProperties(),
                 flushingSetup: try parser.parseFlushingSetup(),
-                allowDefaultCustomerProperties: false,
-                advancedAuthEnabled: false
+                allowDefaultCustomerProperties: try parser.parseAllowDefaultCustomerProperties(),
+                advancedAuthEnabled: try parser.parseAdvancedAuthEnabled()
             )
         } catch {
             print(ExponeaError.parsingError(error: error.localizedDescription).description)

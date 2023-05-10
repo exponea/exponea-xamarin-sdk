@@ -48,16 +48,22 @@ automatically send `session_start` and `session_end` events to Exponea API
 
 #### TokenTrackFrequency
 
-*You can define your policy for tracking push notification token. Default value `OnTokenChange` is recommended. 
+* You can define your policy for tracking push notification token. Default value `OnTokenChange` is recommended. 
 
 >When changing this value, consider wisely all consequences. E.g., if token tracking frequency is set to DAILY, and you use "Anonymize" method for changing the customer, push token for the new customer can not be tracked immediately, but only after another day.
+
+#### AllowDefaultCustomerProperties
+* If true, default properties are applied also for 'identifyCustomer' event.
+
+#### AdvancedAuthEnabled
+* If set, advanced authorization is used for communication with BE for API listed in [JWT Authorization](./AUTHORIZATION.md)
+* For more info see [authorization setup](./AUTHORIZATION.md)
 
 #### AndroidConfiguration
  Specific configuration for Android
 
 #### iOSConfiguration
 Specific configuration for iOS
-
 
 ### Android-specific properties 
 

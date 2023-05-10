@@ -11,6 +11,7 @@
 
         <Entry x:Name="projectToken" Placeholder="Project token"></Entry>
         <Entry x:Name="authorization" Placeholder="Authorization"></Entry>
+        <Entry x:Name="advancedPrivKey" Placeholder="API key ID of Private"></Entry>
         <Entry x:Name="url" Placeholder="Base URL"></Entry>
          <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
                     <Label Text="Auto session tracking" VerticalOptions="Center"></Label>

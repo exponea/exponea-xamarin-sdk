@@ -128,8 +128,11 @@ namespace XamarinExample
                 await DisplayAlert("Error", "One or more fields were left empty, skipping identifying the customer.", "OK");
                 return;
             }
-
-            _exponea.IdentifyCustomer(new Customer(registered) { [propertyName] = propertyValue });
+            Customer Customer = new Customer(registered) { [propertyName] = propertyValue };
+            CustomerTokenStorage.INSTANCE.Configure(
+                customerIds: Customer.ExternalIds
+            );
+            _exponea.IdentifyCustomer(Customer);
         }
 
         async void Switch_Project_ClickedAsync(System.Object sender, System.EventArgs e)
@@ -168,7 +171,11 @@ namespace XamarinExample
 
         void Register_For_Push_Clicked(System.Object sender, System.EventArgs e)
         {
-            _exponea.IdentifyCustomer(new Customer("XamarinUser." + Guid.NewGuid()) { ["apple_push_notification_bundle_id"] = "com.exponea.xamarin" });
+            Customer Customer = new Customer("XamarinUser." + Guid.NewGuid()) { ["apple_push_notification_bundle_id"] = "com.exponea.xamarin" };
+            CustomerTokenStorage.INSTANCE.Configure(
+                customerIds: Customer.ExternalIds
+            );
+            _exponea.IdentifyCustomer(Customer);
             DependencyService.Get<IPushRegistrationHandler>().RegisterForRemoteNotifications();
         }
 
