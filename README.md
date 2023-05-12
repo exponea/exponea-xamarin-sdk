@@ -40,3 +40,7 @@ SDK is created as .net wrapper for binding libraries of [native Android SDK](htt
 
 [Release notes](./documentation/RELEASE_NOTES.md) for the SDK.
 
+## Support
+
+Are you a Bloomreach customer and dealing with some issues on mobile SDK? You can reach the official Engagement Support [via these recommended ways](https://documentation.bloomreach.com/engagement/docs/engagement-support#contacting-the-support).
+Note that Github repository issues and PRs will also be considered but with the lowest priority and without guaranteed output.
