@@ -20,13 +20,13 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>ExponeaSDK.Android</PackageId>
-    <PackageVersion>3.6.0.15</PackageVersion>
+    <PackageVersion>3.6.0.18</PackageVersion>
     <Authors>Exponea</Authors>
     <Copyright>Exponea</Copyright>
     <Owners>Exponea</Owners>
     <Title>ExponeaSDK.Android</Title>
     <Description>Binding library for Exponea Android SDK</Description>
-    <ReleaseVersion>3.6.0.15</ReleaseVersion>
+    <ReleaseVersion>3.6.0.18</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <Summary>Binding library for Exponea Android SDK</Summary>
     <PackageLicenseUrl>https://spdx.org/licenses/MIT</PackageLicenseUrl>
@@ -77,9 +77,6 @@
     <EmbeddedReferenceJar Include="Jars\dec-0.1.2.jar" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Android.Google.Code.Gson">
-      <Version>2.8.8</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
       <Version>2.0.4</Version>
     </PackageReference>
@@ -109,9 +106,12 @@
     <PackageReference Include="Xamarin.Kotlin.StdLib">
       <Version>1.5.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Android.Google.Code.Gson">
+      <Version>2.8.8</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\sdk-3.16.0.9.aar" />
+    <LibraryProjectZip Include="Jars\sdk-3.6.1.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

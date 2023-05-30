@@ -21,6 +21,12 @@ public class ExponeaXamarinVersion: NSObject, ExponeaVersionProvider {
     }
 }
 
+@objc(AuthorizationProviderType)
+public protocol AuthorizationProviderType {
+    init()
+    func getAuthorizationToken() -> String?
+}
+
 @objc(XamarinAuthorizationProvider)
 public class XamarinAuthorizationProvider : NSObject, AuthorizationProviderType {
     required public override init() { }

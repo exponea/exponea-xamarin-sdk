@@ -12,4 +12,6 @@
     <attr path="/api/package[@name='com.exponea.sdk.services']" name="managedName">ExponeaSdk.Services</attr>
     <attr path="/api/package[@name='com.exponea.sdk.style']" name="managedName">ExponeaSdk.Style</attr>
     <attr path="/api/package[@name='com.exponea.sdk.models.eventfilter']" name="managedName">ExponeaSdk.Models.EventFilter</attr>
+    <attr path="/api/package[@name='com.exponea.sdk.models.eventfilter']/class[@name='EventFilterOperatorSerializer']/method[@name='serialize' and count(parameter)=3 and parameter[1][@type='com.exponea.sdk.models.eventfilter.EventFilterOperator'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonSerializationContext']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.exponea.sdk.models.eventfilter']/class[@name='EventFilterOperatorDeserializer']/method[@name='deserialize' and count(parameter)=3 and parameter[1][@type='com.google.gson.JsonElement'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonDeserializationContext']]" name="managedReturn">Java.Lang.Object</attr>
 </metadata>

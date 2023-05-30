@@ -30,7 +30,7 @@ rm -Rf "$SWIFT_OUTPUT_PATH"
 mkdir "$SWIFT_OUTPUT_PATH"
 
 combine_to_fat_debug () {
-	
+
 	echo "Combine modules from another build with the fat framework modules for $1"
 	cp -R "$SWIFT_BUILD_PATH/Debug-iphonesimulator/$1.framework/Modules/$1.swiftmodule/" "$SWIFT_BUILD_PATH/Debug-fat/$1.framework/Modules/$1.swiftmodule/"
 
@@ -47,7 +47,7 @@ combine_to_fat_debug () {
 }
 
 combine_to_fat_release () {
-	
+
 	echo "Combine modules from another build with the fat framework modules for $1"
 	cp -R "$SWIFT_BUILD_PATH/Release-iphonesimulator/$1.framework/Modules/$1.swiftmodule/" "$SWIFT_BUILD_PATH/Release-fat/$1.framework/Modules/$1.swiftmodule/"
 
@@ -70,6 +70,8 @@ do
 done
 
 echo "Generating binding api definition and structs"
+grep -v "@import ExponeaSDKShared;" "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift.h" > "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift-greped.h"
+mv "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift-greped.h" "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift.h"
 sharpie bind --sdk=iphoneos$IOS_SDK_VERSION --output="$SWIFT_OUTPUT_PATH/XamarinApiDef" --namespace="ExponeaSdk" --scope="$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/" "$SWIFT_OUTPUT_PATH/$SWIFT_PROJECT_NAME.framework/Headers/$SWIFT_PROJECT_NAME-Swift.h"
 
 echo "Done!"
