@@ -49,13 +49,6 @@ namespace Exponea
         void TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction = null);
         void SetAppInboxProvider(IDictionary<string, object> data);
         View GetAppInboxButton();
-        void SetPushNotificationsDelegate(
-            Action<
-                NotificationActionType, //type, NonNull
-                string,    // value, Nullable
-                IDictionary<string, object> // extraData, Nullable
-            > action
-        );
         void TrackAppInboxOpened(AppInboxMessage message);
         void TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message);
         void TrackAppInboxClick(AppInboxAction action, AppInboxMessage message);

@@ -177,7 +177,17 @@ public class Exponea : NSObject {
     }
     
     @objc
+    public func handlePushNotificationOpenedWithoutTrackingConsent(userInfo: [AnyHashable: Any], actionIdentifier: String? = nil) {
+        Exponea.shared.handlePushNotificationOpenedWithoutTrackingConsent(userInfo: userInfo, actionIdentifier: actionIdentifier)
+    }
+    
+    @objc
     public func handleCampaignClick(url: URL, timestamp: Double) {
+        Exponea.shared.trackCampaignClick(url: url, timestamp: timestamp)
+    }
+    
+    @objc
+    public func trackCampaignClick(url: URL, timestamp: Double) {
         Exponea.shared.trackCampaignClick(url: url, timestamp: timestamp)
     }
     
@@ -414,6 +424,21 @@ public class Exponea : NSObject {
     }
     
     @objc
+    public func trackPushOpenedWithoutTrackingConsent(userInfo: [AnyHashable: Any]) {
+        Exponea.shared.trackPushOpenedWithoutTrackingConsent(with: userInfo)
+    }
+    
+    @objc
+    public func trackPushReceived(userInfo: [AnyHashable: Any]) {
+        Exponea.shared.trackPushReceived(userInfo: userInfo)
+    }
+    
+    @objc
+    public func trackPushReceivedWithoutTrackingConsent(userInfo: [AnyHashable: Any]) {
+        Exponea.shared.trackPushReceivedWithoutTrackingConsent(userInfo: userInfo)
+    }
+    
+    @objc
     public func trackPushToken(token: String) {
         Exponea.shared.trackPushToken(token)
     }
@@ -582,9 +607,12 @@ public class Exponea : NSObject {
             Exponea.shared.trackInAppMessageClick(message: inAppMessage, buttonText: buttonText, buttonLink: buttonLink)
             
     }
+    
     @objc
-    public func trackInAppMessageClose(
-        message: SimpleInAppMessage
+    public func trackInAppMessageClickWithoutTrackingConsent(
+        message: SimpleInAppMessage,
+        buttonText: String?,
+        buttonLink: String?
     ) {
         guard isConfigured() else {
             print(ExponeaError.notConfigured.description)
@@ -611,12 +639,86 @@ public class Exponea : NSObject {
             hasTrackingConsent: false,
             consentCategoryTracking: nil
             )
-            Exponea.shared.trackInAppMessageClose(message: inAppMessage, isUserInteraction: true)
+            Exponea.shared.trackInAppMessageClickWithoutTrackingConsent(
+                message: inAppMessage,
+                buttonText: buttonText,
+                buttonLink: buttonLink
+            )
+    }
+
+    @objc
+    public func trackInAppMessageClose(
+        message: SimpleInAppMessage,
+        isUserInteraction: Bool
+    ) {
+        guard isConfigured() else {
+            print(ExponeaError.notConfigured.description)
+            return
+        }
+        let inAppMessage = InAppMessage(
+            id: message.id,
+            name: message.name,
+            rawMessageType: message.rawMessageType,
+            rawFrequency: message.rawFrequency,
+            variantId: message.variantId,
+            variantName: message.variantName,
+            trigger: EventFilter(eventType: message.eventType, filter: []),
+            dateFilter: DateFilter(
+                enabled: false,
+                startDate: Date(timeIntervalSince1970: 1570744800),
+                endDate: nil
+            ),
+            priority: message.priority,
+            delayMS: message.delayMS,
+            timeoutMS: message.timeoutMS,
+            payloadHtml: nil,
+            isHtml: message.rawMessageType == "freeform",
+            hasTrackingConsent: false,
+            consentCategoryTracking: nil
+        )
+        Exponea.shared.trackInAppMessageClose(message: inAppMessage, isUserInteraction: isUserInteraction)
+    }
+    
+    @objc
+    public func trackInAppMessageCloseWithoutTrackingConsent(
+        message: SimpleInAppMessage,
+        isUserInteraction: Bool
+    ) {
+        guard isConfigured() else {
+            print(ExponeaError.notConfigured.description)
+            return
+        }
+        let inAppMessage = InAppMessage(
+            id: message.id,
+            name: message.name,
+            rawMessageType: message.rawMessageType,
+            rawFrequency: message.rawFrequency,
+            variantId: message.variantId,
+            variantName: message.variantName,
+            trigger: EventFilter(eventType: message.eventType, filter: []),
+            dateFilter: DateFilter(
+                enabled: false,
+                startDate: Date(timeIntervalSince1970: 1570744800),
+                endDate: nil
+            ),
+            priority: message.priority,
+            delayMS: message.delayMS,
+            timeoutMS: message.timeoutMS,
+            payloadHtml: nil,
+            isHtml: message.rawMessageType == "freeform",
+            hasTrackingConsent: false,
+            consentCategoryTracking: nil
+        )
+        Exponea.shared.trackInAppMessageCloseClickWithoutTrackingConsent(message: inAppMessage, isUserInteraction: isUserInteraction)
     }
 
     @objc
     public func setAppInboxProvider(data: NSDictionary) {
-        Exponea.shared.appInboxProvider = CustomAppInboxProvider(data: data)
+        guard let style = try? AppInboxStyleParser(data).parse() else {
+            print(ExponeaError.parsingError(error: "Unable to parse AppInbox style"))
+            return
+        }
+        Exponea.shared.appInboxProvider = StyledAppInboxProvider(style)
     }
     
     @objc
@@ -625,85 +727,71 @@ public class Exponea : NSObject {
     }
     
     @objc
-    public func getAppInboxListViewController() -> UIViewController {
-        Exponea.shared.getAppInboxListViewController()
+    public func trackAppInboxOpened(_ message: AppInboxMessage) {
+        Exponea.shared.trackAppInboxOpened(message: message.toNativeMessage())
     }
     
     @objc
-    public func getAppInboxDetailViewController(_ messageId: String) -> UIViewController {
-        Exponea.shared.getAppInboxDetailViewController(messageId)
+    public func trackAppInboxOpenedWithoutTrackingConsent(_ message: AppInboxMessage) {
+        Exponea.shared.trackAppInboxOpenedWithoutTrackingConsent(message: message.toNativeMessage())
     }
     
     @objc
-    public func fetchAppInbox(completion: @escaping TypeBlock<[AppInboxData]>, errorCompletion: @escaping TypeBlock<Error>) {
+    public func trackAppInboxClick(_ action: AppInboxAction, _ message: AppInboxMessage) {
+        let nativeAction = MessageItemAction(
+            action: action.action,
+            title: action.title,
+            url: action.url
+        )
+        Exponea.shared.trackAppInboxClick(action: nativeAction, message: message.toNativeMessage())
+    }
+    
+    @objc
+    public func trackAppInboxClickWithoutTrackingConsent(_ action: AppInboxAction, _ message: AppInboxMessage) {
+        let nativeAction = MessageItemAction(
+            action: action.action,
+            title: action.title,
+            url: action.url
+        )
+        Exponea.shared.trackAppInboxClickWithoutTrackingConsent(action: nativeAction, message: message.toNativeMessage())
+    }
+    
+    @objc
+    public func fetchAppInbox(completion: @escaping TypeBlock<[AppInboxMessage]>, errorCompletion: @escaping TypeBlock<String>) {
         Exponea.shared.fetchAppInbox { data in
             switch data {
             case let .success(items):
-                completion(items.map { .init(message: $0) })
+                completion(items.map { .init(source: $0) })
             case let .failure(error):
-                errorCompletion(error)
+                errorCompletion(error.localizedDescription)
             }
         }
     }
-}
-
-public class AppInboxData: NSObject {
-    let message: MessageItem
     
-    init(message: MessageItem) {
-        self.message = message
-    }
-}
-
-import UIKit
-
-public class CustomAppInboxProvider: AppInboxProvider {
-    
-    private let data: NSDictionary
-    
-    init(data: NSDictionary) {
-        self.data = data
-    }
-
-    open func getAppInboxButton() -> UIButton {
-        let button = UIButton()
-        button.setTitle(data["title"] as? String, for: .normal)
-        button.addTarget(self, action: #selector(buttonAction(sender:)), for: .primaryActionTriggered)
-        return button
-    }
-    
-    open func getAppInboxListViewController() -> UIViewController {
-        AppInboxListViewController()
-    }
-
-    open func getAppInboxDetailViewController(_ messageId: String) -> UIViewController {
-        let detailViewController = AppInboxDetailViewController()
-        Exponea.shared.fetchAppInboxItem(messageId) { result in
-            switch result {
-            case .success(let message):
-                detailViewController.withData(message)
-            case .failure: break
-            }
-        }
-        return detailViewController
-    }
-
     @objc
-    private func buttonAction(sender: UIButton!) {
-        var window = UIApplication.shared.keyWindow?.rootViewController?.navigationController?.topViewController
-        if window == nil {
-            window = UIApplication.shared.keyWindow?.rootViewController
+    public func fetchAppInboxItem(messageId: String, completion: @escaping TypeBlock<AppInboxMessage>, errorCompletion: @escaping TypeBlock<String>) {
+        Exponea.shared.fetchAppInboxItem(messageId) { data in
+            switch data {
+            case let .success(item):
+                completion(.init(source: item))
+            case let .failure(error):
+                errorCompletion(error.localizedDescription)
+            }
         }
-        guard let topViewController = window else {
-            return
-        }
-        let listView = getAppInboxListViewController()
-        let naviController = UINavigationController(rootViewController: listView)
-        naviController.modalPresentationStyle = .formSheet
-        topViewController.present(naviController, animated: true)
     }
-
-    open func getAppInboxListTableViewCell(_ cell: UITableViewCell) -> UITableViewCell {
-        cell
+    
+    @objc
+    public func markAppInboxAsRead(_ message: AppInboxMessage, completion: @escaping TypeBlock<Bool>, errorCompletion: @escaping TypeBlock<String>) {
+        Exponea.shared.fetchAppInboxItem(message.id) { nativeMessageResult in
+            switch nativeMessageResult {
+            case .success(let nativeMessage):
+                // we need to fetch native MessageItem; method needs syncToken and customerIds to be fetched
+                Exponea.shared.markAppInboxAsRead(nativeMessage) { marked in
+                    completion(marked)
+                }
+            case .failure(let error):
+                errorCompletion(error.localizedDescription)
+            }
+        }
     }
 }

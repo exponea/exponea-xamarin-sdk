@@ -2,6 +2,7 @@
 using Foundation;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using UIKit;
@@ -146,7 +147,9 @@ namespace Exponea
                 timestamp != null ? (double)timestamp : Utils.GetTimestamp());
 
         public void Track(Delivery delivery)
-            => throw new NotSupportedException();
+        {
+            _exponea.TrackPushReceived(delivery.Attributes.ToNsDictionary());
+        }
 
         public void Track(Click click)
         {
@@ -195,14 +198,19 @@ namespace Exponea
             _exponea.TrackInAppMessageClick(message.ToNsSimleInAppMessage(), buttonText, buttonLink);
         }
 
-        public void TrackInAppMessageClose(InAppMessage message)
+        public void TrackInAppMessageClose(InAppMessage message, bool? isUserInteraction)
         {
-            _exponea.TrackInAppMessageClose(message.ToNsSimleInAppMessage());
+            _exponea.TrackInAppMessageClose(message.ToNsSimleInAppMessage(), isUserInteraction ?? true);
+        }
+
+        public void TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction)
+        {
+            _exponea.TrackInAppMessageCloseWithoutTrackingConsent(message.ToNsSimleInAppMessage(), isUserInteraction ?? true);
         }
 
         public void SetAppInboxProvider(IDictionary<string, object> data)
         {
-            _exponea.setAppInboxProvider(data.ToNsDictionary());
+            _exponea.SetAppInboxProviderWithData(data.ToNsDictionary());
         }
 
         public View GetAppInboxButton()
@@ -217,28 +225,31 @@ namespace Exponea
 
         void IExponeaSdk.TrackWithoutTrackingConsent(Delivery delivery)
         {
-            throw new NotSupportedException();
+            _exponea.TrackPushReceivedWithoutTrackingConsent(delivery.Attributes.ToNsDictionary());
         }
 
         void IExponeaSdk.TrackWithoutTrackingConsent(Click click)
         {
-            throw new NotImplementedException();
+            var info = click.Attributes.ToNsDictionary();
+            if (click.ActionType != null) { info["action_type"] = click.ActionType.ToNsString(); }
+            if (click.ActionName != null) { info["action_name"] = click.ActionName.ToNsString(); }
+            if (click.Url != null) { info["url"] = click.Url.ToNsString(); }
+            _exponea.TrackPushOpenedWithoutTrackingConsent(info);
         }
 
         void IExponeaSdk.HandlePushNotificationOpened(Click click, string actionIdentifier)
         {
-            throw new NotImplementedException();
+            _exponea.HandlePushNotificationOpened(click.Attributes.ToNsDictionary(), actionIdentifier);
         }
 
         void IExponeaSdk.HandlePushNotificationOpenedWithoutTrackingConsent(Click click, string actionIdentifier)
         {
-            throw new NotImplementedException();
+            _exponea.HandlePushNotificationOpenedWithoutTrackingConsentWithUserInfo(click.Attributes.ToNsDictionary(), actionIdentifier);
         }
 
         void IExponeaSdk.TrackCampaign(Uri url, double? timestamp)
         {
-            // shoud be _exponea.TrackCampaignClick(Url, double)
-            throw new NotImplementedException();
+            _exponea.HandleCampaignClick(url, timestamp != null ? (double)timestamp : Utils.GetTimestamp());
         }
 
         void IExponeaSdk.HandlePushToken(string token)
@@ -253,57 +264,65 @@ namespace Exponea
 
         void IExponeaSdk.TrackInAppMessageClickWithoutTrackingConsent(InAppMessage message, string buttonText, string buttonLink)
         {
-            throw new NotImplementedException();
-        }
-
-        void IExponeaSdk.TrackInAppMessageClose(InAppMessage message, bool? isUserInteraction)
-        {
-            throw new NotImplementedException();
-        }
-
-        void IExponeaSdk.SetPushNotificationsDelegate(Action<NotificationActionType, string, IDictionary<string, object>> action)
-        {
-            throw new NotImplementedException();
+            _exponea.TrackInAppMessageClickWithoutTrackingConsent(message.ToNsSimleInAppMessage(), buttonText, buttonLink);
         }
 
         void IExponeaSdk.TrackAppInboxOpened(AppInboxMessage message)
         {
-            throw new NotImplementedException();
+            _exponea.TrackAppInboxOpened(message.ToNative());
         }
 
         void IExponeaSdk.TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message)
         {
-            throw new NotImplementedException();
+            _exponea.TrackAppInboxOpenedWithoutTrackingConsent(message.ToNative());
         }
 
         void IExponeaSdk.TrackAppInboxClick(AppInboxAction action, AppInboxMessage message)
         {
-            throw new NotImplementedException();
+            _exponea.TrackAppInboxClick(action.ToNative(), message.ToNative());
         }
 
         void IExponeaSdk.TrackAppInboxClickWithoutTrackingConsent(AppInboxAction action, AppInboxMessage message)
         {
-            throw new NotImplementedException();
+            _exponea.TrackAppInboxClickWithoutTrackingConsent(action.ToNative(), message.ToNative());
         }
 
         Task<IList<AppInboxMessage>> IExponeaSdk.FetchAppInbox()
         {
-            throw new NotImplementedException();
+            var tcs = new TaskCompletionSource<IList<AppInboxMessage>>();
+            _exponea.FetchAppInbox(
+                success => {
+                    var response = new List<AppInboxMessage>();
+                    foreach (var each in success.ToArray())
+                    {
+                        response.Add(each.ToNet());
+                    }
+                    tcs.SetResult(response);
+                },
+                failure => tcs.SetException(new FetchException(failure, failure)));
+            return tcs.Task;
         }
 
         Task<AppInboxMessage> IExponeaSdk.FetchAppInboxItem(string messageId)
         {
-            throw new NotImplementedException();
-        }
-
-        public void TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction = null)
-        {
-            throw new NotImplementedException();
+            var tcs = new TaskCompletionSource<AppInboxMessage>();
+            _exponea.FetchAppInboxItemWithMessageId(
+                messageId,
+                success => tcs.SetResult(success.ToNet()),
+                failure => tcs.SetException(new FetchException(failure, failure))
+            );
+            return tcs.Task;
         }
 
         public Task<bool> MarkAppInboxAsRead(AppInboxMessage message)
         {
-            throw new NotImplementedException();
+            var tcs = new TaskCompletionSource<bool>();
+            _exponea.MarkAppInboxAsRead(
+                message.ToNative(),
+                success => tcs.SetResult(success),
+                failure => tcs.SetException(new FetchException(failure, failure))
+            );
+            return tcs.Task;
         }
     }
 }

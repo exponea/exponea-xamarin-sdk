@@ -13,6 +13,7 @@ using Com.Exponea.Sdk.Style.Appinbox;
 using NativeAndroid = Android.Widget;
 using AndroidForms = Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Google.Gson.Internal;
 
 namespace Exponea
 {
@@ -22,7 +23,7 @@ namespace Exponea
 
         public ExponeaSdk()
         {
-          
+
         }
 
         public void Configure(Configuration source)
@@ -162,7 +163,25 @@ namespace Exponea
                 Utils.GetTimestamp()
             );
         }
-        
+
+        public void TrackWithoutTrackingConsent(Click click)
+        {
+            var consentCategoryTracking = click.Attributes.GetValueOrDefault("consent_category_tracking");
+            var hasTrackingConsent = click.Attributes.GetValueOrDefault("has_tracking_consent");
+            _exponea.TrackClickedPushWithoutTrackingConsent(
+                new ExponeaSdkAndroid.NotificationData(
+                    click.Attributes.ToJavaDictionary(),
+                    new ExponeaSdkAndroid.CampaignData(),
+                    consentCategoryTracking == null ? null : (string)consentCategoryTracking,
+                    Com.Exponea.Sdk.Util.GdprTracking.Instance.HasTrackingConsent(
+                        hasTrackingConsent.ToJava()
+                    )
+                ),
+                new ExponeaSdkAndroid.NotificationAction(click.ActionType, click.ActionName, click.Url),
+                (Java.Lang.Double)Utils.GetTimestamp()
+            );
+        }
+
         public void Track(Delivery delivery)
         {
             var consentCategoryTracking = delivery.Attributes.GetValueOrDefault("consent_category_tracking");
@@ -209,7 +228,7 @@ namespace Exponea
             _exponea.GetConsents(
                 new KotlinCallback<Result>(r =>
                 {
-                   
+
                     tcs.SetResult(r.ToString());
                 }),
                 new KotlinCallback<Result>(r =>
@@ -337,17 +356,21 @@ namespace Exponea
 
         void IExponeaSdk.HandlePushNotificationOpened(Click click, string actionIdentifier)
         {
-            throw new NotImplementedException();
+            // TODO: Android works differently from iOS, not API exposed, just tracking
+            this.Track(click);
         }
 
         void IExponeaSdk.HandlePushNotificationOpenedWithoutTrackingConsent(Click click, string actionIdentifier)
         {
-            throw new NotImplementedException();
+            // TODO: Android works differently from iOS, not API exposed, just tracking
+            this.TrackWithoutTrackingConsent(click);
         }
 
         void IExponeaSdk.TrackCampaign(Uri url, double? timestamp)
         {
-            throw new NotImplementedException();
+            var campaignIntent = new global::Android.Content.Intent();
+            campaignIntent.SetData(global::Android.Net.Uri.Parse(url.AbsoluteUri));
+            _exponea.HandleCampaignIntent(campaignIntent, AndroidApp.Application.Context);
         }
 
         void IExponeaSdk.HandlePushToken(string token)
@@ -373,11 +396,6 @@ namespace Exponea
         void IExponeaSdk.TrackInAppMessageCloseWithoutTrackingConsent(InAppMessage message, bool? isUserInteraction)
         {
             _exponea.TrackInAppMessageClose(message.ToAndroidInAppMessage(), isUserInteraction.ToJava());
-        }
-
-        void IExponeaSdk.SetPushNotificationsDelegate(Action<NotificationActionType, string, IDictionary<string, object>> action)
-        {
-            throw new NotImplementedException();
         }
 
         void IExponeaSdk.TrackAppInboxOpened(AppInboxMessage message)

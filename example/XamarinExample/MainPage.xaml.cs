@@ -27,27 +27,17 @@ namespace XamarinExample
             View button = _exponea.GetAppInboxButton();
             AppInboxButtonHere.Children.Add(button);
 
-            //Uncomment this to test InAppMessageDelegate
-            //_exponea.SetInAppMessageDelegate(overrideDefaultBehavior: true, trackActions: false, action: async delegate (InAppMessage message, string buttonText, string buttonUrl, bool interaction)
-            //{
-            //    await DisplayAlert(
-            //        "In-App message action delegate called",
-            //        String.Format(
-            //            "MessageId: {0} \n Button text: {1} \n " +
-            //            "Button url: {2} \n Interaction: {3}",
-            //            message.Id, buttonText, buttonUrl, interaction
-            //            ),
-            //        "OK");
-
-            //    if (interaction)
-            //    {
-            //        _exponea.TrackInAppMessageClick(message, buttonText, buttonUrl);
-            //    }
-            //    else
-            //    {
-            //        _exponea.TrackInAppMessageClose(message);
-            //    }
-            //});
+            _exponea.SetInAppMessageDelegate(overrideDefaultBehavior: false, trackActions: true, action: async delegate (InAppMessage message, string buttonText, string buttonUrl, bool interaction)
+            {
+                await DisplayAlert(
+                    "In-App message action delegate called",
+                    String.Format(
+                        "MessageId: {0} \n Button text: {1} \n " +
+                        "Button url: {2} \n Interaction: {3}",
+                        message.Id, buttonText, buttonUrl, interaction
+                        ),
+                    "OK");
+            });
         }
 
         void Track_Clicked(System.Object sender, System.EventArgs e)
@@ -182,6 +172,33 @@ namespace XamarinExample
         void AppInboxButton_Clicked(System.Object sender, System.EventArgs e)
         {
             //Navigation.PushModalAsync((Page)_exponea.GetAppInboxListViewController());
+        }
+
+        async void Fetch_AppInbox_ClickedAsync(System.Object sender, System.EventArgs e)
+        {
+            try
+            {
+                var res = await _exponea.FetchAppInbox();
+                await DisplayAlert("Recommendations fetched", "Got messages: " + res.Count, "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Recommendations fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
+            }
+        }
+
+        async void Fetch_AppInboxItem_ClickedAsync(System.Object sender, System.EventArgs e)
+        {
+            try
+            {
+                var all = await _exponea.FetchAppInbox();
+                var res = await _exponea.FetchAppInboxItem(all[0].Id);
+                await DisplayAlert("Recommendations fetched", "Got message", "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Recommendations fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
+            }
         }
     }
 }

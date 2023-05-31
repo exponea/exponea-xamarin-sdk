@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Foundation;
 using ExponeaSdkIos = ExponeaSdk;
 
@@ -22,6 +23,10 @@ namespace Exponea
 
             return res;
         }
+
+        public static Dictionary<string, object> ToNetDictionary(this NSDictionary nsDictionary) =>
+            nsDictionary.ToDictionary<KeyValuePair<NSObject, NSObject>, string, object>
+                (item => item.Key as NSString, item => item.Value);
 
         public static NSArray ToNSArray<TValue>(this List<TValue> list)
         {
@@ -205,6 +210,42 @@ namespace Exponea
                     message.RawHasTrackingConsent,
                     message.ConsentCategoryTracking
                     );
+        }
+
+        public static ExponeaSdkIos.AppInboxMessage ToNative(this Exponea.AppInboxMessage source)
+        {
+            return new ExponeaSdkIos.AppInboxMessage(
+                source.Id,
+                source.type.ToString().ToLower(),
+                source.IsRead,
+                (int)source.ReceivedTime,
+                source.content.ToNsDictionary()
+            );
+        }
+
+        public static Exponea.AppInboxMessage ToNet(this ExponeaSdkIos.AppInboxMessage source)
+        {
+            var target = new Exponea.AppInboxMessage();
+            target.Id = source.Id;
+            AppInboxMessageType messageType;
+            if (Enum.TryParse<AppInboxMessageType>(source.Type, true, out messageType) == false)
+            {
+                messageType = AppInboxMessageType.UNKNOWN;
+            }
+            target.type = messageType;
+            target.IsRead = source.Read;
+            target.ReceivedTime = source.ReceivedTime;
+            target.content = source.Content.ToNetDictionary();
+            return target;
+        }
+
+        public static ExponeaSdkIos.AppInboxAction ToNative(this Exponea.AppInboxAction source)
+        {
+            return new ExponeaSdkIos.AppInboxAction(
+                source.Type.ToString().ToLower(),
+                source.Title,
+                source.Url
+            );
         }
     }
 }

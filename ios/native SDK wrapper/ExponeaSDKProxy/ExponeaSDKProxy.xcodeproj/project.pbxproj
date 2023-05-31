@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5535F1962A24EAE100791B29 /* AnyCodable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; };
-		5535F1972A24EAE100791B29 /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5535F1982A24EAE100791B29 /* ExponeaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; };
-		5535F1992A24EAE100791B29 /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5535F19A2A24EAE100791B29 /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; };
-		5535F19B2A24EAE100791B29 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5535F19C2A24EAE100791B29 /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; };
-		5535F19D2A24EAE100791B29 /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5535F19E2A24EAE100791B29 /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; };
-		5535F19F2A24EAE100791B29 /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5535F1A02A24EAE100791B29 /* SwiftSoup.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; };
-		5535F1A12A24EAE100791B29 /* SwiftSoup.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93DC2A2751C600015106 /* AnyCodable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; };
+		558E93DD2A2751C600015106 /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93DE2A2751C600015106 /* ExponeaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; };
+		558E93DF2A2751C700015106 /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93E02A2751C700015106 /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; };
+		558E93E12A2751C700015106 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93E22A2751C700015106 /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; };
+		558E93E32A2751C700015106 /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93E42A2751C700015106 /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; };
+		558E93E52A2751C700015106 /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93E62A2751C700015106 /* SwiftSoup.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; };
+		558E93E72A2751C700015106 /* SwiftSoup.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674428C880950059E1CB /* SwiftSoup.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558E93EA2A27699300015106 /* AppInboxMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E93E92A27699300015106 /* AppInboxMessage.swift */; };
 		CC353BD3273BE9A500319DF9 /* ExponeaSDKProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE77DBA26AFF2D7008866B0 /* ExponeaSDKProxy.framework */; };
 		CC353BE2273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDA273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift */; };
 		CC353BE3273BE9E200319DF9 /* ExponeaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353BDB273BE9E200319DF9 /* ExponeaSpec.swift */; };
@@ -53,18 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5535F1A22A24EAE100791B29 /* Embed Frameworks */ = {
+		558E93E82A2751C700015106 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5535F19F2A24EAE100791B29 /* ExponeaSDKShared.xcframework in Embed Frameworks */,
-				5535F1972A24EAE100791B29 /* AnyCodable.xcframework in Embed Frameworks */,
-				5535F19D2A24EAE100791B29 /* ExponeaSDKObjC.xcframework in Embed Frameworks */,
-				5535F19B2A24EAE100791B29 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */,
-				5535F1A12A24EAE100791B29 /* SwiftSoup.xcframework in Embed Frameworks */,
-				5535F1992A24EAE100791B29 /* ExponeaSDK.xcframework in Embed Frameworks */,
+				558E93E52A2751C700015106 /* ExponeaSDKShared.xcframework in Embed Frameworks */,
+				558E93DD2A2751C600015106 /* AnyCodable.xcframework in Embed Frameworks */,
+				558E93E32A2751C700015106 /* ExponeaSDKObjC.xcframework in Embed Frameworks */,
+				558E93E12A2751C700015106 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */,
+				558E93E72A2751C700015106 /* SwiftSoup.xcframework in Embed Frameworks */,
+				558E93DF2A2751C700015106 /* ExponeaSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExponeaSDKNotifications.xcframework; path = ../Carthage/Build/ExponeaSDKNotifications.xcframework; sourceTree = "<group>"; };
 		554B674428C880950059E1CB /* SwiftSoup.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftSoup.xcframework; path = ../Carthage/Build/SwiftSoup.xcframework; sourceTree = "<group>"; };
+		558E93E92A27699300015106 /* AppInboxMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInboxMessage.swift; sourceTree = "<group>"; };
 		CC353BCF273BE9A500319DF9 /* ExponeaSDKProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExponeaSDKProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC353BD9273BE9E100319DF9 /* ExponeaSDKProxyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExponeaSDKProxyTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC353BDA273BE9E200319DF9 /* Exponea+AnonymizeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exponea+AnonymizeSpec.swift"; sourceTree = "<group>"; };
@@ -117,12 +119,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5535F19E2A24EAE100791B29 /* ExponeaSDKShared.xcframework in Frameworks */,
-				5535F1962A24EAE100791B29 /* AnyCodable.xcframework in Frameworks */,
-				5535F19C2A24EAE100791B29 /* ExponeaSDKObjC.xcframework in Frameworks */,
-				5535F19A2A24EAE100791B29 /* ExponeaSDKNotifications.xcframework in Frameworks */,
-				5535F1A02A24EAE100791B29 /* SwiftSoup.xcframework in Frameworks */,
-				5535F1982A24EAE100791B29 /* ExponeaSDK.xcframework in Frameworks */,
+				558E93E42A2751C700015106 /* ExponeaSDKShared.xcframework in Frameworks */,
+				558E93DC2A2751C600015106 /* AnyCodable.xcframework in Frameworks */,
+				558E93E22A2751C700015106 /* ExponeaSDKObjC.xcframework in Frameworks */,
+				558E93E02A2751C700015106 /* ExponeaSDKNotifications.xcframework in Frameworks */,
+				558E93E62A2751C700015106 /* SwiftSoup.xcframework in Frameworks */,
+				558E93DE2A2751C600015106 /* ExponeaSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +180,7 @@
 				CCABBB9826D7875A00DC0DC4 /* AllRecommendationData.swift */,
 				CCCB26F027C3A8A20053792C /* InAppDelegate.swift */,
 				CCFD457C27CF684100B4CF27 /* SimpleInAppMessage.swift */,
+				558E93E92A27699300015106 /* AppInboxMessage.swift */,
 			);
 			path = ExponeaSDKProxy;
 			sourceTree = "<group>";
@@ -240,7 +243,7 @@
 				CCE77DB626AFF2D7008866B0 /* Sources */,
 				CCE77DB726AFF2D7008866B0 /* Frameworks */,
 				CCE77DB826AFF2D7008866B0 /* Resources */,
-				5535F1A22A24EAE100791B29 /* Embed Frameworks */,
+				558E93E82A2751C700015106 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558E93EA2A27699300015106 /* AppInboxMessage.swift in Sources */,
 				CC48EA3426D510B9006B220D /* ConfigParser.swift in Sources */,
 				CCFD457D27CF684100B4CF27 /* SimpleInAppMessage.swift in Sources */,
 				CCCB26F127C3A8A20053792C /* InAppDelegate.swift in Sources */,

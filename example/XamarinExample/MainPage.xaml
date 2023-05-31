@@ -36,6 +36,8 @@
                 <StackLayout x:Name="AppInboxButtonHere">
 
                 </StackLayout>
+                <Button Text="Fetch AppInbox" Clicked="Fetch_AppInbox_ClickedAsync"/>
+                <Button Text="Fetch AppInbox item" Clicked="Fetch_AppInboxItem_ClickedAsync"/>
                
             </StackLayout>
                 
