@@ -146,7 +146,7 @@
       <Version>1.0.11</Version>
     </PackageReference>
     <PackageReference Include="ExponeaSDK">
-      <Version>1.1.0.19</Version>
+      <Version>1.1.0.25</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

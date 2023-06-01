@@ -20,9 +20,11 @@ namespace XamarinExample
             SessionEndButton.IsVisible = !_exponea.AutomaticSessionTracking;
             RegisterForPush.IsVisible = Device.RuntimePlatform == Device.iOS;
 
-            Dictionary<string, object> dic = new Dictionary<string, object>();
-            dic.Add("title", "ČAU Z XAMARINU");
-            //_exponea.SetAppInboxProvider(dic);
+            Dictionary<string, object> style = new Dictionary<string, object>();
+            Dictionary<string, object> buttonStyle = new Dictionary<string, object>();
+            buttonStyle.Add("backgroundColor", "red");
+            style.Add("appInboxButton", buttonStyle);
+            _exponea.SetAppInboxProvider(style);
 
             View button = _exponea.GetAppInboxButton();
             AppInboxButtonHere.Children.Add(button);

@@ -71,7 +71,7 @@
       <Version>123.1.1.1</Version>
     </PackageReference>
     <PackageReference Include="ExponeaSDK">
-      <Version>1.1.0.19</Version>
+      <Version>1.1.0.24</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

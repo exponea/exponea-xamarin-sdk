@@ -167,6 +167,7 @@ namespace Exponea
                 double d => new NSNumber(d),
                 string s => new NSString(s),
                 bool b => new NSNumber(b),
+                IDictionary<string, object> dic => dic.ToNsDictionary(),
                 NSObject o => o,
                 _ => throw new ArgumentException()
             };

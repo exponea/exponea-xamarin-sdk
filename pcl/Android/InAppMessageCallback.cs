@@ -26,7 +26,7 @@ namespace Exponea.Android
 
         public void InAppMessageAction(ExponeaSdkAndroid.InAppMessage message, ExponeaSdkAndroid.InAppMessageButton button, bool interaction, Context context)
         {
-            Action?.Invoke(message.ToNetInAppMessage(), button?.Text, button?.Url, interaction);
+            Action?.Invoke(message?.ToNetInAppMessage(), button?.Text, button?.Url, interaction);
         }
     }
 }

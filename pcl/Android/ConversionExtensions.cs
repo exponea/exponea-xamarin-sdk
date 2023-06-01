@@ -102,6 +102,7 @@ namespace Exponea
                 double d => new Java.Lang.Double(d),
                 string s => new Java.Lang.String(s),
                 bool b => new Java.Lang.Boolean(b),
+                IDictionary<string, object> dic => new JavaDictionary(dic.ToJavaDictionary()),
                 Java.Lang.Object o => o,
                 _ => throw new NotSupportedException()
             };
@@ -159,7 +160,7 @@ namespace Exponea
                 _ => throw new NotImplementedException(),
             };
 
-        public static ExponeaSdkAndroid.MessageItemAction.Type ToAndroidAppInboxMessageType(this AppInboxActionType source)
+        public static ExponeaSdkAndroid.MessageItemAction.Type ToNative(this AppInboxActionType source)
         => source switch
         {
             AppInboxActionType.APP => ExponeaSdkAndroid.MessageItemAction.Type.App,
@@ -169,7 +170,15 @@ namespace Exponea
             _ => throw new NotImplementedException(),
         };
 
-        public static ExponeaSdkAndroid.MessageItem ToAndroidAppInboxMessage(this AppInboxMessage message)
+        public static AppInboxMessageType ToNet(this ExponeaSdkAndroid.AppInboxMessateType source)
+        => source.ToString().ToLower() switch
+        {
+            "html" => AppInboxMessageType.HTML,
+            "push" => AppInboxMessageType.PUSH,
+            _ => AppInboxMessageType.UNKNOWN,
+        };
+
+        public static ExponeaSdkAndroid.MessageItem ToNative(this AppInboxMessage message)
         {
             return new ExponeaSdkAndroid.MessageItem(
                 message.Id,
@@ -179,10 +188,20 @@ namespace Exponea
                 message.content.ToJavaDictionary()
             );
         }
+        public static AppInboxMessage ToNet(this ExponeaSdkAndroid.MessageItem source)
+        {
+            var target = new AppInboxMessage();
+            target.Id = source.Id;
+            target.type = source.Type.ToNet();
+            target.IsRead = (bool)source.Read;
+            target.ReceivedTime = (double)source.ReceivedTime;
+            target.content = source.RawContent.ToNetDictionary();
+            return target;
+        }
         public static ExponeaSdkAndroid.MessageItemAction ToJavaAppInboxAction(this AppInboxAction source)
         {
             ExponeaSdkAndroid.MessageItemAction target = new ExponeaSdkAndroid.MessageItemAction();
-            target.SetType(source.Type.ToAndroidAppInboxMessageType());
+            target.SetType(source.Type.ToNative());
             target.Title = source.Title;
             target.Url = source.Url;
             return target;
@@ -202,8 +221,8 @@ namespace Exponea
                       message.Delay?.IntValue() ?? 0,
                       message.Timeout?.IntValue() ?? 0,
                       message.PayloadHtml,
-                      message.IsHtml().BooleanValue(),
-                      message.RawHasTrackingConsent.BooleanValue(),
+                      message.IsHtml()?.BooleanValue() ?? false,
+                      message.HasTrackingConsent,
                       message.ConsentCategoryTracking
                       );
         }

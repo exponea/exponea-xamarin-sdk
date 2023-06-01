@@ -400,29 +400,29 @@ namespace Exponea
 
         void IExponeaSdk.TrackAppInboxOpened(AppInboxMessage message)
         {
-            _exponea.TrackAppInboxOpened(message.ToAndroidAppInboxMessage());
+            _exponea.TrackAppInboxOpened(message.ToNative());
         }
 
         void IExponeaSdk.TrackAppInboxOpenedWithoutTrackingConsent(AppInboxMessage message)
         {
-            _exponea.TrackAppInboxOpenedWithoutTrackingConsent(message.ToAndroidAppInboxMessage());
+            _exponea.TrackAppInboxOpenedWithoutTrackingConsent(message.ToNative());
         }
 
         void IExponeaSdk.TrackAppInboxClick(AppInboxAction action, AppInboxMessage message)
         {
-            _exponea.TrackAppInboxClick(action.ToJavaAppInboxAction(), message.ToAndroidAppInboxMessage());
+            _exponea.TrackAppInboxClick(action.ToJavaAppInboxAction(), message.ToNative());
         }
 
         void IExponeaSdk.TrackAppInboxClickWithoutTrackingConsent(AppInboxAction action, AppInboxMessage message)
         {
-            _exponea.TrackAppInboxClickWithoutTrackingConsent(action.ToJavaAppInboxAction(), message.ToAndroidAppInboxMessage());
+            _exponea.TrackAppInboxClickWithoutTrackingConsent(action.ToJavaAppInboxAction(), message.ToNative());
         }
 
         Task<bool> IExponeaSdk.MarkAppInboxAsRead(AppInboxMessage message)
         {
             var tcs = new TaskCompletionSource<bool>();
             _exponea.MarkAppInboxAsRead(
-                message.ToAndroidAppInboxMessage(),
+                message.ToNative(),
                 new KotlinCallback<Java.Lang.Boolean>(r =>
                 {
                     tcs.SetResult((bool)r.ToNet());
@@ -436,9 +436,20 @@ namespace Exponea
             var tcs = new TaskCompletionSource<IList<AppInboxMessage>>();
             _exponea.FetchAppInbox(new KotlinCallback<Java.Lang.Object>(nativeR =>
             {
-                string nativeJson = JsonConvert.SerializeObject(nativeR);
-                IList<AppInboxMessage> csharpResult = JsonConvert.DeserializeObject<IList<AppInboxMessage>>(nativeJson);
-                tcs.SetResult(csharpResult);
+                var result = new List<AppInboxMessage>();
+                Console.WriteLine("APP_INBOX got response " + nativeR.ToString());
+                if (nativeR != null)
+                {
+                    var list = (Java.Util.ICollection)nativeR;
+                    Console.WriteLine("APP_INBOX of size " + list.Size());
+                    foreach (var item in list.ToArray())
+                    {
+                        var typedItem = (ExponeaSdkAndroid.MessageItem)item;
+                        Console.WriteLine("APP_INBOX got native type ");
+                        result.Add(typedItem.ToNet());
+                    }
+                }
+                tcs.SetResult(result);
             }));
             return tcs.Task;
         }
@@ -446,11 +457,9 @@ namespace Exponea
         Task<AppInboxMessage> IExponeaSdk.FetchAppInboxItem(string messageId)
         {
             var tcs = new TaskCompletionSource<AppInboxMessage>();
-            _exponea.FetchAppInboxItem(messageId, new KotlinCallback<Java.Lang.Object>(nativeR =>
+            _exponea.FetchAppInboxItem(messageId, new KotlinCallback<ExponeaSdkAndroid.MessageItem>(nativeR =>
             {
-                string nativeJson = JsonConvert.SerializeObject(nativeR);
-                AppInboxMessage csharpResult = JsonConvert.DeserializeObject<AppInboxMessage>(nativeJson);
-                tcs.SetResult(csharpResult);
+                tcs.SetResult(nativeR.ToNet());
             }));
             return tcs.Task;
         }
