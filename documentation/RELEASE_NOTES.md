@@ -1,6 +1,17 @@
 ## :arrow_double_up: [SDK version update guide](./VERSION_UPDATE.md)
 
 ## Release Notes
+## Release Notes for 1.2.0
+#### June 2, 2023
+* Features
+  * API has been extended to match native SDKs as much as possible
+  * Added App Inbox feature support
+  * Ability to track a user 'interaction' while closing InApp message
+  * Support section added to main Readme
+  * Added support for Customer token authorization
+  * Added Configuration flag to be able to disable tracking of default properties along with customer properties
+  * Added documentation notes about tracking consent according to DSGVO/GDPR
+
 ## Release Notes for 1.1.0
 #### Sept 13, 2022
 * Features

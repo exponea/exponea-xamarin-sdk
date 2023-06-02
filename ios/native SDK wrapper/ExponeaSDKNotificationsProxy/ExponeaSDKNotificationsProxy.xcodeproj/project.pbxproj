@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550AD5552A0151620025F52D /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3A273D268F00319DF9 /* ExponeaSDKNotifications.xcframework */; };
-		550AD5572A0151620025F52D /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3E273D269800319DF9 /* ExponeaSDKShared.xcframework */; };
+		55B13FA42A2A234C00FC7456 /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3A273D268F00319DF9 /* ExponeaSDKNotifications.xcframework */; };
+		55B13FA52A2A234C00FC7456 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3A273D268F00319DF9 /* ExponeaSDKNotifications.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55B13FA62A2A234C00FC7456 /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3E273D269800319DF9 /* ExponeaSDKShared.xcframework */; };
+		55B13FA72A2A234C00FC7456 /* ExponeaSDKShared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C3E273D269800319DF9 /* ExponeaSDKShared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC353C2F273D236D00319DF9 /* ExponeaSDKNotificationsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = CC353C2E273D236D00319DF9 /* ExponeaSDKNotificationsProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC353C42273D26E100319DF9 /* ExponeaNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC353C41273D26E100319DF9 /* ExponeaNotificationHandler.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55B13FA82A2A234C00FC7456 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55B13FA72A2A234C00FC7456 /* ExponeaSDKShared.xcframework in Embed Frameworks */,
+				55B13FA52A2A234C00FC7456 /* ExponeaSDKNotifications.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC353C2B273D236D00319DF9 /* ExponeaSDKNotificationsProxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExponeaSDKNotificationsProxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550AD5572A0151620025F52D /* ExponeaSDKShared.xcframework in Frameworks */,
-				550AD5552A0151620025F52D /* ExponeaSDKNotifications.xcframework in Frameworks */,
+				55B13FA62A2A234C00FC7456 /* ExponeaSDKShared.xcframework in Frameworks */,
+				55B13FA42A2A234C00FC7456 /* ExponeaSDKNotifications.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,7 @@
 				CC353C27273D236D00319DF9 /* Sources */,
 				CC353C28273D236D00319DF9 /* Frameworks */,
 				CC353C29273D236D00319DF9 /* Resources */,
+				55B13FA82A2A234C00FC7456 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
