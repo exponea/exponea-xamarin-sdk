@@ -1,5 +1,5 @@
-#github "exponea/exponea-ios-sdk" == 2.16.2
+github "exponea/exponea-ios-sdk" == 2.16.3
 github "scinfu/SwiftSoup" == 2.4.3
 #use this to test not released version from gitlab
-git "file:///Users/adammihalik/exponea/ios-sdk" "fix/AppInboxVisibility"
+#git "file:///Users/adammihalik/exponea/ios-sdk" "fix/AppInboxVisibility"
 github "Flight-School/AnyCodable" == 0.6.0

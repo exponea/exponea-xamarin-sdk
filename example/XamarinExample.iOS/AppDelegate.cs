@@ -22,7 +22,7 @@ namespace XamarinExample.iOS
 
         public override bool ContinueUserActivity(UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
         {
-            if (userActivity.ActivityType == "NSUserActivityTypeBrowsingWeb" && userActivity.WebPageUrl != null) 
+            if (userActivity.ActivityType == "NSUserActivityTypeBrowsingWeb" && userActivity.WebPageUrl != null)
             {
                 ExponeaLinkHandler.Instance.HandleCampaignClick(userActivity.WebPageUrl);
                 return userActivity.WebPageUrl.Host == "old.panaxeo.com";

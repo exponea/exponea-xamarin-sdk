@@ -437,15 +437,12 @@ namespace Exponea
             _exponea.FetchAppInbox(new KotlinCallback<Java.Lang.Object>(nativeR =>
             {
                 var result = new List<AppInboxMessage>();
-                Console.WriteLine("APP_INBOX got response " + nativeR.ToString());
                 if (nativeR != null)
                 {
                     var list = (Java.Util.ICollection)nativeR;
-                    Console.WriteLine("APP_INBOX of size " + list.Size());
                     foreach (var item in list.ToArray())
                     {
                         var typedItem = (ExponeaSdkAndroid.MessageItem)item;
-                        Console.WriteLine("APP_INBOX got native type ");
                         result.Add(typedItem.ToNet());
                     }
                 }

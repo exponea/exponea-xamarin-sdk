@@ -15,7 +15,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
     <PackageReference Include="System.Text.Json" Version="7.0.2" />
-    <PackageReference Include="ExponeaSDK" Version="1.1.0.26" />
+    <PackageReference Include="ExponeaSDK" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="System.Numerics.Vectors" />
