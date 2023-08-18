@@ -1,6 +1,11 @@
 ## :arrow_double_up: [SDK version update guide](./VERSION_UPDATE.md)
 
 ## Release Notes
+## Release Notes for 1.2.1
+#### August 18, 2023
+* Fixes
+  * Fixed: Runtime Android crash due to corrupted Xamarin.Android nuget
+
 ## Release Notes for 1.2.0
 #### June 2, 2023
 * Features
