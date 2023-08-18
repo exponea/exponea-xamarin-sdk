@@ -37,7 +37,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.exponea.xamarin</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>CFBundleVersion</key>
 	<string>5</string>
 </dict>
