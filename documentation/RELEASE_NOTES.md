@@ -1,6 +1,11 @@
 ## :arrow_double_up: [SDK version update guide](./VERSION_UPDATE.md)
 
 ## Release Notes
+## Release Notes for 1.2.2
+#### October 11, 2023
+* Fixes
+  * Fixed: Missing x86_64 architecture build for iOS Notifications
+
 ## Release Notes for 1.2.1
 #### August 18, 2023
 * Fixes
