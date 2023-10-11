@@ -13,7 +13,7 @@ namespace ExamplePushServiceExtension
         public UNMutableNotificationContent BestAttemptContent { get; set; }
         #endregion
 
-        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.xamarin");
+        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.ExponeaSDK-Example2");
 
         #region Constructors
         protected NotificationService(IntPtr handle) : base(handle)

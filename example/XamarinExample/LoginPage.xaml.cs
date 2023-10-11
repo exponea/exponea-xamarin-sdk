@@ -14,10 +14,10 @@ namespace XamarinExample
         {
             InitializeComponent();
 
-            projectToken.Text = Preferences.Get("projectToken", "");
-            authorization.Text = Preferences.Get("authorization", "");
+            projectToken.Text = Preferences.Get("projectToken", "b556af1a-bf4e-11ed-ac28-de4945357d1a");
+            authorization.Text = Preferences.Get("authorization", "urncrotvrtuomaircpsettnbz2wgpey1uj0zozwlylqp1ftfvw46dnvvq7rnivd8");
             advancedPrivKey.Text = Preferences.Get("advancedPrivKey", "");
-            url.Text = Preferences.Get("baseURL", "https://api.exponea.com");
+            url.Text = Preferences.Get("baseURL", "https://demoapp-api.bloomreach.com");
             flushMode.SelectedIndex = 0;
 
             if (_exponea.IsConfigured)
@@ -47,7 +47,7 @@ namespace XamarinExample
             int colorId = System.Drawing.Color.FromArgb(0, 0, 255).ToInt();
             config.AndroidConfiguration = new AndroidConfiguration(pushIcon: "push_icon", pushAccentColor: colorId, automaticPushNotification: true);
 
-            config.AdvancedAuthEnabled = true;
+            config.AdvancedAuthEnabled = false;
 
             // Prepare Example Advanced Auth
             CustomerTokenStorage.INSTANCE.Configure(

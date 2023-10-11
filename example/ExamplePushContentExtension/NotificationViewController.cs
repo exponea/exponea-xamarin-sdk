@@ -12,7 +12,7 @@ namespace ExamplePushContentExtension
     public partial class NotificationViewController : UIViewController, IUNNotificationContentExtension
     {
 
-        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.xamarin");
+        ExponeaNotificationHandler notificationHandler = new ExponeaNotificationHandler("group.com.exponea.ExponeaSDK-Example2");
 
         #region Constructors
         protected NotificationViewController(IntPtr handle) : base(handle)

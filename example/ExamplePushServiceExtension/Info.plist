@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>ExamplePushServiceExtension</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.exponea.xamarin.xamarinserviceextension</string>
+	<string>com.exponea.ExponeaSDK-Example2.ExampleNotificationService</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleInfoDictionaryVersion</key>

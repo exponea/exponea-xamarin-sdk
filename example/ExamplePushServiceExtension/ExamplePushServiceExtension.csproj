@@ -10,7 +10,7 @@
     <RootNamespace>ExamplePushServiceExtension</RootNamespace>
     <AssemblyName>ExamplePushServiceExtension</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <ReleaseVersion>1.2.1</ReleaseVersion>
+    <ReleaseVersion>1.2.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,7 +20,8 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
+    <CodesignProvision>VS: com.exponea.ExponeaSDK-Example2.ExampleNotificationService Development</CodesignProvision>
+    <CodesignKey>Apple Development: Adam Mihalik (9ZX7RBSVJF)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
@@ -30,7 +31,6 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <DeviceSpecificBuild>false</DeviceSpecificBuild>
     <MtouchVerbosity></MtouchVerbosity>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -39,7 +39,7 @@
     <DefineConstants></DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Distribution: Panaxeo, s.r.o. (UVDCL7YSZS)</CodesignKey>
+    <CodesignKey>Apple Development: Adam Mihalik (9ZX7RBSVJF)</CodesignKey>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
@@ -48,7 +48,7 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
     <CodesignExtraArgs>--deep</CodesignExtraArgs>
-    <CodesignProvision>Exponea Examarin Service Distribution</CodesignProvision>
+    <CodesignProvision>VS: com.exponea.ExponeaSDK-Example2.ExampleNotificationService Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -57,13 +57,13 @@
     <DefineConstants></DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>Apple Development: Michaela Okruhlicová (Z88SMR689C)</CodesignKey>
+    <CodesignKey>Apple Development: Adam Mihalik (9ZX7RBSVJF)</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignProvision>VS: com.exponea.ExponeaSDK-Example2.ExampleNotificationService Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -85,6 +85,7 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchVerbosity></MtouchVerbosity>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>VS: com.exponea.ExponeaSDK-Example2.ExampleNotificationService Development</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -128,7 +129,7 @@
       <HintPath>..\packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="NativeLibrary">
-      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.16.3\lib\xamarinios10\NativeLibrary.dll</HintPath>
+      <HintPath>..\packages\ExponeaSDK.iOS.Notifications.2.16.3.1\lib\xamarinios10\NativeLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

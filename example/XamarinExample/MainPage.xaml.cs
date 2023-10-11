@@ -181,11 +181,11 @@ namespace XamarinExample
             try
             {
                 var res = await _exponea.FetchAppInbox();
-                await DisplayAlert("Recommendations fetched", "Got messages: " + res.Count, "OK");
+                await DisplayAlert("AppInbox fetched", "Got messages: " + res.Count, "OK");
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Recommendations fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
+                await DisplayAlert("AppInbox fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
             }
         }
 
@@ -194,12 +194,19 @@ namespace XamarinExample
             try
             {
                 var all = await _exponea.FetchAppInbox();
-                var res = await _exponea.FetchAppInboxItem(all[0].Id);
-                await DisplayAlert("Recommendations fetched", "Got message", "OK");
+                if (all.Count == 0)
+                {
+                    await DisplayAlert("AppInbox fetched", "No message", "OK");
+                }
+                else
+                {
+                    var res = await _exponea.FetchAppInboxItem(all[0].Id);
+                    await DisplayAlert("AppInbox fetched", "Got message", "OK");
+                }
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Recommendations fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
+                await DisplayAlert("AppInbox fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
             }
         }
     }
