@@ -1,6 +1,11 @@
 ## :arrow_double_up: [SDK version update guide](./VERSION_UPDATE.md)
 
 ## Release Notes
+Release Notes for 1.2.3
+#### November 3, 2023
+* Fixes
+  * Fixed: SDK crashes without using Notifications extensions
+
 ## Release Notes for 1.2.2
 #### October 11, 2023
 * Fixes

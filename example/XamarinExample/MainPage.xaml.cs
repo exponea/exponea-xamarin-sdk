@@ -163,11 +163,6 @@ namespace XamarinExample
 
         void Register_For_Push_Clicked(System.Object sender, System.EventArgs e)
         {
-            Customer Customer = new Customer("XamarinUser." + Guid.NewGuid()) { ["apple_push_notification_bundle_id"] = "com.exponea.xamarin" };
-            CustomerTokenStorage.INSTANCE.Configure(
-                customerIds: Customer.ExternalIds
-            );
-            _exponea.IdentifyCustomer(Customer);
             DependencyService.Get<IPushRegistrationHandler>().RegisterForRemoteNotifications();
         }
 

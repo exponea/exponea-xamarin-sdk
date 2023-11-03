@@ -17,7 +17,7 @@ protocol IsExponeaXamarinSDK {
 public class ExponeaXamarinVersion: NSObject, ExponeaVersionProvider {
     required public override init() { }
     public func getVersion() -> String {
-        "1.1.0"
+        "1.2.3"
     }
 }
 
