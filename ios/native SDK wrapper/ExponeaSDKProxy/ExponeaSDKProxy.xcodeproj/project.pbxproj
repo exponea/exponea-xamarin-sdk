@@ -12,8 +12,6 @@
 		55C39C142AD6AAA1006964DA /* AnyCodable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C43273D275300319DF9 /* AnyCodable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C39C152AD6AAA1006964DA /* ExponeaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; };
 		55C39C162AD6AAA1006964DA /* ExponeaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C44273D275300319DF9 /* ExponeaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55C39C172AD6AAA1006964DA /* ExponeaSDKNotifications.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; };
-		55C39C182AD6AAA1006964DA /* ExponeaSDKNotifications.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B674328C880950059E1CB /* ExponeaSDKNotifications.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C39C192AD6AAA1006964DA /* ExponeaSDKObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; };
 		55C39C1A2AD6AAA1006964DA /* ExponeaSDKObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4A273D275600319DF9 /* ExponeaSDKObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C39C1B2AD6AAA1006964DA /* ExponeaSDKShared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC353C4B273D275600319DF9 /* ExponeaSDKShared.xcframework */; };
@@ -63,7 +61,6 @@
 				55C39C1C2AD6AAA1006964DA /* ExponeaSDKShared.xcframework in Embed Frameworks */,
 				55C39C142AD6AAA1006964DA /* AnyCodable.xcframework in Embed Frameworks */,
 				55C39C1A2AD6AAA1006964DA /* ExponeaSDKObjC.xcframework in Embed Frameworks */,
-				55C39C182AD6AAA1006964DA /* ExponeaSDKNotifications.xcframework in Embed Frameworks */,
 				55C39C1E2AD6AAA1006964DA /* SwiftSoup.xcframework in Embed Frameworks */,
 				55C39C162AD6AAA1006964DA /* ExponeaSDK.xcframework in Embed Frameworks */,
 			);
@@ -122,7 +119,6 @@
 				55C39C1B2AD6AAA1006964DA /* ExponeaSDKShared.xcframework in Frameworks */,
 				55C39C132AD6AAA1006964DA /* AnyCodable.xcframework in Frameworks */,
 				55C39C192AD6AAA1006964DA /* ExponeaSDKObjC.xcframework in Frameworks */,
-				55C39C172AD6AAA1006964DA /* ExponeaSDKNotifications.xcframework in Frameworks */,
 				55C39C1D2AD6AAA1006964DA /* SwiftSoup.xcframework in Frameworks */,
 				55C39C152AD6AAA1006964DA /* ExponeaSDK.xcframework in Frameworks */,
 			);
@@ -580,9 +576,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UVDCL7YSZS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -602,7 +596,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.exponea.ExponeaSDKProxy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -618,6 +611,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UVDCL7YSZS;
