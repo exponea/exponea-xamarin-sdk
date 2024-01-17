@@ -22,7 +22,7 @@
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ReleaseVersion>1.2.3</ReleaseVersion>
+    <ReleaseVersion>1.2.4</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,7 +71,7 @@
       <Version>123.1.1.1</Version>
     </PackageReference>
     <PackageReference Include="ExponeaSDK">
-      <Version>1.2.3</Version>
+      <Version>1.2.4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

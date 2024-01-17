@@ -1,6 +1,12 @@
 ## :arrow_double_up: [SDK version update guide](./VERSION_UPDATE.md)
 
 ## Release Notes
+Release Notes for 1.2.4
+#### January 17, 2024
+* Fixes
+  * Fixed: iOS SDK part contains embed frameworks that are denied by AppStore upload process
+
+## Release Notes
 Release Notes for 1.2.3
 #### November 3, 2023
 * Fixes
