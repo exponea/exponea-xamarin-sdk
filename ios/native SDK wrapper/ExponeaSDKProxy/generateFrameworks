@@ -11,6 +11,15 @@ SWIFT_PROJECT_PATH="./ExponeaSDKProxy.xcodeproj"
 SWIFT_BUILD_PATH="./build"
 SWIFT_OUTPUT_PATH="./frameworks"
 
+echo "Validating project to avoid Embed frameworks"
+if grep -q "Embed Frameworks" $SWIFT_PROJECT_PATH/project.pbxproj
+then
+  echo -e "\033[1;31mSelect 'Frameworks and Libraries' to 'Do Not Embed' in XCode\033[0m";
+  exit 1;
+else
+  echo "Project dependencies seems fine";
+fi
+
 echo "Build iOS framework for simulator and device"
 rm -Rf "$SWIFT_BUILD_PATH"
 xcodebuild -sdk iphonesimulator$IOS_SDK_VERSION -arch x86_64 -arch arm64 -arch armv7 -arch armv7s -project "$SWIFT_PROJECT_PATH" -configuration Release SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
