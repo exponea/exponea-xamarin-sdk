@@ -38,6 +38,7 @@
                 </StackLayout>
                 <Button Text="Fetch AppInbox" Clicked="Fetch_AppInbox_ClickedAsync"/>
                 <Button Text="Fetch AppInbox item" Clicked="Fetch_AppInboxItem_ClickedAsync"/>
+                <Button Text="MarkRead AppInbox item" Clicked="MarkRead_AppInboxItem_ClickedAsync"/>
                
             </StackLayout>
                 

@@ -204,5 +204,35 @@ namespace XamarinExample
                 await DisplayAlert("AppInbox fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
             }
         }
+
+        async void MarkRead_AppInboxItem_ClickedAsync(System.Object sender, System.EventArgs e)
+        {
+            try
+            {
+                var all = await _exponea.FetchAppInbox();
+                if (all.Count == 0)
+                {
+                    await DisplayAlert("AppInbox fetched", "No message", "OK");
+                }
+                else
+                {
+                    var unreadMessage = all[0];
+                    foreach (AppInboxMessage message in all)
+                    {
+                        if (!message.IsRead)
+                        {
+                            unreadMessage = message;
+                            break;
+                        }
+                    }
+                    var marked = await _exponea.MarkAppInboxAsRead(unreadMessage);
+                    await DisplayAlert("AppInbox", "Marked as read done", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("AppInbox fetch failed", ex is FetchException fe ? fe.JsonBody : ex.Message, "OK");
+            }
+        }
     }
 }
