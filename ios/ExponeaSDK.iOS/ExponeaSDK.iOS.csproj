@@ -12,10 +12,10 @@
     <AssemblyName>ExponeaSDK.iOS</AssemblyName>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackageId>ExponeaSDK.iOS</PackageId>
-    <PackageVersion>2.16.3.3</PackageVersion>
+    <PackageVersion>2.16.3.4</PackageVersion>
     <Authors>Exponea</Authors>
     <Description>Binding library for native iOS ExponeaSDK</Description>
-    <ReleaseVersion>2.16.3.3</ReleaseVersion>
+    <ReleaseVersion>2.16.3.4</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
     <Owners>Exponea</Owners>
