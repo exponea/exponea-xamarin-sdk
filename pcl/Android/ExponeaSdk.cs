@@ -421,13 +421,19 @@ namespace Exponea
         Task<bool> IExponeaSdk.MarkAppInboxAsRead(AppInboxMessage message)
         {
             var tcs = new TaskCompletionSource<bool>();
-            _exponea.MarkAppInboxAsRead(
-                message.ToNative(),
-                new KotlinCallback<Java.Lang.Boolean>(r =>
+            _exponea.FetchAppInboxItem(message.Id, new KotlinCallback<ExponeaSdkAndroid.MessageItem>(nativeR =>
+            {
+                if (nativeR == null)
+                {
+                    tcs.SetResult(false);
+                    return;
+                }
+                _exponea.MarkAppInboxAsRead(nativeR, new KotlinCallback<Java.Lang.Boolean>(r =>
                 {
                     tcs.SetResult((bool)r.ToNet());
                 })
             );
+            }));
             return tcs.Task;
         }
 
@@ -437,13 +443,16 @@ namespace Exponea
             _exponea.FetchAppInbox(new KotlinCallback<Java.Lang.Object>(nativeR =>
             {
                 var result = new List<AppInboxMessage>();
-                if (nativeR != null)
+                if (nativeR != null && nativeR is Java.Util.ICollection)
                 {
                     var list = (Java.Util.ICollection)nativeR;
                     foreach (var item in list.ToArray())
                     {
-                        var typedItem = (ExponeaSdkAndroid.MessageItem)item;
-                        result.Add(typedItem.ToNet());
+                        if (item != null && item is ExponeaSdkAndroid.MessageItem)
+                        {
+                            var typedItem = (ExponeaSdkAndroid.MessageItem)item;
+                            result.Add(typedItem.ToNet());
+                        }
                     }
                 }
                 tcs.SetResult(result);
