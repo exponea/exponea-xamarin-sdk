@@ -14,10 +14,10 @@ namespace XamarinExample
         {
             InitializeComponent();
 
-            projectToken.Text = Preferences.Get("projectToken", "b556af1a-bf4e-11ed-ac28-de4945357d1a");
-            authorization.Text = Preferences.Get("authorization", "urncrotvrtuomaircpsettnbz2wgpey1uj0zozwlylqp1ftfvw46dnvvq7rnivd8");
+            projectToken.Text = Preferences.Get("projectToken", "");
+            authorization.Text = Preferences.Get("authorization", "");
             advancedPrivKey.Text = Preferences.Get("advancedPrivKey", "");
-            url.Text = Preferences.Get("baseURL", "https://demoapp-api.bloomreach.com");
+            url.Text = Preferences.Get("baseURL", "");
             flushMode.SelectedIndex = 0;
 
             if (_exponea.IsConfigured)

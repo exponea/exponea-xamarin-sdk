@@ -1,12 +1,17 @@
 ## :arrow_double_up: [SDK version update guide](./VERSION_UPDATE.md)
 
 ## Release Notes
+Release Notes for 1.2.5
+#### February 28, 2024
+* Fixes
+  * Fixed: App Inbox Data API wrong casting causing crashes for empty Inbox
+  * Fixed: App Inbox markAsRead not working on Android
+
 Release Notes for 1.2.4
 #### January 17, 2024
 * Fixes
   * Fixed: iOS SDK part contains embed frameworks that are denied by AppStore upload process
 
-## Release Notes
 Release Notes for 1.2.3
 #### November 3, 2023
 * Fixes

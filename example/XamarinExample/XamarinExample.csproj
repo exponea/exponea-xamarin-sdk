@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <ReleaseVersion>1.2.4</ReleaseVersion>
+    <ReleaseVersion>1.2.5</ReleaseVersion>
     <BuildWithMSBuildOnMono>true</BuildWithMSBuildOnMono>
   </PropertyGroup>
 
@@ -16,7 +16,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
     <PackageReference Include="System.Text.Json" Version="7.0.2" />
-    <PackageReference Include="ExponeaSDK" Version="1.2.4" />
+    <PackageReference Include="ExponeaSDK" Version="1.2.5" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="System.Numerics.Vectors" />
